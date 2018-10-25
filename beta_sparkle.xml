@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="https://rhea.colorado.edu/beta_sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Spectrum Sparkle Beta</title>
+    <link></link>
+    <description>Most recent beta releases with links to updates.</description>
+    <language>en</language>
+        <item>
+            <sparkle:releaseNotesLink>
+                http://rhea.colorado.edu/sparkle/release.1.7.0-beta_177.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Tue, 25 Jul 2018 00:01:00 +0000</pubDate>
+            <enclosure url="http://rhea.colorado.edu/sparkle/Spectrum.1.7.0-beta_177.zip" 
+                       sparkle:version="177" 
+                       shortVersionString="1.7.0-beta_177" 
+                       length="27845688" 
+                       type="application/octet-stream" 
+                       sparkle:dsaSignature="MCwCFBaH1QD9HQotW6lXS+DXhMr8UvYUAhR4wD3JRNO4PSXAJ+22US0A2fQDQQ==" 
+                       />
+            <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
+        </item>
+  </channel>
+</rss>

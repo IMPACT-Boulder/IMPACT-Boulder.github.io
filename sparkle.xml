@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="https://rhea.colorado.edu/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Spectrum Sparkle</title>
+    <link></link>
+    <description>Most recent changes with links to updates.</description>
+    <language>en</language>
+        <item>
+            <sparkle:releaseNotesLink>
+                http://rhea.colorado.edu/sparkle/release.1.6.3_125.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Tue, 17 Oct 2017 03:03:00 +0000</pubDate>
+            <enclosure url="http://rhea.colorado.edu/sparkle/Spectrum.1.6.3_125.zip" sparkle:version="125" shortVersionString="1.5.0" length="14490410" type="application/octet-stream" sparkle:dsaSignature="MCwCFDhuVaydXehICRABLOgH1jdRt9PDAhQWw/9cf1huoGIEuYl7Wuq+g/t73g==" />
+            <sparkle:minimumSystemVersion>10.10</sparkle:minimumSystemVersion>
+
+            <sparkle:releaseNotesLink>
+                http://rhea.colorado.edu/sparkle/release.1.5.0b95.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Fri, 24 Feb 2017 03:03:00 +0000</pubDate>
+            <enclosure url="http://rhea.colorado.edu/sparkle/Spectrum.1.5.0_95.zip" sparkle:version="95" shortVersionString="1.5.0" length="12160601" type="application/octet-stream" sparkle:dsaSignature="MCwCFDAZtxuQTCOK/OSvYlSBYv/MynfDAhQ2L46718qFqrPTaQtpIug6UflbLA==" />
+            <sparkle:minimumSystemVersion>10.10</sparkle:minimumSystemVersion>
+        
+            <sparkle:releaseNotesLink>
+                http://rhea.colorado.edu/sparkle/release.1.5.0b93.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Thu, 23 Feb 2017 03:03:00 +0000</pubDate>
+            <enclosure url="http://rhea.colorado.edu/sparkle/Spectrum.1.5.0_93.zip" sparkle:version="93" shortVersionString="1.5.0" length="12158035" type="application/octet-stream" sparkle:dsaSignature="MCwCFAgvxIqPhAsDe88nN5fVT7pEigstAhQDh7+g2K1bu/9J/Wp9Rp0Ymr8LvQ==" />
+            <sparkle:minimumSystemVersion>10.10</sparkle:minimumSystemVersion>
+
+            <sparkle:releaseNotesLink>
+                http://rhea.colorado.edu/sparkle/release.1.4.11b91.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Wed, 7 Dec 2016 03:03:00 +0000</pubDate>
+            <enclosure url="http://rhea.colorado.edu/sparkle/Spectrum.1.4.11_91.zip" sparkle:version="91" shortVersionString="1.4.11" length="12029279" type="application/octet-stream" sparkle:dsaSignature="MCwCFHf0G0ywRzRJ5Gb2LinWFfdKWYlKAhQNp7k/jqh2ij0RyawOyOpbmpM7Lw==" />
+            <sparkle:minimumSystemVersion>10.10</sparkle:minimumSystemVersion>
+
+            <sparkle:releaseNotesLink>
+                http://rhea.colorado.edu/sparkle/release.1.4.10b90.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Thu, 30 Nov 2016 03:03:00 +0000</pubDate>
+            <enclosure url="http://rhea.colorado.edu/sparkle/Spectrum.1.4.10_90.zip" sparkle:version="90" shortVersionString="1.4.10" length="11694957" type="application/octet-stream" sparkle:dsaSignature="MCwCFASWBX/OQpItwAfEC9WA5cKEGMOvAhQPQXvdmvVTgUyeNNkWjbaiuHpXkQ==" />
+            <sparkle:minimumSystemVersion>10.10</sparkle:minimumSystemVersion>
+        </item>
+
+        <item>
+            <sparkle:releaseNotesLink>
+                http://rhea.colorado.edu/sparkle/release.1.4.9b86.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Thu, 19 Nov 2016 03:03:00 +0000</pubDate>
+            <enclosure url="http://rhea.colorado.edu/sparkle/Spectrum.1.4.9_86.zip" sparkle:version="86" shortVersionString="1.4.9" length="11636823" type="application/octet-stream" sparkle:dsaSignature="MCwCFBK/sljQER/59KNChL1QvoENJV69AhQnz/Qps+nnRSBftxgAf+tspVbRTA==" />
+            <sparkle:minimumSystemVersion>10.10</sparkle:minimumSystemVersion>
+      </item>
+    
+      <item>
+          <sparkle:releaseNotesLink>
+              http://rhea.colorado.edu/sparkle/release.1.4.8b84.html
+          </sparkle:releaseNotesLink>
+          <pubDate>Thu, 19 Nov 2016 03:03:00 +0000</pubDate>
+          <enclosure url="http://rhea.colorado.edu/sparkle/Spectrum.1.4.8_84.zip" sparkle:version="84" shortVersionString="1.4.8" length="11616775" type="application/octet-stream" sparkle:dsaSignature="MCwCFHHWCGMdSv7e+oi84SeMkPoijDm7AhQL6XKz4AjIXKA2rBwoyoqRDScPIA==" />
+          <sparkle:minimumSystemVersion>10.10</sparkle:minimumSystemVersion>
+      </item>
+
+      <item>
+          <sparkle:releaseNotesLink>
+              http://rhea.colorado.edu/sparkle/release.1.4.7b82.html
+          </sparkle:releaseNotesLink>
+          <pubDate>Thu, 17 Nov 2016 03:03:00 +0000</pubDate>
+          <enclosure url="http://rhea.colorado.edu/sparkle/Spectrum.1.4.7_82.zip" sparkle:version="82" shortVersionString="1.4.7" length="11555230" type="application/octet-stream" sparkle:dsaSignature="MCwCFGdXNYsiy8iNZYEaxott+ZxekbFdAhRU/+sp8fm2jpQjGbZyFWsNM35HVQ==" />
+          <sparkle:minimumSystemVersion>10.10</sparkle:minimumSystemVersion>
+      </item>
+
+      <item>
+          <sparkle:releaseNotesLink>
+              http://rhea.colorado.edu/sparkle/release.1.4.6.html
+          </sparkle:releaseNotesLink>
+          <pubDate>Thu, 11 Nov 2016 03:03:00 +0000</pubDate>
+          <enclosure url="http://rhea.colorado.edu/sparkle/Spectrum.1.4.6_70_80.zip" sparkle:version="80" shortVersionString="1.4.6" length="11542620" type="application/octet-stream" sparkle:dsaSignature="MCwCFD0HmA2CEr9SwwakRJxjIIIsIzvjAhQFSfTHUzTWGJ3eoejFl1+TDBq7bw==" />
+          <sparkle:minimumSystemVersion>10.10</sparkle:minimumSystemVersion>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,62 @@
+<title>Nightly Build 1.7.0 (Build 177)</title>
+<description>
+	This is a beta version which probably has not been sufficiently tested.
+    <ul>
+    	<li> Version 1.7.0 Nightly Build 177:
+    	<ul>
+    		<li> Replaced Sparkle updater. Autoupdate should not stall any longer.
+    	</ul>	    
+     	<li> Version 1.7.0 Nightly Build 173:
+    	<ul>
+    		<li> Fixed an issue where the app failed to access spice kernels if located 
+    		     outside of the sandbox. To provide access to the kernels the directory 
+    		     containing ALL KERNELS needs to be identified first via the preferences 
+    		     dialog.
+    		<li> The side bar presents Spice based event parameters.
+    	    <li> Fixed a couple of bugs related to very old projects and to CDA data.   
+    	</ul>	    
+    	<li> Version 1.7.0 Nightly Build 172:
+    	<ul>
+    		<li> Fixed an issue where the app failed to connect to the update server
+    		<li> Added inspector icons.
+    	    <li> Fixed minor side bar issues
+    	</ul>	    
+    	<li> Version 1.7.0 Nightly Build 171:
+    	<ul>
+    		<li> Fixed an issue that caused the app to crash when loading a project containing 
+    			 spectra with identified bulges
+    		<li> Fixed multiple race conditions that caused the app to crash when starting
+    			 with multiple open projects.
+    	    <li> Improved code stability
+    	</ul>	
+        <li> Version 1.7.0 Nightly Build 170:
+    	<ul>
+    		<li> New Sidebar.
+    		<li> New design of the project setup UI. Project ressources such as the 
+    		     spectrum template are now selected via the setup UI.
+    		<li> Progress reports when computing a sum spectrum.
+    		<li> Migrated code to Swift 4.2, xCode 10.0
+    		<li> Removed obsolete code.
+    		<li> Fixed an issue where spectrum plots do not correctly show faint features.
+    		<li> Fixed an issue where the sum spectrum is not shown after computing.
+    	</ul>    	
+    	<li> Version 1.7.0 Nightly Build 165:
+    	<ul>
+    		<li> Models can be fitted to auxiliary waveforms.
+    		<li> Greatly improved line assignments.
+    		<li> Added missing capabilities from the IDL version.
+    		<li> And last but not least a mother lode of bug fixes.
+    	</ul>    	
+        <li> Version 1.7.0 Nightly Build 145:
+    	<ul>
+    		<li> The app architecture is now document based. This allows to have more than
+    			one spectrum project opened.
+    		<li> Each opened spectrum project employs its own set of libraries and 
+    			spectrometers.
+    		<li> Newly imported data sets are created as new projects, while the current
+    			project remains open.
+    		<li> Note that because of the architecture of the Spice toolkit all 
+    			open projects use the same spice setup.
+    	</ul>
+    </ul>
+</description>
