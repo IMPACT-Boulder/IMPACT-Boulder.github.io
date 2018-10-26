@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="https://rhea.colorado.edu/beta_sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rss version="2.0" xmlns:sparkle="https://impact.colorado.edu/beta_sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Spectrum Sparkle Beta</title>
     <link></link>
@@ -7,10 +7,10 @@
     <language>en</language>
         <item>
             <sparkle:releaseNotesLink>
-                http://rhea.colorado.edu/sparkle/release.1.7.0-beta_177.html
+                https://impact.colorado.edu/release.1.7.0-beta_177.html
             </sparkle:releaseNotesLink>
             <pubDate>Tue, 25 Jul 2018 00:01:00 +0000</pubDate>
-            <enclosure url="http://rhea.colorado.edu/sparkle/Spectrum.1.7.0-beta_177.zip" 
+            <enclosure url="https://impact.colorado.edu/Spectrum.1.7.0-beta_177.zip" 
                        sparkle:version="177" 
                        shortVersionString="1.7.0-beta_177" 
                        length="27845688" 
