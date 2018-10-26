@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="https://impact.colorado.edu/beta_sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>Spectrum Sparkle Beta</title>
-    <link></link>
+    <title>Spectrum App Beta</title>
+    <link>
+           https://impact.colorado.edu/appcast-beta.xml
+    </link>
     <description>Most recent beta releases with links to updates.</description>
     <language>en</language>
         <item>
             <sparkle:releaseNotesLink>
-                https://impact.colorado.edu/release.1.7.0-beta_177.html
+                https://impact.colorado.edu/spectrumapp/beta-release_notes.html
             </sparkle:releaseNotesLink>
             <pubDate>Tue, 25 Jul 2018 00:01:00 +0000</pubDate>
-            <enclosure url="https://impact.colorado.edu/Spectrum.1.7.0-beta_177.zip" 
+            <enclosure url="https://impact.colorado.edu/spectrumapp/Spectrum-beta.zip" 
                        sparkle:version="177" 
                        shortVersionString="1.7.0-beta_177" 
                        length="27845688" 
                        type="application/octet-stream" 
-                       sparkle:dsaSignature="MCwCFBaH1QD9HQotW6lXS+DXhMr8UvYUAhR4wD3JRNO4PSXAJ+22US0A2fQDQQ==" 
-                       />
+                       sparkle:dsaSignature="MCwCFBaH1QD9HQotW6lXS+DXhMr8UvYUAhR4wD3JRNO4PSXAJ+22US0A2fQDQQ==" />
             <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
         </item>
   </channel>

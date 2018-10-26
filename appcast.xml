@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>Spectrum Sparkle</title>
+    <title>Spectrum App</title>
     <link>
         https://impact.colorado.edu/appcast.xml
     </link>
@@ -9,10 +9,10 @@
     <language>en</language>
         <item>
             <sparkle:releaseNotesLink>
-                https://impact.colorado.edu/release.1.6.3_125.html
+                https://impact.colorado.edu/spectrumapp/release_notes.html
             </sparkle:releaseNotesLink>
             <pubDate>Tue, 17 Oct 2017 03:03:00 +0000</pubDate>
-            <enclosure url="https://impact.colorado.edu/Spectrum.1.6.3_125.zip" 
+            <enclosure url="https://impact.colorado.edu/spectrumapp/Spectrum.zip" 
                                sparkle:version="125" 
                                shortVersionString="1.5.0" 
                                length="14490410" 
