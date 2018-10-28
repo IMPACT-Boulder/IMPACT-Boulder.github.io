@@ -14,7 +14,7 @@
             <pubDate>Sun, 28 Oct 2018 00:01:00 +0000</pubDate>
             <enclosure url="https://impact.colorado.edu/spectrumapp/Spectrum-beta.zip" 
                        sparkle:version="184" 
-                       sparkle:shortVersionString="1.7.0 (184)" 
+                       sparkle:shortVersionString="1.7.0-beta" 
                        sparkle:dsaSignature="MC0CFQCFTTlRipqUsJJyRwDOPMZHxrAUjQIUCVctL50Rnrouc/bnsVLxaaDbBh0=" 
                        length="28493680" 
                        type="application/octet-stream" />
