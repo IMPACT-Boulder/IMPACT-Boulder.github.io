@@ -15,7 +15,7 @@
             <enclosure url="https://impact.colorado.edu/spectrumapp/Spectrum-beta.zip" 
                        sparkle:version="187" 
                        sparkle:shortVersionString="1.7.0-beta" 
-                       sparkle:dsaSignature="MEUCIQCBIfZtondn5rHj0mkwpEGx+nQpd4eWFKcuGXupd+Qg/AIgdWuM0R1CWDuSWPmcZweHyO1yz7zwxWBezIhvEWyJucI="
+                       sparkle:dsaSignature="MCwCFDRfxmSH4hGJ+sc9ny2YYx7ZvcgGAhQovudP5qCOdpVu9UMINFrnpW7hvA=="
                        length="28552046"
                        type="application/octet-stream" />
             <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
