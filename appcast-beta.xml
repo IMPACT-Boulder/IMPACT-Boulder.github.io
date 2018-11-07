@@ -12,8 +12,8 @@
                 https://impact.colorado.edu/spectrumapp/beta-release_notes.html
             </sparkle:releaseNotesLink>
             <pubDate>Mon, 7 Nov 2018 00:01:00 +0000</pubDate>
-            <enclosure url="https://impact.colorado.edu/spectrumapp/Spectrum-beta.zip"  
-                       sparkle:version="188" 
+            <enclosure url="https://impact.colorado.edu/spectrumapp/Spectrum-beta.zip" 
+                       sparkle:version="189" 
                        sparkle:shortVersionString="1.7.0-beta" 
                        sparkle:dsaSignature="MCwCFHQb95Gf5rtr5CCPJQ65thOJn3m9AhRxlNyze5EigUjqPdHU9rccC7u4Vw=="
                        length="28923253"
