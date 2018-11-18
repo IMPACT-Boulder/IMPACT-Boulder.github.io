@@ -14,7 +14,7 @@
             <pubDate>Sun, 18 Nov 2018 03:03:00 +0000</pubDate>
             <enclosure url="https://impact.colorado.edu/spectrumapp/Spectrum.zip" 
                                sparkle:version="194" 
-                               shortVersionString="2.0" 
+                               sparkle:shortVersionString="2.0" 
                                length="28867389" 
                                type="application/octet-stream" 
                                sparkle:dsaSignature="MCwCFD4DUsGrTAo+hpJVx3Bq4wCqKLUyAhRBttSy1kfoV7XvMQ6+s+NlapqgBQ==" />
