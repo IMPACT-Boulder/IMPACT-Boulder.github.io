@@ -7,29 +7,16 @@
     </link>
     <description>Most recent beta releases with links to updates.</description>
     <language>en</language>
-            <item>
-            <sparkle:releaseNotesLink>
-                https://impact.colorado.edu/spectrumapp/release_notes.html
-            </sparkle:releaseNotesLink>
-            <pubDate>Sun, 18 Nov 2018 03:03:00 +0000</pubDate>
-            <enclosure url="https://impact.colorado.edu/spectrumapp/Spectrum.zip" 
-                               sparkle:version="194" 
-                               sparkle:shortVersionString="2.0" 
-                               length="28867389" 
-                               type="application/octet-stream" 
-                               sparkle:dsaSignature="MCwCFD4DUsGrTAo+hpJVx3Bq4wCqKLUyAhRBttSy1kfoV7XvMQ6+s+NlapqgBQ==" />
-            <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
-        </item>
         <item>
             <sparkle:releaseNotesLink>
                 https://impact.colorado.edu/spectrumapp/beta-release_notes.html
             </sparkle:releaseNotesLink>
             <pubDate>Mon, 15 Nov 2018 00:01:00 +0000</pubDate>
             <enclosure url="https://impact.colorado.edu/spectrumapp/Spectrum-beta.zip" 
-                       sparkle:version="192" 
-                       sparkle:shortVersionString="1.7.0-beta" 
-                       sparkle:dsaSignature="MC0CFFzYnr9djrHYuNmjpHnSNN7agqKzAhUAgJYPI9rzWiEycV5FXnaqavJvGvA="
-                       length="28864473"
+                       sparkle:version="195" 
+                       sparkle:shortVersionString="2.1-beta" 
+                       sparkle:dsaSignature="MCwCFGGMLIpmfyYafrmY35tXSfOVAfU4AhR3dmt0nAHDKT5a8Bd0+lo3aut4ww=="
+                       length="28914286"
                        type="application/octet-stream" />
             <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
         </item>
