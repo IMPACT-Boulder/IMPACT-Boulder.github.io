@@ -15,11 +15,11 @@
             <pubDate>Tue, 22 Apr 2020 03:03:00 +0000</pubDate>
             <!--<enclosure url="https://impact.colorado.edu/spectrumapp/Spectrum-beta.zip"-->
             <enclosure url="https://impact.colorado.edu/spectrumapp/Spectrum.zip"
-                               sparkle:version="289" 
-                               sparkle:shortVersionString="2.2.0" 
-                               length="26331973" 
+                               sparkle:version="305" 
+                               sparkle:shortVersionString="2.3.0" 
+                               length="28467292" 
                                type="application/octet-stream" 
-                               sparkle:dsaSignature="MC0CFQCG2D9U9BBJr0lKsmZuJs1VKev65AIUbl5y7QHkuaKnB9+AEc4fCiwDiNY=" />
+                               sparkle:dsaSignature="MCwCFE3VCqr1QJOWs9lIlOehA3i3eK0MAhRoIEfv3l2uSrtURSmjiy+F0Hmytg==" />
             <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
         </item>
   </channel>
