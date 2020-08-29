@@ -9,14 +9,12 @@
     <language>en</language>
         <item>
             <sparkle:releaseNotesLink>
-                https://impact.colorado.edu/spectrumapp/release_notes.html
-                <!--https://impact.colorado.edu/spectrumapp/beta-release_notes.html-->
+                https://impact.colorado.edu/spectrumapp/beta-release_notes.html
             </sparkle:releaseNotesLink>
             <pubDate>Fri, 28 Aug 2020 03:03:00 +0000</pubDate>
-            <!--<enclosure url="https://impact.colorado.edu/spectrumapp/Spectrum-beta.zip"-->
-            <enclosure url="https://impact.colorado.edu/spectrumapp/Spectrum.zip"
+            <enclosure url="https://impact.colorado.edu/spectrumapp/Spectrum-beta.zip"
                                sparkle:version="306" 
-                               sparkle:shortVersionString="2.3.beta" 
+                               sparkle:shortVersionString="2.3.0 (306) beta" 
                                length="28479628" 
                                type="application/octet-stream" 
                                sparkle:dsaSignature="MCwCFBiJeBJ5EHBfvFKQRt3im+p5Al2dAhQo7jUrdA/WWgsX9EKI5L5EbbwSXw==" />
