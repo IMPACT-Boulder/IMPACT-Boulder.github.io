@@ -13,11 +13,11 @@
             </sparkle:releaseNotesLink>
             <pubDate>Thu, 11 Mar 2020 03:03:00 +0000</pubDate>
             <enclosure url="https://impact.colorado.edu/spectrumapp/Spectrum-beta.zip"
-                               sparkle:version="333" 
-                               sparkle:shortVersionString="2.3.0 (333) beta" 
-                               length="26782965" 
+                               sparkle:version="334" 
+                               sparkle:shortVersionString="2.3.0 (334) beta" 
+                               length="26801513" 
                                type="application/octet-stream" 
-                               sparkle:dsaSignature="MCwCFBoeDdFdC5ACGMDczeAQtEDTu6gHAhQqe3QgMA4IZohJrRQIsidxau3Lpw==" />
+                               sparkle:dsaSignature="MC0CFQCIpUp/n1IJnA70ft7EECgjfQatawIUF4r2je3o2N355Y91XXD39FBKICY=" />
             <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
         </item>
   </channel>
