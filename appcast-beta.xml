@@ -11,13 +11,13 @@
             <sparkle:releaseNotesLink>
                 https://impact.colorado.edu/spectrumapp/beta-release_notes.html
             </sparkle:releaseNotesLink>
-            <pubDate>Mon, 31 Jan 2022 08:00:00 +0000</pubDate>
+            <pubDate>Fri, 4 Feb 2022 08:00:00 +0000</pubDate>
             <enclosure url="https://impact.colorado.edu/spectrumapp/Spectrum-beta.zip"
-                               sparkle:version="373" 
-                               sparkle:shortVersionString="3.0.0 (373) Release Candidate 5" 
-                               length="24361065" 
+                               sparkle:version="377" 
+                               sparkle:shortVersionString="3.0.0 (377) Golden Master" 
+                               length="24358141" 
                                type="application/octet-stream" 
-                               sparkle:dsaSignature="MCwCFC/MCwCFFQV7vKlHI29vPOCkoR3NzmPttKIAhQttc1O90YQ0JBVEVnVvfxmKMnytA==" />
+                               sparkle:dsaSignature="MCwCFCihbLqS+ThehFcjfhJ9sF7oaoMUAhR6pIUHTuGH8WuoUQ5QjPqWQGEAqg==" />
             <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
         </item>
   </channel>
