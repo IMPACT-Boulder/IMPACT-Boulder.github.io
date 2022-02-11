@@ -11,13 +11,13 @@
             <sparkle:releaseNotesLink>
                 https://impact.colorado.edu/spectrumapp/release_notes.html
             </sparkle:releaseNotesLink>
-            <pubDate>Wed, 9 Feb 2022 03:03:00 +0000</pubDate>
+            <pubDate>Wed, 11 Feb 2022 03:03:00 +0000</pubDate>
             <enclosure url="https://impact.colorado.edu/spectrumapp/Spectrum.zip" 
-                               sparkle:version="378" 
-                               sparkle:shortVersionString="3.3.0 (378)" 
-                               length="24357366" 
+                               sparkle:version="379" 
+                               sparkle:shortVersionString="3.0.1 (379)" 
+                               length="24370406" 
                                type="application/octet-stream" 
-                               sparkle:dsaSignature="MCwCFGzWRFLHvi8HuH6i2bG74ZDfwCotAhRFREguyA6+acl0EZaeOODYcI1x3A==" />
+                               sparkle:dsaSignature="MCwCFHiQDGCiXOHqi3on3jmLteK/AJ5JAhQAk95i9q7YwphN9DhXYU4G1ihbgA==" />
             <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
         </item>
   </channel>
