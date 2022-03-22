@@ -7,32 +7,11 @@
             <pubDate>Sat, 19 Mar 2022 13:31:02 -0600</pubDate>
             <sparkle:version>381</sparkle:version>
             <sparkle:shortVersionString>3.0.2</sparkle:shortVersionString>
-            <description><![CDATA[<title>Version 3.0.2 (Build 381)</title>
-	        <description>
-    		<ul> 
-    		    <li> Version 3.0.2 (381): 
-        			<ul>
-	        			<li> The verification of Spice ressources during project loading is more forgiving.
-	        			<li> HDF5 data exports are now comprehensive enough to allow to reload such data into Spectrum again.
-	        			<li> Fixed a bug where the upper x axis in the Line Viewer didn't show the user's selected choice.
-	    			</ul>
-        		<li> Version 3.0.1 (379): 
-        			<ul>
-	        			<li> Minor bug fixes.
-	    			</ul>	
-        		<li> Version 3.0.0 (378): 
-        			<ul>
-	        			<li> Polished UI
-	        			<li> Impact database access
-	        			<li> Better organisation scheme for datasets
-	        			<li> Suports lastest version of SUDA instrument software
-	        			<li> Improved code stability
-	    			</ul>	
-	        	</ul>
-			</description>
-	        ]]></description>
             <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
-            <enclosure url="Spectrum.zip" length="24348398" type="application/octet-stream" sparkle:edSignature="RBkVNZg5knBjylTcVd5Ro1gavsL4v5T5UBFv5T2hxNM/HyxZRz1vT14vDbOl29QBuJHfvqpnTDr2y5dm8K0ZBw=="/>
+            <enclosure url="https://impact.colorado.edu/spectrumapp/Spectrum.zip" length="24348398" type="application/octet-stream" sparkle:edSignature="RBkVNZg5knBjylTcVd5Ro1gavsL4v5T5UBFv5T2hxNM/HyxZRz1vT14vDbOl29QBuJHfvqpnTDr2y5dm8K0ZBw=="/>
+            <sparkle:releaseNotesLink>
+                https://impact.colorado.edu/spectrumapp/release_notes.html
+            </sparkle:releaseNotesLink>
         </item>
     </channel>
 </rss>
