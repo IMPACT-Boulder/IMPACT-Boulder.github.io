@@ -3,35 +3,14 @@
     <channel>
         <title>Spectrum</title>
         <item>
-            <title>3.0.4</title>
-            <pubDate>Sun, 03 Apr 2022 20:12:45 -0600</pubDate>
-            <sparkle:version>384</sparkle:version>
-            <sparkle:shortVersionString>3.0.4</sparkle:shortVersionString>
+            <title>3.0.5</title>
+            <pubDate>Sat, 09 Apr 2022 13:54:38 -0600</pubDate>
+            <sparkle:version>385</sparkle:version>
+            <sparkle:shortVersionString>3.0.5</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink>
-                https://impact.colorado.edu/spectrumapp/release_notes.html
-            </sparkle:releaseNotesLink>
-            <enclosure url="Spectrum.zip" length="24365954" type="application/octet-stream" sparkle:edSignature="WoixnJRMAPgs5LEVe1FoTzJXXzchlDsdjDxCZP8h6nbcwcYQefbg3o3oQjvZT33oXyJWTu6/ZnJ6TkpZ2BQ5Bg=="/>
-        </item>
-        <item>
-            <title>3.0.3</title>
-            <pubDate>Sun, 03 Apr 2022 08:31:40 -0600</pubDate>
-            <sparkle:version>382</sparkle:version>
-            <sparkle:shortVersionString>3.0.3</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
+             <sparkle:releaseNotesLink>https://impact.colorado.edu/spectrumapp/release_notes.html</sparkle:releaseNotesLink>
             <sparkle:releaseNotesLink>Spectrum.html</sparkle:releaseNotesLink>
-            <enclosure url="Spectrum.zip" length="24361714" type="application/octet-stream" sparkle:edSignature="6LNdsitapW08un/B5eQYsv0EtY7jbS9zH81RDzeaQTSVHKp6/50sNbjgb0Ci6UMp1uYHztBk6WgKU7o1j4aKCg=="/>
-        </item>
-        <item>
-            <title>3.0.2</title>
-            <pubDate>Sat, 19 Mar 2022 13:31:02 -0600</pubDate>
-            <sparkle:version>381</sparkle:version>
-            <sparkle:shortVersionString>3.0.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
-            <enclosure url="Spectrum.zip" length="24348398" type="application/octet-stream" sparkle:edSignature="RBkVNZg5knBjylTcVd5Ro1gavsL4v5T5UBFv5T2hxNM/HyxZRz1vT14vDbOl29QBuJHfvqpnTDr2y5dm8K0ZBw=="/>
-            <sparkle:releaseNotesLink>
-                https://impact.colorado.edu/spectrumapp/release_notes.html
-            </sparkle:releaseNotesLink>
+            <enclosure url="Spectrum.zip" length="22965308" type="application/octet-stream" sparkle:edSignature="qcpHcLauFlB5ZQOOyTCRZrIF1Q0qmXH1BsWw8hmR2Q5YsgceSiGtE5QrU8rW97BsLe6nStPxbMmrfYn1EOymAw=="/>
         </item>
     </channel>
 </rss>
