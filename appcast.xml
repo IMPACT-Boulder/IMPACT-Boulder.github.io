@@ -3,14 +3,14 @@
     <channel>
         <title>Spectrum</title>
         <item>
-            <title>3.0.5</title>
-            <pubDate>Sat, 09 Apr 2022 13:54:38 -0600</pubDate>
-            <sparkle:version>385</sparkle:version>
-            <sparkle:shortVersionString>3.0.5</sparkle:shortVersionString>
+            <title>3.0.6</title>
+            <pubDate>Mon, 11 Apr 2022 09:13:15 -0600</pubDate>
+            <sparkle:version>386</sparkle:version>
+            <sparkle:shortVersionString>3.0.6</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
              <sparkle:releaseNotesLink>https://impact.colorado.edu/spectrumapp/release_notes.html</sparkle:releaseNotesLink>
             <sparkle:releaseNotesLink>Spectrum.html</sparkle:releaseNotesLink>
-            <enclosure url="Spectrum.zip" length="22965308" type="application/octet-stream" sparkle:edSignature="qcpHcLauFlB5ZQOOyTCRZrIF1Q0qmXH1BsWw8hmR2Q5YsgceSiGtE5QrU8rW97BsLe6nStPxbMmrfYn1EOymAw=="/>
+            <enclosure url="Spectrum.zip" length="35612591" type="application/octet-stream" sparkle:edSignature="hijLBKhGhyu99JWllJPs5920nkrPdgw6wd1wzyjI8dm98c4un7T4NfW1pfJsfQWqKtqZ0W1PC6cKSZoEk8ZiCA=="/>
         </item>
     </channel>
 </rss>
