@@ -2,6 +2,14 @@
 <description>
 	This is a beta version which probably has not been sufficiently tested.
 	<ul>	    
+		<li> Version 3.1.0 (Build 394):
+			<ul>
+					<li> Data sets can now be quality marked in the Project/General dialog.
+					<li> Supports Impact database version 3.4.0, which now accepts QD (accelerator) data.
+					<li> Ignored and locked state of mass lines are now exported to Impact DB. 
+	    			<li> H5 imports and exports now include QD (accelerator) data
+	    			<li> Anchor lines are now correctly loaded from Impact DB.
+	    			<li> Fixes an issue where CDA data sets could not be merged.
 		<li> Version 3.1.0 (Build 393):
 			<ul>
 	    			<li> This version brings support of user-defined Python functions. Right now Python modules computing line shapes and waveform models can be called by Spectrum. Python plugins need to registered via the Preferences dialog. Because Spectrum is sandboxed, it cannot call call external programs including the Python interpreter. For this reason, a full Python 3.8 package including NumPy is bundled into the App (which explains the large increase of the app's size).
