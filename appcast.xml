@@ -3,6 +3,15 @@
     <channel>
         <title>Spectrum</title>
         <item>
+            <title>3.0.8</title>
+            <pubDate>Sat, 20 Aug 2022 06:08:38 -0600</pubDate>
+            <sparkle:version>395</sparkle:version>
+            <sparkle:shortVersionString>3.0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>Spectrum.html</sparkle:releaseNotesLink>
+            <enclosure url="Spectrum.zip" length="36855380" type="application/octet-stream" sparkle:edSignature="OJe07r1wdYbCK71qyHko4UbMuUGzSfie5F3FSPJWtKhu7vID4N+A5k4EEB0kTHrnhq+nrzHqc0UJlGDYnG3YBg=="/>
+        </item>
+        <item>
             <title>3.0.7</title>
             <pubDate>Sat, 30 Apr 2022 09:14:56 -0600</pubDate>
             <sparkle:version>387</sparkle:version>
