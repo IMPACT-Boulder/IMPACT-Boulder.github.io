@@ -1,7 +1,22 @@
-<title>Version 3.1.0 (Build 388)</title>
+<title>Version 3.1.0 (Build 397)</title>
 <description>
 	This is a beta version which probably has not been sufficiently tested.
 	<ul>	    
+			<li> Version 3.1.0 (Build 397):
+			<ul>
+					<li> Fixes an issue where sometimes the cursor was not any longer responding to mouse movements.
+					<li> Fixes some menu items in the main menu.
+					<li> Rewrote data viewer code to increase stability.
+					<li> Other bug fixes. 
+			</ul>
+		<li> Version 3.1.0 (Build 395):
+			<ul>
+					<li> Queries of large data sets are now much faster.
+					<li> The number of bins to compute the composition statistics can now be set by the user.
+					<li> Rewrote data viewer code to increase stability.
+					<li> Fixes an issue that prevented the line drop down menu in the Spectrum Tab's line table to be updated.
+					<li>  Multiple bug fixes. 
+			</ul>
 		<li> Version 3.1.0 (Build 394):
 			<ul>
 					<li> Data sets can now be quality marked in the Project/General dialog.
@@ -10,6 +25,7 @@
 	    			<li> H5 imports and exports now include QD (accelerator) data
 	    			<li> Anchor lines are now correctly loaded from Impact DB.
 	    			<li> Fixes an issue where CDA data sets could not be merged.
+	    	</ul>
 		<li> Version 3.1.0 (Build 393):
 			<ul>
 	    			<li> This version brings support of user-defined Python functions. Right now Python modules computing line shapes and waveform models can be called by Spectrum. Python plugins need to registered via the Preferences dialog. Because Spectrum is sandboxed, it cannot call call external programs including the Python interpreter. For this reason, a full Python 3.8 package including NumPy is bundled into the App (which explains the large increase of the app's size).
