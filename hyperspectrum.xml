@@ -3,6 +3,28 @@
     <channel>
         <title>HyperSpectrum</title>
         <item>
+            <title>1.0.5</title>
+            <pubDate>Tue, 11 Oct 2022 12:45:37 +0200</pubDate>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>1.0.5</sparkle:shortVersionString>
+            <description><![CDATA[<title>Version 1.0.4 (Build 7)</title>
+<description>
+    <ul>  
+    		<li> Version 1.0.4 (7):
+            <ul>
+	            <li> FIxed an issue that prevented the app from launching.
+	        </ul>    
+            <li> Version 1.0.4 (6):
+            <ul>
+	            <li> First release
+	        </ul>      
+    </ul>
+</description>
+]]></description>
+            <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
+            <enclosure url="https://impact.colorado.edu/HyperSpectrum.zip" length="10072665" type="application/octet-stream" sparkle:edSignature="hYWFIC+yBh9YXUjHl5AOuT5OHt06F0VP8m1tEKkFIYYBFXwJErx7n0xgNFNiJnjr761+y1sROo4GFsLgYs4QCw=="/>
+        </item>
+        <item>
             <title>1.0.4</title>
             <pubDate>Tue, 11 Oct 2022 09:11:32 +0200</pubDate>
             <sparkle:version>6</sparkle:version>
