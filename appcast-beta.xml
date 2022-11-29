@@ -4,12 +4,12 @@
         <title>Spectrum</title>
         <item>
             <title>3.1.0-beta</title>
-            <pubDate>Mon, 21 Nov 2022 14:13:30 +0100</pubDate>
-            <sparkle:version>412</sparkle:version>
+            <pubDate>Tue, 29 Nov 2022 16:22:12 +0100</pubDate>
+            <sparkle:version>414</sparkle:version>
             <sparkle:shortVersionString>3.1.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
             <sparkle:releaseNotesLink>https://impact.colorado.edu/spectrumapp/beta-release_notes.html</sparkle:releaseNotesLink>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="74998776" type="application/octet-stream" sparkle:edSignature="ZdL3YM5uKFWMRccbTECP72W9r+r6CkNddXxsDR7qkSzn/tgacb3MAY5OaL+Ah9SdWiMsPK4UtjU78IQViGqBBQ=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="75176521" type="application/octet-stream" sparkle:edSignature="5QN7nlI9yyjAcOQ2aSZUzHx4y+OzAqMZiaMWO46E964Wu42aaWXuO+u1MsGqhDz7BcojrQz63yl4aMw8O5C3DQ=="/>
         </item>
     </channel>
 </rss>
