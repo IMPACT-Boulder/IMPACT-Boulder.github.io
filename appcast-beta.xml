@@ -3,13 +3,13 @@
     <channel>
         <title>Spectrum</title>
         <item>
-            <title>3.1.0-beta</title>
-            <pubDate>Tue, 29 Nov 2022 16:22:12 +0100</pubDate>
-            <sparkle:version>414</sparkle:version>
-            <sparkle:shortVersionString>3.1.0-beta</sparkle:shortVersionString>
+            <title>3.2.0-beta</title>
+            <pubDate>Sun, 18 Dec 2022 19:14:22 +0100</pubDate>
+            <sparkle:version>417</sparkle:version>
+            <sparkle:shortVersionString>3.2.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink>https://impact.colorado.edu/spectrumapp/beta-release_notes.html</sparkle:releaseNotesLink>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="75176521" type="application/octet-stream" sparkle:edSignature="5QN7nlI9yyjAcOQ2aSZUzHx4y+OzAqMZiaMWO46E964Wu42aaWXuO+u1MsGqhDz7BcojrQz63yl4aMw8O5C3DQ=="/>
+            <sparkle:releaseNotesLink>https://impact.colorado.edu/Spectrum-beta.html</sparkle:releaseNotesLink>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="75864805" type="application/octet-stream" sparkle:edSignature="gk/jpU+seFMfirLBWmF4MO8wR4TLTCMl1PRyff5hQLISa0wK1ftpV++y7IehpPih6LRy2CXJSPXhxM6bvNKjAw=="/>
         </item>
     </channel>
 </rss>
