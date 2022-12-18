@@ -3,6 +3,15 @@
     <channel>
         <title>Spectrum</title>
         <item>
+            <title>3.1.0</title>
+            <pubDate>Sun, 18 Dec 2022 11:44:18 +0100</pubDate>
+            <sparkle:version>416</sparkle:version>
+            <sparkle:shortVersionString>3.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://impact.colorado.edu/Spectrum.html</sparkle:releaseNotesLink>
+            <enclosure url="https://impact.colorado.edu/Spectrum.zip" length="75346582" type="application/octet-stream" sparkle:edSignature="m1GnCQmc3ltXc1P5H9I0w4AAVCTLnAsqALVm7/+bxqgeunZN2PaagrxhMEFSwdZ+uTJqIlEw0SY+7bu7n/hQAg=="/>
+        </item>
+        <item>
             <title>3.0.8</title>
             <pubDate>Sat, 20 Aug 2022 06:08:38 -0600</pubDate>
             <sparkle:version>395</sparkle:version>
@@ -20,16 +29,6 @@
             <sparkle:releaseNotesLink>https://impact.colorado.edu/spectrumapp/release_notes.html</sparkle:releaseNotesLink>
             <sparkle:releaseNotesLink>Spectrum.html</sparkle:releaseNotesLink>
             <enclosure url="Spectrum.zip" length="35615728" type="application/octet-stream" sparkle:edSignature="YH8t/2vDkI/ntVJ+wCL6xhd7oE8m2+u1DF0vF4DqIlG5aeJ0B+tHnJlpZWJrDTjz5OGk83Au897v6Oe0QjtfCw=="/>
-        </item>
-        <item>
-            <title>3.0.6</title>
-            <pubDate>Mon, 11 Apr 2022 09:13:15 -0600</pubDate>
-            <sparkle:version>386</sparkle:version>
-            <sparkle:shortVersionString>3.0.6</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink>https://impact.colorado.edu/spectrumapp/release_notes.html</sparkle:releaseNotesLink>
-            <sparkle:releaseNotesLink>Spectrum.html</sparkle:releaseNotesLink>
-            <enclosure url="Spectrum.zip" length="35612591" type="application/octet-stream" sparkle:edSignature="hijLBKhGhyu99JWllJPs5920nkrPdgw6wd1wzyjI8dm98c4un7T4NfW1pfJsfQWqKtqZ0W1PC6cKSZoEk8ZiCA=="/>
         </item>
     </channel>
 </rss>
