@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/dap_template.dwt" codeOutsideHTMLIsLocked="false" --><head>
+<html lang="en"><head>
     <meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,12 +7,12 @@
 	<meta http-equiv="cache-control" content="no-cache" />
     <meta http-equiv="pragma" content="no-cache" />
 
-	<!-- InstanceBeginEditable name="doctitle" -->
+	<!-- TemplateBeginEditable name="doctitle" -->
 	<title>DAP 2023, Boulder CO</title>
-	<!-- InstanceEndEditable -->
+	<!-- TemplateEndEditable -->
 	<!-- Bootstrap -->
-	<link href="css/bootstrap.css" rel="stylesheet">
-	<link href="css/dap_styles.css" rel="stylesheet" type="text/css">
+	<link href="../css/bootstrap.css" rel="stylesheet">
+	<link href="../css/dap_styles.css" rel="stylesheet" type="text/css">
 	<link href="css/dropdown_tabs.css" rel="stylesheet" type="text/css">
 	
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -24,8 +24,8 @@
 	<meta name="description" content="DAP 2023 Boulder CO -- Dust, Atmospheres, and Plasma Workshop">
   	<meta name="keywords" content="international, conference, plasma, science, denver, ionized, physics, microwave generation, charged particle, beams, sources, high energy density, energy density, plasma applications, industrial plasma, medical plasma, commercial plasma, diagnostics, plasma diagnostics, ieee, plasma conference, pulsed power, dielectric breakdown, opening switches, closing switches, generators, particle diagnostics, optical diagnostics, microwave diagnostics, millimeter wave diagnostics, plasma display, nonequilibrium plasma, plasma processing, plasma material interactions, material interactions, laser produced plasma, laser plasma, plasma accelerator, particle acceleration, plasma beam, inertial fusion, inertial confinement fusion, plasma source, electron source, ion source, electron beam, ion beam, plasma beam, thz source, terahertz source, thz, terahertz, plasma modeling, vacuum electronics, gaseous electronics, fast wave, slow wave, intense beam, partially ionized, computational plasma, space plasma, dusty plasma, plasma chemistry">
 
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
 <script>var __adobewebfontsappname__="dreamweaver"</script>
  
@@ -36,10 +36,10 @@
 </head>
   <body style="background-color:rgb(245, 245, 255);">
 	<div class="container">
-      <header class="row"><a href="index.html"><img src="images/DAP%202023%20Banner.png" width="100%" alt=""/></a>
+      <header class="row"><a href="../index.html"><img src="../images/DAP 2023 Banner.png" width="100%" alt=""/></a>
         <div class="col-sm-12"></div>
       </header>
-      <div class="row"><!-- InstanceBeginEditable name="navigation_bar" -->
+      <div class="row"><!-- TemplateBeginEditable name="navigation_bar" -->
         <div class="col-sm-2">
           <ul class="nav nav-pills nav-stacked">
               <li class="active"><a href="index.html"                    >Home</a></li>
@@ -51,24 +51,13 @@
               <li>               <a href="07_visitingboulder.html"       >Visiting Boulder</a></li>
           </ul>
         </div>
-      <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="main_content" -->
+      <!-- TemplateEndEditable --><!-- TemplateBeginEditable name="main_content" -->
         <article class="col-sm-10"> 
-          <h1blboc>Dust, Atmosphere, and Plasma Environment of the Moon and Small Bodies</h1blboc>      
+          <h1blboc>Main Heading</h1blboc>      
           <p></p>
-          <p>The 4<sup>th</sup> Dust, Atmosphere, and Plasma Environment of the Moon and Small Bodies (DAP-2023) workshop will be held this summer!&nbsp;</p>
-          <p>This will be a three-day workshop from June 5-7, 2023 in Boulder, CO.</p>
-          <p>&nbsp;</p>
-          <p> The DAP-2023 workshop will be hosted by the SSERVI-IMPACT team at the University of Colorado, and will be a forum to&nbsp;</p>
-          <p>(i) discuss our current understanding of the surface environment of the Moon and other small bodies,&nbsp;</p>
-          <p>(ii) share new results from past and ongoing missions to the moon, airless bodies and comets, and&nbsp;</p>
-          <p>(iii) describe expectations, problems, and solutions for planned future missions to dusty destinations.&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>DAP-2023 will follow the tradition of three previous workshops, <a href="https://www.sciencedirect.com/journal/planetary-and-space-science/vol/59/issue/14">LDAP-2010</a>, <a href="https://www.sciencedirect.com/journal/planetary-and-space-science/vol/89/">DAP-2012</a>, and <a href="https://www.sciencedirect.com/journal/planetary-and-space-science/vol/156/suppl/C">DAP-2017</a>. Contributions to each of these workshops were published in special issues of Planetary and Space Sciences. </p>
-          <p>&nbsp;</p>
-          <p>Stay tuned to this space for more details as they are posted! </p>
-          <p>&nbsp;</p>
+          <p>This is the main body of the page.This is the main body of the page.This is the main body of the page.This is the main body of the page.This is the main body of the page.This is the main body of the page.This is the main body of the page.This is the main body of the page.This is the main body of the page.This is the main body of the page. This is the main body of the page.This is the main body of the page.This is the main body of the page. </p>
         </article>
-        <!-- InstanceEndEditable --></div>
+        <!-- TemplateEndEditable --></div>
       <div class="row">
         <footer class="col-sm-12">
           <p>&nbsp;</p>
@@ -77,10 +66,10 @@
       </div>
 </div>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="../js/jquery-1.11.3.min.js"></script>
 
 	<!-- Include all compiled plugins (below), or include individual files as needed --> 
-	<script src="js/bootstrap.js"></script>
+	<script src="../js/bootstrap.js"></script>
 	<script src="js/dropdown_tabs.js"></script>
   </body>
-<!-- InstanceEnd --></html>
+</html>

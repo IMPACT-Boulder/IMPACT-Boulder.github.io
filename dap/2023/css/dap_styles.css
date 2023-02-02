@@ -1,0 +1,324 @@
+@charset "UTF-8";
+footer {
+	text-align: right;
+	font-size: small;
+}
+header {
+	margin-bottom: 20px;
+}
+.col-sm-2 .nav.nav-pills {
+    font-family: oswald;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 150%;
+	line-height: 99%;
+}
+body {
+	/* font-family: 'questrial';                 */
+	/* font-family: 'Josefin Sans', sans-serif;  */
+	/* font-family: 'Raleway', sans-serif;       */
+	font-family: 'Ubuntu', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+p {
+	font-size: 120%;
+	text-align: justify;
+}
+pbl {
+	font-size: 120%;
+	text-align: justify;
+	color: #4472C4;
+}
+article a {
+	text-decoration: underline;
+	color: #4472C4;
+}
+h1blboc    {
+	color: #4472C4;
+	text-align: center;
+	font-size: 300%;
+	border-bottom-width: thick;
+	font-weight: bolder;
+	border-top-width: thick;
+	display: inherit;
+}
+h2blboc  {
+	font-weight: bolder;
+	color: #4472C4;
+	text-align: center;
+	font-size: 250%;
+	display: inherit;
+}
+h2f   {
+	font-family: bebas-neue;
+	font-weight: 400;
+	font-size: 250%;
+}
+h3blboc  {
+	font-weight: bolder;
+	color: #4472C4;
+	text-align: center;
+	font-size: 200%;
+	display: inherit;
+}
+h3bo  {
+	font-size: 200%;
+	font-weight: bolder;
+}
+h3f  {
+	font-family: bebas-neue;
+	font-weight: 400;
+	font-size: 200%;
+}
+h4new  {
+	font-size: 190%;
+}
+h4f  {
+	font-family: bebas-neue;
+	font-weight: 400;
+	font-size: 190%;
+}
+h4bl  {
+	color: #4472C4;
+	font-size: 190%;
+}
+h4bo  {
+	font-size: 190%;
+	font-weight: bolder;
+}
+h5new  {
+	font-size: 150%;
+}
+h5f  {
+	font-family: bebas-neue;
+	font-weight: 400;
+	font-size: 150%;
+}
+h5bl  {
+	color: #4472C4;
+	font-size: 150%;
+}
+h5bo  {
+	font-size: 150%;
+	font-weight: bolder;
+}
+h5grlh90  {
+	color: #777777;
+	font-size: 150%;
+	line-height: 90%;
+}
+h6bl  {
+	color: #4472C4;
+	font-size: 140%;
+}
+h6new  {
+	font-size: 140%;
+}
+h6blbo  {
+	color: #4472C4;
+	font-size: 140%;
+	font-weight: bolder;
+}
+h7grit  {
+	font-size: 120%;
+	font-style: italic;
+	color: #777777;
+}
+.nav>li>a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+tbody tr td {
+	padding-left: 7px;
+	padding-right: 7px;
+}
+.active a {
+  background-color: #4472C4 !important;
+}
+.nav-pills a{
+color:#4472C4;
+}
+a:hover {
+	color: black;
+}
+.col-sm-12.icopstitle {
+	background-color: #EEEEEE;
+}
+.row .col-sm-10.infobutton {
+	text-align: justify;
+	background-color: rgba(255,235,235,1.00);
+	border-color: rgba(68,114,196,1.00);
+	border-style: solid;
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+.btn-group mobilemenubutton {
+	font-family: oswald;
+	font-weight: 400;
+	font-size: 150%;
+	text-align: center;
+	color: #4472C4;
+    
+}
+.dropdown-menu li a {
+	text-decoration: none;
+}
+tbody tr .speakercolumn {
+	width:290px;
+}
+.image-container {
+	text-align: center;
+}
+
+@media (max-width:770px){
+p {
+	font-size: 100%;
+}
+pbl {
+	font-size: 100%;
+}
+h1blboc    {
+	font-size: 225%;
+}
+h2blboc  {
+	font-size: 180%;
+}
+h2f   {
+	font-size: 180%;
+}
+h3blboc  {
+	font-size: 150%;
+}
+h3bo  {
+	font-size: 150%;
+}
+h3f  {
+	font-size: 150%;
+}
+h4new  {
+	font-size: 135%;
+}
+h4f  {
+	font-size: 135%;
+}
+h4bl  {
+	font-size: 135%;
+}
+h4bo  {
+	font-size: 135%;
+}
+h5new  {
+	font-size: 125%;
+}
+h5f  {
+	font-size: 125%;
+}
+h5bl  {
+	font-size: 125%;
+}
+h5bo  {
+	font-size: 125%;
+}
+h5grlh90  {
+	font-size: 125%;
+}
+h6bl  {
+	font-size: 110%;
+}
+h6new  {
+	font-size: 110%;
+}
+h6blbo  {
+	font-size: 110%;
+}
+h7grit  {
+	font-size: 105%;
+}	
+td p img {
+	max-width:100%;
+  	height:auto;
+}
+tbody tr .speakercolumn   {
+	width:250px;
+}
+}
+
+
+@media (max-width:568px){
+p {
+	font-size: 85%;
+}
+pbl {
+	font-size: 85%;
+}
+h1blboc    {
+	font-size: 175%;
+}
+h2blboc  {
+	font-size: 110%;
+}
+h2f   {
+	font-size: 110%;
+}
+h3blboc  {
+	font-size: 100%;
+}
+h3bo  {
+	font-size: 100%;
+}
+h3f  {
+	font-size: 100%;
+}
+h4new  {
+	font-size: 95%;
+}
+h4f  {
+	font-size: 95%;
+}
+h4bl  {
+	font-size: 95%;
+}
+h4bo  {
+	font-size: 95%;
+}
+h5new  {
+	font-size: 85%;
+}
+h5f  {
+	font-size: 85%;
+}
+h5bl  {
+	font-size: 85%;
+}
+h5bo  {
+	font-size: 85%;
+}
+h5grlh90  {
+	font-size: 85%;
+}
+h6bl  {
+	font-size: 80%;
+}
+h6new  {
+	font-size: 80%;
+}
+h6blbo  {
+	font-size: 80%;
+}
+h7grit  {
+	font-size: 75%;
+}	
+td p img {
+	max-width:100%;
+  	height:auto;
+}
+tbody tr .speakercolumn {
+	width:125px;
+}
+
+}
