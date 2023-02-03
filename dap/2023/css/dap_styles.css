@@ -1,4 +1,5 @@
 @charset "UTF-8";
+.tab { margin-left: 40px; }
 footer {
 	text-align: right;
 	font-size: small;
