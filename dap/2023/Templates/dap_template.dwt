@@ -34,7 +34,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&family=Ubuntu&display=swap" rel="stylesheet">
     
 </head>
-  <body style="background-color:rgb(245, 245, 255);">
+  <body style="background-color:rgb(250, 250, 250);">
 	<div class="container">
       <header class="row"><a href="../index.html"><img src="../images/DAP 2023 Banner.png" width="100%" alt=""/></a>
         <div class="col-sm-12"></div>
