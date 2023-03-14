@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>IonOptics</title>
+        <item>
+            <title>1.0.2</title>
+            <pubDate>Tue, 14 Mar 2023 08:18:42 +0100</pubDate>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.2</sparkle:minimumSystemVersion>
+            <enclosure url="https://impact.colorado.edu/IonOptics.zip" length="6638792" type="application/octet-stream" sparkle:edSignature="8+vejw08QnmIsAvN/NUZpgHOwymztfOat6sQ7aXk7vvqJXjXqIbDdnklYN6dVBlBgNb0I5bp2VOc9Cpoz3t+CQ=="/>
+            <description><![CDATA[<title>Version 1.0.2 (Build 2)</title>
+<description>
+    <ul>  
+        <li> Version 1.0.2 (2):
+            <ul>
+	            <li> Migration of the IDL SpecSim tool for analysing mass spectrometer ion simulations.
+	            <li> Includes all tools for analysising single simulations
+	            <li> Imports SpecSim projects.
+	            <li> Imports SimIon Fly2 data sets generated for arbitrary geometries.
+	            <li> There are still glitches which will be fixed in the next few releases.
+	        </ul> 
+    </ul>
+</description>
+]]></description>
+        </item>
+    </channel>
+</rss>
