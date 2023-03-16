@@ -59,12 +59,12 @@ h2f   {
 h3blboc  {
 	font-weight: bolder;
 	color: #4472C4;
-	text-align: center;
-	font-size: 200%;
+	text-align: left;
+	font-size: 190%;
 	display: inherit;
 }
 h3bo  {
-	font-size: 200%;
+	font-size: 190%;
 	font-weight: bolder;
 }
 h3f  {
@@ -85,7 +85,7 @@ h4bl  {
 	font-size: 190%;
 }
 h4bo  {
-	font-size: 190%;
+	font-size: 170%;
 	font-weight: bolder;
 }
 h5new  {
@@ -106,7 +106,7 @@ h5bo  {
 }
 h5grlh90  {
 	color: #777777;
-	font-size: 150%;
+	font-size: 140%;
 	line-height: 90%;
 }
 h6bl  {
@@ -118,7 +118,7 @@ h6new  {
 }
 h6blbo  {
 	color: #4472C4;
-	font-size: 140%;
+	font-size: 160%;
 	font-weight: bolder;
 }
 h7grit  {
