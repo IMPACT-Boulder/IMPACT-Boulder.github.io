@@ -206,6 +206,12 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 	background:linear-gradient(#FFFFFF 0%,#EFEFEF 100%);
 	}
 
+/* Contact Links */
+
+.contact-mailto:hover {
+	text-decoration: underline;
+}
+
 /* Alert Messages */
 
 .alert-msg{display:block; position:relative; margin:15px 0; padding:15px 40px 15px 20px; border:1px solid #F00000; color:inherit;}
