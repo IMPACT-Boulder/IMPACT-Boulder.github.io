@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
 <title>IMPACT</title>
+<link rel="icon" type="image/x-icon" href="images/logos/IMPACT_favicon.png">
 <meta charset="iso-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="layout/styles/main.css" rel="stylesheet" type="text/css" media="all">
@@ -14,7 +15,7 @@
 <!-- Slider -->
 <link href="layout/scripts/responsiveslides.js-v1.53/responsiveslides.css" rel="stylesheet" type="text/css" media="all">
 </head>
-<body class="">
+<body>
 <!--
 <div class="wrapper row1">
   <header id="header" class="full_width clear">
@@ -32,7 +33,7 @@
 </div>
 -->
 <!-- ################################################################################################ -->
-<div class="wrapper row2">
+<!--<div class="wrapper row2">
   <nav id="topnav">
     <ul class="clear">
       <li class="active"><a href="index.html" title="Homepage">Homepage</a></li>
@@ -44,44 +45,60 @@
       <li class="active"><a href="epo.html" title="EPO">Education / Public Outreach</a></li>
       <li class="active"><a href="sservi.html" title="SSERVI">SSERVI / Teams</a></li>
       <li class="active"><a href="media.html" title="Media">Media</a></li>
-       <li class="active"><a href="meetings.html" title="Meetings">Meetings</a></li>
+      <li class="active"><a href="meetings.html" title="Meetings">Meetings</a></li>
       <li class="active"><a href="contact.html" title="Contact">Contact</a></li>
     </ul>
   </nav>
+</div>-->
+<!--NEW NAV-->
+<div id="hamburger__menu">
+  <input id="menu__toggle" type="checkbox" />
+  <label class="menu__btn" for="menu__toggle">
+    <div id="menu">MENU</div>
+    <div><span class="menu__hamburger"></span></div>
+  </label>
+
+  <ul class="menu__box">
+    <li><a class="menu__item" href="index.html">HOMEPAGE</a></li>
+    <li><a class="menu__item" href="news.html">NEWS</a></li>
+    <li><a class="menu__item" href="about.html">ABOUT IMPACT</a></li>
+    <li><a class="menu__item" href="facilities.html">FACILITIES</a></li>
+    <li><a class="menu__item" href="people.html">PEOPLE</a></li>
+    <li><a class="menu__item" href="publications.html">PUBLICATIONS</a></li>
+    <li><a class="menu__item" href="epo.html">EDUCATION / PUBLIC OUTREACH</a></li>
+    <li><a class="menu__item" href="sservi.html">SSERVI / TEAMS</a></li>
+    <li><a class="menu__item" href="media.html">MEDIA</a></li>
+    <li><a class="menu__item" href="meetings.html">MEETINGS</a></li>
+    <li><a class="menu__item" href="contact.html">CONTACT</a></li>
+  </ul>
+</div>
+<!--######## Top of Page ########-->
+<div id="home-header">
+  <img src="images/logos/IMPACT_logo1.png" id="header-logo" />
 </div>
 <!-- ################################################################################################ -->
-<div class="wrapper row5">
   <!-- ################################################################################################ -->
-  <div class="rslides_container clear">
-    <ul class="rslides clear" id="rslides">
-      <li><img src="images/cover_with_lasp.jpg" alt=""></li>
-      <!--<li><img src="images/demo/slider/2.jpg" alt=""></li>
-      <li><img src="images/demo/slider/3.jpg" alt=""></li>-->
-    </ul>
-  </div>
+ 
+<div style="height: 100vh;">
+    <img src="images/cover_with_lasp.jpg" alt="">
   <!-- ################################################################################################ -->
   <div class="clear"></div>
-</div>
+
 <!-- content -->
-<div class="wrapper row3">
-  <div id="container">
     <!-- ################################################################################################ -->
-    <div id="homepage" class="clear">
-      <div class="center emphasise push80">
-      <!-- <h1 style="margin:0 auto; max-width:80%;">IMPACT</h1> -->
+    <div id="homepage" class="clear" style="display: flex; justify-content: center;">
+      <div class="center" style="width: 80%;">
       <ul class="nospace clear">
-          <li >
-       <figure class="team-member"><img src="images/impact_logo.jpg" alt=""></figure>
-           </li>
-          <li>
-        <p><h2>Institute for Modeling Plasma, Atmospheres and Cosmic Dust</h2></p>
+        <li>
+          <h2 style="padding-top: 20px; margin-bottom: 0; font-size: 3rem">Institute for Modeling Plasma, Atmospheres and Cosmic Dust</h2>
         </li>
-          <li>
-              <p><i><font size="4">A multi-institutional member of NASA's Solar System Exploration Research Virtual Institute (SSERVI) through a cooperative agreement.</font></i></p>
-          </li>
-        </div>
-    
-      <section>
+        <li>
+          <p style="font-size: 30px; margin-top: 1rem;"><i>A multi-institutional member of NASA's Solar System Exploration Research Virtual Institute (SSERVI) through a cooperative agreement.</i></p>
+        </li>
+      </div>
+    </div>
+</div>
+      <!--<section>
         <ul class="nospace spacing clear">
             <li class="one_third first">
                 <article class="clear">
@@ -103,52 +120,88 @@
                     </div>
                 </article>
             </li>
-          <li class="one_third">
-            <article class="clear">
-              <div class="one_fifth first"><span class="icon-desktop icon-3x orange"></span></div>
-              <div class="four_fifth">
-                <h2 class="font-large nospace">Apply for Machine Time</h2>
-                <p>The dust accelerator is open for use by our colleagues in the academic and commercial sectors.</p>
-                <footer><a href="facilities.html">Read More &raquo;</a></footer>
-              </div>
-            </article>
-          </li>
-          <li class="one_third first">
-            <article class="clear">
-              <div class="one_fifth first"><span class="icon-file-alt icon-3x green"></span></div>
-              <div class="four_fifth">
-                <h2 class="font-large nospace">Publications</h2>
-                <p>Current and past publications from IMPACT researchers</p>
-                <footer><a href="publications.html">Read More &raquo;</a></footer>
-              </div>
-            </article>
-          </li>
-          <li class="one_third">
+            <li class="one_third">
               <article class="clear">
-                  <div class="one_fifth first"><span class="icon-group icon-3x blue"></span></div>
-                  <div class="four_fifth">
-                      <h2 class="font-large nospace">The People of IMPACT</h2>
-                      <p>Information about the staff, colloborators, and students of IMPACT</p>
-                      <footer><a href="people.html">Read More &raquo;</a></footer>
-                  </div>
+                <div class="one_fifth first"><span class="icon-desktop icon-3x orange"></span></div>
+                <div class="four_fifth">
+                  <h2 class="font-large nospace">Apply for Machine Time</h2>
+                  <p>The dust accelerator is open for use by our colleagues in the academic and commercial sectors.</p>
+                  <footer><a href="facilities.html">Read More &raquo;</a></footer>
+                </div>
               </article>
-          </li>
-          <li class="one_third">
-            <article class="clear">
-              <div class="one_fifth first"><span class="icon-phone icon-3x grey"></span></div>
-              <div class="four_fifth">
-                <h2 class="font-large nospace">Contact IMPACT</h2>
-                <p>Contacts for IMPACT</p>
-                <footer><a href="contact.html">Read More &raquo;</a></footer>
-              </div>
-            </article>
-          </li>
+            </li>
+            <li class="one_third first">
+              <article class="clear">
+                <div class="one_fifth first"><span class="icon-file-alt icon-3x green"></span></div>
+                <div class="four_fifth">
+                  <h2 class="font-large nospace">Publications</h2>
+                  <p>Current and past publications from IMPACT researchers</p>
+                  <footer><a href="publications.html">Read More &raquo;</a></footer>
+                </div>
+              </article>
+            </li>
+            <li class="one_third">
+                <article class="clear">
+                    <div class="one_fifth first"><span class="icon-group icon-3x blue"></span></div>
+                    <div class="four_fifth">
+                        <h2 class="font-large nospace">The People of IMPACT</h2>
+                        <p>Information about the staff, colloborators, and students of IMPACT</p>
+                        <footer><a href="people.html">Read More &raquo;</a></footer>
+                    </div>
+                </article>
+            </li>
+            <li class="one_third">
+              <article class="clear">
+                <div class="one_fifth first"><span class="icon-phone icon-3x grey"></span></div>
+                <div class="four_fifth">
+                  <h2 class="font-large nospace">Contact IMPACT</h2>
+                  <p>Contacts for IMPACT</p>
+                  <footer><a href="contact.html">Read More &raquo;</a></footer>
+                </div>
+              </article>
+            </li>
         </ul>
-      </section>
+      </section>-->
+      <div id="home-links-section">
+        <div class="home-links-container">
+          <div id="home-about-cotnainer" class="home-boxes">
+            <div class="home-link-content">
+              <a class="home_box_link" href="about.html">About IMPACT</a>
+            </div>
+          </div>
+          <div id="home-news-cotnainer" class="home-boxes">
+            <div class="home-link-content">
+              <a class="home_box_link" href="news.html">Recent News</a>
+            </div>
+          </div>
+          <div id="home-machine-cotnainer" class="home-boxes">
+            <div class="home-link-content">
+              <a class="home_box_link" href="people.html">People of IMPACT</a>
+            </div>
+          </div>
+        </div>
+        <div class="home-links-container">
+          <div id="home-about-cotnainer" class="home-boxes">
+            <div class="home-link-content">
+              <a class="home_box_link" href="publications.html">Publications</a>
+            </div>
+          </div>
+          <div id="home-news-cotnainer" class="home-boxes">
+            <div class="home-link-content">
+              <a class="home_box_link" href="facilities.html">Apply for Machine Time</a>
+            </div>
+          </div>
+          <div id="home-machine-cotnainer" class="home-boxes">
+            <div class="home-link-content">
+              <a class="home_box_link" href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- ################################################################################################ -->
     <div class="clear"></div>
-  </div>
+  
 </div>
 <!-- Footer -->
 
