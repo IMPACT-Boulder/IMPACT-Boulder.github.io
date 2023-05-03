@@ -14,8 +14,21 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
   width: 1200px;
   background-color: #f5f5f5;
   height: 100%;
-  
+  margin-top: 5%;
 }
+.content_container {
+ width: 90%;
+}
+
+h2{/*relocate*/
+    color:#2d4159;
+    font-weight: bold;
+}
+h1{
+  color: #2d4159;
+  font-weight: bold;
+}
+
 .post-image{margin-bottom:40px;}
 
 .blog-post-title a{color:#979797; background-color:#FFFFFF;}
@@ -46,7 +59,7 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 }
 .bottom__nav .divide{
     font-weight: 800;
-    color: gray;
+    color: #f5f5f5;
 }
 .page__title {
     position: absolute;
@@ -56,26 +69,6 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
     letter-spacing: 0.05em;
     font-weight: bold;
     margin-left: 3rem;
-}
-.header__top {
-    width: 100%;
-    height: 120px;
-    background-color: #000;
-    position: fixed;
-    top: 0px;
-    z-index: 5;
-    border-bottom: 0.02rem solid #000 ;
-    display: flex;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    transition: top 0.5s ease-in-out;
-}
-.header__logo {
-    height: 90px;
-    width: auto;
-    margin: 15px 20px;
-}
-.nav-up { /*---scroll up effect---*/
-    top: -120px;
 }
 .content_section {
   margin-top: 9%;
@@ -158,6 +151,23 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 }
 
 /*my nav */
+.header__top {
+  width: 100%;
+  height: 120px;
+  background-color: #000;
+  position: fixed;
+  top: 0px;
+  z-index: 5;
+  border-bottom: 0.02rem solid #000 ;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: top 0.5s ease-in-out;
+}
+.header__logo {
+  height: 90px;
+  width: auto;
+  margin: 15px 20px;
+}
 #hamburger__menu {
     background-color: #000;
     z-index: 10;
@@ -240,6 +250,10 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 .menu__item:hover {
   background-color: #87b6ca;
 }
+.nav_up { /*---scroll up effect---*/
+  top: -120px;
+
+}
 /*----------------------------------------------News-----------------------------------------*/
 .news_title {
   color: #2d4159;
@@ -299,6 +313,33 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 #older_link:hover {
   text-decoration: underline orange;
 }
+/*----------------------------------------------SSERVI-------------------------------------------*/
+.sservi__box {
+  background-color: #e2e2e2;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  height: 130px;
+  width: 700px;
+  padding: 20px;
+}
+.sservi__img {
+  background-color: #fff;
+  border-radius: 10px;
+  height: 130px;
+  width: 130px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.sservi__box__int {
+  background-color: #e2e2e2;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  height: 70px;
+  width: 700px;
+  padding: 20px;
+}
+
 /*----------------------------------------------Blog Overview-------------------------------------*/
 
 #blog-posts #blog-overview{display:block; width:100%;}
