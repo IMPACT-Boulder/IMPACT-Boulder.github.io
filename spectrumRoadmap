@@ -2,7 +2,7 @@
     {
         "id": "1",
         "title": "Migrate Template dialog to SwiftUI",
-        "status": "planned",
+        "status": "done",
         "description" : "Apple is in the process of transistioning from Cocoa to SwiftUI. To be compatible with the next OS versions and to improve the maintainablility of the code base, essential parts of the Spectrum UI need to be migrated."
     },
     {
