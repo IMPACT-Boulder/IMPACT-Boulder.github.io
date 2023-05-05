@@ -1,53 +1,88 @@
-body {
-	background-color: #000000;
+html{
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
 	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 0.05em;
+}
+body {
+	background-color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url(images/moon_expanded-1200x2300-rt.png);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	overflow-x: hidden;
+	margin: 0 0 0 0;
 }
 #header {
-	width: 912px;
-	height: 228px;
-	margin: 10px auto 0 auto;
-	background-image: url(images/header.jpg);
+	color: #CFB87C;
+	background-color: rgba(0, 0, 0, 0.85);
 }
-#header img, #footer img {
-	border: none;
+#title-1 {
+	font-size: 4rem;
+	padding-top: 1rem;
+	margin: 0 0 0 0;
+	text-align: center;
 }
-#topnav, #main, #footer {
-	width: 700px;
+#title-2 {
+	font-size: 1.4rem;
+	margin: 0 0 0 0;
+	text-align: center;
+}
+#main, #footer {
+	width: 80%;
 	margin: 0 auto;
-	border: 1px solid #4994DA ;
-}
-#topnav {
-	height: 31px;
-/*	background-image: url(images/topnav_bg.jpg); */
-	color: black;
 }
 #main {
 	min-height: 300px;
-	/*background-image: url(images/main_bg.jpg);*/
-	background-color: black;
-	border-width: 0 1px;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 0 0 0 0;
+	padding-top: 0px;
+	overflow: auto;
+	border: #000 solid 0.1rem;
+	border-radius: 0.4rem;
+	margin-top: 7rem;
+	-webkit-box-shadow:0 0 1rem #CFB87C; 
+	-moz-box-shadow: 0 0 1rem #CFB87C;
+	box-shadow:0 0 1rem #CFB87C;
+}
+#main-index{
+	min-height: 300px;
 	padding: 0;
 	padding-top: 0px;
 	overflow: auto;
+	width: 80%;
+	margin: 0 auto;
+	background-color: transparent;
+	margin-top: 7rem;
 }
-
+.content-container{
+	margin-bottom: 4rem;
+	background-color: rgba(0, 0, 0, 0.6);
+	border: #000 solid 0.1rem;
+	border-radius: 0.4rem;
+	-webkit-box-shadow:0 0 1rem #CFB87C; 
+	-moz-box-shadow: 0 0 1rem #CFB87C;
+	box-shadow:0 0 1rem #CFB87C;
+	padding: 2rem;
+}
 #content {
-	width: 680px;
+	padding: 2rem;
 	min-height: 290px;
-	/*background: url(images/content_bg.jpg) repeat-x #d1dbe6;*/
-	background-color: white;
-	padding: 10px;
 	float: left;
 	overflow: hidden;
+	color: #FFF;
+	margin: 0 auto;
 }
 #rightnav {
 	width: 240px;
 	float: right;
 	padding-top: 40px;
 }
-#footer {
+#foot-space {
 	height: 100px;
-	background-image: url(images/footer.jpg);
 }
 #regents {
 	width: 595px;
@@ -56,22 +91,32 @@ body {
 	color: white;
 	font-size: 0.8em;
 }
-
-
+.content-container h1 {
+	font-size: 2.2rem;
+}
+.content-container h2 {
+	margin-top: 0;
+	font-size: 2rem;
+}
+#content {
+	font-size: 1.1rem;
+}
 h1, h2, h3 {
 	padding-left: 25px;
 	display: block;
 }
 h1 {
 	font-size: 1.5em;
-	border-left: 7px solid #4994DA;
-	border-bottom: 1px solid #4994DA;
+	border-bottom: 1px solid #CFB87C;
 	padding-top: .1em;
+	color: #CFB87C;
 }
 h2 {
 	font-size: 1.2em;
-	border-bottom: 1px dotted gray;
-	padding-top: 10px;
+	border-bottom: 1px solid #CFB87C;
+	padding-top: 0.7rem;
+	margin-top: 2rem;
+	color: #CFB87C;
 }
 h3 {
 	margin-top: 0;
@@ -97,6 +142,7 @@ div.image-left {
 
 #content a {
 	text-decoration: none;
+	color: rgb(255, 153, 0);
 }
 #content a:hover {
 	text-decoration: underline;
@@ -104,25 +150,28 @@ div.image-left {
 
 
 /* ------------- TOP NAVIGATION ------------- */
+#topnav {
+	height: 2rem;
+	width: 100%;
+	text-align: center;
+	padding: 1rem 0 1rem 0;
+	background-color: rgba(68, 68, 68, 0.4);
+	border-top: #CFB87C  solid 0.015rem;
+}
 #topnav a, #rightnav a {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
+	font-size: 1rem;
 	display: block;
 	text-decoration: none;
+	color:#CFB87C
 }
-
 #topnav a {
-	font-weight: bold;
-	float: left;
 	width: 125px;
 	height: 31px;
 	line-height: 31px;
-	color: white;
-	margin-right: 2px;
 	text-align: center;
-}
-#topnav #lastlink {
-	margin-right: 0;
+	display: inline-block;
+	margin: 0 0.2rem 0 0.2rem;
 }
 #topnav a:hover {
 	color: #4994DA;
@@ -135,6 +184,9 @@ div.image-left {
 	color: gray;
 }
 
+#zoom {
+	font-size: 1.2rem;
+}
 /* IE6 "ghost text bug" fix */
 /**html #topnav #lastlink {
 	float: right;
@@ -188,9 +240,6 @@ div.image-left {
 	
 }
 
-
-
-
 #partners img {
 	padding: 2px;
 	border: none;
@@ -200,4 +249,28 @@ div.image-left {
 }
 #partners a:hover img {
 	border: 2px solid #1C3BA1;
+}
+
+/*------------FOOTER-----------------*/
+
+footer {
+	background-color: #000;
+	text-align: center;
+}
+#footer-sponsors {
+	font-size: 1.75rem;
+	letter-spacing: 0.1em;
+	color:#CFB87C; 
+	padding-top: 1.25rem;
+}
+footer p {
+	color: #fff;
+	width: 62%;
+	font-weight: bold;
+	font-size: 0.9rem;
+	margin: 0 auto;
+	padding-bottom: 1rem;
+}
+footer img {
+	margin: 0 1rem 2rem 1rem;
 }
