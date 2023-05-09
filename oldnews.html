@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
     <title>IMPACT: News</title>
+    <link rel="icon" type="image/x-icon" href="images/logos/IMPACT_favicon.png">
 <meta charset="iso-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="layout/styles/main.css" rel="stylesheet" type="text/css" media="all">
@@ -13,7 +14,7 @@
 <![endif]-->
 </head>
 <body class="secondary">
-    <header class="header__top">
+    <header class="header__top the-header">
         <a href="index.html"><img class="header__logo" src="images/logos/IMPACT_logo1.png" /></a>
         <div id="hamburger__menu">
           <input id="menu__toggle" type="checkbox" />
@@ -40,11 +41,13 @@
 <!-- ################################################################################################ -->
 <div id="container" class="page__content">
     <div class="page__top">
-        <div class="bottom__nav"><a href="index.html">Home </a><span class='divide'> &#10097; </span><span class="bottom__nav__page"> Older News</span></div>
-        <div class="page__title">Older News for IMPACT</div>
+        <div class="page__top__bottom">
+            <div class="bottom__nav"><a href="index.html">Home </a><span class='divide'> &#10097; </span><span class="bottom__nav__page"><a href="news.html"> News</a></span><span class='divide'> &#10097; </span><span class="bottom__nav__page"> Older News</span></div>
+            <div class="page__title">Older IMPACT News</div>
+        </div>
     </div>
     <!-- content -->
-    <div class="wrapper row3">
+    <div class="content_section">
     <div id="container">
         <!-- ################################################################################################ -->
         <h1 class="content_title">Older news for IMPACT</h1>
@@ -216,7 +219,7 @@
         </section>
     </section>
 
-    <section class="one_half first news_item_bigger">
+    <section class="one_half first news_item">
         <h2 class="news_title">07/22/2019: IMPACT student receives poster award</h2>
         <section class="news_content">
             <section class="news_p first">
@@ -230,12 +233,12 @@
         </section>
     </section>
 
-    <section class="one_half news_item_bigger">
+    <section class="one_half news_item">
         <h2 class="news_title">7/01/2019: IMPACT selected as one of SSERVI's new research teams</h2>
         <section class="news_content">
             <section class="news_p first">
                 <p>NASA has selected a new round of research teams to collaborate on research into the intersection of space science and human space exploration as part of the Solar System Exploration Research Virtual Institute (<a href="https://sservi.nasa.gov/" target="_blank">SSERVI</a>). Among the eight teams selected is the Institute for Modeling Plasmas, Atmospheres, and Cosmic Dust (IMPACT).<p>
-                <p>IMPACT is an interdisciplinary program investigating the physical processes governing dusty plasmas on the moon and other airless bodies including issues necessary for ensuring human safety and long-term usability of mechanical and optical devices. Additionally, IMPACT conducts a series of interconnected experiments, which together advance a comprehensive understanding of impact-related phenomena. Areas explored include the measurement of particulate, gaseous and charged ejecta products from micrometeoroid impacts, including those onto icy targets.</p>
+                <!--<p>IMPACT is an interdisciplinary program investigating the physical processes governing dusty plasmas on the moon and other airless bodies including issues necessary for ensuring human safety and long-term usability of mechanical and optical devices. Additionally, IMPACT conducts a series of interconnected experiments, which together advance a comprehensive understanding of impact-related phenomena. Areas explored include the measurement of particulate, gaseous and charged ejecta products from micrometeoroid impacts, including those onto icy targets.</p>-->
             </section>
             <section class="one_half news_img">
                 <figure><img src="images/PI.jpg" alt="">
@@ -265,7 +268,7 @@
         <section class="news_content">
             <section class="news_p first">
                 <p>In 2006, NASA launched the New Horizons mission to explore the Pluto system and beyond. New Horizons had its closest approach with Pluto on July 14<sup>th</sup>, 2015 being the first spacecraft to visit the unexplored body. On new years, New Horizons will fly-by a second Kuiper Belt Object, Ultima Thule, uncovering the mysteries of the solar system relic. From launch to Utlima Thule and beyond, the student-built instrument, the Student Dust Counter (SDC), has been taking nearly continuous measurements of the interplanetary dust population. The principle investigator of the SDC is <a href="people.html#horanyi">Mih&aacute;ly Hor&aacute;nyi</a>, who oversees the project.</p>
-                <p>For more information on the New Horizon's mission and the upcomming fly-by of Utlima Thule, please visit, <a href="http://newhorizons.jhuapl.edu/" target="_blank">here</a>. For additional information on the SDC please visit,  <a href="http://lasp.colorado.edu/home/sdc/" target="_blank">here</a>.
+                <!--<p>For more information on the New Horizon's mission and the upcomming fly-by of Utlima Thule, please visit, <a href="http://newhorizons.jhuapl.edu/" target="_blank">here</a>. For additional information on the SDC please visit,  <a href="http://lasp.colorado.edu/home/sdc/" target="_blank">here</a>.-->
             </section>
             <section class="one_half news_img">
                 <figure><img src="images/SDC.jpg" alt="">
@@ -452,21 +455,7 @@
         </section>
     </section>
 
-    <section class="one_half first news_item"><!--MOVE THIS-->
-        <h2 class="news_title">10/15/2016: 2017 Dust, Atmospheres, and Plasma workshop hosted by IMPACT</h2>
-        <section class="news_content">
-            <section class="news_p first">
-                <p>The Dust, Atmosphere and Plasma environment of the Moon and Small Bodies (DAP-2017) workshop was a forum to (i) discuss our current understanding of the surface environment of the Moon, the moons of Mars, and asteroids, (ii) share new results from past and ongoing missions to airless bodies and comets, and (iii) describe expectations for planned upcoming missions to airless bodies and comets.</p>
-            </section>
-            <section class="one_half">
-                <figure><img src="images/dap-2017_notxt.jpeg" alt="">
-                    <figcaption>Lunar surface courtesy of NASA</figcaption>
-                </figure>
-            </section>
-        </section>
-    </section>
-
-    <section class="one_half news_item">
+    <section class="one_half news_item first">
         <h2 class="news_title">01/06/17: Featured IMPACT science</h2>
             <section class="news_content">
             <section class="news_p first">
@@ -480,7 +469,7 @@
         </section>
     </section>
 
-    <section class="one_half first news_item">
+    <section class="one_half news_item">
         <h2 class="news_title">12/8/2016: IMPACT student awarded Raul A. and Ruth Stern Plasma Physics Scholarship</h2>
         <section class="news_content">
             <section class="news_p first">
@@ -494,7 +483,7 @@
         </section>
     </section>
 
-    <section class="one_half news_item">
+    <section class="one_half news_item_med first">
         <h2 class="news_title">9/23/2016: IMPACT hosts experiment to explore microparticle behavior in plasma-material interactions</h2>
         <section class="news_content">
             <section class="news_p first">
@@ -508,13 +497,13 @@
         </section>
     </section>
 
-    <section class="one_half first news_item">
-        <h2 class="news_title">10/15/2016: IMPACT to host 2017 Dust, Atmospheres, and Plasma workshop</h2>
+    <section class="one_half news_item_med">
+        <h2 class="news_title">10/15/2016: 2017 Dust, Atmospheres, and Plasma workshop hosted by IMPACT</h2>
         <section class="news_content">
             <section class="news_p first">
-                <p>The Dust, Atmosphere and Plasma environment of the Moon and Small Bodies (DAP-2017) workshop will be a forum to (i) discuss our current understanding of the surface environment of the Moon, the moons of Mars, and asteroids, (ii) share new results from past and ongoing missions to airless bodies and comets, and (iii) describe expectations for planned upcoming missions to airless bodies and comets.</p>
+                <p>The Dust, Atmosphere and Plasma environment of the Moon and Small Bodies (DAP-2017) workshop was a forum to (i) discuss our current understanding of the surface environment of the Moon, the moons of Mars, and asteroids, (ii) share new results from past and ongoing missions to airless bodies and comets, and (iii) describe expectations for planned upcoming missions to airless bodies and comets.</p>
             </section>
-            <section class="one_half news_img">
+            <section class="one_half">
                 <figure><img src="images/dap-2017_notxt.jpeg" alt="">
                     <figcaption>Lunar surface courtesy of NASA</figcaption>
                 </figure>
@@ -522,7 +511,8 @@
         </section>
     </section>
 
-    <section class="one_half news_item">
+
+    <section class="one_half news_item_med first">
         <h2 class="news_title">8/14/2016: IMPACT outreach inspires future scientists and engineers</h2>
         <section class="news_content">
             <section class="news_p first">
@@ -536,7 +526,7 @@
         </section>
     </section>
 
-    <section class="one_half first news_item">
+    <section class="one_half news_item_med">
         <h2 class="news_title">7/22/2016: IMPACT and LASP host Dusty Visions Workshop</h2>
         <section class="news_content">
             <section class="news_p first">
@@ -550,7 +540,7 @@
         </section>
     </section>
 
-    <section class="one_half news_item">
+    <section class="one_half first news_item_med">
         <h2 class="news_title">9/22/2015: IMPACT student selected as University of Colorado Astronaut Scholar</h2>
         <section class="news_content">
             <section class="news_p first">
@@ -564,7 +554,7 @@
         </section>
     </section>
 
-    <section class="one_half first news_item_big">
+    <section class="one_half news_item_med">
         <h2 class="news_title">9/19/2015: IMPACT hosts International Observe the Moon Night</h2>
         <section class="news_content">
             <section class="news_p first">
@@ -579,7 +569,7 @@
         </section>
     </section>
 
-    <section class="one_half news_item_big">
+    <section class="one_half news_item_bigger first">
         <h2 class="news_title">8/18/2015: SSERVI sponsers graduate seminar</h2>
         <section class="news_content">
             <section class="news_p first">
@@ -594,13 +584,13 @@
         </section>
     </section>
 
-    <section class="one_half first news_item_bigger">
+    <section class="one_half news_item_bigger">
         <h2 class="news_title">7/24/2015: Student-built instrument passes Pluto</h2>
         <section class="news_content">
             <section class="news_p first">
                 <p>In 2006 NASA launched New Horizons to explore Pluto, the Kuiper Belt, and beyond. New Horizons had its closest approach with Pluto on July 14<sup>th</sup>, 2015 being the first spacecraft to visit the unexplored body. During the nearly 10 year flight to Pluto, a student-built instrument named the Student Dust Counter (SDC) has been taking interplanetary dust measurements to map the size distribution of dust particles in our solar system. The principle investigator of the SDC is <a href="people.html#horanyi">Mih&aacute;ly Hor&aacute;nyi</a>, who oversees the project.</p>
-                <p>Recent articles from the <a href="http://www.nytimes.com/2015/05/26/science/nasa-pluto-new-horizons-space-dust-counter.html?_r=2" target="_blank">NY Times</a>, <a href="http://www.washingtonpost.com/news/speaking-of-science/wp/2015/07/17/on-its-way-to-pluto-new-horizons-became-a-tool-for-education-like-no-other-probe/" target="_blank">Washington Post</a> and Channel 9 News discuss the SDC and include interviews with <a href="people.html#horanyi">Mih&aacute;ly Hor&aacute;nyi</a> as wells as past and current students involved with the instrument.</p>
-                <p>For more information, please visit the SDC website, <a href="http://lasp.colorado.edu/home/sdc/" target="_blank">here</a>.
+                <p>Articles from the <a href="http://www.nytimes.com/2015/05/26/science/nasa-pluto-new-horizons-space-dust-counter.html?_r=2" target="_blank">NY Times</a>, <a href="http://www.washingtonpost.com/news/speaking-of-science/wp/2015/07/17/on-its-way-to-pluto-new-horizons-became-a-tool-for-education-like-no-other-probe/" target="_blank">Washington Post</a> and Channel 9 News discuss the SDC and include interviews with <a href="people.html#horanyi">Mih&aacute;ly Hor&aacute;nyi</a> as wells as past and current students involved with the instrument.</p>
+                <!--<p>For more information, please visit the SDC website, <a href="http://lasp.colorado.edu/home/sdc/" target="_blank">here</a>.-->
             </section>
             <section class="one_half news_img">
                 <figure><img src="images/SDC.jpg" alt="">
@@ -610,7 +600,7 @@
         </section>
     </section>
 
-    <section class="one_half news_item_bigger">
+    <section class="one_half first news_item_bigger">
         <h2 class="news_title">6/18/2015: Asymmetric dust cloud around the Moon</h2>
         <section class="news_content">
             <section class="news_p first">
@@ -620,20 +610,20 @@
             </section>
             <section class="one_half news_img">
                 <figure><img src="images/nature.jpg" alt="">
-                    <figcaption>An artist's conception of the thin dust cloud surrounding the Moon and the LADEE mission orbit. The colors represent the amount of material ejected from the lunar surface, with red representing the highest density of dust and blue representing the lowest density. Credit: Daniel Morgan and Jamey Szalay, University of Colorado</figcaption>
+                    <figcaption>An artist's conception of the thin dust cloud surrounding the Moon and the LADEE mission orbit. The colors represent the amount of material ejected from the lunar surface, with red representing the highest density of dust and blue representing the lowest density.<!-- Credit: Daniel Morgan and Jamey Szalay, University of Colorado--></figcaption>
                 </figure>
             </section>
         </section>
     </section>
 
-    <section class="one_half first news_item_bigger">
+    <section class="one_half news_item_bigger">
         <h2 class="news_title">5/26/2015: LASP instrument chosen for NASA's Europa mission</h2>
         <section class="news_content">
             <section class="news_p first">
                 <p>On May 26<sup>th</sup> NASA announced their selection of 9 instruments for a mission to Europa, an icy moon of Jupiter. Among the selected instruments will be the LASP-built SUrface Dust Mass Analyzer (SUDA) with IMPACT's own, <a href="people.html#kempf">Sascha Kempf</a> acting as the principle investigator. SUDA will study the composition of solid particles originating from Europa's surface.</p>
                 <p>Europa is believed to have a subsurface ocean capable of supporting life, providing an opportunity to search for living organisms beyond our planet. Furthermore, exploration of Europa may provide insight to the conditions necessary for the emergence of life in our solar system.</p>
                 <p>More information about SUDA can be found <a href="http://lasp.colorado.edu/home/blog/2015/05/26/lasp-instrument-selected-for-nasa-mission-to-europa/" target="_blank">here</a>.<br />
-                More information about the entire Europa mission can be found <a href="http://www.nasa.gov/press-release/nasa-s-europa-mission-begins-with-selection-of-science-instruments" target="_blank">here</a>.</p>
+                <!--More information about the entire Europa mission can be found <a href="http://www.nasa.gov/press-release/nasa-s-europa-mission-begins-with-selection-of-science-instruments" target="_blank">here</a>.--></p>
             </section>
             <section class="one_half news_img">
                 <figure><img src="images/europa_clipper.jpg" alt="">
@@ -643,7 +633,7 @@
         </section>
     </section>
 
-    <section class="one_half news_item_bigger">
+    <section class="one_half first news_item_med">
         <h2 class="news_title">4/15/2015: IMPACT student receives prestigious Goldwater Scholarship</h2>
         <section class="news_content">
             <section class="news_p first">
@@ -657,7 +647,7 @@
         </section>
     </section>
 
-    <section class="one_half first news_item_med">
+    <section class="one_half news_item_med">
         <h2 class="news_title">4/19/2015: Japanese public broadcasting network visits IMPACT</h2>
         <section class="news_content">
             <section class="news_p first">
@@ -671,7 +661,7 @@
         </section>
     </section>
 
-    <section class="one_half news_item_med">
+    <section class="one_half first news_item_big">
         <h2 class="news_title">3/11/2015: Hydrothermal activity within Enceladus</h2>
         <section class="news_content">
             <section class="news_p first">
@@ -687,7 +677,7 @@
         </section>
     </section>
 
-    <section class="one_half first news_item">
+    <section class="one_half news_item_big">
         <h2 class="news_title">2/25/2015: IMPACT breaks the 100 km/s speed barrier</h2>
         <section class="news_content">
             <section class="news_p first">
@@ -701,7 +691,7 @@
         </section>
     </section>
 
-    <section class="one_half news_item">
+    <section class="one_half first news_item">
         <h2 class="news_title">10/9/2014: Lunar Eclipse</h2>
         <section class="news_content">
             <section class="news_p first">
@@ -716,7 +706,7 @@
     </section>
 
 
-    <section class="one_half first news_item">
+    <section class="one_half news_item">
         <h2 class="news_title">10/7/2014: LADEE receives 2014 Popular Mechanic Breakthrough Award</h2>
         <section class="news_content">
             <section class="news_p first">
@@ -732,7 +722,7 @@
         </section>
     </section>
 
-    <section class="one_half news_item">
+    <section class="one_half first news_item_med">
         <h2 class="news_title">10/3/2014: IMPACT sets new speed record</h2>
         <section class="news_content">
             <section class="news_p first">
@@ -746,7 +736,7 @@
         </section>
     </section>
 
-    <section class="one_half first news_item">
+    <section class="one_half news_item_med">
         <h2 class="news_title">9/26/2014: Observing comets from Mars</h2>
         <section class="news_content">
             <section class="news_p first">
@@ -762,7 +752,7 @@
         </section>
     </section>
 
-    <section class="one_half news_item">
+    <section class="one_half first news_item_med">
         <h2 class="news_title">9/6/2014: International Observe the Moon Night</h2>
         <section class="news_content">
             <section class="news_p first">
@@ -776,7 +766,7 @@
         </section>
     </section>
 
-    <section class="one_half first news_item">
+    <section class="one_half news_item_med">
         <h2 class="news_title">8/10/2014: IMPACT reaches out to underrepresented students</h2>
         <section class="news_content">
             <section class="news_p first">
@@ -790,7 +780,7 @@
         </section>
     </section>
 
-    <section class="one_half news_item">
+    <section class="one_half first news_item_med">
         <h2 class="news_title">8/5/2014: Getting ready for International Observe the Moon Night</h2>
         <section class="news_content">
             <section class="news_p first">
@@ -806,7 +796,7 @@
         </section>
     </section>
 
-    <section class="one_half first news_item">
+    <section class="one_half news_item_med">
         <h2 class="news_title">7/16/2014: High school plasma</h2>
         <section class="news_content">
             <section class="news_p first">
@@ -820,7 +810,7 @@
         </section>
     </section>
 
-    <section class="one_half news_item">
+    <section class="one_half first news_item_big">
         <h2 class="news_title">6/19/2014: In-Situ Resource Utilization (ISRU) Conference</h2>
         <section class="news_content">
             <section class="news_p first">
@@ -835,7 +825,7 @@
         </section>
     </section>
 
-    <section class="one_half first news_item_med">
+    <section class="one_half news_item_big">
         <h2 class="news_title">5/10/2014: Prof. Mih&aacute;ly Hor&aacute;nyi discusses LADEE</h2>
         <section style="color:#040404;">
             <p><a href="people.html">Prof. Mih&aacute;ly Hor&aacute;nyi</a> discusses the Lunar Atmosphere and Dust Environment Explorer (LADEE) in an interview with FOX31 Denver News. He talks about the purpose and some of the major findings of the NASA mission.</p>
@@ -843,7 +833,7 @@
         </section>
     </section>
 
-    <section class="one_half news_item_med">
+    <section class="one_half first news_item_big">
         <h2 class="news_title">5/5/2014: Jamey Szalay discusses SDC</h2>
         <section style="color:#040404;">
             <p>In an interview with FOX31 Denver News, <a href="people.html#szalay">Jamey Szalay</a> discusses the Student Dust Counter (SDC). SDC is student built and operated instrument aboard the New Horizons mission, which is on its way to Pluto.</p>
@@ -851,7 +841,7 @@
         </section>
     </section>
 
-    <section class="one_half first news_item_med">
+    <section class="one_half news_item_big">
         <h2 class="news_title">4/17/2014: The LADEE mission comes to an end</h2>
         <section class="news_content">
             <section class="news_p first">
@@ -866,7 +856,7 @@
         </section>
     </section>
 
-    <section class="one_half news_item_med">
+    <section class="one_half first news_item_big">
         <h2 class="news_title">4/17/2014: LADEE mission ending with a bang</h2>
         <section class="news_content">
             <section class="news_p first">
@@ -882,7 +872,7 @@
         </section>
     </section>
 
-    <section class="one_half first news_item_med">
+    <section class="one_half news_item_big">
         <h2 class="news_title">4/11/2014: In-Situ Resource Utilization (ISRU) Conference</h2>
         <section class="news_content">
             <section class="news_p first">
@@ -897,7 +887,7 @@
         </section>
     </section>
 
-    <section class="one_half news_item_med">
+    <section class="one_half first news_item_bigger">
         <h2 class="news_title">2/7/2014: LADEE receives 28 day mission extension</h2>
         <section class="news_content">
             <section class="news_p first">
@@ -912,7 +902,7 @@
         </section>
     </section>
 
-    <section class="news_item one_half first">
+    <section class="news_item_bigger one_half">
         <h2 class="news_title">1/28/2014: IMPACT sets new speed record</h2>
         <section class="news_content">
             <section class="news_p first">
@@ -926,7 +916,7 @@
         </section>
     </section>
 
-    <section class="one_half news_item">
+    <section class="one_half first news_item_big">
         <h2 class="news_title">11/20/2013: Dr. Collette releases new book on data manipulation</h2>
         <section class="news_content">
             <section class="news_p first">

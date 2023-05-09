@@ -1,42 +1,48 @@
- ////Header scroll effect//////
+ ////scroll effect//////
+ let checkbox=document.querySelector('#menu__toggle');
+ //distance required to scroll to cause effect
+ //secondary pages scroll threshold
+const SCROLL_THRESHOLD = 30;
+ //home page scroll threshold
+const SCROLL_THRESHOLD_HOME = 70;
 
-    // Hide Header on on scroll down
-    var didScroll;
-    var lastScrollTop = 0;
-    var delta = 10;
-    var navbarHeight = $('header').outerHeight();
 
-    $(window).scroll(function(){
-        didScroll = true;
-    });
 
-    setInterval(function() {
-        if (didScroll) {
-            hasScrolled();
-            didScroll = false;
-        }
-    }, 250); //distance scrolled without triggering disappear
+ let lastScrollY = window.scrollY;
+ 
+ window.addEventListener('scroll', () => {
+   const currentScrollY = window.scrollY;
+   const delta = currentScrollY - lastScrollY;
+ 
+   if (delta > 0 && delta >= SCROLL_THRESHOLD) {
+     // The user has scrolled down by at least SCROLL_THRESHOLD pixels
+     document.querySelector(".the-header").classList.add("nav_up")
+     document.querySelector(".menu__box").classList.add("nav_up")
 
-    function hasScrolled() {
-        var st = $(this).scrollTop();
-        
-        // Make sure user scroll more than delta
-        if(Math.abs(lastScrollTop - st) <= delta)
-            return;
-        
-        // If user scrolled down and are past the navbar, add class .nav_up.
-        if (st > lastScrollTop && st > navbarHeight){
-            // Scroll Down Disappear
-            $('header').removeClass('header__top').addClass('nav_up');
-            $('label').removeClass('menu__btn').addClass('nav_up');
-        } else {
-            // Scroll Up Reappear
-            if(st + $(window).height() < $(document).height()) {
-                $('header').removeClass('nav_up').addClass('header__top');
-                $('label').removeClass('nav_up').addClass('menu__btn');
-            }
-        }
-        
-        lastScrollTop = st;
-    }
+   } else if (delta < 0 && -delta >= SCROLL_THRESHOLD) {
+     // The user has scrolled up by at least SCROLL_THRESHOLD pixels
+     document.querySelector(".the-header").classList.remove("nav_up")
+     document.querySelector(".menu__box").classList.remove("nav_up")
+   }
+ 
+   lastScrollY = currentScrollY;
+ });
+
 /////////////////////////////////////////////////////////////
+window.addEventListener('scroll', () => {
+  const currentScrollY = window.scrollY;
+  const delta = currentScrollY - lastScrollY;
+
+  if (delta > 0 && delta >= SCROLL_THRESHOLD_HOME) {
+    // The user has scrolled down by at least SCROLL_THRESHOLD pixels
+    
+    document.querySelector(".menu__box__home").classList.add("nav_up")
+    checkbox.checked=false;
+  } else if (delta < 0 && -delta >= SCROLL_THRESHOLD) {
+    // The user has scrolled up by at least SCROLL_THRESHOLD pixels
+
+    document.querySelector(".menu__box__home").classList.remove("nav_up")
+  }
+
+  lastScrollY = currentScrollY;
+});

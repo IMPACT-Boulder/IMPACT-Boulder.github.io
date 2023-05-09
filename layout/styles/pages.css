@@ -9,12 +9,12 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 /*----------------------------------------------Site Wide Shared Classes-------------------------------------*/
 .secondary {
   background-image: url("images/star-background.jpg");
+  width: 100%;
 }
 .page__content{
-  width: 1200px;
+  width: 100%;
   background-color: #f5f5f5;
   height: 100%;
-  margin-top: 5%;
 }
 .content_container {
  width: 90%;
@@ -29,6 +29,24 @@ h1{
   font-weight: bold;
 }
 
+
+.title__bar {
+  background: linear-gradient(rgb(0, 0, 105) 3rem, #f5f5f5);
+  height: 140px;
+  width: 100%;
+  margin-top: 0px;
+  padding-top: 1rem;
+}
+.title__bar p {
+  margin-top: 0px;
+  color: #fff;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  margin-left: 3rem;
+  font-size: 2.5rem;
+  top: 2rem;
+}
+
 .post-image{margin-bottom:40px;}
 
 .blog-post-title a{color:#979797; background-color:#FFFFFF;}
@@ -40,17 +58,24 @@ h1{
 .blog-post-meta ul li{display:inline; margin-left:5px; padding-left:5px; border-left:1px solid #D6D6D6;}
 .blog-post-meta ul li:first-child{margin-left:0; padding:0; border:none;}
 .page__top{
-    height: 60vh;
-    width: 100%;
-    background-color:rgb(139, 72, 148);
-    background-image: url("images/Butterfly-Nebula_Hubble.jpg");
-    position: relative;
-    background-size:cover;
-    background-position:center;
+  height: 80vh;
+  width: 100%;
+  background-image: url("images/Butterfly-Nebula_Hubble.jpg");
+  position: relative;
+  background-size:cover;
+  background-position:center;
+}
+.page__top__bottom {
+  width: 100%;
+  height: 14rem;
+  position: absolute;
+  bottom: 0;
+  padding-top: 1rem;;
+  background: linear-gradient(transparent, #2d4159 50%);
 }
 .bottom__nav {
     position: absolute;
-    bottom: 5rem;
+    bottom: 4rem;
     color: #000;
     font-size: 1rem;
     letter-spacing: 0.05em;
@@ -85,23 +110,118 @@ h1{
 #intro .boxholder{padding:15px; border-color:#333333;}
 #home-header {
     width: 100%; 
-    height:100vh; 
+    height:140vh; 
     background-color:#000;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url("images/earth-across-moon-surface.jpg");
+    position: absolute;
+    top: 0;
+    background-size:cover;
+    background-position:center;
 }
 #header-logo {
     width: 40%;
+    margin-top: 3rem;
 }
+#top_fade {
+  height: 55vh;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(transparent, #000 40vh);
+  margin-top: 80vh;
+}
+.arrow {
+  color: rgba(255, 255, 255);
+  font-size: 60px;
+  text-align: center;
+  padding-top: 30px;
+  
+}
+/*arrow bounce*/
+@keyframes bounceIn {
+	0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+	40% {
+    transform: translateY(-30px);
+  }
+	60% {
+    transform: translateY(-15px);
+  }
+}
+.bounce {
+  animation: bounceIn 2s infinite 2s;
+}
+#center_fade {
+  background: linear-gradient(#000, #232323 );
+  height: 30vh;
+  width: 100%;
+}
+#home_center {
+  position: relative;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#home_center_content {
+  display: flex;
+  height: 350px;
+  width: 80%;
+}
+#home_center img{
+  width: 350px;
+  height: 350px;
+}
+#home_center h2 {
+  padding-top: 20px; 
+  margin-bottom: 0; 
+  font-size: 2rem;
+  color: #fff;
+  text-align: left;
+}
+#home_center p {
+  font-size: 1.3rem; 
+  margin-top: 2rem;
+  color: #fff;
+  text-align: left;
+}
+#about_button {
+  background-color: #CFB87C;
+  width: 150px;
+  height: 50px;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  }
+
+  #about_button:disabled {
+    pointer-events: none;
+  }
+  #about_button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  #about_button:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
 #home-links-section {
     width: 100%;
-    height: 100vh;
     background-color: #232323;
 }
 .home-links-container {
     display: flex;
-    height: 50vh;
+    height: 45vh;
     width: 100%;
     align-items: center;
     justify-content: space-around;
@@ -119,7 +239,6 @@ h1{
     overflow: hidden;
 }
 .home-link-content {
-    background-image: url("images/milkyway.jpg");
     height: 100%;
     width: 100%;
     background-size: cover;
@@ -149,8 +268,74 @@ h1{
   line-height: 1.2em;
   margin: 0 auto;
 }
-
-/*my nav */
+/*HOME NAV*/
+#hamburger__menu__home {
+  background-color: #000;
+  z-index: 10;
+}
+.menu__btn__home {
+  position: absolute;
+  right: 20px;
+  width: 130px;
+  height: auto;
+  cursor: pointer;
+  z-index: 12;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 5px 5px 5px 10px;
+  border-radius: 5px;
+  
+}
+#menu__toggle:checked+.menu__btn__home .menu__hamburger {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked+.menu__btn__home .menu__hamburger::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked+.menu__btn__home .menu__hamburger::after {
+  top: 0;
+  transform: rotate(90deg);
+  position: fixed;
+}
+.menu__btn__home .menu__hamburger,
+.menu__btn__home .menu__hamburger::before,
+.menu__btn__home .menu__hamburger::after {
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: #FFF;
+  transition-duration: .5s;
+}
+.menu__btn__home .menu__hamburger::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn__home .menu__hamburger::after {
+  content: '';
+  top: 8px;
+}
+#menu__toggle:checked~.menu__box__home {
+  right: 0 !important;
+}
+.menu__box__home {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: rgba(79, 112, 148, 0.8);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .7);
+  transition-duration: .5s;
+  z-index: 10;
+}
+/*-------------------------------------------------------HEADER NAV---------------------------------------------------------------*/
 .header__top {
   width: 100%;
   height: 120px;
@@ -161,6 +346,10 @@ h1{
   border-bottom: 0.02rem solid #000 ;
   display: flex;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: top 0.5s ease-in-out;
+}
+.the-header { /*make header dissapear*/
+  top: 0px;
   transition: top 0.5s ease-in-out;
 }
 .header__logo {
@@ -190,13 +379,16 @@ h1{
 #menu__toggle:checked~.menu__box {
   right: 0 !important;
 }
+/*#menu__toggle:checked~.menu__btn {
+  position:fixed !important;
+}*/
 .menu__btn {
   position: fixed;
   right: 40px;
   width: 100px;
   height: auto;
   cursor: pointer;
-  z-index: 1;
+  z-index: 12;
   display: flex;
   align-items: center;
   gap: 1em;
@@ -204,6 +396,7 @@ h1{
 #menu {
   color: #fff;
   font-size: 1.5rem;
+  
 }
 .menu__btn .menu__hamburger,
 .menu__btn .menu__hamburger::before,
@@ -236,6 +429,7 @@ h1{
   background-color: rgba(79, 112, 148, 0.8);
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .7);
   transition-duration: .5s;
+  z-index: 10;
 }
 .menu__item {
   display: block;
@@ -250,9 +444,8 @@ h1{
 .menu__item:hover {
   background-color: #87b6ca;
 }
-.nav_up { /*---scroll up effect---*/
-  top: -120px;
-
+.nav_up { /*---disappearing nav effect---*/
+  display: none;
 }
 /*----------------------------------------------News-----------------------------------------*/
 .news_title {
@@ -312,6 +505,37 @@ h1{
 }
 #older_link:hover {
   text-decoration: underline orange;
+}
+/*--------------------------------------------------PEOPLE--------------------------------*/
+.people_topsection {
+  display: flex;
+  justify-content: center;
+}
+.people_topbox {
+  background-color: #e2e2e2;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  width: 300px !important;
+  padding: 2rem !important;
+}
+.people_img {
+ margin: 0px 65px;/*bad for responsive */
+}
+.people_name {
+  text-align: center;
+  width: auto;
+}
+#rest-of-people {
+  width: 980px;
+  height: auto;
+}
+.people_box {
+  background-color: #e2e2e2;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  width: 980px;
+  height: auto;
+  padding: 50px;
 }
 /*----------------------------------------------SSERVI-------------------------------------------*/
 .sservi__box {
