@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
     <title>IMPACT: Dusty Visions Meeting</title>
+    <link rel="icon" type="image/x-icon" href="images/logos/IMPACT_favicon.png">
 <meta charset="iso-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="layout/styles/main.css" rel="stylesheet" type="text/css" media="all">
@@ -12,36 +13,50 @@
 <script src="../layout/scripts/ie/html5shiv.min.js"></script>
 <![endif]-->
 </head>
-<body class="">
-<div class="wrapper row1">
+<body class="secondary">
+<!--<div class="wrapper row1">
   <header id="header" class="full_width clear">
     <hgroup>
       <h1><a href="index.html">Institute for Modeling Plasma, Atmospheres and Cosmic Dust</a></h1>
       <h2>Boulder, CO, USA</h2>
     </hgroup>
   </header>
-</div>
+</div>-->
 <!-- ################################################################################################ -->
-<div class="wrapper row2">
-    <nav id="topnav">
-        <ul class="clear">
-            <li class="active"><a href="index.html" title="Homepage">Homepage</a></li>
-            <li class="active"><a href="news.html" title="News">News</a></li>
-            <li class="active"><a href="about.html" title="About">About IMPACT</a></li>
-            <li class="active"><a href="facilities.html" title="Facilities">Facilities</a></li>
-            <li class="active"><a href="people.html" title="People">People</a></li>
-            <li class="active"><a href="publications.html" title="Publications">Publications</a></li>
-            <li class="active"><a href="epo.html" title="EPO">Education / Public Outreach</a></li>
-            <li class="active"><a href="sservi.html" title="SSERVI">SSERVI / Teams</a></li>
-            <li class="active"><a href="media.html" title="Media">Media</a></li>
-            <li class="active"><a href="meetings.html" title="Meetings">Meetings</a></li>
-            <li class="active"><a href="contact.html" title="Contact">Contact</a></li>
-        </ul>
-    </nav>
-</div>
+<header class="header__top the-header">
+    <a href="index.html"><img class="header__logo" src="images/logos/IMPACT_logo1.png" /></a>
+    <div id="hamburger__menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <div id="menu">MENU</div>
+        <div><span class="menu__hamburger"></span></div>
+      </label>
+      <ul class="menu__box">
+        <li><a class="menu__item" href="index.html">HOMEPAGE</a></li>
+        <li><a class="menu__item" href="news.html">NEWS</a></li>
+        <li><a class="menu__item" href="about.html">ABOUT IMPACT</a></li>
+        <li><a class="menu__item" href="facilities.html">FACILITIES</a></li>
+        <li><a class="menu__item" href="people.html">PEOPLE</a></li>
+        <li><a class="menu__item" href="publications.html">PUBLICATIONS</a></li>
+        <li><a class="menu__item" href="epo.html">EDUCATION / PUBLIC OUTREACH</a></li>
+        <li><a class="menu__item" href="sservi.html">SSERVI / TEAMS</a></li>
+        <li><a class="menu__item" href="media.html">MEDIA</a></li>
+        <li><a class="menu__item" href="meetings.html">MEETINGS</a></li>
+        <li><a class="menu__item" href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+</header>
+<!--#######################################################################################################################-->
+<div id="container" class="page__content">
+    <div class="page__top the-header">
+      <div class="page__top__bottom">
+        <div class="bottom__nav"><a href="index.html">Home </a><span class='divide'> &#10097; </span><span class="bottom__nav__page"> News</span></div>
+        <div class="page__title">Dusty Visions</div>
+      </div>
+    </div>
 <!-- content -->
-<div class="wrapper row3">
-  <div id="container">
+<div class="content_section">
+  <div id="container" class="content_container">
       <div id="sidebar_1" class="sidebar one_quarter first">
           <aside>
               <h2>Dusty Visions Workshop 2016</h2>
@@ -642,21 +657,7 @@
                <p><h2><strong>Marcus Piquette</strong>, Interplanetary Dust from Earth to the Kuiper Belt: Results from the Student Dust Counter</h2>
                 The Student Dust Counter (SDC) is an impact dust detector onboard the New Horizons spacecraft, observing the dust density distribution since April 2006 across the Solar System. SDC measures the mass of dust grains in the range of 10-12 - 10-9 g, covering an approximate size range of 0.5-5 &mu;m in particle radius. Measurements can be compared to recent models following the orbital evolution of dust grains originating from the Edgeworth-Kuiper Belt. The measurements SDC has taken throughout the solar system, including in the Pluto-Charon system, are presented, as well as predictions for the dust distribution it will measure as it explores the Kuiper Belt.</p>
                 <p align="right"><a href="#schedule">Back to schedule</a></p>
-                    
-                    
 
-
-                    
-                    
-                    
-                
-                    
-                
-                
-                
-                
-                
-                
                 
                 <h2><p>Science Organizing Committee:</h2></p>
                 <DL>
@@ -718,6 +719,8 @@
   </div>
 </div>
 <!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type='text/javascript' src="layout/scripts/effects.js" defer></script>
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>
 <script>window.jQuery || document.write('<script src="../layout/scripts/jquery-latest.min.js"><\/script>\
