@@ -670,12 +670,12 @@ p {
 }
 .news_video {
   position: absolute;
-top: 0;
-left: 0;
-bottom: 0;
-right: 0;
-width: 100%;
-height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 @media only screen and (max-width: 1200px) {
   .one_half {
@@ -698,7 +698,6 @@ height: 100%;
   }
   .news_item_bigger {
     width: auto !important;
-   
     height: auto;
   }
   #flex_container {
@@ -721,13 +720,13 @@ height: 100%;
 /*--------------------------------------------------PEOPLE--------------------------------*/
 .people_topsection {
   display: flex;
-  justify-content: center;
+  justify-content: right;
 }
 .people_topbox {
   background-color: #e2e2e2;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  width: 300px !important;
+  width:300px !important;
   padding: 2rem !important;
 }
 .people_name {
@@ -735,14 +734,17 @@ height: 100%;
   width: auto;
 }
 #rest-of-people {
-  width: 980px;
+  width: 100%;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .people_box {
   background-color: #e2e2e2;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  width: 980px;
+  width: auto;
   height: auto;
   padding: 50px;
 }
@@ -754,16 +756,17 @@ height: 100%;
 }
 @media only screen and (max-width: 1200px) {
   .people_topsection {
-    display: block;
+    flex-direction: column;
+    align-items:last baseline;
   }
   .people_topbox {
     width: 380px !important;
     height: 440px;
     margin-left: 40px !important;
-    margin-bottom: 20px !important;
+    margin-bottom: 30px !important;
   }
   .people_box {
-    width: 80%;
+    width: auto;
   }
   #rest-of-people {
     width: 100%;
@@ -793,6 +796,9 @@ height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .team-member {
+    margin-bottom: 60px;
   }
 }
 @media only screen and (max-width: 540px) {
