@@ -4,14 +4,18 @@
         <title>Spectrum</title>
         <item>
             <title>3.2.0-beta</title>
-            <pubDate>Thu, 04 May 2023 06:59:33 +0200</pubDate>
-            <sparkle:version>425</sparkle:version>
+            <pubDate>Wed, 17 May 2023 14:30:47 +0200</pubDate>
+            <sparkle:version>426</sparkle:version>
             <sparkle:shortVersionString>3.2.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
             <description><![CDATA[<title>Version 3.2.0 (Build 425)</title>
 <description>
 	This is a beta version which probably has not been sufficiently tested.
 	<ul>	 
+	      <li> Version 3.2.0 (Build 426):
+	      	 <li> Can fix in some cases a damaged internal database. 
+			<li> Fixes an issue where a reassignment of a gain stage waveform to a spectrum was not apparent.
+			<li> Improves assignment of shift parameters.
 		  <li> Version 3.2.0 (Build 425):
 			 <li> Migrated the Composition Types, Target, and Material Catalogs to SwiftUI.
 			 <li> Brought back paste and copy to catalog dialogs.
@@ -54,7 +58,7 @@
 	</ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="77075764" type="application/octet-stream" sparkle:edSignature="xBd1l6MyLQsDACciAwVh+5HXMlhKyWusGPxg2Gg0M2fawCexKIyOXV8yRTd9g0RSAYN8iGz0ve60DWyTd/OHBQ=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="77105187" type="application/octet-stream" sparkle:edSignature="HI+BZvGOgm/LwoACJdl5G0HCVSNfFhHBkVSVqmOA3jKYknHlHfM2AlkbEBn71E04cZfObL8GDBA/qZmog/zdDQ=="/>
         </item>
     </channel>
 </rss>
