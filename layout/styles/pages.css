@@ -7,8 +7,11 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 */
 
 /*----------------------------------------------Site Wide Shared Classes-------------------------------------*/
+html {
+  width: 100%;
+}
 .secondary {
-  background-image: url("images/star-background.jpg");
+  background-image: url("images/black-star-background.jpg");
   width: 100%;
 }
 .page__content{
@@ -140,95 +143,71 @@ p {
 }
 /*----------------------------------------------Homepage-------------------------------------*/
 
-#homepage{margin:0; padding:0; overflow:hidden;}/*Overflow Hidden - Due to collapsing margin bug*/
-#intro{padding:30px 0;}
-#intro .boxholder{padding:15px; border-color:#333333;}
+
 #home-header {
     width: 100%; 
-    height:140vh; 
+    background-image: url("images/black-star-background.jpg");
     background-color:#000;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-image: url("images/earth-across-moon-surface.jpg");
     position: absolute;
     top: 0;
     background-size:cover;
     background-position:center;
 }
-#header-logo {
-    width: 40%;
-    margin-top: 3rem;
+#homepage {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  width: 60%;
+}
+#impact__logo {
+  height: auto;
+  width: 100% !important;  
 }
 #top_fade {
   height: 55vh;
   position: relative;
   width: 100%;
-  background: linear-gradient(transparent, #000 40vh);
+  background: linear-gradient(transparent, #232323 40vh );
   margin-top: 80vh;
 }
-#center_fade {
-  background: linear-gradient(#000, #232323 );
-  height: 30vh;
-  width: 100%;
-}
+
 #home_center {
   position: relative;
-  height: 100vh;
-  background-color: #000;
+  height: 130vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  width: 100%;
 }
 #home_center_content {
   display: flex;
-  height: 350px;
-  width: 80%;
+  flex-direction: column;
+  height: 400px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10%;
+  padding-bottom: 30vh;
 }
 #home_center img{
   width: 350px;
   height: 350px;
 }
-#home_center h2 {
-  padding-top: 20px; 
-  margin-bottom: 0; 
-  font-size: 2rem;
-  color: #fff;
-  text-align: left;
-}
 #home_center p {
-  font-size: 1.3rem; 
-  margin-top: 2rem;
+  font-size: 1.1rem; 
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   color: #fff;
   text-align: left;
 }
-#about_button {
-  background-color: #CFB87C;
-  width: 150px;
-  height: 50px;
-  border: 2px solid #1A1A1A;
-  border-radius: 15px;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 600;
-  text-align: center;
-  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-  }
-  #about_button:disabled {
-    pointer-events: none;
-  }
-  #about_button:hover {
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-    transform: translateY(-2px);
-  }
-  #about_button:active {
-    box-shadow: none;
-    transform: translateY(0);
-  }
-
 #home-links-section {
     width: 100%;
+    height: 100vh;
     background-color: #232323;
+    display: flex;
+    flex-direction: column;
 }
 .home-links-container {
     display: flex;
@@ -236,7 +215,6 @@ p {
     width: 100%;
     align-items: center;
     justify-content: space-around;
-    margin: 0 auto;
 }
 .home-boxes {
     height: 40vh;
@@ -284,7 +262,6 @@ p {
   font-size: 60px;
   text-align: center;
   padding-top: 30px;
-  
 }
 /*arrow bounce*/
   @keyframes bounceIn {
@@ -368,71 +345,101 @@ p {
   transition-duration: .5s;
   z-index: 10;
 }
-@media only screen and (max-width: 1250px) {
- #about_button {
-  height: 40px;
- }
- #center_list h2 {
-  font-size: 28px;
- }
- #center_list i {
-  font-size: 19px
- }
-}
-@media only screen and (max-width: 1007px) {
+@media only screen and (max-height: 1200px) {
   #home-header {
-    height: 90vh;
+    height: 1300px;
   }
-  #header-logo {
-    width: 60%;
+  #home-center {
+    height: 1300px;
   }
   #top_fade {
-    margin-top: 50vh;
-  }
-  #home_center {
-    height: 30vh;
-    padding-bottom: 10vh;
-  }
-  #center_fade {
-    margin-bottom: 10vh;
-  }
-  #home_center_content {
-    display: block;
-    text-align: center;
+    height: 350px;
+    margin-top: 1100px;
   }
   #home-links-section {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+    height: 1000px;
+  }
+  .home-links-container {
+    height: 450px;
+  }
+  .home-boxes {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  #homepage {
+    height: 70%;
+    margin-top: 5%;
+  }
+}
+@media only screen and (max-width: 1007px) {
+  .arrow {
+    padding-top: 0px;
+    margin: 0px;
+  }
+  #homepage {
+    width: 100%;
+    align-items: center;
+  }
+  #impact__logo{
+    width: 90% !important;
+    margin-bottom: 5%;
+  }
+  #home_center p {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #top_fade {
+    margin-top: 90vh;
+  }
+  #home_center {
+    height: 120vh;
+    padding-bottom: 10vh;
+  }
+  #home_center_content {
+    flex-direction: column;
+    align-items: center;
+  }
+  #home-links-section {
+    justify-content: space-between;
+    align-items: center;
     padding: 5vh 0;
-    margin-top: 20%;
+    height: auto;
   }
   .home-links-container {
     display: block;
-    height: 20vh;
-    width: 40%;
+    height: 100vh;
+    width: 70%;
   }
   .home-boxes {
-    height: 20vh;
+    height: 30vh;
     width: 100%;
     margin-bottom: 3vh;
   }
+  @media only screen and (max-height: 1200px) {
+    #home-center {
+      height: 1200px;
+      padding-bottom: 100px;
+    }
+    #top_fade {
+      margin-top: 950px;
+    }
+    #home-links-section {
+      
+      padding: 50px 0;
+    }
+    .home-links-container {
+      height: 1000px;
+    }
+    .home-boxes {
+      height: 300px;
+      margin-bottom: 30px;
+    }
+  }
 }
 @media only screen and (max-width: 640px) {
-  #header-logo {
-    width: 90%;
-  }
-  #home_center {
-    padding: 20vh 0 50vh 0;
-  }
-  #home_center img {
-    width: 200px;
-    height: 200px;
-  }
-  #home-links-section {
-    display: block;
-    height: 200vh;
-  }
+  
   .home-links-container {
     height: 100vh;
     width: 80%;
@@ -440,6 +447,23 @@ p {
   .home-boxes {
     height: 30vh;
     width: 100%;
+  }
+  @media only screen and (max-height: 1200px) {
+    .home-links-container {
+      height: 1000px;
+    }
+    .home-boxes {
+      height: 300px;
+    }
+  }
+}
+@media only screen and (max-width: 440px) {
+  #home_center img {
+    width: 200px;
+    height: 200px;
+  }
+  #homepage {
+    height: 60%;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -452,6 +476,12 @@ p {
   #home_center {
     padding-bottom: 90vh;
     height:5vh;
+  }
+  @media only screen and (max-height: 1200px) {
+    #home_center {
+      padding-bottom: 900px;
+      height:50px;
+    }
   }
 }
 
@@ -603,6 +633,9 @@ p {
 }
 
 /*----------------------------------------------News-----------------------------------------*/
+#news_page_title {
+  margin-top: 80px;
+}
 .news_title {
   color: #2d4159;
   font-weight: bold;
