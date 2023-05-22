@@ -162,7 +162,7 @@ p {
   width: 60%;
 }
 #impact__logo {
-  height: auto;
+  height: auto !important;
   width: 100% !important;  
 }
 #top_fade {
@@ -347,14 +347,15 @@ p {
 }
 @media only screen and (max-height: 1200px) {
   #home-header {
-    height: 1300px;
+    height: 1100px;
   }
   #home-center {
     height: 1300px;
   }
   #top_fade {
-    height: 350px;
-    margin-top: 1100px;
+    height: 400px;
+    margin-top: 750px;
+    background: linear-gradient(transparent, #232323 250px );
   }
   #home-links-section {
     height: 1000px;
@@ -390,9 +391,6 @@ p {
     width: 90%;
     margin: 0 auto;
   }
-  #top_fade {
-    margin-top: 90vh;
-  }
   #home_center {
     height: 120vh;
     padding-bottom: 10vh;
@@ -424,6 +422,10 @@ p {
     }
     #top_fade {
       margin-top: 950px;
+      height: 400px;
+      margin-top: 750px;
+      background: linear-gradient(transparent, #232323 250px );
+
     }
     #home-links-section {
       
