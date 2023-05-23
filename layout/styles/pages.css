@@ -258,11 +258,15 @@ p {
   margin: 0 auto;
 }
 .arrow {
-  color: rgba(255, 255, 255);
   font-size: 60px;
   text-align: center;
   padding-top: 30px;
 }
+#arrow {
+  height: 50px;
+  width: auto;
+}
+
 /*arrow bounce*/
   @keyframes bounceIn {
     0%, 20%, 50%, 80%, 100% {
@@ -280,10 +284,6 @@ p {
     animation: bounceIn 2s infinite 2s;
   }
 /*HOME NAV*/
-#hamburger__menu__home {
-  background-color: #000;
-  z-index: 10;
-}
 .menu__btn__home {
   position: absolute;
   right: 20px;
@@ -326,24 +326,6 @@ p {
 .menu__btn__home .menu__hamburger::after {
   content: '';
   top: 8px;
-}
-#menu__toggle:checked~.menu__box__home {
-  right: 0 !important;
-}
-.menu__box__home {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: -100%;
-  width: 300px;
-  height: 100%;
-  margin: 0;
-  padding: 80px 0;
-  list-style: none;
-  background-color: rgba(79, 112, 148, 0.8);
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, .7);
-  transition-duration: .5s;
-  z-index: 10;
 }
 @media only screen and (max-height: 1200px) {
   #home-header {
@@ -476,12 +458,11 @@ p {
     right: -5%;
   }
   #home_center {
-    padding-bottom: 90vh;
-    height:5vh;
+    padding-bottom: 300px;
   }
   @media only screen and (max-height: 1200px) {
     #home_center {
-      padding-bottom: 900px;
+      
       height:50px;
     }
   }
@@ -682,6 +663,9 @@ p {
   display: flex;
   padding-right: 0;
 }
+.vid{
+  display: block !important;
+}
 .news_p {
   width: 60%;
   color: #040404;
@@ -712,9 +696,16 @@ p {
   width: 100%;
   height: 100%;
 }
+.news_page {
+  background-image: url("images/black-star-background.jpg") !important;
+}
 @media only screen and (max-width: 1200px) {
+
+  #flex_container {
+    background-image: url("images/black-star-background.jpg");
+  }
   .one_half {
-    max-width: 80% !important;
+    max-width: 60% !important;
   }
   .news_item {
     width: auto !important;
@@ -745,6 +736,9 @@ p {
 @media only screen and (max-width: 640px) {
   .news_content {
     display: block;
+    padding: 20px;
+  }
+  .vid {
     padding: 20px;
   }
   .news_title{
@@ -938,6 +932,11 @@ p {
   .sservi__box__int .first {
     display: flex;
     justify-content: center;
+  }
+  .int_content {
+    text-align: center;
+    width: 100%;
+    padding-left: 0px;
   }
 }
 /*--------------------------------------------------CONTACT-----------------------------------------------*/
