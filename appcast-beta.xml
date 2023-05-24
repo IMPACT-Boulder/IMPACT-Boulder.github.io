@@ -4,14 +4,16 @@
         <title>Spectrum</title>
         <item>
             <title>3.2.0-beta</title>
-            <pubDate>Wed, 17 May 2023 14:30:47 +0200</pubDate>
-            <sparkle:version>426</sparkle:version>
+            <pubDate>Wed, 24 May 2023 12:36:38 +0200</pubDate>
+            <sparkle:version>427</sparkle:version>
             <sparkle:shortVersionString>3.2.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
             <description><![CDATA[<title>Version 3.2.0 (Build 425)</title>
 <description>
 	This is a beta version which probably has not been sufficiently tested.
 	<ul>	 
+		  <li> Version 3.2.0 (Build 427):
+		  	<li> Fixes an issue where the selection of Rise Time as color code may lead to a crash.
 	      <li> Version 3.2.0 (Build 426):
 	      	 <li> Can fix in some cases a damaged internal database. 
 			<li> Fixes an issue where a reassignment of a gain stage waveform to a spectrum was not apparent.
@@ -58,7 +60,7 @@
 	</ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="77105187" type="application/octet-stream" sparkle:edSignature="HI+BZvGOgm/LwoACJdl5G0HCVSNfFhHBkVSVqmOA3jKYknHlHfM2AlkbEBn71E04cZfObL8GDBA/qZmog/zdDQ=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="77102937" type="application/octet-stream" sparkle:edSignature="yTWFp4FKpA1WYqeJLBu9/9mT5X6PKCUS+RWfQW5eyG9EKRIwHF1GLukTvhuhx5dj5Ofu3SiJfWaPuc5qJ13ABw=="/>
         </item>
     </channel>
 </rss>
