@@ -67,6 +67,13 @@ h3bo  {
 	font-size: 190%;
 	font-weight: bolder;
 }
+h3boc  {
+	font-size: 190%;
+	font-weight: bolder;
+	text-align: center;
+	display: inherit;
+
+}
 h3f  {
 	font-family: bebas-neue;
 	font-weight: 400;
@@ -91,13 +98,23 @@ h4bo  {
 h5new  {
 	font-size: 150%;
 }
+h5bl  {
+	color: #4472C4;
+	font-size: 150%;
+}
+h5c  {
+	font-size: 150%;
+	text-align: center;
+	display: inherit;
+}
 h5f  {
 	font-family: bebas-neue;
 	font-weight: 400;
 	font-size: 150%;
 }
-h5bl  {
+h5blbo  {
 	color: #4472C4;
+    font-weight:bolder;
 	font-size: 150%;
 }
 h5bo  {
