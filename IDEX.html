@@ -99,15 +99,21 @@
                     </section>
                 </section>
                 <section>
-                        <p>From this simulation, IDEX is expected to measure 16 events per day on average. Using these estimates in conjunction with the bitmap in Figure 4.7, we can estimate the weekly data volume expectancy for IDEX during the mission. This has been carried out for each of the science data product levels, as depicted in table 5.1.</p>  
-                    <section class="one_half first">
-                        <figure ><img src="images/idex_fig4.7.png" alt="A bitmap outline" /><br />Figure 4.7: A bitmap outline of what is contained in each FPGA metadata event header.</figure>
-                    </section>
-                    <section class="one_half">
-                        <figure ><img src="images/idex_table5.1.png" alt="Expectations for IDEX`s weekly data volume" /><br />
-                            Table 5.1: Expectations for IDEX's weekly data volume throughout the mission, organized by data product level.
-                            </figure>
-                    </section>
+                    <p>From this simulation, IDEX is expected to measure 16 events per day on average. Using these estimates in conjunction with the bitmap in Figure 4.7, we can estimate the weekly data volume expectancy for IDEX during the mission. This has been carried out for each of the science data product levels, as depicted in table 5.1.</p>  
+                    <div>
+                        <section class="one_half first">
+                            <figure ><span style="font-size: 0.65rem;">Click image to enlarge</span><img class='image' src="images/idex_fig4.7.png" alt="A bitmap outline" /><br />Figure 4.7: A bitmap outline of what is contained in each FPGA metadata event header.</figure>
+                        </section>
+                        <section class="one_half">
+                            <figure ><span style="font-size: 0.65rem;">Click image to enlarge</span><img class='image' src="images/idex_table5.1.png" alt="Expectations for IDEX`s weekly data volume" /><br />
+                                Table 5.1: Expectations for IDEX's weekly data volume throughout the mission, organized by data product level.
+                                </figure>
+                        </section>
+                        <div id="Modal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content image" id="image-modal"></div>
+                        </div>
+                    </div>
                 </section>
             </section>
             <br />
@@ -118,7 +124,9 @@
                     <p>An overview of the sensor head is shown in Figure 3.2.</p>
                     <figure ><img src="images/idex_fig3.2.png" alt="Sensor Head" /><br />Figure 3.2: An outline of the IDEX instrument sensor head.</figure>
             </section>
-            
+            <div id="Modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content image" id="image-modal"></div>
             </div>
             
             <!-- ################################################################################################ -->
@@ -129,6 +137,9 @@
 
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script type='text/javascript' src="layout/scripts/imageExpand.js" defer></script>
+
 <script type='text/javascript' src="layout/scripts/effects.js" defer></script>
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>
