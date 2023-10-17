@@ -1064,3 +1064,11 @@ figure.team-member figcaption .team-description{margin:0; padding-top:15px; bord
 .testimonial div blockquote .marks{position:absolute; top:0; left:0; font-size:120px; line-height:.8em;}
 .testimonial div blockquote p{margin:0 0 15px 0; padding:0;}
 .testimonial .testimonial-author{padding:0 0 0 60px;}
+
+/*----------------------------------------------Student Profiles-------------------------------------*/
+.student_photo {
+width: 70% !important;
+height: auto; 
+align-items: center;
+margin-left: 100px;
+}
