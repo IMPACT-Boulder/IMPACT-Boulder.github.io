@@ -49,6 +49,11 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 }
 
 /* 480px */
+@media only screen and (max-width: 615px) {
+	.one_half {
+	  min-width: 100% !important;
+	}
+  }
 
 @media screen and (min-width:361px) and (max-width:615px) {
 	#header, #topnav, #intro, #container, #footer, #copyright{max-width:95%; margin:0 auto;}
