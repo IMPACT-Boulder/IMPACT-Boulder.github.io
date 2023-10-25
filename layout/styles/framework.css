@@ -27,19 +27,9 @@ body.boxed .wrapper{max-width:90%; padding:0 1.6%; margin:0 auto;}
 
 /*----------------------------------------------Half Grid-------------------------------------*/
 
-/*
-.one_half{width:570px;} => 570 � 1200 = 0.475 * 100 = 47.5
-*/
-
 .one_half{
     width:44%;
 }
-
-
-
-/*
-.one_half.nogutter{width:600px;} => 600 � 1200 = 0.5 * 100 = 50
-*/
 
 .one_half.nogutter{width:50%;}
 

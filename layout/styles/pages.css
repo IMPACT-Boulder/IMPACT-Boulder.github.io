@@ -663,13 +663,16 @@ p {
   width: 80%;
   margin: 0 auto;
 }
-
-.test {
-  display: flex;
+.center_news_img {
+  width: 100%; display: flex;
   flex-direction: column;
-  width: 60%;
   align-items: center;
   margin: 0 auto;
+  height: 100% !important;
+  width: 100% !important;
+}
+.test {
+  height: 100%;
 }
 #older_link {
   margin-left: 5%; 
@@ -699,46 +702,23 @@ p {
 }
 #flex_container {
   background-image: url("images/black-star-background.jpg");
-}
-.one_half {
-  max-width: 100% !important;
-}
-.news_item {
-  width: auto !important;
-  
-  height: auto;;
-}
-.news_item_med {
-  width: auto !important;
-
-  height: auto;
-}
-.news_item_big {
-  width: auto !important;
-
-  height: auto;
-}
-.news_item_bigger {
-  width: auto !important;
-  height: auto;
-}
-#flex_container {
   display: flex;
   width: 100%;
   flex-direction: column;
   align-items: center;
 }
+.news_item {
+  max-width: 90% !important;
+  height: auto;;
+}
+
 @media only screen and (max-width: 1200px) {
-  .one_half {
-    max-width: 80% !important;
+  .news_item {
+    max-width: 90% !important;
   }
 }
-@media only screen and (max-width: 1200px) {
-  .one_half {
-    max-width: 60% !important;
-  }
-}
-@media only screen and (max-width: 640px) {
+
+@media only screen and (max-width: 700px) {
   .news_content {
     display: block;
     padding: 20px;
@@ -749,9 +729,9 @@ p {
   .news_title{
     padding: 20px 20px 0 20px;
   }
-  .one_half {
+  /*.one_half {
     max-width: 80% !important;
-  } 
+  } */
   .news_p {
     width: 100% !important;
   }
@@ -760,6 +740,10 @@ p {
   }
   .news_vid {
     width: 100%;
+  }
+  .news_img {
+    margin: 0 !important;
+    min-width: 100%;
   }
 }
 /*--------------------------------------------------PEOPLE--------------------------------*/
@@ -906,7 +890,9 @@ p {
 .sservi__box__int img {
   width: 92px !important;
   height: 67px !important;
+  
 }
+
 @media only screen and (max-width: 840px) {
   .sservi__box {
     height:150px;
