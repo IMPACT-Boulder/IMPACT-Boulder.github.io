@@ -711,7 +711,13 @@ p {
   max-width: 90% !important;
   height: auto;;
 }
-
+.double_img { 
+  display: flex; 
+  justify-content: center;
+}
+.figcaption_double {
+  text-align: center;
+}
 @media only screen and (max-width: 1200px) {
   .news_item {
     max-width: 90% !important;
@@ -744,6 +750,12 @@ p {
   .news_img {
     margin: 0 !important;
     min-width: 100%;
+  }
+  .double_img {
+    display: block; 
+  }
+  .double_first {
+    margin-bottom: 20px;
   }
 }
 /*--------------------------------------------------PEOPLE--------------------------------*/
