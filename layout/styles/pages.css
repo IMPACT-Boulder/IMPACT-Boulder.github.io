@@ -804,7 +804,7 @@ p {
   flex-direction: column;
   align-items: center;
 }
-.people_box {
+.tile {
   background-color: #e2e2e2;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -829,7 +829,7 @@ p {
     margin-left: 40px !important;
     margin-bottom: 30px !important;
   }
-  .people_box {
+  .tile {
     width: auto;
   }
   #rest-of-people {
@@ -873,7 +873,7 @@ p {
   .people_img {
     margin: 0px 5px;
   }
-  .people_box {
+  .tile {
     width: 70%;
   }
 }
