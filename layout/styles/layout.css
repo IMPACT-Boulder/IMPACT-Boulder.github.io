@@ -134,7 +134,6 @@ nav ul{margin:0; padding:0; list-style:none;}
 #topnav ul:first-child li:last-child > ul{right:0;}
 #topnav ul:first-child > li:last-child li > ul{left:-190px;}
 #topnav li{position:relative; display:block; float:left; margin:0 20px 0 0; padding:0;}
-#topnav li:first-child{}
 #topnav ul:first-child li:last-child{margin-right:0;}
 #topnav li li{width:100%; margin:0;}
 #topnav li a{display:block; padding:20px 0;}
