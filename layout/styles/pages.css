@@ -818,14 +818,19 @@ p {
   display: flex;
   justify-content: center;
 }
+.team-member img {
+  width: 100% !important;
+  height: auto !important;
+}
+
 @media only screen and (max-width: 1200px) {
   .people_topsection {
     flex-direction: column;
-    align-items:last baseline;
+    align-items: last baseline;
   }
   .people_topbox {
     width: 380px !important;
-    height: 440px;
+    height: auto;
     margin-left: 40px !important;
     margin-bottom: 30px !important;
   }
@@ -835,12 +840,6 @@ p {
   #rest-of-people {
     width: 100%;
     height: auto;
-  }
-  .person_container {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
   }
 }
 @media only screen and (max-width: 720px) {
@@ -864,6 +863,9 @@ p {
   .team-member {
     margin-bottom: 60px;
   }
+  .break {
+    display: none;
+  }
 }
 @media only screen and (max-width: 540px) {
   .people_topbox {
@@ -874,18 +876,7 @@ p {
     margin: 0px 5px;
   }
   .tile {
-    width: 70%;
-  }
-}
-
-@media only screen and (max-width: 440px) {
-  .people_topbox {
-    height: 500px !important;
-  }
-}
-@media only screen and (max-width: 320px) {
-  .people_topbox {
-    height: 540px !important;
+    width: auto;
   }
 }
 /*----------------------------------------------PUBLICATIONS-------------------------------------------*/
@@ -894,9 +885,11 @@ p {
 .dropdown {
   position: relative;
   width: 100%;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 100px;
 }
 .dropdown-btn {
-  width: 100%;
+  width: auto;
   border: none;
   color: #fff;
   display: flex;
@@ -907,7 +900,6 @@ p {
   cursor: pointer;
   text-align: left;
   margin-bottom: 25px !important;
-  margin: 0 auto;
   background-color: #e2e2e2;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -920,18 +912,19 @@ p {
 }
 .dropdown-content {
   position: absolute;
-  width: 100%;
-  overflow-y: scroll;
-  max-height: 310px;
-  margin: 100px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+.dropdown-content.active {
+  position: relative;
+  max-height: 200px;
+  transition: max-height 0.3s ease-in-out;
 }
 input[type="checkbox"] {
   opacity: 0;
   position: absolute;
 }
-/*button transition
-input[type="checkbox"]:checked + label {
-}*/
 .dropdown-content li {
   border-radius: 0.5em;
 }
