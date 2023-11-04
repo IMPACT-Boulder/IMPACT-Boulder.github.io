@@ -921,7 +921,7 @@ p {
   max-height: 200px;
   transition: max-height 0.3s ease-in-out;
 }
-input[type="checkbox"] {
+#dropdown {
   opacity: 0;
   position: absolute;
 }
