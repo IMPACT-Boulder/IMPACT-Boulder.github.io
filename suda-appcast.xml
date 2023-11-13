@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>SUDA</title>
+        <item>
+            <title>1.0.1</title>
+            <pubDate>Sun, 12 Nov 2023 19:35:33 -0700</pubDate>
+            <sparkle:version>26</sparkle:version>
+            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <description><![CDATA[<title>Version 1.0.1 (Build 26)</title>
+<description>
+    <ul>           
+     	<li> Version 1.0.1 (Build 26): 
+   		<ul>
+            <li> Identifies flybys on Jovian moons based on Europa Clipper kernels.
+            <li> Analyses flybys, predicts impact rates, and identifies health and safety issues.
+		</ul>	
+    </ul>
+</description>
+]]></description>
+            <enclosure url="https://impact.colorado.edu/SUDA.zip" length="54388937" type="application/octet-stream" sparkle:edSignature="n6KnucKCFEW9vSNjjL4rYiVfim2XKJ/2oonO8S2ZCJKUe220lVpdEg+hWbNYr+TxIvHIDiSFYRQAaDMsqg21BQ=="/>
+        </item>
+    </channel>
+</rss>
