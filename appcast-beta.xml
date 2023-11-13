@@ -4,14 +4,18 @@
         <title>Spectrum</title>
         <item>
             <title>3.2.0-beta</title>
-            <pubDate>Mon, 02 Oct 2023 12:09:30 -0600</pubDate>
-            <sparkle:version>434</sparkle:version>
+            <pubDate>Mon, 13 Nov 2023 16:16:12 -0700</pubDate>
+            <sparkle:version>435</sparkle:version>
             <sparkle:shortVersionString>3.2.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<title>Version 3.2.0 (Build 434)</title>
 <description>
 	This is a beta version which probably has not been sufficiently tested.
 	<ul>	
+		 <li> Version 3.2.0 (Build 435):
+		    <ul>
+		 		<li> Migration to SwiftUI mostly complete. This will (eventually) improve the stability and performance of the App.
+		 	</ul>	
 	 	 <li> Version 3.2.0 (Build 434):
 		  		<ul>
 		  	 		<li> Full migration of the main data viewers (Spectrum, Lines, ...) from Cocoa to SwiftUI, which will (eventually)
@@ -93,7 +97,7 @@
 	</ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="77662979" type="application/octet-stream" sparkle:edSignature="yyfEfRT7Dn4K7+GaGAwOvUBPqImFjUHqcqELaah2ImWBQLqOxMAM0nbfj+/iDatMf2salEV2d9+vz0cbcX85Dg=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="76432753" type="application/octet-stream" sparkle:edSignature="ARqMo9qVWpEYXNgzpY3w8u5PxsbyA7CBli0K+zlzuw7IqLRfKai8PfoixsrGSCZatYBzj4LlxbyEW1kznLkTCQ=="/>
         </item>
     </channel>
 </rss>
