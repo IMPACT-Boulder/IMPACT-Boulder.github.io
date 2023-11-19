@@ -4,14 +4,24 @@
         <title>Spectrum</title>
         <item>
             <title>3.2.0-beta</title>
-            <pubDate>Mon, 13 Nov 2023 16:16:12 -0700</pubDate>
-            <sparkle:version>435</sparkle:version>
+            <pubDate>Sun, 19 Nov 2023 10:52:41 -0700</pubDate>
+            <sparkle:version>437</sparkle:version>
             <sparkle:shortVersionString>3.2.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.2.0 (Build 434)</title>
+            <description><![CDATA[<title>Version 3.2.0 (Build 437)</title>
 <description>
 	This is a beta version which probably has not been sufficiently tested.
 	<ul>	
+		<li> Version 3.2.0 (Build 437):
+		    <ul>
+		 		<li> New splash screen which shows the project loading progress. This comes in handy when loading very large 
+		 		     projects. Note that progress will only be shown for projects saved with this release.
+		 		<li> Changes to the file format, which allows for progress reporting and leads to smaller file sizes. Note that
+		 		     this format change is not backward compatible.
+		 		<li> Added a context menu item to the abundance statistics viewer to enable/disable the removal of target 
+		 		     contaminations from teh abundancy data.
+		 	    <li> Many bug fixes.
+		 	</ul>
 		 <li> Version 3.2.0 (Build 435):
 		    <ul>
 		 		<li> Migration to SwiftUI mostly complete. This will (eventually) improve the stability and performance of the App.
@@ -97,7 +107,7 @@
 	</ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="76432753" type="application/octet-stream" sparkle:edSignature="ARqMo9qVWpEYXNgzpY3w8u5PxsbyA7CBli0K+zlzuw7IqLRfKai8PfoixsrGSCZatYBzj4LlxbyEW1kznLkTCQ=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="76546785" type="application/octet-stream" sparkle:edSignature="1JjYwSkywFjJI6QUEdrESJ9ksX0MbCLSO9ko9wk6cS7BoQFFWujGf0zlZpNBY4Y45Vak728ziwAeO6AUyBd0Bg=="/>
         </item>
     </channel>
 </rss>
