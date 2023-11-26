@@ -4,14 +4,18 @@
         <title>Spectrum</title>
         <item>
             <title>3.2.0-beta</title>
-            <pubDate>Sun, 19 Nov 2023 10:52:41 -0700</pubDate>
-            <sparkle:version>437</sparkle:version>
+            <pubDate>Sun, 26 Nov 2023 17:10:13 +0100</pubDate>
+            <sparkle:version>438</sparkle:version>
             <sparkle:shortVersionString>3.2.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.2.0 (Build 437)</title>
+            <description><![CDATA[<title>Version 3.2.0 (Build 438)</title>
 <description>
 	This is a beta version which probably has not been sufficiently tested.
 	<ul>	
+		<li> Version 3.2.0 (Build 437):
+		    <ul>
+		 		<li> Improvements and bug fixes
+		 		<li> Migrated a few more statistics tools to SwiftUI
 		<li> Version 3.2.0 (Build 437):
 		    <ul>
 		 		<li> New splash screen which shows the project loading progress. This comes in handy when loading very large 
@@ -107,7 +111,7 @@
 	</ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="76546785" type="application/octet-stream" sparkle:edSignature="1JjYwSkywFjJI6QUEdrESJ9ksX0MbCLSO9ko9wk6cS7BoQFFWujGf0zlZpNBY4Y45Vak728ziwAeO6AUyBd0Bg=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="76671287" type="application/octet-stream" sparkle:edSignature="UShyK4MAJV0zA6oKZi2kQcrGJM7EMsCgVn4lQ0EhdCHSW7CUxMRjsNcsQwAL8KcnFjGxs0EBOjmzifycRP5/Cw=="/>
         </item>
     </channel>
 </rss>
