@@ -4,14 +4,18 @@
         <title>Spectrum</title>
         <item>
             <title>3.2.0-beta</title>
-            <pubDate>Wed, 06 Dec 2023 07:49:39 -0700</pubDate>
-            <sparkle:version>441</sparkle:version>
+            <pubDate>Thu, 07 Dec 2023 21:13:29 -0700</pubDate>
+            <sparkle:version>442</sparkle:version>
             <sparkle:shortVersionString>3.2.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.2.0 (Build 441)</title>
+            <description><![CDATA[<title>Version 3.2.0 (Build 442)</title>
 <description>
 	This is a beta version which probably has not been sufficiently tested.
 	<ul>	
+		<li> Version 3.2.0 (Build 442):
+		    <ul>
+		 		<li> Implemented identification of partial QD (accelerator) features.
+		 		<li> Fixed an issue caused by updating data with Impact data base data.
 		<li> Version 3.2.0 (Build 441):
 		    <ul>
 		 		<li> Fixes broken imports from files such as IDL Browser and H5.
@@ -123,7 +127,7 @@
 	</ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="76941852" type="application/octet-stream" sparkle:edSignature="nNmEKRcW/u+1MAh1BE/3qfD2es/tDiXQshlfM/fbm/xM91lGcwtCT1MdRMj2d8hY/nLE8LmzQ65qjQa62syiDA=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="76968169" type="application/octet-stream" sparkle:edSignature="ruSasBhcQetxAIvbNor5I1m/RPKe07h8Vx4LVa7Nr7YqzWHj63oYljdUVhVjE21ZmHz4Iy9n5GsF5zcp0xXeBQ=="/>
         </item>
     </channel>
 </rss>
