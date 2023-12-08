@@ -4,14 +4,48 @@
         <title>Spectrum</title>
         <item>
             <title>3.2.0-beta</title>
-            <pubDate>Mon, 02 Oct 2023 12:09:30 -0600</pubDate>
-            <sparkle:version>434</sparkle:version>
+            <pubDate>Thu, 07 Dec 2023 21:13:29 -0700</pubDate>
+            <sparkle:version>442</sparkle:version>
             <sparkle:shortVersionString>3.2.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.2.0 (Build 434)</title>
+            <description><![CDATA[<title>Version 3.2.0 (Build 442)</title>
 <description>
 	This is a beta version which probably has not been sufficiently tested.
 	<ul>	
+		<li> Version 3.2.0 (Build 442):
+		    <ul>
+		 		<li> Implemented identification of partial QD (accelerator) features.
+		 		<li> Fixed an issue caused by updating data with Impact data base data.
+		<li> Version 3.2.0 (Build 441):
+		    <ul>
+		 		<li> Fixes broken imports from files such as IDL Browser and H5.
+		 		<li> Improves line fitting.
+		 		<li> Improves fitting line clusters.
+		 		<li> Improves statistics tools: many popovers now show the relevant 
+		 		     waveform or line shape.
+		 		<li> Migrated a few more statistics tools to SwiftUI (5 to go).
+		 		<li> Improvements and bug fixes
+		<li> Version 3.2.0 (Build 440):
+		    <ul>
+		 		<li> Improvements and bug fixes
+		<li> Version 3.2.0 (Build 437):
+		    <ul>
+		 		<li> Improvements and bug fixes
+		 		<li> Migrated a few more statistics tools to SwiftUI
+		<li> Version 3.2.0 (Build 437):
+		    <ul>
+		 		<li> New splash screen which shows the project loading progress. This comes in handy when loading very large 
+		 		     projects. Note that progress will only be shown for projects saved with this release.
+		 		<li> Changes to the file format, which allows for progress reporting and leads to smaller file sizes. Note that
+		 		     this format change is not backward compatible.
+		 		<li> Added a context menu item to the abundance statistics viewer to enable/disable the removal of target 
+		 		     contaminations from teh abundancy data.
+		 	    <li> Many bug fixes.
+		 	</ul>
+		 <li> Version 3.2.0 (Build 435):
+		    <ul>
+		 		<li> Migration to SwiftUI mostly complete. This will (eventually) improve the stability and performance of the App.
+		 	</ul>	
 	 	 <li> Version 3.2.0 (Build 434):
 		  		<ul>
 		  	 		<li> Full migration of the main data viewers (Spectrum, Lines, ...) from Cocoa to SwiftUI, which will (eventually)
@@ -93,7 +127,7 @@
 	</ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="77662979" type="application/octet-stream" sparkle:edSignature="yyfEfRT7Dn4K7+GaGAwOvUBPqImFjUHqcqELaah2ImWBQLqOxMAM0nbfj+/iDatMf2salEV2d9+vz0cbcX85Dg=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="76968169" type="application/octet-stream" sparkle:edSignature="ruSasBhcQetxAIvbNor5I1m/RPKe07h8Vx4LVa7Nr7YqzWHj63oYljdUVhVjE21ZmHz4Iy9n5GsF5zcp0xXeBQ=="/>
         </item>
     </channel>
 </rss>
