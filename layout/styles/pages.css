@@ -63,7 +63,7 @@ p {
 .blog-post-meta ul li{display:inline; margin-left:5px; padding-left:5px; border-left:1px solid #D6D6D6;}
 .blog-post-meta ul li:first-child{margin-left:0; padding:0; border:none;}
 .page__top{
-  height: 80vh;
+  height: 60vh;
   width: 100%;
   background-image: url("images/Butterfly-Nebula_Hubble.jpg");
   position: relative;
@@ -698,6 +698,7 @@ p {
 }
 .news_page {
   background-image: url("images/black-star-background.jpg") !important;
+ padding: 40px 0;
 }
 #flex_container {
   background-image: url("images/black-star-background.jpg");
@@ -904,7 +905,7 @@ p {
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
-.arrow {
+.arrow-pub {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 6px solid #FF9900;
