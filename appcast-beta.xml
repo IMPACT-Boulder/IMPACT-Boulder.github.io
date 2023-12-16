@@ -4,14 +4,19 @@
         <title>Spectrum</title>
         <item>
             <title>3.2.0-beta</title>
-            <pubDate>Thu, 07 Dec 2023 21:13:29 -0700</pubDate>
-            <sparkle:version>442</sparkle:version>
+            <pubDate>Fri, 15 Dec 2023 22:06:18 -0800</pubDate>
+            <sparkle:version>443</sparkle:version>
             <sparkle:shortVersionString>3.2.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.2.0 (Build 442)</title>
+            <description><![CDATA[<title>Version 3.2.0 (Build 443)</title>
 <description>
 	This is a beta version which probably has not been sufficiently tested.
 	<ul>	
+		<li> Version 3.2.0 (Build 443):
+		    <ul>
+		 		<li> Finished SwiftUI migration of statistics tools.
+		 		<li> Added printer support.
+		 		<li> Started SwiftUI migration of sidebar. 
 		<li> Version 3.2.0 (Build 442):
 		    <ul>
 		 		<li> Implemented identification of partial QD (accelerator) features.
@@ -127,7 +132,7 @@
 	</ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="76968169" type="application/octet-stream" sparkle:edSignature="ruSasBhcQetxAIvbNor5I1m/RPKe07h8Vx4LVa7Nr7YqzWHj63oYljdUVhVjE21ZmHz4Iy9n5GsF5zcp0xXeBQ=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="77273764" type="application/octet-stream" sparkle:edSignature="eANU53z2gB9ieJ7+/M9c4i0vYrdEeB3VSAYjaK3y03/Nutv2ktAE96pnyIUf+9hMSzNErtlAQ8N2B4L4tfZUBA=="/>
         </item>
     </channel>
 </rss>
