@@ -823,6 +823,10 @@ p {
   width: 100% !important;
   height: auto !important;
 }
+.people_ul {
+  margin-top: 80px !important;
+  
+}
 
 @media only screen and (max-width: 1200px) {
   .people_topsection {
@@ -862,10 +866,13 @@ p {
     align-items: center;
   }
   .team-member {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
   }
   .break {
     display: none;
+  }
+  .people_ul {
+    margin-top: 0 !important;
   }
 }
 @media only screen and (max-width: 540px) {

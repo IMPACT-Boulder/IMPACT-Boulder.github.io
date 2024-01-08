@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (newUl.childElementCount === 4 || teamMembers.length === 0) {
                 list.appendChild(newUl);
                 newUl = document.createElement('ul');
-                newUl.className = 'nospace clear staff_ul';
+                newUl.className = 'nospace clear people_ul';
             }
         }
     }
