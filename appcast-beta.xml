@@ -4,14 +4,19 @@
         <title>Spectrum</title>
         <item>
             <title>3.2.0-beta</title>
-            <pubDate>Mon, 08 Jan 2024 13:11:04 +0100</pubDate>
-            <sparkle:version>448</sparkle:version>
+            <pubDate>Thu, 11 Jan 2024 08:00:08 +0100</pubDate>
+            <sparkle:version>449</sparkle:version>
             <sparkle:shortVersionString>3.2.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.2.0 (Build 448)</title>
+            <description><![CDATA[<title>Version 3.2.0 (Build 449)</title>
 <description>
 	This is a beta version which probably has not been sufficiently tested.
 	<ul>
+		<li> Version 3.2.0 (Build 449):
+			<ul>
+		    	<li> Fixed an unit conversion issue in the Target Distance Statistics tool.
+		    	<li> Improved the way how user defined ranges are handled in the Accelerator Performance tool.
+		    	<li> Performance improvements.
 		<li> Version 3.2.0 (Build 448):
 			<ul>
 		    	<li> Improved acceleration statistics plots
@@ -148,7 +153,7 @@
 	</ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="78896362" type="application/octet-stream" sparkle:edSignature="jIPWXP385BL0xeGkX2rbQmLekuB/ZIhOUHZkfHqJlZ106zKgb1i0cHYcT7MHGMGRrs2dnI3c80IkLCI9BoPODA=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="76945549" type="application/octet-stream" sparkle:edSignature="q5fCuwnu84hUZEEQqAVZYxXL7JuRMh3tfGnaPWthidaIvemkP09VppC4KXgQxghQK0ZvXQt/oA6XyNgP17t1Bg=="/>
         </item>
     </channel>
 </rss>
