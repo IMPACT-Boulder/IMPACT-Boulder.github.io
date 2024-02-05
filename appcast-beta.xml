@@ -4,14 +4,19 @@
         <title>Spectrum</title>
         <item>
             <title>3.3.0-beta</title>
-            <pubDate>Wed, 31 Jan 2024 12:02:47 -0700</pubDate>
-            <sparkle:version>454</sparkle:version>
+            <pubDate>Mon, 05 Feb 2024 07:56:47 -0700</pubDate>
+            <sparkle:version>456</sparkle:version>
             <sparkle:shortVersionString>3.3.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.3.0 (Build 454)</title>
+            <description><![CDATA[<title>Version 3.3.0 (Build 456)</title>
 <description>
 	This is a beta version which probably has not been sufficiently tested.
 	<ul>
+		<li> Version 3.3.0 (Build 456):
+			<ul>
+		    	<li> Columns of all Viewer tables can be rearranged by the user (only supported in MacOS 14 Sonoma). A right click into the column's header opens a menu for downselecting columns.
+		    	<li> Includes all bug fixes in the current stable branch (3.2.4).
+		</ul>
 		<li> Version 3.3.0 (Build 454):
 			<ul>
 		    	<li> Columns of the Spectrum and Line Viewer tables can be rearranged by the user (only supported in MacOS 14 Sonoma).
@@ -21,7 +26,7 @@
 	</ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="77430665" type="application/octet-stream" sparkle:edSignature="u7ZWzIIykNSYuRSYXmcBMVN2TNe6f5eQCDcvT678QGf+xaXdfFwQrkcRE/Sr50tiv+sKwHOUM3V5CVA0+PswBQ=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="77504909" type="application/octet-stream" sparkle:edSignature="jjB8dKIxtUzLd112R4lvyualGAVWLO3KUsLH9pCEotO9Qv3WnhgR0B/nt3/yvaEtOnVfQQyOtA13M4NFOmwDAA=="/>
         </item>
     </channel>
 </rss>
