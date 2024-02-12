@@ -4,29 +4,34 @@
         <title>Spectrum</title>
         <item>
             <title>3.3.0-beta</title>
-            <pubDate>Mon, 05 Feb 2024 07:56:47 -0700</pubDate>
-            <sparkle:version>456</sparkle:version>
+            <pubDate>Mon, 12 Feb 2024 07:07:38 -0700</pubDate>
+            <sparkle:version>460</sparkle:version>
             <sparkle:shortVersionString>3.3.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.3.0 (Build 456)</title>
+            <description><![CDATA[<title>Version 3.3.0 (Build 460)</title>
 <description>
 	This is a beta version which probably has not been sufficiently tested.
 	<ul>
+		<li> Version 3.3.0 (Build 460):
+			<ul>
+				<li> Excludes events with clipped QD feature from Grid Statistics analysis.
+				<li> Includes all bug fixes in the current stable branch (3.2.6).
+			</ul>
 		<li> Version 3.3.0 (Build 456):
 			<ul>
 		    	<li> Columns of all Viewer tables can be rearranged by the user (only supported in MacOS 14 Sonoma). A right click into the column's header opens a menu for downselecting columns.
 		    	<li> Includes all bug fixes in the current stable branch (3.2.4).
-		</ul>
+			</ul>
 		<li> Version 3.3.0 (Build 454):
 			<ul>
 		    	<li> Columns of the Spectrum and Line Viewer tables can be rearranged by the user (only supported in MacOS 14 Sonoma).
 		    	<li> Implemented a work around to prevent crashes when starting an import on Intel Macs. Please note that I couldn't 
 		    	     test this on an Intel Mac so far.
-		</ul>      
+			</ul>      
 	</ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="77504909" type="application/octet-stream" sparkle:edSignature="jjB8dKIxtUzLd112R4lvyualGAVWLO3KUsLH9pCEotO9Qv3WnhgR0B/nt3/yvaEtOnVfQQyOtA13M4NFOmwDAA=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="77524461" type="application/octet-stream" sparkle:edSignature="5kQezP1h6jUuw3b4yRuNZkq8SX1kAT6/N/LAuo/xS7y9z7yIsP9lEDwn1cJtaMasmYJxD6PXkkQfxxZSG5GiAQ=="/>
         </item>
     </channel>
 </rss>
