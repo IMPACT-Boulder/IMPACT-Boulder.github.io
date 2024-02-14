@@ -1188,7 +1188,7 @@ figure.team-member figcaption .team-description{margin:0; padding-top:15px; bord
 /*----------------------------------------------Student Profiles-------------------------------------*/
 .student_photo {
 
-height: auto; 
+height: auto !important; 
 align-items: center;
 margin-left: 100px;
 }
@@ -1222,5 +1222,10 @@ margin-left: 100px;
   .student_photo {
     margin-left: 20px;
   }
+}
+  @media only screen and (max-width: 340px) {
+    .student_photo {
+      margin-left: 0px !important;
+    }
 }
 
