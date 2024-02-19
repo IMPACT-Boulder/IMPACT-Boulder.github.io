@@ -4,14 +4,19 @@
         <title>Spectrum</title>
         <item>
             <title>3.3.0-beta</title>
-            <pubDate>Fri, 16 Feb 2024 14:59:18 +0100</pubDate>
-            <sparkle:version>462</sparkle:version>
+            <pubDate>Mon, 19 Feb 2024 14:47:20 +0100</pubDate>
+            <sparkle:version>463</sparkle:version>
             <sparkle:shortVersionString>3.3.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.3.0 (Build 460)</title>
+            <description><![CDATA[<title>Version 3.3.0 (Build 463)</title>
 <description>
 	This is a beta version which probably has not been sufficiently tested.
 	<ul>
+		<li> Version 3.3.0 (463):
+			<ul>
+    		    <li> The spreadsheet editor has been merged with the CSV export file dialog.
+   				<li> Other bug fixes.
+    		</ul>
 		<li> Version 3.3.0 (462):
     		<ul>
     		    <li> Reorganized the Import menu in the menu bar. 
@@ -37,7 +42,7 @@
 	</ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="77527101" type="application/octet-stream" sparkle:edSignature="0hwTryV0IFyZo6/GFlVPHPP1LWp9V1FMPl5wdWDEMF/fXQ6gOyNUXmRNe1wQKMo5vnzvThRuY9cZJ4CCJPDTBw=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="77587249" type="application/octet-stream" sparkle:edSignature="BUmTeRgzqwTGewAi41FYCi6AGnv/6imGpeoLhG+srcny+Sxv0kIh1jPULOQHA98WqimeWutVvelU9zndvBikCQ=="/>
         </item>
     </channel>
 </rss>
