@@ -92,7 +92,7 @@ export const dustTypesData: DustTypeInfo[] = [
     { id_dust_type: 83, dust_name: 'Alumina' },
     { id_dust_type: 84, dust_name: 'Silver' },
     { id_dust_type: 85, dust_name: 'Carbon Aerogel' },
-    { id_dust_type: 86, dust_name: 'Orthopyrexene' },
+    { id_dust_type: 86, dust_name: 'Orthopyroxene' },
     { id_dust_type: 87, dust_name: 'Olivine' },
     { id_dust_type: 88, dust_name: 'Aluminum' },
     { id_dust_type: 89, dust_name: 'Aluminum' },
