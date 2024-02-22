@@ -17,6 +17,7 @@ import DustType from './DustType.tsx';
 import GroupName from './GroupName.tsx';
 import TagDropdown from './TagDropDown.tsx';
 import { convertToCSV } from './CSVUtils.ts';
+import Button from '@mui/material/Button';
 
 interface DataInputControlProps {
   onDataUpdate: (data: any[]) => void;
@@ -185,6 +186,8 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
 
       const response = await fetch(apiUrl);
       const rawData: string = await response.json();
+      //console.log('Fetched data:', fetchedData);
+
       const parsedArray: any[] = JSON.parse(rawData);
 
       if (Array.isArray(parsedArray)) {
@@ -264,17 +267,17 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
               </div>
             </div>
           </div>
-          <button type="button" onClick={handleFormSubmit} id='submit'>
+          <Button type="button" variant="contained" onClick={handleFormSubmit} id='submit'>
             Submit
-          </button>
+          </Button>
           <div id='loading'>
             {loading && <p>Loading...</p>}
             {!loading && fetchTimestamp !== null && <p>Data fetched at: {new Date(fetchTimestamp).toLocaleString()}</p>}
           </div>
         </div>
-        <button type="button" onClick={handleDownload} id='download'>
+        <Button type="button" variant="outlined" onClick={handleDownload} id='download'>
              Download Data as CSV
-        </button>
+        </Button>
       </form>
     </div>
   );

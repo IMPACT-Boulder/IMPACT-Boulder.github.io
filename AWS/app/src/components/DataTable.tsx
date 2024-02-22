@@ -43,6 +43,7 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
     'Charge (C)',
     'Time',
     'Dust Name', 
+    'Tag',
   ];
 
   // Dynamically reorder columns based on the selected sorting column
@@ -52,7 +53,7 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
   ];
 
   return (
-    <div id='table_div'>
+    <div id="table_div">
       <h2>Data Table</h2>
       <Box sx={{ m: 1, minWidth: 120, display: 'flex', flexDirection: 'row' }}>
         <FormControl sx={{ mr: 1 }}>
@@ -60,7 +61,7 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
           <Select
             labelId="label-sort-by"
             id="select-sort-by"
-            value={sortColumn}
+            value={'Trace Number'} // Set the default sort column here
             label="Sort by"
             onChange={(e: SelectChangeEvent<string>) => handleColumnChange(e.target.value)}
           >
@@ -71,14 +72,14 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
             ))}
           </Select>
         </FormControl>
-        <Button variant="contained" onClick={handleSortToggle} id='table_button'>
-          {sortOrder === 'asc' ? 'Sort Descending' : 'Sort Ascending'}
+        <Button variant="contained" onClick={handleSortToggle} id="table_button">
+          Sort Ascending
         </Button>
       </Box>
       <table>
         <thead>
           <tr>
-            {reorderedColumns.map((column) => (
+            {columnOptions.map((column) => (
               <th key={column}>{column === 'Dust Name' ? 'Dust Type' : column}</th>
             ))}
           </tr>
@@ -86,8 +87,8 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
         <tbody>
           {sortedData.map((item, index) => (
             <tr key={index}>
-              {reorderedColumns.map((column) => (
-                <td key={column}>{item[column]}</td>
+              {columnOptions.map((column) => (
+                <td key={column}>{column === 'Tag' ? item.tag : item[column]}</td>
               ))}
             </tr>
           ))}

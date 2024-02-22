@@ -1,10 +1,13 @@
-//types.ts
+ //types.ts
 export interface DataItem {
-    'Estimate Quality': number;
-    'Velocity (km/s)': number;
-    'Radius (m)': number;
-    'Mass (kg)': number;
-    'Charge (C)': number;
-    'Time': number;
-    'Trace Number': number;
-  }
+  [key: string]: any;
+  Mass: number;
+  Velocity: number;
+  Charge: number;
+  TraceNumber: number;
+  Radius: number;
+  EstimateQuality: number;
+  Time: number;
+  DustName: string;
+  Tag: string;
+}
