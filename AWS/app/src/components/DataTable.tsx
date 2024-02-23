@@ -88,11 +88,14 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
           {sortedData.map((item, index) => (
             <tr key={index}>
               {columnOptions.map((column) => (
-                <td key={column}>{column === 'Tag' ? item.tag : item[column]}</td>
+                <td key={column}>
+                  {column === 'Dust Name' ? item['Dust Name'] : column === 'Tag' ? item['Tag'] : item[column]}
+                </td>
               ))}
             </tr>
           ))}
         </tbody>
+
       </table>
     </div>
   );

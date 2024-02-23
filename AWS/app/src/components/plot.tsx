@@ -80,7 +80,7 @@ const DustPlot: React.FC<DustPlotProps> = ({ numberOfDataValues, data }) => {
         },
         hoverinfo: 'text',
         text: scaledRadii.map((radius, index) =>
-          `Velocity[ km/s ]: ${limitedVelocities[index]}<br>Mass [ kg ]: ${limitedMasses[index]}<br>Charge[ C ]: ${limitedCharges[index]}<br>Original Radius[ m ]: ${limitedRadii[index]}<br>Trace Number: ${limitedTraceNumbers[index]}<br>Estimate Quality: ${limitedEstimateQualities[index]}<br>Velocity[ km/s ]: ${limitedVelocities[index]}<br>Time [ MST ]: ${limitedTimes[index]}<br>Dust Type: ${limitedDataItems[index]['Dust Name']}<br>Tag: ${limitedDataItems[index]['Tag']}`,
+          `Velocity[ km/s ]: ${limitedVelocities[index]}<br>Mass [ kg ]: ${limitedMasses[index]}<br>Charge[ C ]: ${limitedCharges[index]}<br>Original Radius[ m ]: ${limitedRadii[index]}<br>Trace Number: ${limitedTraceNumbers[index]}<br>Estimate Quality: ${limitedEstimateQualities[index]}<br>Velocity[ km/s ]: ${limitedVelocities[index]}<br>Time [ MST ]: ${limitedTimes[index]}<br>Dust Type: ${limitedDataItems[index]['Dust Name']}<br>Experiment Name: ${limitedDataItems[index]['Tag']}`,
         ),
       },
     ];
