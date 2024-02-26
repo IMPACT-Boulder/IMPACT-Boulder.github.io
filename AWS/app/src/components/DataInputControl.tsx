@@ -174,6 +174,8 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
     }
   };
 
+  const [errorMessage, setErrorMessage] = useState<string>('');
+
   const handleFormSubmit = async () => {
     try {
       setLoading(true); // Set loading state to true when form is submitted
@@ -181,7 +183,7 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
       const dustTypesParam = formState.dustTypes.join(',');
       const groupNamesParam = formState.groupNames.join(',');
       const tagNamesParam = selectedTag;
-      const apiUrl = `http://127.0.0.1:5000/api/data?limit=${formState.limitValue}&velocityLow=${(formState.velLow)*1000}&velocityHigh=${(formState.velHigh)*1000}&qualityLow=${formState.qualLow}&qualityHigh=${formState.qualHigh}&massLow=${formState.massLow}&massHigh=${formState.massHigh}&chargeLow=${formState.chargeLow}&chargeHigh=${formState.chargeHigh}&radiusLow=${formState.radiusLow}&radiusHigh=${formState.radiusHigh}&timeLow=${formState.timeLow}&timeHigh=${formState.timeHigh}&dustType=${dustTypesParam}&groupName=${groupNamesParam}&tagName=${tagNamesParam}`;
+      const apiUrl = `http://10.247.29.45:5000/api/data?limit=${formState.limitValue}&velocityLow=${(formState.velLow)*1000}&velocityHigh=${(formState.velHigh)*1000}&qualityLow=${formState.qualLow}&qualityHigh=${formState.qualHigh}&massLow=${formState.massLow}&massHigh=${formState.massHigh}&chargeLow=${formState.chargeLow}&chargeHigh=${formState.chargeHigh}&radiusLow=${formState.radiusLow}&radiusHigh=${formState.radiusHigh}&timeLow=${formState.timeLow}&timeHigh=${formState.timeHigh}&dustType=${dustTypesParam}&groupName=${groupNamesParam}&tagName=${tagNamesParam}`;
       
       const response = await fetch(apiUrl);
       const rawData: string = await response.json();
@@ -273,6 +275,11 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
              Download Data as CSV
         </Button>
       </form>
+      {errorMessage && (
+        <div className="error-message">
+          <p>{errorMessage}</p>
+        </div>
+      )}
     </div>
   );
 };

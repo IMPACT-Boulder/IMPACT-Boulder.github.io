@@ -20,7 +20,7 @@ const TagDropdown: React.FC<TagDropdownProps> = ({ onChange, selectedTag }) => {
   useEffect(() => {
     const fetchTagNames = async () => {
       try {
-        const response = await fetch('http://127.0.0.1:5000/api/tag_names?page=1');
+        const response = await fetch('http://10.247.29.45:5000/api/tag_names?page=1');
         const data: { tag: string }[] = await response.json();
         const fetchedTagNames = data.map((item) => item.tag);
         console.log('Processed Tag Names:', fetchedTagNames);
