@@ -1,5 +1,5 @@
 //DataInputControl.tsx
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import TextBox from './inputLimit.tsx';
 import VelocityLow from './VelocityRange/VelocityLow.tsx';
 import VelocityHigh from './VelocityRange/VelocityHigh.tsx';
@@ -175,34 +175,32 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
   };
 
   const handleFormSubmit = async () => {
-    
     try {
+      setLoading(true); // Set loading state to true when form is submitted
+      
       const dustTypesParam = formState.dustTypes.join(',');
       const groupNamesParam = formState.groupNames.join(',');
       const tagNamesParam = selectedTag;
       const apiUrl = `http://127.0.0.1:5000/api/data?limit=${formState.limitValue}&velocityLow=${(formState.velLow)*1000}&velocityHigh=${(formState.velHigh)*1000}&qualityLow=${formState.qualLow}&qualityHigh=${formState.qualHigh}&massLow=${formState.massLow}&massHigh=${formState.massHigh}&chargeLow=${formState.chargeLow}&chargeHigh=${formState.chargeHigh}&radiusLow=${formState.radiusLow}&radiusHigh=${formState.radiusHigh}&timeLow=${formState.timeLow}&timeHigh=${formState.timeHigh}&dustType=${dustTypesParam}&groupName=${groupNamesParam}&tagName=${tagNamesParam}`;
-
-      console.log('API URL:', apiUrl);
-
+      
       const response = await fetch(apiUrl);
       const rawData: string = await response.json();
-      //console.log('Fetched data:', fetchedData);
-
       const parsedArray: any[] = JSON.parse(rawData);
-
+  
       if (Array.isArray(parsedArray)) {
         onDataUpdate(parsedArray);
         setActualArray(parsedArray);
       } else {
         console.error('Data is not an array:', parsedArray);
       }
-      setLoading(false);
       setFetchTimestamp(Date.now());
     } catch (error) {
-      setLoading(false);
       console.error('Error fetching data:', error);
+    } finally {
+      setLoading(false); // Set loading state to false when fetch operation completes
     }
   };
+  
   
 
   const handleDownload = () => {
@@ -250,9 +248,7 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
                 <MassLow onChange={handleMassLowChange} massLowProp={formState.massLow} />
                 <ChargeLow onChange={handleChargeLowChange} chargeLowProp={formState.chargeLow} />
                 <RadiusLow onChange={handleRadiusLowChange} radiusLowProp={formState.radiusLow} />
-                {/* <TimeLow onChange={handleTimeLowChange} timeLowProp={formState.timeLow} /> */}
-
-                <TimeHigh onChange={handleTimeHighChange} timeHighProp={formState.timeHigh} />
+                <TimeLow onChange={handleTimeLowChange} timeLowProp={formState.timeLow} />
               </div>
               <div className='controls'>
                 <h3>Upper Constraints</h3>
@@ -261,9 +257,7 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
                 <MassHigh onChange={handleMassHighChange} massHighProp={formState.massHigh} />
                 <ChargeHigh onChange={handleChargeHighChange} chargeHighProp={formState.chargeHigh} />
                 <RadiusHigh onChange={handleRadiusHighChange} radiusHighProp={formState.radiusHigh} />
-                {/* <TimeHigh onChange={handleTimeHighChange} timeHighProp={formState.timeHigh} /> */}
-
-                <TimeLow onChange={handleTimeLowChange} timeLowProp={formState.timeLow} />
+                <TimeHigh onChange={handleTimeHighChange} timeHighProp={formState.timeHigh} />
               </div>
             </div>
           </div>
