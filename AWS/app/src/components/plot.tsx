@@ -18,11 +18,12 @@ const axisLabelMapping: Record<string, string> = {
   'Estimate Quality': 'Estimate Quality',
   'Time': 'Time [ MST ]',
   'Dust Name': 'Dust Name',
+  'Tag': 'Tag',
 };
 
 const DustPlot: React.FC<DustPlotProps> = ({ numberOfDataValues, data }) => {
-  const [xAxis, setXAxis] = useState<string>('');
-  const [yAxis, setYAxis] = useState<string>('');
+  const [xAxis, setXAxis] = useState<string>('Mass');
+  const [yAxis, setYAxis] = useState<string>('Velocity');
 
   const handleAxisChange = (axisType: string, selectedAxis: string) => {
     if (axisType === 'x') {
@@ -40,6 +41,8 @@ const DustPlot: React.FC<DustPlotProps> = ({ numberOfDataValues, data }) => {
     } else {
       setKeyVisibility('none');
     }
+
+    console.log('Data:', data);
 
     const chartData = data;
 
@@ -59,6 +62,7 @@ const DustPlot: React.FC<DustPlotProps> = ({ numberOfDataValues, data }) => {
       'Estimate Quality': item['Estimate Quality'],
       'Time': item['Time'],
       'Dust Name': item['Dust Name'],
+      'Tag': item['Tag'],
     } as DataItem));
     
 
@@ -76,7 +80,7 @@ const DustPlot: React.FC<DustPlotProps> = ({ numberOfDataValues, data }) => {
         },
         hoverinfo: 'text',
         text: scaledRadii.map((radius, index) =>
-          `Velocity[ km/s ]: ${limitedVelocities[index]}<br>Mass [ kg ]: ${limitedMasses[index]}<br>Charge[ C ]: ${limitedCharges[index]}<br>Original Radius[ m ]: ${limitedRadii[index]}<br>Trace Number: ${limitedTraceNumbers[index]}<br>Estimate Quality: ${limitedEstimateQualities[index]}<br>Velocity[ km/s ]: ${limitedVelocities[index]}<br>Time [ MST ]: ${limitedTimes[index]}<br>Dust Type: ${limitedDataItems[index]['Dust Name']}`,
+          `Velocity[ km/s ]: ${limitedVelocities[index]}<br>Mass [ kg ]: ${limitedMasses[index]}<br>Charge[ C ]: ${limitedCharges[index]}<br>Original Radius[ m ]: ${limitedRadii[index]}<br>Trace Number: ${limitedTraceNumbers[index]}<br>Estimate Quality: ${limitedEstimateQualities[index]}<br>Velocity[ km/s ]: ${limitedVelocities[index]}<br>Time [ MST ]: ${limitedTimes[index]}<br>Dust Type: ${limitedDataItems[index]['Dust Name']}<br>Experiment Name: ${limitedDataItems[index]['Tag']}`,
         ),
       },
     ];

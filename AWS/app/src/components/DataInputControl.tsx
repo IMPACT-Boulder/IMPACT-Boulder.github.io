@@ -1,5 +1,5 @@
 //DataInputControl.tsx
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import TextBox from './inputLimit.tsx';
 import VelocityLow from './VelocityRange/VelocityLow.tsx';
 import VelocityHigh from './VelocityRange/VelocityHigh.tsx';
@@ -17,6 +17,7 @@ import DustType from './DustType.tsx';
 import GroupName from './GroupName.tsx';
 import TagDropdown from './TagDropDown.tsx';
 import { convertToCSV } from './CSVUtils.ts';
+import Button from '@mui/material/Button';
 
 interface DataInputControlProps {
   onDataUpdate: (data: any[]) => void;
@@ -173,33 +174,35 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
     }
   };
 
+  const [errorMessage, setErrorMessage] = useState<string>('');
+
   const handleFormSubmit = async () => {
-    
     try {
+      setLoading(true); // Set loading state to true when form is submitted
+      
       const dustTypesParam = formState.dustTypes.join(',');
       const groupNamesParam = formState.groupNames.join(',');
       const tagNamesParam = selectedTag;
-      const apiUrl = `http://127.0.0.1:5000/api/data?limit=${formState.limitValue}&velocityLow=${(formState.velLow)*1000}&velocityHigh=${(formState.velHigh)*1000}&qualityLow=${formState.qualLow}&qualityHigh=${formState.qualHigh}&massLow=${formState.massLow}&massHigh=${formState.massHigh}&chargeLow=${formState.chargeLow}&chargeHigh=${formState.chargeHigh}&radiusLow=${formState.radiusLow}&radiusHigh=${formState.radiusHigh}&timeLow=${formState.timeLow}&timeHigh=${formState.timeHigh}&dustType=${dustTypesParam}&groupName=${groupNamesParam}&tagName=${tagNamesParam}`;
-
-      console.log('API URL:', apiUrl);
-
+      const apiUrl = `http://10.247.29.45:5000/api/data?limit=${formState.limitValue}&velocityLow=${(formState.velLow)*1000}&velocityHigh=${(formState.velHigh)*1000}&qualityLow=${formState.qualLow}&qualityHigh=${formState.qualHigh}&massLow=${formState.massLow}&massHigh=${formState.massHigh}&chargeLow=${formState.chargeLow}&chargeHigh=${formState.chargeHigh}&radiusLow=${formState.radiusLow}&radiusHigh=${formState.radiusHigh}&timeLow=${formState.timeLow}&timeHigh=${formState.timeHigh}&dustType=${dustTypesParam}&groupName=${groupNamesParam}&tagName=${tagNamesParam}`;
+      
       const response = await fetch(apiUrl);
       const rawData: string = await response.json();
       const parsedArray: any[] = JSON.parse(rawData);
-
+  
       if (Array.isArray(parsedArray)) {
         onDataUpdate(parsedArray);
         setActualArray(parsedArray);
       } else {
         console.error('Data is not an array:', parsedArray);
       }
-      setLoading(false);
       setFetchTimestamp(Date.now());
     } catch (error) {
-      setLoading(false);
       console.error('Error fetching data:', error);
+    } finally {
+      setLoading(false); // Set loading state to false when fetch operation completes
     }
   };
+  
   
 
   const handleDownload = () => {
@@ -247,9 +250,7 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
                 <MassLow onChange={handleMassLowChange} massLowProp={formState.massLow} />
                 <ChargeLow onChange={handleChargeLowChange} chargeLowProp={formState.chargeLow} />
                 <RadiusLow onChange={handleRadiusLowChange} radiusLowProp={formState.radiusLow} />
-                {/* <TimeLow onChange={handleTimeLowChange} timeLowProp={formState.timeLow} /> */}
-
-                <TimeHigh onChange={handleTimeHighChange} timeHighProp={formState.timeHigh} />
+                <TimeLow onChange={handleTimeLowChange} timeLowProp={formState.timeLow} />
               </div>
               <div className='controls'>
                 <h3>Upper Constraints</h3>
@@ -258,24 +259,27 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
                 <MassHigh onChange={handleMassHighChange} massHighProp={formState.massHigh} />
                 <ChargeHigh onChange={handleChargeHighChange} chargeHighProp={formState.chargeHigh} />
                 <RadiusHigh onChange={handleRadiusHighChange} radiusHighProp={formState.radiusHigh} />
-                {/* <TimeHigh onChange={handleTimeHighChange} timeHighProp={formState.timeHigh} /> */}
-
-                <TimeLow onChange={handleTimeLowChange} timeLowProp={formState.timeLow} />
+                <TimeHigh onChange={handleTimeHighChange} timeHighProp={formState.timeHigh} />
               </div>
             </div>
           </div>
-          <button type="button" onClick={handleFormSubmit} id='submit'>
+          <Button type="button" variant="contained" onClick={handleFormSubmit} id='submit'>
             Submit
-          </button>
+          </Button>
           <div id='loading'>
             {loading && <p>Loading...</p>}
             {!loading && fetchTimestamp !== null && <p>Data fetched at: {new Date(fetchTimestamp).toLocaleString()}</p>}
           </div>
         </div>
-        <button type="button" onClick={handleDownload} id='download'>
+        <Button type="button" variant="outlined" onClick={handleDownload} id='download'>
              Download Data as CSV
-        </button>
+        </Button>
       </form>
+      {errorMessage && (
+        <div className="error-message">
+          <p>{errorMessage}</p>
+        </div>
+      )}
     </div>
   );
 };
