@@ -22,7 +22,7 @@ const GroupName: React.FC<GroupNameProps> = ({ onChange, selectedGroups }) => {
   useEffect(() => {
     const fetchGroupNames = async () => {
       try {
-        const response = await fetch('http://10.203.176.79:5000/api/group_names');
+        const response = await fetch('127.0.0.1:5000/api/group_names');
         const data: { group_names: string[] }[] = await response.json();
 
         const extractedGroupNames = data.map((item) => item.group_names).flat();

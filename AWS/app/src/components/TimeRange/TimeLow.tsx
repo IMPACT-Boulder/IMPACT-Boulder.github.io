@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
+//import 'react-datepicker/dist/react-datepicker.css';
+import '../../styles/Time.css'
 
 interface TimeLowProps {
   onChange: (low: number) => void;
@@ -30,6 +31,7 @@ const TimeLow: React.FC<TimeLowProps> = ({ onChange, timeLowProp }) => {
   return (
     <Box
       component="form"
+      // className="opaque-datepicker"
       sx={{
         '& > :not(style)': { m: 1, width: '20ch' },
       }}
