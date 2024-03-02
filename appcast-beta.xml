@@ -1,17 +1,24 @@
 <?xml version="1.0" standalone="yes"?>
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
-        <title>Spectrum</title>
+        <title>Spectrum-beta</title>
         <item>
             <title>3.3.0-beta</title>
-            <pubDate>Mon, 19 Feb 2024 14:47:20 +0100</pubDate>
-            <sparkle:version>463</sparkle:version>
+            <pubDate>Wed, 28 Feb 2024 08:33:44 +0100</pubDate>
+            <sparkle:version>464</sparkle:version>
             <sparkle:shortVersionString>3.3.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.3.0 (Build 463)</title>
+            <description><![CDATA[<title>Version 3.3.0 (Build 464)</title>
 <description>
 	This is a beta version which probably has not been sufficiently tested.
 	<ul>
+		<li> Version 3.3.0 (464):
+			<ul>
+    		    <li> Migrated the Impact data base access dialogs to SwiftUI. With that the migration to SwiftUI is complete.
+   				<li> Improved the Impact Query dialog. The dialog clearly indicates if Spice ressources must be loaded first to enable a correct conversion of the event time.
+   				<li> Added a context menu to the Query dialog to enable easier builds of range constraints (e.g. time ≥ x && time ≤ y).
+   				<li> Other bug fixes.
+    		</ul>
 		<li> Version 3.3.0 (463):
 			<ul>
     		    <li> The spreadsheet editor has been merged with the CSV export file dialog.
@@ -42,7 +49,7 @@
 	</ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="77587249" type="application/octet-stream" sparkle:edSignature="BUmTeRgzqwTGewAi41FYCi6AGnv/6imGpeoLhG+srcny+Sxv0kIh1jPULOQHA98WqimeWutVvelU9zndvBikCQ=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="77585411" type="application/octet-stream" sparkle:edSignature="GuVqVebRJzgtTdga4GVRJCc6ZQvpqD8KcgaUeaxeiARWT9p1M3CXy/EHGysTho76hMZ5XNcUywxNpO2LOROLAQ=="/>
         </item>
     </channel>
 </rss>
