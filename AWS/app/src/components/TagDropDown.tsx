@@ -1,4 +1,3 @@
-//TagDropDown.tsx
 import React, { useEffect, useState, lazy, Suspense } from 'react';
 import Box from '@mui/material/Box';
 import FormControl from '@mui/material/FormControl';
@@ -16,17 +15,22 @@ const LazyMenuItem = lazy(() => import('@mui/material/MenuItem'));
 
 const TagDropdown: React.FC<TagDropdownProps> = ({ onChange, selectedTag }) => {
   const [tagNames, setTagNames] = useState<string[]>([]);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchTagNames = async () => {
       try {
         const response = await fetch('https://10.247.29.46:3000/api/tag_names?page=1');
+        if (!response.ok) {
+          throw new Error('Failed to fetch');
+        }
         const data: { tag: string }[] = await response.json();
         const fetchedTagNames = data.map((item) => item.tag);
         console.log('Processed Tag Names:', fetchedTagNames);
         setTagNames(fetchedTagNames);
       } catch (error) {
         console.error('Error fetching tag names:', error);
+        setError('Failed to fetch tag names');
       }
     };
 
@@ -37,11 +41,10 @@ const TagDropdown: React.FC<TagDropdownProps> = ({ onChange, selectedTag }) => {
     event.preventDefault(); // Prevent default behavior of the click event
     onChange(tag);
   };
-  
 
   const Row = ({ index, style }: { index: number; style: React.CSSProperties }) => {
     const tag = tagNames[index];
-  
+
     return (
       <Suspense fallback={<div>Loading...</div>}>
         <LazyMenuItem
@@ -56,7 +59,6 @@ const TagDropdown: React.FC<TagDropdownProps> = ({ onChange, selectedTag }) => {
       </Suspense>
     );
   };
-  
 
   useEffect(() => {
     console.log('Selected Tag:', selectedTag);
@@ -87,14 +89,13 @@ const TagDropdown: React.FC<TagDropdownProps> = ({ onChange, selectedTag }) => {
           onChange={(event) => onChange(event.target.value as string)}
           renderValue={(selected) => selected}
         >
-          <FixedSizeList
-            height={400}
-            itemCount={tagNames.length}
-            itemSize={40}
-            width={200}
-          >
-            {Row}
-          </FixedSizeList>
+          {error ? (
+            <LazyMenuItem disabled>{error}</LazyMenuItem>
+          ) : (
+            <FixedSizeList height={400} itemCount={tagNames.length} itemSize={40} width={200}>
+              {Row}
+            </FixedSizeList>
+          )}
         </Select>
         <FormHelperText></FormHelperText>
       </FormControl>
