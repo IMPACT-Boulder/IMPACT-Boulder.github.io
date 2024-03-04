@@ -1,21 +1,22 @@
-import React, { useEffect, useState, lazy, Suspense } from 'react';
+import React, { useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
 import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
 import InputLabel from '@mui/material/InputLabel';
 import FormHelperText from '@mui/material/FormHelperText';
-import { FixedSizeList } from 'react-window';
+import { Autocomplete } from '@mui/material';
 
 interface TagDropdownProps {
   onChange: (value: string) => void;
   selectedTag: string;
 }
 
-const LazyMenuItem = lazy(() => import('@mui/material/MenuItem'));
-
 const TagDropdown: React.FC<TagDropdownProps> = ({ onChange, selectedTag }) => {
   const [tagNames, setTagNames] = useState<string[]>([]);
   const [error, setError] = useState<string | null>(null);
+  const [searchQuery, setSearchQuery] = useState<string>('');
+  const [inputLabel, setInputLabel] = useState<string>('Experiment Names');
+  const [textFieldLabel, setTextFieldLabel] = useState<string>('');
 
   useEffect(() => {
     const fetchTagNames = async () => {
@@ -37,38 +38,14 @@ const TagDropdown: React.FC<TagDropdownProps> = ({ onChange, selectedTag }) => {
     fetchTagNames();
   }, []);
 
-  const handleMenuItemClick = (event: React.MouseEvent<HTMLLIElement, MouseEvent>, tag: string) => {
-    event.preventDefault(); // Prevent default behavior of the click event
-    onChange(tag);
+  const handleTagChange = (value: string) => {
+    onChange(value);
   };
 
-  const Row = ({ index, style }: { index: number; style: React.CSSProperties }) => {
-    const tag = tagNames[index];
-
-    return (
-      <Suspense fallback={<div>Loading...</div>}>
-        <LazyMenuItem
-          key={tag}
-          value={tag}
-          style={style}
-          onClick={(event) => handleMenuItemClick(event, tag)} // Pass the event and tag
-          selected={selectedTag === tag}
-        >
-          {tag}
-        </LazyMenuItem>
-      </Suspense>
-    );
+  const handleBoxClick = () => {
+    setInputLabel('');
+    setTextFieldLabel('Experiment Names');
   };
-
-  useEffect(() => {
-    console.log('Selected Tag:', selectedTag);
-  }, [selectedTag]);
-
-  useEffect(() => {
-    console.log('Tag Names:', tagNames);
-  }, [tagNames]);
-
-  console.log('Selected Tag:', selectedTag);
 
   return (
     <Box
@@ -78,25 +55,28 @@ const TagDropdown: React.FC<TagDropdownProps> = ({ onChange, selectedTag }) => {
       }}
       noValidate
       autoComplete="off"
+      onClick={handleBoxClick}
     >
       <FormControl sx={{ m: 1, minWidth: 120 }}>
-        <InputLabel id="label-tag-names">Experiment Names</InputLabel>
-        <Select
-          labelId="label-tag-names"
-          id="select-tag-names"
+        <InputLabel id="label-tag-names">{inputLabel}</InputLabel>
+        <Autocomplete
+          id="tag-dropdown"
+          options={tagNames}
           value={selectedTag || ''}
-          label="Experiment Names"
-          onChange={(event) => onChange(event.target.value as string)}
-          renderValue={(selected) => selected}
-        >
-          {error ? (
-            <LazyMenuItem disabled>{error}</LazyMenuItem>
-          ) : (
-            <FixedSizeList height={400} itemCount={tagNames.length} itemSize={40} width={200}>
-              {Row}
-            </FixedSizeList>
+          onChange={(event, value) => handleTagChange(value as string)}
+          inputValue={searchQuery}
+          onInputChange={(event, newInputValue) => setSearchQuery(newInputValue)}
+          renderInput={(params) => (
+            <TextField
+              {...params}
+              label={textFieldLabel}
+              variant="outlined"
+              error={!!error}
+              helperText={error}
+              InputLabelProps={{ shrink: true }}
+            />
           )}
-        </Select>
+        />
         <FormHelperText></FormHelperText>
       </FormControl>
     </Box>

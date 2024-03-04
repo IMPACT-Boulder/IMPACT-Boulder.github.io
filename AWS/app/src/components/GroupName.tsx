@@ -9,11 +9,10 @@ import { sortBy } from 'lodash';
 
 interface GroupNameProps {
   onChange: (groups: string[]) => void;
-  selectedGroups: string[];
 }
 
-const GroupName: React.FC<GroupNameProps> = ({ onChange, selectedGroups }) => {
-  const [groupsInputValue, setGroupsInputValue] = useState<string[]>(selectedGroups.map(String));
+const GroupName: React.FC<GroupNameProps> = ({ onChange }) => {
+  const [selectedGroup, setSelectedGroup] = useState<string | null>(null);
   const [groupNames, setGroupNames] = useState<string[]>([]);
   const [error, setError] = useState<string | null>(null);
 
@@ -37,12 +36,12 @@ const GroupName: React.FC<GroupNameProps> = ({ onChange, selectedGroups }) => {
     fetchGroupNames();
   }, []);
 
-  const handleDropDownChange = (value: string | string[]) => {
-    setGroupsInputValue(Array.isArray(value) ? value : [value]);
+  const handleDropDownChange = (value: string) => {
+    setSelectedGroup((prevSelected) => (prevSelected === value ? null : value));
   };
 
   const handleBlur = () => {
-    onChange(groupsInputValue);
+    onChange(selectedGroup ? [selectedGroup] : []);
   };
 
   return (
@@ -59,15 +58,15 @@ const GroupName: React.FC<GroupNameProps> = ({ onChange, selectedGroups }) => {
         <Select
           labelId="label-group-name"
           id="select-group-name"
-          value={groupsInputValue[0] || ''}
+          value={selectedGroup || ''}
           label="Experiment Group"
-          onChange={(e: SelectChangeEvent<string | string[]>) => handleDropDownChange(e.target.value)}
+          onChange={(e: SelectChangeEvent<string>) => handleDropDownChange(e.target.value)}
           onBlur={handleBlur}
         >
           {error ? (
             <MenuItem disabled>{error}</MenuItem>
           ) : (
-            groupNames.map((groupName, index) => (
+            groupNames.map((groupName) => (
               <MenuItem key={groupName} value={groupName}>
                 {groupName}
               </MenuItem>

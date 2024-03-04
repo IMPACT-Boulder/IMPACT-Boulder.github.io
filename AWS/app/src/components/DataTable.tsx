@@ -58,7 +58,7 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
     'Charge (C)',
     'Time',
     'Dust Name',
-    'Tag', // changed from 'Experiment Name'
+    'Experiment Name',
   ];
 
   const isAllSelected = selectedColumns.length === columnOptions.length;

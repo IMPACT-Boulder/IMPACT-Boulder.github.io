@@ -23,8 +23,8 @@ const axisLabelMapping: Record<string, string> = {
 };
 
 const DustPlot: React.FC<DustPlotProps> = ({ numberOfDataValues, data }) => {
-  const [xAxis, setXAxis] = useState<string>('Mass');
-  const [yAxis, setYAxis] = useState<string>('Velocity');
+  const [xAxis, setXAxis] = useState<string>('Velocity');
+  const [yAxis, setYAxis] = useState<string>('Mass');
 
   const handleAxisChange = (axisType: string, selectedAxis: string) => {
     if (axisType === 'x') {
@@ -111,8 +111,8 @@ const DustPlot: React.FC<DustPlotProps> = ({ numberOfDataValues, data }) => {
 
   const getXAxisData = (axis: string, velocities: number[], charges: number[], traceNumbers: number[], radii: number[], estimateQualities: number[], masses: number[], times: number[]) => {
     switch (axis) {
-      case 'Velocity':
-        return velocities;
+      case 'Masses':
+        return masses;;
       case 'Charge':
         return charges;
       case 'Trace Number':
@@ -124,7 +124,7 @@ const DustPlot: React.FC<DustPlotProps> = ({ numberOfDataValues, data }) => {
       case 'Time':
         return times;
       default:
-        return masses;
+        return velocities;
     }
   };
 
