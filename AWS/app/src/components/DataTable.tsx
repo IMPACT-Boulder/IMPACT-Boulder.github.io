@@ -1,4 +1,3 @@
-//DataTable.tsx
 import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import MenuItem from '@mui/material/MenuItem';
@@ -6,6 +5,7 @@ import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import InputLabel from '@mui/material/InputLabel';
 import Button from '@mui/material/Button';
+import '../styles/Table.css'
 
 interface DataTableProps {
   data: any[];
@@ -14,13 +14,28 @@ interface DataTableProps {
 const DataTable: React.FC<DataTableProps> = ({ data }) => {
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('asc');
   const [sortColumn, setSortColumn] = useState<string>('Trace Number');
+  const [selectedColumns, setSelectedColumns] = useState<string[]>([
+    'Trace Number',
+    'Velocity (km/s)',
+    'Mass (kg)',
+    'Estimate Quality',
+    'Radius (m)',
+    'Charge (C)',
+    'Time',
+    'Dust Name', 
+    'Experiment Name',
+  ]);
 
   const handleSortToggle = () => {
     setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
   };
 
   const handleColumnChange = (selectedColumn: string) => {
-    setSortColumn(selectedColumn);
+    if (selectedColumns.includes(selectedColumn)) {
+      setSelectedColumns(selectedColumns.filter(column => column !== selectedColumn));
+    } else {
+      setSelectedColumns([...selectedColumns, selectedColumn]);
+    }
   };
 
   const sortedData = data.slice().sort((a, b) => {
@@ -43,14 +58,10 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
     'Charge (C)',
     'Time',
     'Dust Name', 
-    'Tag',
+    'Experiment Name',
   ];
 
-  // Dynamically reorder columns based on the selected sorting column
-  const reorderedColumns = [
-    sortColumn,
-    ...columnOptions.filter((column) => column !== sortColumn),
-  ];
+  const isAllSelected = selectedColumns.length === columnOptions.length;
 
   return (
     <div id="table_div">
@@ -61,9 +72,9 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
           <Select
             labelId="label-sort-by"
             id="select-sort-by"
-            value={'Trace Number'} // Set the default sort column here
+            value={sortColumn} // Set the default sort column here
             label="Sort by"
-            onChange={(e: SelectChangeEvent<string>) => handleColumnChange(e.target.value)}
+            onChange={(e: SelectChangeEvent<string>) => setSortColumn(e.target.value)}
           >
             {columnOptions.map((column) => (
               <MenuItem key={column} value={column}>
@@ -73,13 +84,40 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
           </Select>
         </FormControl>
         <Button variant="contained" onClick={handleSortToggle} id="table_button">
-          Sort Ascending
+          Sort {sortOrder === 'asc' ? 'Descending' : 'Ascending'}
         </Button>
+        <FormControl sx={{ minWidth: 120, marginLeft: 1 }}>
+          <InputLabel id="label-select-columns">Select Columns</InputLabel>
+          <Select
+            labelId="label-select-columns"
+            id="select-columns"
+            multiple
+            label="Select Columns"
+            value={isAllSelected ? ['All'] : selectedColumns}
+            onChange={(e: SelectChangeEvent<string[]>) => {
+              if (e.target.value && e.target.value.includes('All')) {
+                setSelectedColumns(columnOptions);
+              } else {
+                setSelectedColumns(e.target.value || []);
+              }
+            }}
+            renderValue={(selected: string[]) => (selected.includes('All') ? 'All' : selected.join(', '))}
+          >
+            <MenuItem key="All" value="All">
+              All
+            </MenuItem>
+            {columnOptions.map((column) => (
+              <MenuItem key={column} value={column}>
+                {column === 'Dust Name' ? 'Dust Type' : column}
+              </MenuItem>
+            ))}
+          </Select>
+        </FormControl>
       </Box>
       <table>
         <thead>
           <tr>
-            {columnOptions.map((column) => (
+            {selectedColumns.map((column) => (
               <th key={column}>{column === 'Dust Name' ? 'Dust Type' : column}</th>
             ))}
           </tr>
@@ -87,7 +125,7 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
         <tbody>
           {sortedData.map((item, index) => (
             <tr key={index}>
-              {columnOptions.map((column) => (
+              {selectedColumns.map((column) => (
                 <td key={column}>
                   {column === 'Dust Name' ? item['Dust Name'] : column === 'Tag' ? item['Tag'] : item[column]}
                 </td>
@@ -95,7 +133,6 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
             </tr>
           ))}
         </tbody>
-
       </table>
     </div>
   );

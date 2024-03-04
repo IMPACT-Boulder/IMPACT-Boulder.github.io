@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Plotly from 'plotly.js-dist';
 import DropDown from './axisDropdown.tsx';
 import { DataItem } from './types';
+import '../styles/Plot.css'
 
 interface DustPlotProps {
   numberOfDataValues: number;

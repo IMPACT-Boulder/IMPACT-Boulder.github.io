@@ -1,4 +1,4 @@
-// GroupName.tsx
+// // GroupName.tsx
 
 import React, { useState, useEffect } from 'react';
 import Box from '@mui/material/Box';
@@ -22,15 +22,14 @@ const GroupName: React.FC<GroupNameProps> = ({ onChange, selectedGroups }) => {
   useEffect(() => {
     const fetchGroupNames = async () => {
       try {
-        const response = await fetch('http://10.247.29.45:5000/api/group_names');
+        const response = await fetch('https://10.247.29.46:3000/api/group_names');
+        if (!response.ok) {
+          throw new Error('Failed to fetch');
+        }
         const data: { group_names: string[] }[] = await response.json();
-
         const extractedGroupNames = data.map((item) => item.group_names).flat();
         const sortedGroupNames = sortBy(extractedGroupNames);
-
-        // Prepend 'All' to the sorted group names
-        const groupNamesWithAll = ['All', ...sortedGroupNames];
-        setGroupNames(groupNamesWithAll);
+        setGroupNames(sortedGroupNames);
       } catch (error) {
         console.error('Error fetching group names:', error);
         setErrorMessage('Cannot Connect to Server');
@@ -57,6 +56,7 @@ const GroupName: React.FC<GroupNameProps> = ({ onChange, selectedGroups }) => {
       noValidate
       autoComplete="off"
     >
+      {errorMessage && <p>Error: {errorMessage}</p>}
       {groupNames.length > 0 && (
         <FormControl sx={{ m: 1, minWidth: 120 }}>
           <InputLabel id="label-group-name">Experiment Group</InputLabel>
@@ -105,14 +105,15 @@ export default GroupName;
 //   useEffect(() => {
 //     const fetchGroupNames = async () => {
 //       try {
-//         const response = await fetch('http://127.0.0.1:5000/api/group_names');
-//         if (!response.ok) {
-//           throw new Error('Failed to fetch');
-//         }
+//         const response = await fetch('127.0.0.1:5000/api/group_names');
 //         const data: { group_names: string[] }[] = await response.json();
+
 //         const extractedGroupNames = data.map((item) => item.group_names).flat();
 //         const sortedGroupNames = sortBy(extractedGroupNames);
-//         setGroupNames(sortedGroupNames);
+
+//         // Prepend 'All' to the sorted group names
+//         const groupNamesWithAll = ['All', ...sortedGroupNames];
+//         setGroupNames(groupNamesWithAll);
 //       } catch (error) {
 //         console.error('Error fetching group names:', error);
 //         setErrorMessage('Cannot Connect to Server');
@@ -139,7 +140,6 @@ export default GroupName;
 //       noValidate
 //       autoComplete="off"
 //     >
-//       {errorMessage && <p>Error: {errorMessage}</p>}
 //       {groupNames.length > 0 && (
 //         <FormControl sx={{ m: 1, minWidth: 120 }}>
 //           <InputLabel id="label-group-name">Experiment Group</InputLabel>
