@@ -80,4 +80,8 @@ const GroupName: React.FC<GroupNameProps> = ({ onChange, selectedGroups }) => {
   );
 };
 
+<<<<<<< HEAD
 export default GroupName;
+=======
+export default GroupName;
+>>>>>>> refs/remotes/origin/master
