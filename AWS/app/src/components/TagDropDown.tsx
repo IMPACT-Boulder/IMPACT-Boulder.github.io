@@ -22,7 +22,7 @@ const TagDropdown: React.FC<TagDropdownProps> = ({ onChange, selectedTag }) => {
   useEffect(() => {
     const fetchTagNames = async () => {
       try {
-        const response = await fetch('https://10.247.29.177:3000/api/tag_names?page=1');
+        const response = await fetch('https://10.247.28.163:3000/api/tag_names?page=1');
         if (!response.ok) {
           throw new Error('Failed to fetch');
         }

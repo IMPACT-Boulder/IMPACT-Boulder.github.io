@@ -4,7 +4,6 @@ import DataInputControl from './DataInputControl.tsx';
 import DustPlot from './plot.tsx';
 import DataTable from './DataTable.tsx';
 import { DataItem } from './types.ts';
-import ErrorBoundary from './ErrorBoundary.tsx';
 
 const Page: React.FC = () => {
   const [data, setData] = useState<DataItem[]>([]);
@@ -20,9 +19,7 @@ const Page: React.FC = () => {
   return (
     <div id='interface'>
       <div id='interface_main'>
-        <ErrorBoundary>
-          <DataInputControl onDataUpdate={handleDataUpdate} />
-        </ErrorBoundary>
+        <DataInputControl onDataUpdate={handleDataUpdate} />
         <DustPlot data={data} numberOfDataValues={data.length} />
       </div>
       <DataTable data={data} />
