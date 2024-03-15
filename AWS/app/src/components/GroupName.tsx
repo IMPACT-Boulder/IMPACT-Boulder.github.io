@@ -9,15 +9,20 @@ import { sortBy } from 'lodash';
 
 interface GroupNameProps {
     onChange: (groups: string[]) => void;
-    selectedGroups: string[]; // Corrected prop name
+    selectedGroups: string[];
 }
 
-const GroupName: React.FC<GroupNameProps> = ({ onChange, selectedGroups }) => { // Fixed prop name here as well
+const GroupName: React.FC<GroupNameProps> = ({ onChange, selectedGroups }) => {
     const [groupNames, setGroupNames] = useState<string[]>([]);
-    const [error, setError] = useState<string | null>(null);
+    const [error, setError] = useState<string | null>('');
     const [searchQuery, setSearchQuery] = useState<string>('');
     const [inputLabel, setInputLabel] = useState<string>('Experiment Groups');
     const [textFieldLabel, setTextFieldLabel] = useState<string>('');
+
+    const handleChildError = (error: string) => {
+        // Handle the error in the parent component
+        console.error('Error in child component:', error);
+    };
 
     useEffect(() => {
         const fetchGroupNames = async () => {
@@ -30,9 +35,11 @@ const GroupName: React.FC<GroupNameProps> = ({ onChange, selectedGroups }) => { 
                 const extractedGroupNames = data.map((item) => item.group_names).flat();
                 const sortedGroupNames = sortBy(extractedGroupNames);
                 setGroupNames(sortedGroupNames);
-            } catch (error) {
+            } catch (error: any) { // Explicitly define the type of 'error' as 'any'
                 console.error('Error fetching group names:', error);
                 setError('Failed to fetch group names');
+                // Call the error handler function
+                handleChildError(error.message);
             }
         };
 

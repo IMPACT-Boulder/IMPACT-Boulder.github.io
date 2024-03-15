@@ -69,6 +69,11 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
   const [actualArray, setActualArray] = useState<any[]>([]);
   const [errorMessage, setErrorMessage] = useState<string>('');
 
+   // Function to handle errors from child components
+   const handleChildError = (error: string) => {
+    setErrorMessage(error);
+  };
+
   const handleTagNamesChange = (value: string) => {
     console.log('Selected Tag Names:', value);
     setSelectedTag(value);
@@ -199,6 +204,7 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
 
   return (
     <div id="box">
+      {errorMessage && <h1>Cannot Connect to the Server. Make sure you are connected to the LASP VPN. Secure Socket Layer not yet configured. Open a new tab and enter 'https://10.247.28.163:3000'. Click Advanced, and choose to proceed. This issue is temporary. </h1>}
       <form onSubmit={handleFormSubmit}>
         <div id="controls" onKeyDown={handleKeyDown}>
           <div id="limit_box">
