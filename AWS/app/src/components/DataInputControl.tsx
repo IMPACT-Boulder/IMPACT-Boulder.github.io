@@ -93,8 +93,11 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
 
   const handleGroupNamesChange = (values: string[]) => {
     console.log('Selected Group Names:', values);
+    // Set the error message if the received value is an empty array
+    setErrorMessage(values.length === 0 ? 'Error: Something went wrong in the child component' : '');
     setFormState((prevFormState) => ({ ...prevFormState, groupNames: values }));
-  };
+};
+
 
   const handleVelocityHighChange = (high: number) => {
     setFormState((prevFormState) => ({ ...prevFormState, velHigh: high }));

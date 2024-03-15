@@ -22,7 +22,11 @@ const GroupName: React.FC<GroupNameProps> = ({ onChange, selectedGroups }) => {
     const handleChildError = (error: string) => {
         // Handle the error in the parent component
         console.error('Error in child component:', error);
+        // Pass the error to the parent component
+        onChange([]);
+        setError(error);
     };
+    
 
     useEffect(() => {
         const fetchGroupNames = async () => {
