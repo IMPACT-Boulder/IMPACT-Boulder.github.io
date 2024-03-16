@@ -19,6 +19,14 @@ const TagDropdown: React.FC<TagDropdownProps> = ({ onChange, selectedTag }) => {
   const [inputLabel, setInputLabel] = useState<string>('Experiment Names');
   const [textFieldLabel, setTextFieldLabel] = useState<string>('');
 
+  const handleChildError = (error: string) => {
+    // Handle the error in the parent component
+    console.error('Error in child component:', error);
+    // Pass the error to the parent component
+    onChange([]);
+    setError(error);
+};
+
   useEffect(() => {
     const fetchTagNames = async () => {
       try {
@@ -30,9 +38,11 @@ const TagDropdown: React.FC<TagDropdownProps> = ({ onChange, selectedTag }) => {
         const fetchedTagNames = data.map((item) => item.tag);
         console.log('Processed Tag Names:', fetchedTagNames);
         setTagNames(fetchedTagNames);
-      } catch (error) {
+      } catch (error: any) {
         console.error('Error fetching tag names:', error);
         setError('Failed to fetch tag names');
+        // Call the error handler function
+        handleChildError(error.message);
       }
     };
 
