@@ -40,7 +40,8 @@ const DustPlot: React.FC<DustPlotProps> = ({ numberOfDataValues, data }) => {
     if (data.length > 0) {
       setKeyVisibility('block');
     } else {
-      setKeyVisibility('none');
+      //////////////////////////////////////////////////////////////////////
+      setKeyVisibility('block'); //!!!TESTING. for production use 'none'!!!
     }
 
     console.log('Data:', data);
