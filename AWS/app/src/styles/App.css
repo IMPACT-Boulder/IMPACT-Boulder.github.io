@@ -1,8 +1,14 @@
+:root, body, html, .app {
+  width: 500px !important;
+}
 .App {
   text-align: center;
-  overflow-x: hidden;
-  padding: 0 20px;
-
+  overflow-x: none;
+  width: auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
 }
 
 :root {

@@ -107,8 +107,29 @@ const DustPlot: React.FC<DustPlotProps> = ({ numberOfDataValues, data }) => {
       },
     };
 
-    Plotly.newPlot('dust_plot', plotData, layout);
+    
+
+    Plotly.newPlot('dust_plot', plotData, layout,);
   }, [xAxis, yAxis, data, numberOfDataValues]);
+
+  useEffect(() => {
+    const updatePlot = () => {
+      Plotly.relayout('dust_plot', {
+        width: window.innerWidth * 0.9, // Adjust width as needed
+      });
+    };
+  
+    updatePlot(); // Initial plot sizing
+  
+    window.addEventListener('resize', updatePlot);
+  
+    return () => {
+      window.removeEventListener('resize', updatePlot);
+    };
+  }, []);
+  
+  
+  
 
   const getXAxisData = (axis: string, velocities: number[], charges: number[], traceNumbers: number[], radii: number[], estimateQualities: number[], masses: number[], times: number[]) => {
     switch (axis) {
