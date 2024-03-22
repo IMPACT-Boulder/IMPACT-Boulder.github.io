@@ -28,12 +28,12 @@ const QualityHigh: React.FC<QualityHighProps> = ({ onChange, qualHighProp }) => 
     <Box
       component="form"
       sx={{
-        '& > :not(style)': { m: 1, width: '20ch' },
+        '& > :not(style)': { m: 1, width: '100%', maxWidth: '20ch' },
       }}
       noValidate
       autoComplete="off"
     >
-      <FormControl sx={{ m: 1, minWidth: 120 }}>
+      <FormControl sx={{ m: 1, width: '100%', maxWidth: '20ch', minWidth: 120 }}>
         <InputLabel id="label-quality-high">Estimate Quality</InputLabel>
         <Select
           labelId="label-quality-high"

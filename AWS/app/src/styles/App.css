@@ -1,3 +1,4 @@
+/* Responsive up to 720px */
 :root, body, html, .app {
   width: 500px !important;
 }

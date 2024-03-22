@@ -24,7 +24,7 @@ const VelocityLow: React.FC<VelocityLowProps> = ({ onChange, velLowProp }) => {
     <Box
       component="form"
       sx={{
-        '& > :not(style)': { m: 1, width: '20ch' },
+        '& > :not(style)': { m: 1, width: '100%', maxWidth: '20ch' },
       }}
       noValidate
       autoComplete="off"

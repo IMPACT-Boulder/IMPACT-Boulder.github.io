@@ -228,21 +228,25 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
             <div id="constraints_main">
               <div className="controls">
                 <h3>Lower Constraints</h3>
-                <VelocityLow onChange={handleVelocityLowChange} velLowProp={formState.velLow} />
-                <QualityLow onChange={handleQualityLowChange} qualLowProp={formState.qualLow} />
-                <MassLow onChange={handleMassLowChange} massLowProp={formState.massLow} />
-                <ChargeLow onChange={handleChargeLowChange} chargeLowProp={formState.chargeLow} />
-                <RadiusLow onChange={handleRadiusLowChange} radiusLowProp={formState.radiusLow} />
-                <TimeLow onChange={handleTimeLowChange} timeLowProp={formState.timeLow} />
+                <div className='constraint_container'>
+                  <VelocityLow onChange={handleVelocityLowChange} velLowProp={formState.velLow} />
+                  <MassLow onChange={handleMassLowChange} massLowProp={formState.massLow} />
+                  <ChargeLow onChange={handleChargeLowChange} chargeLowProp={formState.chargeLow} />
+                  <RadiusLow onChange={handleRadiusLowChange} radiusLowProp={formState.radiusLow} />
+                  <TimeLow onChange={handleTimeLowChange} timeLowProp={formState.timeLow} />
+                  <QualityLow onChange={handleQualityLowChange} qualLowProp={formState.qualLow} />
+                </div>
               </div>
               <div className="controls">
                 <h3>Upper Constraints</h3>
-                <VelocityHigh onChange={handleVelocityHighChange} velHighProp={formState.velHigh} />
-                <QualityHigh onChange={handleQualityHighChange} qualHighProp={formState.qualHigh} />
-                <MassHigh onChange={handleMassHighChange} massHighProp={formState.massHigh} />
-                <ChargeHigh onChange={handleChargeHighChange} chargeHighProp={formState.chargeHigh} />
-                <RadiusHigh onChange={handleRadiusHighChange} radiusHighProp={formState.radiusHigh} />
-                <TimeHigh onChange={handleTimeHighChange} timeHighProp={formState.timeHigh} />
+                <div className='constraint_container'>
+                  <VelocityHigh onChange={handleVelocityHighChange} velHighProp={formState.velHigh} />
+                  <MassHigh onChange={handleMassHighChange} massHighProp={formState.massHigh} />
+                  <ChargeHigh onChange={handleChargeHighChange} chargeHighProp={formState.chargeHigh} />
+                  <RadiusHigh onChange={handleRadiusHighChange} radiusHighProp={formState.radiusHigh} />
+                  <TimeHigh onChange={handleTimeHighChange} timeHighProp={formState.timeHigh} />
+                  <QualityHigh onChange={handleQualityHighChange} qualHighProp={formState.qualHigh} />
+                </div>
               </div>
             </div>
           </div>

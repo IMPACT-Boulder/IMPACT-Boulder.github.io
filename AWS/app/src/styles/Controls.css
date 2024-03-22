@@ -1,16 +1,32 @@
 #constraints {
     display: block;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    width: 100%;
   }
   
   #constraints_top {
     display: flex;
     margin: 20px 20px 40px 20px;
+    width: 100%;
+  }
+
+  #contstraints_main {
+    width: 100%
+  }
+
+  .constraint_container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
   }
   
   .controls {
-    display: flex;
+    display: block;
     width: 100%;
+    text-align: left;
+  }
+  .controls h3 {
+    padding-left: 10px;
   }
   
   #submit {
