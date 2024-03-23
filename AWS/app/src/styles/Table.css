@@ -1,5 +1,11 @@
 /* BREAKS at ~370px w */
 
+  #table_div {
+    position: absolute;
+    top: 1450px;
+    padding: 0px 20px;
+  }
+
 table {
     width: 100%;
     border-collapse: collapse;

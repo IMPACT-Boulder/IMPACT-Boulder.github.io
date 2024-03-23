@@ -29,34 +29,36 @@ const TimeLow: React.FC<TimeLowProps> = ({ onChange, timeLowProp }) => {
   };
 
   return (
-    <Box
-      component="form"
-      // className="opaque-datepicker"
-      sx={{
-        '& > :not(style)': { m: 1, width: '100%', maxWidth: '20ch' },
-      }}
-      noValidate
-      autoComplete="off"
-    >
-      <DatePicker
-        selected={selectedDate}
-        onChange={handleDateChange}
-        showTimeSelect
-        timeFormat="HH:mm"
-        timeIntervals={15}
-        dateFormat="yyyy-MM-dd HH:mm:ss.SSS"
-        customInput={
-          <TextField
-            id="outlined-basic-high"
-            label="Time YYYY-mm-dd HH:MM:SS.f"
-            variant="outlined"
-            value={formatDate(selectedDate)}
-            onChange={() => {}}
-            onBlur={() => {}}
-          />
-        }
-      />
-    </Box>
+    <div className='constraint'>
+      <Box
+        component="form"
+        // className="opaque-datepicker"
+        sx={{
+          '& > :not(style)': { m: 1, width: '100%', maxWidth: '20ch' },
+        }}
+        noValidate
+        autoComplete="off"
+      >
+        <DatePicker
+          selected={selectedDate}
+          onChange={handleDateChange}
+          showTimeSelect
+          timeFormat="HH:mm"
+          timeIntervals={15}
+          dateFormat="yyyy-MM-dd HH:mm:ss.SSS"
+          customInput={
+            <TextField
+              id="outlined-basic-high"
+              label="Time YYYY-mm-dd HH:MM:SS.f"
+              variant="outlined"
+              value={formatDate(selectedDate)}
+              onChange={() => {}}
+              onBlur={() => {}}
+            />
+          }
+        />
+      </Box>
+    </div>
   );
 };
 

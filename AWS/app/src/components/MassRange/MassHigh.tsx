@@ -21,23 +21,25 @@ const MassHigh: React.FC<MassHighProps> = ({ onChange, massHighProp }) => {
   };
 
   return (
-    <Box
-      component="form"
-      sx={{
-        '& > :not(style)': { m: 1, width: '100%', maxWidth: '20ch' },
-      }}
-      noValidate
-      autoComplete="off"
-    >
-      <TextField
-        id="outlined-basic-low"
-        label="Mass [ kg ]"
-        variant="outlined"
-        onChange={(e) => handleInputChange(e.target.value)}
-        value={highInputValue}
-        onBlur={handleBlur}
-      />
-    </Box>
+    <div className='constraint'>
+      <Box
+        component="form"
+        sx={{
+          '& > :not(style)': { m: 1, width: '100%', maxWidth: '20ch' },
+        }}
+        noValidate
+        autoComplete="off"
+      >
+        <TextField
+          id="outlined-basic-low"
+          label="Mass [ kg ]"
+          variant="outlined"
+          onChange={(e) => handleInputChange(e.target.value)}
+          value={highInputValue}
+          onBlur={handleBlur}
+        />
+      </Box>
+    </div>
   );
 };
 

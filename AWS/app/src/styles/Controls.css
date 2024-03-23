@@ -40,6 +40,10 @@
     height: auto;
   }
 
+  .constraint {
+    padding: 0 3px;
+  }
+
   #error_boundary {
     color: red;
   }

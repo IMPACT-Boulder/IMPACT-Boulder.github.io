@@ -21,23 +21,25 @@ const ChargeLow: React.FC<ChargeLowProps> = ({ onChange, chargeLowProp }) => {
   };
 
   return (
-    <Box
-      component="form"
-      sx={{
-        '& > :not(style)': { m: 1, width: '100%', maxWidth: '20ch' },
-      }}
-      noValidate
-      autoComplete="off"
-    >
-      <TextField
-        id="outlined-basic-low"
-        label="Charge [ C ]"
-        variant="outlined"
-        onChange={(e) => handleInputChange(e.target.value)}
-        value={lowInputValue}
-        onBlur={handleBlur}
-      />
-    </Box>
+    <div className='constraint'>
+      <Box
+        component="form"
+        sx={{
+          '& > :not(style)': { m: 1, width: '100%', maxWidth: '20ch' },
+        }}
+        noValidate
+        autoComplete="off"
+      >
+        <TextField
+          id="outlined-basic-low"
+          label="Charge [ C ]"
+          variant="outlined"
+          onChange={(e) => handleInputChange(e.target.value)}
+          value={lowInputValue}
+          onBlur={handleBlur}
+        />
+      </Box>
+    </div>
   );
 };
 
