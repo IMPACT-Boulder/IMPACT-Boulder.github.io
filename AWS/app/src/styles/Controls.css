@@ -1,23 +1,28 @@
-#constraints {
+  #limit_box {
+    display: flex;
+    margin: 20px 30px;
+  }
+
+  #constraints {
     display: block;
-    /* justify-content: space-between; */
-    width: 100%;
+    width: 95%;
+    margin-left: 20px;
   }
   
   #constraints_top {
     display: flex;
-    margin: 20px 20px 40px 20px;
+    /* margin: 20px 0px 40px 0px; */
     width: 100%;
   }
 
   #contstraints_main {
-    width: 100%
+    width: 95%
   }
 
   .constraint_container {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    
   }
   
   .controls {

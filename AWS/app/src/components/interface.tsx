@@ -4,6 +4,7 @@ import DataInputControl from './DataInputControl.tsx';
 import DustPlot from './plot.tsx';
 import DataTable from './DataTable.tsx';
 import { DataItem } from './types.ts';
+import '../styles/App.css'
 
 const Page: React.FC = () => {
   const [data, setData] = useState<DataItem[]>([]);

@@ -40,7 +40,6 @@ const DustPlot: React.FC<DustPlotProps> = ({ numberOfDataValues, data }) => {
     if (data.length > 0) {
       setKeyVisibility('block');
     } else {
-      
       setKeyVisibility('none'); 
     }
 
@@ -89,6 +88,9 @@ const DustPlot: React.FC<DustPlotProps> = ({ numberOfDataValues, data }) => {
 
     const layout = {
       title: 'Dust Plot',
+      // autosize: false,
+      // width: 1700,
+      // height: 700,
       xaxis: {
         zeroline: false,
         title: getXAxisTitle(xAxis),

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
-import '../styles/Limit.css'
+import '../styles/Controls.css'
 
 interface TextBoxProps {
   onChange: (value: number) => void;

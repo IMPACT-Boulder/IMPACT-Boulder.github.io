@@ -1,22 +1,10 @@
-/* Responsive up to 720px */
-html {
-  width: 100px;
-}
 
 .App {
   text-align: center;
-  overflow-x: none;
   width: auto;
-  max-width: 100%;
   display: flex;
   flex-direction: column;
   flex-direction: row;
-}
-
-:root {
-  background-color: #fff;
-  color-scheme: none;
-  color: #000;
 }
 
 .App::-webkit-scrollbar { 
