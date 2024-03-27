@@ -47,9 +47,7 @@
     padding: 20px;
     width: 90% !important;
 }
-.plot-container {
-    /* border: solid black 3px; */
-}
+
 #dust_plot .ytitle, #dust_plot .xtitle /*Axis title*/ {
     font-weight: bold !important;
     font-size: 18px !important;

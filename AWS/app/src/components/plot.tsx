@@ -25,6 +25,7 @@ const axisLabelMapping: Record<string, string> = {
 const DustPlot: React.FC<DustPlotProps> = ({ numberOfDataValues, data }) => {
   const [xAxis, setXAxis] = useState<string>('Velocity');
   const [yAxis, setYAxis] = useState<string>('Mass');
+  const [xAxisScaleType, setXAxisScaleType] = useState<'linear' | 'log'>('linear');
 
   const handleAxisChange = (axisType: string, selectedAxis: string) => {
     if (axisType === 'x') {
@@ -32,6 +33,10 @@ const DustPlot: React.FC<DustPlotProps> = ({ numberOfDataValues, data }) => {
     } else if (axisType === 'y') {
       setYAxis(selectedAxis);
     }
+  };
+
+  const toggleXAxisScaleType = () => {
+    setXAxisScaleType(xAxisScaleType === 'linear' ? 'log' : 'linear');
   };
 
   const [keyVisibility, setKeyVisibility] = useState<'none' | 'block'>('none');
@@ -95,6 +100,7 @@ const DustPlot: React.FC<DustPlotProps> = ({ numberOfDataValues, data }) => {
         zeroline: false,
         title: getXAxisTitle(xAxis),
         automargin: true,
+        type: xAxisScaleType,
         titlefont: {
           color: 'black',
         },
@@ -112,7 +118,7 @@ const DustPlot: React.FC<DustPlotProps> = ({ numberOfDataValues, data }) => {
     
 
     Plotly.newPlot('dust_plot', plotData, layout,);
-  }, [xAxis, yAxis, data, numberOfDataValues]);
+  }, [xAxis, yAxis, data, numberOfDataValues, xAxisScaleType]);
 
   useEffect(() => {
     const updatePlot = () => {
@@ -192,6 +198,7 @@ const DustPlot: React.FC<DustPlotProps> = ({ numberOfDataValues, data }) => {
           values={['', 'Mass', 'Velocity', 'Charge', 'Trace Number', 'Radius', 'Estimate Quality', 'Time']}
           onChange={(selectedAxis) => handleAxisChange('y', selectedAxis)}
         />
+        <button onClick={toggleXAxisScaleType}>Toggle </button>
       </div>
       <div id='plot'>
         <div id='dust_plot' />
