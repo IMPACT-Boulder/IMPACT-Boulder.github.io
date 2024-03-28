@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Plotly from 'plotly.js-dist';
 import DropDown from './axisDropdown.tsx';
 import { DataItem } from './types';
+import Button from '@mui/material/Button';
 import '../styles/Plot.css'
 
 interface DustPlotProps {
@@ -26,12 +27,22 @@ const DustPlot: React.FC<DustPlotProps> = ({ numberOfDataValues, data }) => {
   const [xAxis, setXAxis] = useState<string>('Velocity');
   const [yAxis, setYAxis] = useState<string>('Mass');
   const [xAxisScaleType, setXAxisScaleType] = useState<'linear' | 'log'>('linear');
+  const [yAxisScaleType, setYAxisScaleType] = useState<'linear' | 'log'>('linear');
+  const [keyVisibility, setKeyVisibility] = useState<'none' | 'block'>('none');
 
-  const handleAxisChange = (axisType: string, selectedAxis: string) => {
+  const handleXAxisChange = (axisType: string, selectedXAxis: string) => {
     if (axisType === 'x') {
-      setXAxis(selectedAxis);
+      setXAxis(selectedXAxis);
     } else if (axisType === 'y') {
-      setYAxis(selectedAxis);
+      setYAxis(selectedXAxis);
+    }
+  };
+
+  const handleYAxisChange = (axisType: string, selectedYAxis: string) => {
+    if (axisType === 'y') {
+      setYAxis(selectedYAxis);
+    } else if (axisType === 'x') {
+      setYAxis(selectedYAxis);
     }
   };
 
@@ -39,7 +50,9 @@ const DustPlot: React.FC<DustPlotProps> = ({ numberOfDataValues, data }) => {
     setXAxisScaleType(xAxisScaleType === 'linear' ? 'log' : 'linear');
   };
 
-  const [keyVisibility, setKeyVisibility] = useState<'none' | 'block'>('none');
+  const toggleYAxisScaleType = () => {
+    setYAxisScaleType(yAxisScaleType === 'log' ?  'linear' : 'log');
+  };
 
   useEffect(() => {
     if (data.length > 0) {
@@ -109,6 +122,7 @@ const DustPlot: React.FC<DustPlotProps> = ({ numberOfDataValues, data }) => {
         zeroline: false,
         title: getYAxisTitle(yAxis),
         automargin: true,
+        type: yAxisScaleType,
         titlefont: {
           color: 'black',
         },
@@ -118,7 +132,7 @@ const DustPlot: React.FC<DustPlotProps> = ({ numberOfDataValues, data }) => {
     
 
     Plotly.newPlot('dust_plot', plotData, layout,);
-  }, [xAxis, yAxis, data, numberOfDataValues, xAxisScaleType]);
+  }, [xAxis, yAxis, data, numberOfDataValues, xAxisScaleType, yAxisScaleType]);
 
   useEffect(() => {
     const updatePlot = () => {
@@ -188,17 +202,26 @@ const DustPlot: React.FC<DustPlotProps> = ({ numberOfDataValues, data }) => {
   return (
     <div id='plot_div'>
       <div id='axis-selectors'>
-        <DropDown
-          label='X axis'
-          values={['', 'Mass', 'Velocity', 'Charge', 'Trace Number', 'Radius', 'Estimate Quality', 'Time']}
-          onChange={(selectedAxis) => handleAxisChange('x', selectedAxis)}
-        />
-        <DropDown
-          label='Y axis'
-          values={['', 'Mass', 'Velocity', 'Charge', 'Trace Number', 'Radius', 'Estimate Quality', 'Time']}
-          onChange={(selectedAxis) => handleAxisChange('y', selectedAxis)}
-        />
-        <button onClick={toggleXAxisScaleType}>Toggle </button>
+        <div id='dropdown'>
+          <DropDown
+            label='X axis'
+            values={['', 'Mass', 'Velocity', 'Charge', 'Trace Number', 'Radius', 'Estimate Quality', 'Time']}
+            onChange={(selectedXAxis) => handleXAxisChange('x', selectedXAxis)}
+          />
+          <DropDown
+            label='Y axis'
+            values={['', 'Mass', 'Velocity', 'Charge', 'Trace Number', 'Radius', 'Estimate Quality', 'Time']}
+            onChange={(selectedYAxis) => handleYAxisChange('y', selectedYAxis)}
+          />
+        </div>
+        <div id='toggle'>
+          <Button variant="contained" onClick={toggleXAxisScaleType} id="x-scale-toggle">
+            {xAxisScaleType === 'linear' ? 'Log Scale' : 'Linear Scale'} 
+          </Button>
+          <Button variant="contained" onClick={toggleYAxisScaleType} id="y-scale-toggle">
+            {yAxisScaleType=== 'linear' ? 'Log Scale' : 'Linear Scale'}
+          </Button>
+        </div>
       </div>
       <div id='plot'>
         <div id='dust_plot' />

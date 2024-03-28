@@ -32,7 +32,7 @@ const GroupName: React.FC<GroupNameProps> = ({ onChange, selectedGroups }) => {
     useEffect(() => {
         const fetchGroupNames = async () => {
             try {
-                const response = await fetch('https://10.247.29.52:3000/api/group_names');
+                const response = await fetch('http://127.0.0.1:5000/api/group_names');
                 if (!response.ok) {
                     throw new Error('Failed to fetch');
                 }
