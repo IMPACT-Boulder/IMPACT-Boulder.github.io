@@ -1,4 +1,4 @@
-//GroupName.tsx
+// GroupName.tsx
 import React, { useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
@@ -10,24 +10,16 @@ import { sortBy } from 'lodash';
 
 interface GroupNameProps {
     onChange: (groups: string[]) => void;
-    selectedGroups: string[];
+    onGroupChange: (group: string) => void; // Callback for updating selected group
+    selectedGroups: string; // Change to single string
 }
 
-const GroupName: React.FC<GroupNameProps> = ({ onChange, selectedGroups }) => {
+const GroupName: React.FC<GroupNameProps> = ({ onChange, onGroupChange, selectedGroups }) => {
     const [groupNames, setGroupNames] = useState<string[]>([]);
-    const [error, setError] = useState<string | null>('');
+    const [error, setError] = useState<string | null>(null);
     const [searchQuery, setSearchQuery] = useState<string>('');
     const [inputLabel, setInputLabel] = useState<string>('Experiment Groups');
     const [textFieldLabel, setTextFieldLabel] = useState<string>('');
-
-    const handleChildError = (error: string) => {
-        // Handle the error in the parent component
-        console.error('Error in child component:', error);
-        // Pass the error to the parent component
-        onChange([]);
-        setError(error);
-    };
-    
 
     useEffect(() => {
         const fetchGroupNames = async () => {
@@ -40,11 +32,9 @@ const GroupName: React.FC<GroupNameProps> = ({ onChange, selectedGroups }) => {
                 const extractedGroupNames = data.map((item) => item.group_names).flat();
                 const sortedGroupNames = sortBy(extractedGroupNames);
                 setGroupNames(sortedGroupNames);
-            } catch (error: any) { // Explicitly define the type of 'error' as 'any'
+            } catch (error) {
                 console.error('Error fetching group names:', error);
                 setError('Failed to fetch group names');
-                // Call the error handler function
-                handleChildError(error.message);
             }
         };
 
@@ -53,6 +43,7 @@ const GroupName: React.FC<GroupNameProps> = ({ onChange, selectedGroups }) => {
 
     const handleGroupChange = (value: string) => {
         onChange([value]);
+        onGroupChange(value); // Callback to update selected group in the parent component
     };
 
     const handleBoxClick = () => {

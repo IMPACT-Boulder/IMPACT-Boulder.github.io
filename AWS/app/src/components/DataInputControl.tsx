@@ -41,6 +41,7 @@ interface FormState {
   dustTypes: number[];
   groupNames: string[];
   tagNames: string[];
+  selectedGroup: string;
 }
 
 const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => {
@@ -61,6 +62,7 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
     dustTypes: [],
     groupNames: [],
     tagNames: [],
+    selectedGroup: '',
   });
 
   const [loading, setLoading] = useState(false);
@@ -69,15 +71,8 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
   const [actualArray, setActualArray] = useState<any[]>([]);
   const [errorMessage, setErrorMessage] = useState<string>('');
 
-   // Function to handle errors from child components
-   const handleChildError = (error: string) => {
-    setErrorMessage(error);
-  };
-
   const handleTagNamesChange = (value: string) => {
     console.log('Selected Tag Names:', value);
-     // Set the error message if the received value is an empty array
-     setErrorMessage(value.length === 0 ? 'Error: Something went wrong' : '');
     setSelectedTag(value);
   };
 
@@ -95,11 +90,9 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
 
   const handleGroupNamesChange = (values: string[]) => {
     console.log('Selected Group Names:', values);
-    // Set the error message if the received value is an empty array
-    setErrorMessage(values.length === 0 ? 'Error: Something went wrong in the child component' : '');
-    setFormState((prevFormState) => ({ ...prevFormState, groupNames: values }));
-};
-
+    setFormState((prevFormState) => ({ ...prevFormState, groupNames: values, selectedGroup: values[0] || '' }));
+    // Set the selectedGroup based on the first value in the array or empty string if no value
+  };
 
   const handleVelocityHighChange = (high: number) => {
     setFormState((prevFormState) => ({ ...prevFormState, velHigh: high }));
@@ -209,11 +202,6 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
 
   return (
     <div id="box">
-      {errorMessage && <div id='error_boundary'>
-        <h1>Server Error</h1>
-        <h2>Make sure you are connected to the LASP VPN</h2>
-        <h2>Secure Socket Layer not yet configured. Open a new tab and enter <a href='https://10.247.29.224:3000' target='_blank'>'https://10.247.29.224:3000'</a>. Click 'Advanced' or 'show details', and then choose to proceed. This issue is temporary. </h2>
-        </div>}
       <form onSubmit={handleFormSubmit}>
         <div id="controls" onKeyDown={handleKeyDown}>
           <div id="limit_box">
@@ -223,7 +211,7 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
             <div id="constraints_top">
               <DustType onChange={handleDustTypeChange} selectedTypes={formState.dustTypes} />
               <GroupName onChange={handleGroupNamesChange} selectedGroups={formState.groupNames} />
-              <TagDropdown onChange={handleTagNamesChange} selectedTag={selectedTag} />
+              <TagDropdown onChange={handleTagNamesChange} selectedTag={selectedTag} selectedGroup={formState.selectedGroup} tagNames={formState.tagNames} />
             </div>
             <div id="constraints_main">
               <div className="controls">
