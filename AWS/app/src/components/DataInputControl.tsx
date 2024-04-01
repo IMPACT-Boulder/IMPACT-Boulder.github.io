@@ -1,4 +1,3 @@
-//DataInputControl.tsx
 import React, { useState } from 'react';
 import TextBox from './inputLimit.tsx';
 import VelocityLow from './VelocityRange/VelocityLow.tsx';
@@ -18,6 +17,7 @@ import GroupName from './GroupName.tsx';
 import TagDropdown from './TagDropDown.tsx';
 import { convertToCSV } from './CSVUtils.ts';
 import Button from '@mui/material/Button';
+import CircularProgress from '@mui/material/CircularProgress'; // Import CircularProgress
 import '../styles/Controls.css';
 
 interface DataInputControlProps {
@@ -242,7 +242,7 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
             Submit
           </Button>
           <div id="loading">
-            {loading && <p>Loading...</p>}
+            {loading && <CircularProgress />} {/* Replace loading text with CircularProgress */}
             {!loading && fetchTimestamp !== null && <p>Data fetched at: {new Date(fetchTimestamp).toLocaleString()}</p>}
           </div>
         </div>
