@@ -19,11 +19,11 @@ const Page: React.FC = () => {
 
   return (
     <div id='interface'>
-      <div id='interface_main'>
+      {/* <div id='interface_main'> */}
         <DataInputControl onDataUpdate={handleDataUpdate} />
         <DustPlot data={data} numberOfDataValues={data.length} />
-      </div>
-      <DataTable data={data} />
+      {/* </div> */}
+        <DataTable data={data} />
     </div>
   );
 };

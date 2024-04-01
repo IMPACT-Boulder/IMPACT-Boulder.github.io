@@ -1,4 +1,3 @@
-// plot.tsx
 import React, { useEffect, useState } from 'react';
 import Plotly from 'plotly.js-dist';
 import DropDown from './axisDropdown.tsx';
@@ -129,16 +128,22 @@ const DustPlot: React.FC<DustPlotProps> = ({ numberOfDataValues, data }) => {
       },
     };
 
-    
-
     Plotly.newPlot('dust_plot', plotData, layout,);
   }, [xAxis, yAxis, data, numberOfDataValues, xAxisScaleType, yAxisScaleType]);
 
   useEffect(() => {
     const updatePlot = () => {
-      Plotly.relayout('dust_plot', {
-        width: window.innerWidth * 0.9, // Adjust width as needed
-      });
+      const dustPlot = document.getElementById('dust_plot');
+      if (dustPlot && dustPlot.parentElement) { // Check if dustPlot and its parentElement are not null
+        const currentWidth = dustPlot.offsetWidth;
+        const containerWidth = dustPlot.parentElement.offsetWidth;
+        const initialWidth = containerWidth * 0.9; // Set an initial width based on a percentage of the container width
+        if (currentWidth !== initialWidth) {
+          Plotly.relayout('dust_plot', {
+            width: initialWidth,
+          });
+        }
+      }
     };
   
     updatePlot(); // Initial plot sizing
@@ -149,6 +154,7 @@ const DustPlot: React.FC<DustPlotProps> = ({ numberOfDataValues, data }) => {
       window.removeEventListener('resize', updatePlot);
     };
   }, []);
+  
   
   
   

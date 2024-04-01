@@ -7,6 +7,10 @@
   flex-direction: row;
 }
 
+#interface {
+  width: 100% !important;
+}
+
 .App::-webkit-scrollbar { 
   display: none;}
 

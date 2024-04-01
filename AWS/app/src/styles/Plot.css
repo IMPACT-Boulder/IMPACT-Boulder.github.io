@@ -8,8 +8,8 @@
     border-radius: 3px;
     text-align: left;
     padding: 20px;
-    right: 12%;
-    top: 700px;
+    left: 800px;
+    top: 1450px;
     position: absolute;
 
 } 
@@ -20,20 +20,32 @@
 #plot_div {
     padding: 20px;
     height: auto;
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    position: relative;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important; /* Make sure this rule is applied */
+    justify-content: center !important; /* Make sure this rule is applied */
 }
+
 #plot {
     width: 100%;
     height: 700px;
     margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
+
 #dust_plot {
     width: 100%;
     height: 100%;
     position: relative;
+}
+
+#plot-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 .svg-container {
     height: 900px !important;
@@ -65,16 +77,32 @@
    flex-direction: column;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1240px) {
     #key {
         width: 160px;
         height: 165px;
         padding: 20px;
-        right: 12%;
+        left: 66%;
         position: absolute;
     }
 
     #key h2 {
         font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    #key {
+        left: 62%;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    #key {
+        top: 1500px;
+        left: 53%;  
+        width: 190px;
+        height: 130px;
     }
 }
