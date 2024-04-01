@@ -71,8 +71,13 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
   const [actualArray, setActualArray] = useState<any[]>([]);
   const [errorMessage, setErrorMessage] = useState<string>('');
 
+  const handleChildError = (error: string) => {
+    setErrorMessage(error);
+  };
+
   const handleTagNamesChange = (value: string) => {
     console.log('Selected Tag Names:', value);
+    setErrorMessage(value.length === 0 ? 'Error: Something went wrong' : '');
     setSelectedTag(value);
   };
 
@@ -90,6 +95,7 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
 
   const handleGroupNamesChange = (values: string[]) => {
     console.log('Selected Group Names:', values);
+    setErrorMessage(values.length === 0 ? 'Error: Something went wrong' : '');
     setFormState((prevFormState) => ({ ...prevFormState, groupNames: values, selectedGroup: values[0] || '' }));
     // Set the selectedGroup based on the first value in the array or empty string if no value
   };
@@ -202,6 +208,11 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
 
   return (
     <div id="box">
+      {errorMessage && <div id='error_boundary'>
+        <h1>Server Error</h1>
+        <h2>Make sure you are connected to the LASP VPN</h2>
+        <h2>Secure Socket Layer not yet configured. Open a new tab and enter <a href='https://10.247.29.224:3000' target='_blank'>'https://10.247.29.224:3000'</a>. Click 'Advanced' or 'show details', and then choose to proceed. This issue is temporary. </h2>
+        </div>}
       <form onSubmit={handleFormSubmit}>
         <div id="controls" onKeyDown={handleKeyDown}>
           <div id="limit_box">
