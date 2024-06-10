@@ -1,0 +1,145 @@
+/*----------------------------------------------News-----------------------------------------*/
+#news_page_title {
+    padding-top: 80px;
+  }
+  .news_title {
+    color: #2d4159;
+    font-weight: bold;
+  }
+  .news_item {
+    height: auto;
+    max-width: 90% !important;
+    margin: 2% 1.5% !important;
+    background-color: #e2e2e2;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+  .news_content {
+    display: flex;
+    padding-right: 0;
+    margin-bottom: 0px !important;
+  }
+  .news_content_horz {
+    display: block;
+    padding: 20px;
+    margin-bottom: 0px !important;
+  }
+  .vid{
+    display: block !important;
+    margin-bottom: 0px !important;
+  }
+  .news_p {
+    width: 100%;
+    color: #040404;
+    margin-bottom: 0px;
+  }
+  .news_vid {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .center_news_img {
+    width: 100%; display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    height: 100% !important;
+    width: 100% !important;
+  }
+  /* .test {
+    height: 100%;
+  } */
+  .news_video_container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+  }
+  .news_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .news_page {
+    background-image: url("images/black-star-background.jpg") !important;
+   padding: 40px 0;
+  }
+  #flex_container {
+    background-image: url("images/black-star-background.jpg");
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .double_img { 
+    display: flex; 
+    justify-content: center;
+  }
+  .figcaption_double {
+    text-align: center;
+  }
+  .news_person {
+    width: 80%;
+  }
+  .news_img_big {
+    width: 100%;
+  }
+  @media only screen and (max-width: 1200px) {
+    .news_item {
+      max-width: 90% !important;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .news_content_horz_med {
+      display: block;
+      padding: 20px;
+      margin-bottom: 0px !important;
+    }
+    .news_content_horz_med .news_img {
+      margin: 0 !important;
+      min-width: 100%;
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    .news_content {
+      display: block;
+      padding: 20px;
+    }
+    .vid {
+      padding: 20px;
+    }
+    .news_title{
+      padding: 20px 20px 0 20px;
+    }
+    .news_p {
+      width: 100% !important;
+    }
+    /* .xl {
+      padding: 20px;
+    } */
+    .news_vid {
+      width: 100%;
+    }
+    .news_img {
+      margin: 0 !important;
+      min-width: 100%;
+    }
+    .double_img {
+      display: block; 
+    }
+    .double_first {
+      margin-bottom: 20px;
+    }
+    .news_person {
+      width: 60%;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .news_person {
+      width: 100%;
+    }
+  }

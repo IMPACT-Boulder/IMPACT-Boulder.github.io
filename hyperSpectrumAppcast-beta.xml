@@ -1,0 +1,81 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>HyperSpectrum</title>
+        <item>
+            <title>1.0.9</title>
+            <pubDate>Wed, 30 Nov 2022 16:35:06 +0100</pubDate>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>1.0.9</sparkle:shortVersionString>
+            <description><![CDATA[<title>Version 1.0.8 (Build 8)</title>
+<description>
+    <ul>  
+        <li> Version 1.0.9 (9):
+            <ul>
+	            <li> Improved the performance for spectra with hundreds of lines.
+	            <li> Fixed an issue that prevented the updater to work properly
+	        </ul> 
+    	<li> Version 1.0.8 (8):
+            <ul>
+	            <li> FIxed an issue that lead to a crash after adding the first line.
+	        </ul> 
+    	<li> Version 1.0.7 (7):
+            <ul>
+	            <li> FIxed an issue that prevented the app from launching.
+	        </ul>   
+	    <li> Version 1.0.6 (6):
+            <ul>
+	            <li> First release
+	        </ul>      
+    </ul>
+</description>
+]]></description>
+            <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
+            <enclosure url="https://impact.colorado.edu/HyperSpectrum.zip" length="11500759" type="application/octet-stream" sparkle:edSignature="l7BY5Efc60/pzZq4YG9DjiEXPzwrAiv5YLy4BK5B1V6sitxU3trr6lvMzn7xxmZO/iWxvcCARKjHYvVWz+RxCA=="/>
+        </item>
+        <item>
+            <title>1.0.8</title>
+            <pubDate>Tue, 29 Nov 2022 21:31:51 +0100</pubDate>
+            <sparkle:version>8</sparkle:version>
+            <sparkle:shortVersionString>1.0.8</sparkle:shortVersionString>
+            <description><![CDATA[<title>Version 1.0.4 (Build 7)</title>
+<description>
+    <ul>  
+    		<li> Version 1.0.4 (7):
+            <ul>
+	            <li> FIxed an issue that prevented the app from launching.
+	        </ul>    
+            <li> Version 1.0.4 (6):
+            <ul>
+	            <li> First release
+	        </ul>      
+    </ul>
+</description>
+]]></description>
+            <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
+            <enclosure url="https://impact.colorado.edu/HyperSpectrum.zip" length="11500132" type="application/octet-stream" sparkle:edSignature="KLLUBnvU9wylpieWQ3rlKnHfT/lRu6lJWrGQ+p3phOHhrGvNLVez68I/8lovUzapv/w//MkXB92WBRMNwS9rBg=="/>
+        </item>
+        <item>
+            <title>1.0.5</title>
+            <pubDate>Tue, 11 Oct 2022 12:45:37 +0200</pubDate>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>1.0.5</sparkle:shortVersionString>
+            <description><![CDATA[<title>Version 1.0.4 (Build 7)</title>
+<description>
+    <ul>  
+    		<li> Version 1.0.4 (7):
+            <ul>
+	            <li> FIxed an issue that prevented the app from launching.
+	        </ul>    
+            <li> Version 1.0.4 (6):
+            <ul>
+	            <li> First release
+	        </ul>      
+    </ul>
+</description>
+]]></description>
+            <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
+            <enclosure url="https://impact.colorado.edu/HyperSpectrum.zip" length="10072665" type="application/octet-stream" sparkle:edSignature="hYWFIC+yBh9YXUjHl5AOuT5OHt06F0VP8m1tEKkFIYYBFXwJErx7n0xgNFNiJnjr761+y1sROo4GFsLgYs4QCw=="/>
+        </item>
+    </channel>
+</rss>

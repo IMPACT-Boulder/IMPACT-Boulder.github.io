@@ -1,0 +1,6 @@
+
+.react-datepicker-popper {
+  z-index: 9999  !important; /* Ensure the calendar is positioned above other elements */
+}
+  
+  

@@ -1,0 +1,133 @@
+<title>Version 3.1.0 (Build 414)</title>
+<description>
+	This is a beta version which probably has not been sufficiently tested.
+	<ul>	 	 
+		<li> Version 3.1.0 (Build 414):
+			<ul>
+				<li> This is the second 3.1.0 release candidate: there have been still some bugs to smash.
+			</ul>	
+		<li> Version 3.1.0 (Build 412):
+			<ul>
+				<li> This is the 3.1.0 release candidate.
+			</ul>		
+		<li> Version 3.1.0 (Build 410):
+			<ul>
+				<li> Another suite of bug fixes before the release candidate is ready for prime time.
+			</ul>
+		<li> Version 3.1.0 (Build 409):
+			<ul>
+				<li> This will be the last 3.1.0 beta release. The next release will be the Release Candidate.
+				<li> Improves the overall performance and stability.
+				<li> Fixes a rare issue where the app could not be quitted any longer.
+			</ul>	 	 	
+		<li> Version 3.1.0 (Build 408):
+			<ul>
+				<li> Improves the overall performance and stability.
+				<li> Fixes the selection of the anchor line via the line table.
+				 <li> Fixes the selection of ignored lines via the line table.
+			</ul>
+		<li> Version 3.1.0 (Build 407):
+			<ul>
+				<li> Improves the way auxiliary data downloaded from Impact are processed.
+				<li> Estimates the impact time of downloaded data from the fitted target waveform. 
+			</ul>   	
+		<li> Version 3.1.0 (Build 406):
+			<ul>
+				<li> Events associated with the wrong QD feature are noe marked in the Accelerator Statistics tool.
+				<li>  Fixes an issue introduced in the previous release where events could not any longer be selected in the Accelerator view.
+				<li> Fixes an issue that affected the upload of accelerator waveforms. 
+			</ul>   	
+		<li> Version 3.1.0 (Build 405):
+			<ul>
+					<li> Supports MacOS Ventura. Note that you need to install the update before you upgrade your computer to MacOS Ventura. 
+					       Ventura's GateKeeper will not accept the previous version to run.
+					<li> Fixes an issue that affected the undoing of stretch parameter changes.
+					<li> Fixed plotting of spectra in the mass domain.
+					<li> Fixed and improved the browser mode.
+					<li> Fixed an issue that affected the change tracking of catalog items such as line and composition types
+					<li> Improved the overall performance and stability
+			</ul>   	
+		<li> Version 3.1.0 (Build 403):
+			<ul>
+					<li> Provides a predefined DDA instrument.
+					<li> Fixes an issue that affected the undoing of assigned anchor lines.
+					<li> Fixes a rare issue that affected the import of scope data.
+					<li> Other bug fixes. 
+			</ul>   
+		<li> Version 3.1.0 (Build 402):
+			<ul>
+					<li> The next few beta releases will only include bug fixes to prepare the release of the stable version 3.1.0.
+					<li> Multiple behind the scene improvements and bug fixes.
+			</ul>   
+		<li> Version 3.1.0 (Build 401):
+			<ul>
+					<li> Provides a predefined IDEX instrument.
+					<li> The database query builder now has an approximatly equal operator for event time searches.
+					<li> Coded reviewed and refactored all statistics tools.
+					<li> A large number of bug fixes. 
+			</ul>   
+		<li> Version 3.1.0 (Build 399):
+			<ul>
+					<li> Moved Import and Export submenues from File menu to main bar.
+					<li> Query builder time stamp format is now using the long form.
+					<li> Fixes an issue which caused the app to crash after opening the query dialog when the current window has an open side bar.
+					<li> Fixes an issue which caused the app to crash after closing a project when certain statistics views are still open.
+					<li> Other bug fixes. 
+			</ul>   
+		<li> Version 3.1.0 (Build 398):
+			<ul>
+					<li> Database import is more forgiving in cas of data integrity issues.
+					<li> Data base query alters are now presented.
+					<li> Line labels are now correctly placed in browser mode.
+					<li> Other bug fixes. 
+			</ul>   
+		<li> Version 3.1.0 (Build 397):
+			<ul>
+					<li> Fixes an issue where sometimes the cursor was not any longer responding to mouse movements.
+					<li> Fixes some menu items in the main menu.
+					<li> Rewrote data viewer code to increase stability.
+					<li> Other bug fixes. 
+			</ul>
+		<li> Version 3.1.0 (Build 395):
+			<ul>
+					<li> Queries of large data sets are now much faster.
+					<li> The number of bins to compute the composition statistics can now be set by the user.
+					<li> Rewrote data viewer code to increase stability.
+					<li> Fixes an issue that prevented the line drop down menu in the Spectrum Tab's line table to be updated.
+					<li>  Multiple bug fixes. 
+			</ul>
+		<li> Version 3.1.0 (Build 394):
+			<ul>
+					<li> Data sets can now be quality marked in the Project/General dialog.
+					<li> Supports Impact database version 3.4.0, which now accepts QD (accelerator) data.
+					<li> Ignored and locked state of mass lines are now exported to Impact DB. 
+	    			<li> H5 imports and exports now include QD (accelerator) data
+	    			<li> Anchor lines are now correctly loaded from Impact DB.
+	    			<li> Fixes an issue where CDA data sets could not be merged.
+	    	</ul>
+		<li> Version 3.1.0 (Build 393):
+			<ul>
+	    			<li> This version brings support of user-defined Python functions. Right now Python modules computing line shapes and waveform models can be called by Spectrum. Python plugins need to registered via the Preferences dialog. Because Spectrum is sandboxed, it cannot call call external programs including the Python interpreter. For this reason, a full Python 3.8 package including NumPy is bundled into the App (which explains the large increase of the app's size).
+	    			<li> The H5 import and export capabilities have been further improved. H5 archives starting with a LILBID group are considered to contain LILBID raw data generated by the Freie University group and will be coverted into a Spectrum project.
+	    			<li> This version now imports CCSDS packet data generated by SUDA FSW version 9.
+	    			<li> Impproved import of PSU data. The correlation between PSU and QD data can be analysed indepth with the new QD Detection Statistics tool.
+	    			<li> New tool for visualizing the impact plasma composition as function of the impact speed, impact energy, and impact energy density.
+	    			<li> Improved Impact database import and export.
+	    			<li> Multiple bug fixes. 
+	   		</ul>
+	    <li> Version 3.1.0 (Build 388):
+	    	<ul>
+	    			<li> New Impact Database account management, which moved to the Preferences dialog. 
+	    				   Account credentials will be stored in the user's local keychain, implying that passwords
+	    				   only need entered at the time of the account's registration with the app. Accounts can 
+	    				   be selected in the main menu's Impact menu.
+	    		    <li> Impact Database action menus have been moved to stand alone menu Impact located 
+	    		           in the main menu bar.
+	    		    <li> The H5 export has been significantly enhanced to allow for the reimport of H5 files. Import 
+	    		           of H5 Spectrum archives are now possible.
+	    		    <li> Major parts of the app's code base have been moved to external packages to improve 
+	    		           the quality and testability of the software.
+	    		    <li> Many minor improvenments and bug fixes.
+	    	</ul>
+	</ul>
+</description>

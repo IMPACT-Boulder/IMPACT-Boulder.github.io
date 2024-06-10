@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "title": "Jupiter Nanograins Model",
+        "status": "planned",
+        "description" : "Adopt Mihaly's model of the Io torus emitting nanograins for predicting the nanograin flux."
+    },
+    {
+        "id": "2",
+        "title": "ISD model",
+        "status": "planned",
+        "description" : "Adding model describing the ISD flux onto SUDA."
+    },
+    {
+        "id": "3",
+        "title": "Staubach IDP model",
+        "status": "planned",
+        "description" : "Add the IDP model by P. Staubach et al.."
+    },
+    {
+        "id": "4",
+        "title": "Goode MC model.",
+        "status": "planned",
+        "description" : "Add Bill Goode's compositional mapping model to the flyby view."
+    }
+]

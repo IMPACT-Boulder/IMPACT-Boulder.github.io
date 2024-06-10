@@ -1,0 +1,323 @@
+
+/*----------------------------------------------Site Wide Shared Classes-------------------------------------*/
+html {
+  width: 100%;
+}
+.secondary {
+  width: 100%;
+}
+.page__content{
+  width: 100%;
+  background-color: #f5f5f5;
+  height: 100%;
+}
+.content_container {
+ width: 90%;
+}
+
+h2{
+    color:#2d4159;
+    font-weight: bold;
+}
+h1{
+  color: #2d4159;
+  font-weight: bold;
+}
+p {
+  overflow: hidden;
+}
+
+.title__bar {
+  background: linear-gradient(rgb(0, 0, 105) 3rem, #f5f5f5);
+  height: 140px;
+  width: 100%;
+  margin-top: 0px;
+  padding-top: 1rem;
+}
+.title__bar p {
+  margin-top: 0px;
+  color: #fff;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  margin-left: 3rem;
+  font-size: 2.5rem;
+  top: 2rem;
+}
+
+.post-image{margin-bottom:40px;}
+
+.blog-post-title a{color:#979797; background-color:#FFFFFF;}
+.blog-post-title a:hover{color:#FF9900; background-color:#FFFFFF;}
+.read-more{text-align:right;}
+
+.blog-post-meta{font-size:.8em;}
+.blog-post-meta ul{margin:0; padding:0; list-style:none;}
+.blog-post-meta ul li{display:inline; margin-left:5px; padding-left:5px; border-left:1px solid #D6D6D6;}
+.blog-post-meta ul li:first-child{margin-left:0; padding:0; border:none;}
+.page__top{
+  height: 60vh;
+  width: 100%;
+  background-image: url("images/Butterfly-Nebula_Hubble.jpg");
+  position: relative;
+  background-size:cover;
+  background-position:center;
+}
+.page__top__bottom {
+  width: 100%;
+  height: 14rem;
+  position: absolute;
+  bottom: 0;
+  padding-top: 1rem;;
+  background: linear-gradient(transparent, #2d4159 50%);
+}
+.bottom__nav {
+    position: absolute;
+    bottom: 4rem;
+    color: #000;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    margin-left: 3rem;
+}
+.bottom__nav .divide{
+    font-weight: 800;
+    color: #f5f5f5;
+}
+.page__title {
+    position: absolute;
+    bottom: 1rem;
+    font-size: 2.5rem;
+    color: #fff;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    margin-left: 3rem;
+    line-height: 1em;
+}
+.content_section {
+  margin-top: 9%;
+}
+.content_title {
+  margin-left: 5%;
+  color:#2d4159;
+  font-weight: bold;
+}
+@media only screen and (min-width: 1200px) {
+  .secondary {
+    background-image: url("images/black-star-background.jpg");
+  }
+  
+}
+@media only screen and (max-width: 1200px) {
+  .secondary {
+    background-image: none;
+  }
+  .page__content{
+    min-width: 100vw;
+  }
+  .tile {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .page__title {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .page__title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-left: 1rem;
+  }
+  .bottom__nav {
+    margin-left: 1rem;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .page__title {
+   margin-left: 1rem;
+  }
+  .bottom__nav {
+    display: none;
+    
+  }
+}
+
+ .iframe_container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.iframe_container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+ .tile {
+  background-color: #e2e2e2;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  width: auto;
+  height: auto;
+  padding: 50px;
+}
+
+@media only screen and (max-width: 540px) {
+  .tile {
+    width: auto;
+  }
+}
+
+
+/*-------------------------------------------------------HEADER NAV---------------------------------------------------------------*/
+.header__top {
+  width: 100%;
+  height: 120px;
+  background-color: #000;
+  position: fixed;
+  top: 0px;
+  z-index: 5;
+  border-bottom: 0.02rem solid #000 ;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: top 0.5s ease-in-out;
+}
+.the-header { /*make header dissapear*/
+  top: 0px;
+  transition: top 0.5s ease-in-out;
+}
+.header__logo {
+  height: 90px;
+  width: auto;
+  margin: 15px 20px;
+}
+#hamburger__menu {
+    background-color: #000;
+    z-index: 10;
+}
+#menu__toggle {
+    opacity: 0;
+}
+#menu__toggle:checked+.menu__btn .menu__hamburger {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked+.menu__btn .menu__hamburger::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+
+#menu__toggle:checked+.menu__btn .menu__hamburger::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked~.menu__box {
+  right: 0 !important;
+}
+/*#menu__toggle:checked~.menu__btn {
+  position:fixed !important;
+}*/
+.menu__btn {
+  position: fixed;
+  right: 40px;
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  z-index: 12;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+#menu {
+  color: #fff;
+  font-size: 1.5rem;
+  
+}
+.menu__btn .menu__hamburger,
+.menu__btn .menu__hamburger::before,
+.menu__btn .menu__hamburger::after {
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: #FFF;
+  transition-duration: .5s;
+}
+.menu__btn .menu__hamburger::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn .menu__hamburger::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: rgba(79, 112, 148, 0.8);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .7);
+  transition-duration: .5s;
+  z-index: 10;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #87b6ca;
+}
+.nav_up { /*---disappearing nav effect---*/
+  display: none;
+}
+@media only screen and (max-width: 640px) {
+  .header__top {
+    height: 100px;
+  }
+  .header__logo {
+    height: 70px;
+    width: auto;
+  }
+}
+@media only screen and (max-height: 556px) {
+  .menu__box {
+    overflow-y: scroll;
+    height: calc(100% - 100px);
+  }
+  
+}
+@media only screen and (max-width: 490px) {
+  .header__logo {
+    height: 50px;
+    width: auto;
+    margin-top: 20px;
+  }
+  .header__top {
+    height: 80px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .header__logo {
+    display: none;
+  }
+  .menu__box {
+    right: -120%;
+  }
+}
+

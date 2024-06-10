@@ -1,0 +1,68 @@
+  #limit_box {
+    display: flex;
+    margin: 20px 30px;
+  }
+
+  #constraints {
+    display: block;
+    width: 95%;
+    margin-left: 20px;
+  }
+  
+  #constraints_top {
+    display: flex;
+    /* margin: 20px 0px 40px 0px; */
+    width: 100%;
+  }
+
+  #contstraints_main {
+    width: 95%;
+  }
+
+  .constraint_container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .controls {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  .controls h3 {
+    padding-left: 10px;
+  }
+  
+  #submit {
+    margin: 20px 30px;
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+  }
+  #submit-load {
+    display: flex;
+    align-items: center;
+  }
+  
+  #box {
+    width: 100%;
+    height: auto;
+  }
+
+  .constraint {
+    padding: 0 3px;
+  }
+
+  #error_boundary {
+    color: red;
+  }
+
+
+  @media only screen and (max-width: 546px) {
+    .constraint_container {
+      flex-direction: column;
+    }
+    #constraints_main {
+      display: flex;
+    }
+  }

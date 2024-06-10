@@ -1,0 +1,127 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>SUDA</title>
+        <item>
+            <title>1.6.0</title>
+            <pubDate>Sun, 12 May 2024 19:04:28 +0200</pubDate>
+            <sparkle:version>34</sparkle:version>
+            <sparkle:shortVersionString>1.6.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <description><![CDATA[<title>Version 1.6.0 (Build 34)</title>
+<description>
+    <ul> 
+        <li> Version 1.6.0 (Build 34):
+            <ul>
+                <li> Added Cruise pannel:
+                <ul>
+                    <li> Added cruise CK to app bundle.
+                    <li> IDP model by Divine for estimating dust count.
+                    <li> Pointing models for IDPs, ISD, and Jovian nanograins.
+                </ul>
+                <li> Added splash screen (experimental).
+                <li> Added roadmap.
+                <li> Performance improvements.
+            </ul>  
+        <li> Version 1.4.0 (Build 32):
+        <ul>
+            <li> Shows ground tracks.
+            <li> Marks landforms on surface maps.
+            <li> Added dialog for importing KML encoded landform definitions. 
+        </ul>  
+        <li> Version 1.2.1 (Build 30):     
+        <ul>
+            <li> Can be run without any external Spice ressources. To this aim unselect
+                 "Spice data is loaded from user-defined directory". In this configuration
+                 the app uses the 21F31V6 tour kernels, which are bundled with the app.
+            <li> Improved import of tour simulations.
+            <li> Improved requirement verification.
+            <li> Many bug fixes and improvements.
+        </ul>  
+        <li> Version 1.1.0 (Build 28):     
+        <ul>
+            <li> Migrated orbit, time line, ring survey, and nanograin viewers.
+            <li> Analyses orbits, identifies ring and nanograins survey opportunities.
+		</ul>
+     	<li> Version 1.0.1 (Build 26): 
+   		<ul>
+            <li> Identifies flybys on Jovian moons based on Europa Clipper kernels.
+            <li> Analyses flybys, predicts impact rates, and identifies health and safety issues.
+		</ul>	
+    </ul>
+</description>
+]]></description>
+            <enclosure url="https://impact.colorado.edu/SUDA.zip" length="104179656" type="application/octet-stream" sparkle:edSignature="ORvi2sRmWLwLCFRJnzOft64zA2F7UJyu0Lnpgf7G3L9/c2MGQ4CqYvNcDleidlmIAuzhYXH89EyxzaV7+QeeCw=="/>
+        </item>
+        <item>
+            <title>1.4.0</title>
+            <pubDate>Wed, 17 Apr 2024 12:09:22 +0200</pubDate>
+            <sparkle:version>32</sparkle:version>
+            <sparkle:shortVersionString>1.4.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <description><![CDATA[<title>Version 1.4.0 (Build 32)</title>
+<description>
+    <ul> 
+        <li> Version 1.4.0 (Build 32):
+            <li> Shows ground tracks.
+            <li> Marks landforms on surface maps.
+            <li> Added dialog for importing KML encoded landform definitions. 
+        <li> Version 1.2.1 (Build 30):     
+        <ul>
+            <li> Can be run without any external Spice ressources. To this aim unselect
+                 "Spice data is loaded from user-defined directory". In this configuration
+                 the app uses the 21F31V6 tour kernels, which are bundled with the app.
+            <li> Improved import of tour simulations.
+            <li> Improved requirement verification.
+            <li> Many bug fixes and improvements.
+        </ul>  
+        <li> Version 1.1.0 (Build 28):     
+        <ul>
+            <li> Migrated orbit, time line, ring survey, and nanograin viewers.
+            <li> Analyses orbits, identifies ring and nanograins survey opportunities.
+		</ul>
+     	<li> Version 1.0.1 (Build 26): 
+   		<ul>
+            <li> Identifies flybys on Jovian moons based on Europa Clipper kernels.
+            <li> Analyses flybys, predicts impact rates, and identifies health and safety issues.
+		</ul>	
+    </ul>
+</description>
+]]></description>
+            <enclosure url="https://impact.colorado.edu/SUDA.zip" length="101067972" type="application/octet-stream" sparkle:edSignature="iCYBWJntKhCQOjot7KlTRrNHF6fdsoQ2axWXYmkE5wMXBpS1Po2WbYse56u8DTbvQOauC7/LM1ZG3FNZbj5mCA=="/>
+        </item>
+        <item>
+            <title>1.2.1</title>
+            <pubDate>Mon, 08 Apr 2024 11:25:52 -0600</pubDate>
+            <sparkle:version>30</sparkle:version>
+            <sparkle:shortVersionString>1.2.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <description><![CDATA[<title>Version 1.2.1 (Build 30)</title>
+<description>
+    <ul> 
+        <li> Version 1.2.1 (Build 30):     
+        <ul>
+            <li> Can be run without any external Spice ressources. To this aim unselect
+                 "Spice data is loaded from user-defined directory". In this configuration
+                 the app uses the 21F31V6 tour kernels, which are bundled with the app.
+            <li> Improved import of tour simulations.
+            <li> Improved requirement verification.
+            <li> Many bug fixes and improvements.
+        </ul>  
+        <li> Version 1.1.0 (Build 28):     
+        <ul>
+            <li> Migrated orbit, time line, ring survey, and nanograin viewers.
+            <li> Analyses orbits, identifies ring and nanograins survey opportunities.
+		</ul>
+     	<li> Version 1.0.1 (Build 26): 
+   		<ul>
+            <li> Identifies flybys on Jovian moons based on Europa Clipper kernels.
+            <li> Analyses flybys, predicts impact rates, and identifies health and safety issues.
+		</ul>	
+    </ul>
+</description>
+]]></description>
+            <enclosure url="https://impact.colorado.edu/SUDA.zip" length="78522022" type="application/octet-stream" sparkle:edSignature="hEpA49kZGbFbDcGFRSRP1dJBQneX80j8HiaOOrRHRn/CpDESt9x9bUE8oYYi2RfRo9olVVWiTnoRHSlYt6lbCQ=="/>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,32 @@
+/*----------------------------------------------Student Profiles-------------------------------------*/
+.student_photo {
+
+    height: auto !important; 
+    align-items: center;
+    margin-left: 100px;
+    }
+    .person_description {
+     line-height: 1.5;
+     font-size: 16px;
+    }
+    .talks {
+     margin-bottom: 40px;
+    }
+    
+    @media only screen and (max-width: 1050px) {
+      .student_photo {
+        margin-left: 50px;
+      }
+    }
+    @media only screen and (max-width: 900px) {
+      .student_photo {
+        margin-left: 20px;
+      }
+    }
+      @media only screen and (max-width: 340px) {
+        .student_photo {
+          margin-left: 0px !important;
+        }
+    }
+    
+    

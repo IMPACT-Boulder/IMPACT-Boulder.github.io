@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "title": "Migrate Template dialog to SwiftUI",
+        "status": "done",
+        "description" : "Apple is in the process of transistioning from Cocoa to SwiftUI. To be compatible with the next OS versions and to improve the maintainablility of the code base, essential parts of the Spectrum UI need to be migrated."
+    },
+    {
+        "id": "2",
+        "title": "Enhance Impact Queries",
+        "status": "planned",
+        "description" : "The current query dialog is confusing and not really flexible enough."
+    },
+    {
+        "id": "3",
+        "title": "Improve scripted queries.",
+        "status": "planned",
+        "description" : "Enhance the capabilities of the current test version."
+    },
+    {
+        "id": "4",
+        "title": "Improve baseline assignment.",
+        "status": "planned",
+        "description" : "Enable automatic baseline assignments."
+    }
+]
