@@ -4,18 +4,23 @@
         <title>Spectrum</title>
         <item>
             <title>3.3.0-beta</title>
-            <pubDate>Fri, 07 Jun 2024 17:39:14 +0200</pubDate>
-            <sparkle:version>471</sparkle:version>
+            <pubDate>Tue, 11 Jun 2024 07:46:11 +0200</pubDate>
+            <sparkle:version>472</sparkle:version>
             <sparkle:shortVersionString>3.3.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<title>Version 3.3.0 (Build 469)</title>
 <description>
 	This is a beta version which probably has not been sufficiently tested.
 	<ul>
+		<li> Version 3.3.0 (472):
+			<ul>
+				<li> Fixed Target dialog.
+				<li> As a fallback for MacOS 12 users, the accounts dialog has been added to the Impact menu.
+			</ul>
 		<li> Version 3.3.0 (471):
 			<ul>
-				<li> Fixed Template dialog
-				<li> Fixed Materials dialog
+				<li> Fixed Template dialog.
+				<li> Fixed Materials dialog.
 				<li> Other bug fixes.
 			</ul>
 		<li> Version 3.3.0 (470):
@@ -100,7 +105,7 @@
 	</ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="78747326" type="application/octet-stream" sparkle:edSignature="1T7yGH2Ye0VgI8a1Df302HB9IsctGV3umOGITE3gctQnesXvdKGVHN1pcNYPDxSJAYvb41jbiHfQMXuPUg2fAw=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="78767980" type="application/octet-stream" sparkle:edSignature="87Y3PqA6nrTARN/lLuKdk8d1IeahNCjgUVlHv2bYMQzIQ2QO3KYpHYCSihywMca5rZQN+CUoi+krsn2+oelpDg=="/>
         </item>
     </channel>
 </rss>
