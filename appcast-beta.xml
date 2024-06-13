@@ -4,14 +4,19 @@
         <title>Spectrum</title>
         <item>
             <title>3.3.0-beta</title>
-            <pubDate>Thu, 13 Jun 2024 06:43:10 +0200</pubDate>
-            <sparkle:version>473</sparkle:version>
+            <pubDate>Thu, 13 Jun 2024 22:29:30 +0200</pubDate>
+            <sparkle:version>474</sparkle:version>
             <sparkle:shortVersionString>3.3.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<title>Version 3.3.0 (Build 469)</title>
 <description>
 	This is a beta version which probably has not been sufficiently tested.
 	<ul>
+		<li> Version 3.3.0 (474):
+			<ul>
+				<li> Fixed issue in Impact query filter UI.
+				<li> Improved field dropdown menu in Impact query UI.
+			</ul>
 		<li> Version 3.3.0 (473):
 			<ul>
 				<li> Supports upcomming MacOS 15.
@@ -111,7 +116,7 @@
 	</ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="76977441" type="application/octet-stream" sparkle:edSignature="e5eQFHd+JQu2ZHSCYDgp2CQh2Vq7QLjh2j2hYD3WXGBX0HRSDPOsLiteQbHB5EroO7Xig1j+yqtIYOXo+nrTBw=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="76991691" type="application/octet-stream" sparkle:edSignature="idu9lxvVtT0ml6+hRRlWME/cQQWP+BO/x+DCe9U8BEfWZVopKoSY17kz+sWLVoYxtqrQRP2DXbfdtGovztcLBA=="/>
         </item>
     </channel>
 </rss>
