@@ -4,14 +4,24 @@
         <title>Spectrum</title>
         <item>
             <title>3.3.0-beta</title>
-            <pubDate>Thu, 13 Jun 2024 22:29:30 +0200</pubDate>
+            <pubDate>Sat, 15 Jun 2024 21:48:02 +0200</pubDate>
             <sparkle:version>474</sparkle:version>
             <sparkle:shortVersionString>3.3.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.3.0 (Build 469)</title>
+            <description><![CDATA[<title>Version 3.3.0 (Build 475)</title>
 <description>
 	This is a beta version which probably has not been sufficiently tested.
 	<ul>
+		<li> Version 3.3.0 (475):
+			<ul>
+				<li> Fixed another issue in the Impact query filter UI. Selecting time ranges do not crash any longer.
+				<li> Rewrote Run Script query UI. Swift meta kernels will now be loaded before executing the query.
+				<li> Known issues:
+					<ul>
+						<li> Computing sum spectra will lead to a crash.
+						<li> Running Impact query cannot be canceled.
+					</ul>
+			</ul>
 		<li> Version 3.3.0 (474):
 			<ul>
 				<li> Fixed issue in Impact query filter UI.
@@ -116,7 +126,7 @@
 	</ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="76991691" type="application/octet-stream" sparkle:edSignature="idu9lxvVtT0ml6+hRRlWME/cQQWP+BO/x+DCe9U8BEfWZVopKoSY17kz+sWLVoYxtqrQRP2DXbfdtGovztcLBA=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="77044847" type="application/octet-stream" sparkle:edSignature="vEIlcH8e1+HYRDHnl/qll1jcYa5C0Cd6f+Pf+OA+EDlMFxGsCMnwW4urCdM/FduQm/6HyemBJsDCJuUSHjnNBQ=="/>
         </item>
     </channel>
 </rss>
