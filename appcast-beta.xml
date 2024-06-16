@@ -4,14 +4,19 @@
         <title>Spectrum</title>
         <item>
             <title>3.3.0-beta</title>
-            <pubDate>Sat, 15 Jun 2024 21:48:02 +0200</pubDate>
-            <sparkle:version>474</sparkle:version>
+            <pubDate>Sun, 16 Jun 2024 23:25:18 +0200</pubDate>
+            <sparkle:version>476</sparkle:version>
             <sparkle:shortVersionString>3.3.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.3.0 (Build 475)</title>
+            <description><![CDATA[<title>Version 3.3.0 (Build 476)</title>
 <description>
 	This is a beta version which probably has not been sufficiently tested.
 	<ul>
+		<li> Version 3.3.0 (476):
+			<ul>
+				<li> Computation of a sum spectrum will not any longer crash the app.
+				<li> Other bug fixes.
+			</ul>
 		<li> Version 3.3.0 (475):
 			<ul>
 				<li> Fixed another issue in the Impact query filter UI. Selecting time ranges do not crash any longer.
@@ -126,7 +131,7 @@
 	</ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="77044847" type="application/octet-stream" sparkle:edSignature="vEIlcH8e1+HYRDHnl/qll1jcYa5C0Cd6f+Pf+OA+EDlMFxGsCMnwW4urCdM/FduQm/6HyemBJsDCJuUSHjnNBQ=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="77341306" type="application/octet-stream" sparkle:edSignature="NowoYQDwHRiVlZA7ZatfCRdKarDoTcYXsl6dbaK4BbZ0FxvztcYWKGrdCU6OH2CvLEcj1tecWK4ERHU1MZldDA=="/>
         </item>
     </channel>
 </rss>
