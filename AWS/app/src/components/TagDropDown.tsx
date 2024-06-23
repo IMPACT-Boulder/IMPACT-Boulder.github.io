@@ -28,7 +28,7 @@ const TagDropdown: React.FC<TagDropdownProps> = ({ onChange, selectedTag, select
                 console.log('Selected Group:', selectedGroup); // Log selected group name
                 if (!selectedGroup) return; // Do not fetch tag names if no group is selected
                 // Fetch tag names based on the selected group
-                const response = await fetch(`https://10.247.28.195:3000/api/tag_names?selectedGroup=${selectedGroup}`);
+                const response = await fetch(`https://10.247.28.237:3000/api/tag_names?selectedGroup=${selectedGroup}`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch');
                 }

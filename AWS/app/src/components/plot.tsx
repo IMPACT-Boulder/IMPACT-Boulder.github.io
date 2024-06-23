@@ -110,37 +110,47 @@ const DustPlot: React.FC<DustPlotProps> = ({ numberOfDataValues, data }) => {
         },
         hoverinfo: 'text',
         text: scaledRadii.map((_, index) =>  // Use '_' as a placeholder to indicate unused parameter
-  `Velocity[ km/s ]: ${limitedVelocities[index]}<br>Mass [ kg ]: ${limitedMasses[index]}<br>Charge[ C ]: ${limitedCharges[index]}<br>Original Radius[ m ]: ${limitedRadii[index]}<br>Trace Number: ${limitedTraceNumbers[index]}<br>Estimate Quality: ${limitedEstimateQualities[index]}<br>Velocity[ km/s ]: ${limitedVelocities[index]}<br>Time [ MST ]: ${limitedTimes[index]}<br>Dust Type: ${limitedDataItems[index]['DustName']}<br>Experiment Name: ${limitedDataItems[index]['Tag']}`,
-),
-      
+        `<br> <br> <br>Velocity[ km/s ]: ${limitedVelocities[index]}<br>Mass [ kg ]: ${limitedMasses[index]}<br>Charge[ C ]: ${limitedCharges[index]}<br>Original Radius[ m ]: ${limitedRadii[index]}<br>Trace Number: ${limitedTraceNumbers[index]}<br>Estimate Quality: ${limitedEstimateQualities[index]}<br>Time [ MST ]: ${limitedTimes[index]}<br>Dust Type: ${limitedDataItems[index]['DustName']}<br>Experiment Name: ${limitedDataItems[index]['Tag']}`,
+        ),
+        hoverlabel: {
+          bgcolor: '#A4D2FE',  // Background color of the hover label
+          font: {
+            color: '#000',  // Text color of the hover label
+            size: 12,  // Font size of the hover label
+          },
+          bordercolor: '#000'  // Border color of the hover label
+        }
       },
     ];
 
     // Plot layout
-    const layout = {
-      // title: 'Dust Plot',
+    const initialLayout = {
       xaxis: {
-        zeroline: false,
-        title: getXAxisTitle(xAxis),
-        automargin: true,
-        type: xAxis === 'Time' ? 'date' : xAxisScaleType,
-        titlefont: {
-          color: 'black',
-        },
+          zeroline: false,
+          title: axisLabelMapping[xAxis] || xAxis,
+          automargin: true,
+          type: xAxis === 'Time' ? 'date' : xAxisScaleType,
       },
       yaxis: {
-        zeroline: false,
-        title: getYAxisTitle(yAxis),
-        automargin: true,
-        type: yAxis === 'Time' ? 'date' : yAxisScaleType,
-        titlefont: {
-          color: 'black',
-        },
+          zeroline: false,
+          title: axisLabelMapping[yAxis] || yAxis,
+          automargin: true,
+          type: yAxis === 'Time' ? 'date' : yAxisScaleType,
       },
-    };
+      margin: { l: 100, t: 20, b: 40, r: 20 },
+      plot_bgcolor: "white",
+      paper_bgcolor: "white",
+  };
 
-    // Create plot
-    Plotly.newPlot('dust_plot', plotData, layout);
+  Plotly.newPlot('dust_plot', plotData, initialLayout).then(() => {
+      Plotly.relayout('dust_plot', {
+          'yaxis.titlefont.size': 40,
+          'yaxis.titlefont.color': 'black',
+          'xaxis.titlefont.color': 'black',
+          'yaxis.titlestandoff': 10,
+          'yaxis.rotate': -45  // Using negative to rotate counter-clockwise
+      });
+  });
   }, [xAxis, yAxis, data, numberOfDataValues, xAxisScaleType, yAxisScaleType]);
 
   // Effect hook for plot resizing
@@ -206,16 +216,6 @@ const DustPlot: React.FC<DustPlotProps> = ({ numberOfDataValues, data }) => {
       default:
         return masses;
     }
-  };
-
-  // Function to get X axis title
-  const getXAxisTitle = (axis: string) => {
-    return axis === '' ? '' : axisLabelMapping[axis] || axis;
-  };
-
-  // Function to get Y axis title
-  const getYAxisTitle = (axis: string) => {
-    return axis === '' ? '' : axisLabelMapping[axis] || axis;
   };
 
   return (
