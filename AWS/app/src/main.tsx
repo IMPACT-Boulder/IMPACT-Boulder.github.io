@@ -1,11 +1,28 @@
-//main.tsx
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
+const { app, BrowserWindow } = require('electron');
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+function createWindow () {
+  // Create the browser window.
+  const mainWindow = new BrowserWindow({
+    width: 800,
+    height: 600,
+    webPreferences: {
+      nodeIntegration: true
+    }
+  });
+
+  // and load the index.html of the app.
+  mainWindow.loadURL('http://localhost:3000');
+
+  // Open the DevTools.
+  mainWindow.webContents.openDevTools();
+}
+
+app.on('ready', createWindow);
+
+app.on('window-all-closed', function () {
+  if (process.platform !== 'darwin') app.quit();
+});
+
+app.on('activate', function () {
+  if (BrowserWindow.getAllWindows().length === 0) createWindow();
+});

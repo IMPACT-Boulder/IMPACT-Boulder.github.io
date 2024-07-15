@@ -1,6 +1,7 @@
 {
-  "name": "app",
+  "name": "dust-data-digger",
   "version": "0.1.0",
+  "description": "Dust Data Digger application",
   "private": true,
   "homepage": "https://impact.colorado.edu/",
   "dependencies": {
@@ -34,8 +35,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "electron-start": "NODE_ENV=production electron .",
-  "electron-dev": "NODE_ENV=development electron ."
-  },  
+    "electron-dev": "NODE_ENV=development electron ."
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -55,9 +56,20 @@
     ]
   },
   "devDependencies": {
+    "@types/babel__core": "^7.20.5",
+    "@types/babel__generator": "^7.6.8",
+    "@types/babel__template": "^7.4.4",
+    "@types/babel__traverse": "^7.20.6",
     "@types/d3": "^7.4.3",
     "@types/d3-scale": "^4.0.8",
     "@types/d3-scale-chromatic": "^3.0.3",
+    "@types/geojson": "^7946.0.14",
+    "@types/http-cache-semantics": "^4.0.4",
+    "@types/istanbul-lib-coverage": "^2.0.6",
+    "@types/istanbul-lib-report": "^3.0.3",
+    "@types/istanbul-reports": "^3.0.4",
+    "@types/jest": "^29.5.12",
+    "@types/keyv": "^4.2.0",
     "@types/lodash": "^4.14.202",
     "@types/node": "^20.12.10",
     "@types/papaparse": "^5.3.14",
@@ -65,12 +77,26 @@
     "@types/react-datepicker": "^6.0.1",
     "@types/react-dom": "^18.2.24",
     "@types/react-window": "^1.8.8",
-    "@vitejs/plugin-react": "^4.2.1",
-    "electron": "^30.0.2",
+    "@types/responselike": "^1.0.3",
+    "@types/stack-utils": "^2.0.3",
+    "@types/testing-library__jest-dom": "^6.0.0",
+    "@types/yauzl": "^2.10.3",
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^8.2.2",
+    "electron": "^30.2.0",
+    "electron-builder": "^24.13.3",
     "gh-pages": "^6.1.1",
     "typedoc": "^0.25.13",
     "typescript": "^5.4.5",
-    "vite": "^5.1.2"
+    "vite": "^5.1.2",
+    "wait-on": "^7.2.0"
   },
-  "main": "src/electron-starter.js"
+  "main": "src/electron-starter.js",
+  "build": {
+    "appId": "com.example.dustdatadigger",
+    "productName": "Dust Data Digger",
+    "mac": {
+      "category": "public.app-category.utilities"
+    }
+  }
 }
