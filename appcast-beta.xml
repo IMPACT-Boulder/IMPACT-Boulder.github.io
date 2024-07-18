@@ -4,14 +4,20 @@
         <title>Spectrum</title>
         <item>
             <title>3.3.0-beta</title>
-            <pubDate>Sun, 14 Jul 2024 08:56:00 -0600</pubDate>
-            <sparkle:version>485</sparkle:version>
+            <pubDate>Thu, 18 Jul 2024 11:23:37 -0600</pubDate>
+            <sparkle:version>486</sparkle:version>
             <sparkle:shortVersionString>3.3.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<title>Version 3.3.0 (Build 485)</title>
 <description>
 	This is a beta version which probably has not been sufficiently tested.
 	<ul>
+		<li> Version 3.3.0 (486):
+	    	<ul>
+				<li> Improved the setup of Spice kernels to load. You can now either load the kernels using
+					 meta kernel, or you can select individual kernels via a user interface.
+				<li> Fixed the highlighting of selected table rows.
+			</ul>
 		<li> Version 3.3.0 (485):
 	    	<ul>
 				<li> Line viewer now supports fitting of sum spectra line (set sum spectra button located 
@@ -165,7 +171,7 @@
 	</ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="75438651" type="application/octet-stream" sparkle:edSignature="s3KbIZuK0NMma/drNfYSNM0itggqekil45EVHx3Blpcn6Qwp/+3JtsKSPR67py1FzRN5NjE4bv6TyEuqT1c+Cw=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="75831563" type="application/octet-stream" sparkle:edSignature="CuXYMMnektOHQOg3P/gVODox/dOaj6YxNOEhctMK2GtT6QHyxNteWukbD/pCDv3isfvMZsn8rpTyHyaDBui7Ag=="/>
         </item>
     </channel>
 </rss>
