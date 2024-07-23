@@ -91,7 +91,7 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
               <h1>Server Error</h1>
               <h2>Make sure you are connected to the LASP VPN</h2>
               <h2>Secure Socket Layer not yet configured. Open a new tab and enter 
-              <a href='https://10.247.28.237:3000' target='_blank'> 'https://10.247.28.237:3000'</a>. 
+              <a href='https://10.247.29.20:3000' target='_blank'> 'https://10.247.29.20:3000'</a>. 
               Click 'Advanced' or 'show details', and then choose to proceed. This issue is temporary.
             `,
           }
@@ -127,7 +127,7 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
               <h1>Server Error</h1>
               <h2>Make sure you are connected to the LASP VPN</h2>
               <h2>Secure Socket Layer not yet configured. Open a new tab and enter 
-              <a href='https://10.247.28.237:3000' target='_blank'> 'https://10.247.28.237:3000'</a>. 
+              <a href='https://10.247.29.20:3000' target='_blank'> 'https://10.247.29.20:3000'</a>. 
               Click 'Advanced' or 'show details', and then choose to proceed. This issue is temporary.
             `,
           }
@@ -209,7 +209,7 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
       const dustTypesParam = formState.dustTypes.join(',');
       const groupNamesParam = formState.groupNames.join(',');
       const tagNamesParam = selectedTag;
-      const apiUrl = `https://10.247.28.237:3000/api/data?limit=${formState.limitValue}&velocityLow=${(formState.velLow)*1000}&velocityHigh=${(formState.velHigh)*1000}&qualityLow=${formState.qualLow}&qualityHigh=${formState.qualHigh}&massLow=${formState.massLow}&massHigh=${formState.massHigh}&chargeLow=${formState.chargeLow}&chargeHigh=${formState.chargeHigh}&radiusLow=${formState.radiusLow}&radiusHigh=${formState.radiusHigh}&timeLow=${formState.timeLow}&timeHigh=${formState.timeHigh}&dustType=${dustTypesParam}&groupName=${groupNamesParam}&tagName=${tagNamesParam}`;
+      const apiUrl = `https://10.247.29.20:3000/api/data?limit=${formState.limitValue}&velocityLow=${(formState.velLow)*1000}&velocityHigh=${(formState.velHigh)*1000}&qualityLow=${formState.qualLow}&qualityHigh=${formState.qualHigh}&massLow=${formState.massLow}&massHigh=${formState.massHigh}&chargeLow=${formState.chargeLow}&chargeHigh=${formState.chargeHigh}&radiusLow=${formState.radiusLow}&radiusHigh=${formState.radiusHigh}&timeLow=${formState.timeLow}&timeHigh=${formState.timeHigh}&dustType=${dustTypesParam}&groupName=${groupNamesParam}&tagName=${tagNamesParam}`;
       
        // Log the API URL
       console.log('Fetch URL:', apiUrl);
