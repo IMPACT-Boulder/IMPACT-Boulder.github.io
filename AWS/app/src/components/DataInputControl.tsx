@@ -209,7 +209,7 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
           </div>
           <div id="constraints">
             <div id="constraints_top">
-              <DustType onChange={handleDustTypeChange} selectedTypes={formState.dustTypes} />
+              <DustType onChange={handleDustTypeChange} selectedTypes={formState.dustTypes} selectedGroup={formState.selectedGroup} />
               <GroupName
                 onChange={handleGroupChange}
                 onGroupChange={handleGroupChange}
