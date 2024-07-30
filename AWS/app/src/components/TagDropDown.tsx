@@ -10,10 +10,10 @@ interface TagDropdownProps {
   onChange: (value: string) => void;
   selectedTag: string;
   selectedGroup: string;
-  tagNames: string[];
+  selectedDustType: number[];
 }
 
-const TagDropdown: React.FC<TagDropdownProps> = ({ onChange, selectedTag, selectedGroup }) => {
+const TagDropdown: React.FC<TagDropdownProps> = ({ onChange, selectedTag, selectedGroup, selectedDustType }) => {
   const [tagNames, setTagNames] = useState<string[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState<string>('');
@@ -29,7 +29,7 @@ const TagDropdown: React.FC<TagDropdownProps> = ({ onChange, selectedTag, select
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ selectedDustType: [], selectedGroup }),
+          body: JSON.stringify({ selectedDustType, selectedGroup }),
         });
         if (!response.ok) {
           throw new Error('Failed to fetch');
@@ -45,7 +45,7 @@ const TagDropdown: React.FC<TagDropdownProps> = ({ onChange, selectedTag, select
     };
 
     fetchTagNames();
-  }, [selectedGroup]);
+  }, [selectedGroup, selectedDustType]);
 
   const handleTagChange = (value: string) => {
     onChange(value);

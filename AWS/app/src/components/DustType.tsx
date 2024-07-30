@@ -1,4 +1,3 @@
-// DustType.tsx
 import React, { useState, useEffect } from 'react';
 import Box from '@mui/material/Box';
 import MenuItem from '@mui/material/MenuItem';
@@ -15,15 +14,12 @@ interface DustTypeProps {
 }
 
 const DustType: React.FC<DustTypeProps> = ({ onChange, selectedTypes }) => {
-  // State hooks for selected dust types and input value
   const [typesInputValue, setTypesInputValue] = useState<string[]>(selectedTypes.map(String));
   const [selectedDustTypes, setSelectedDustTypes] = useState<{ [key: string]: string[] }>({});
 
-  // Sort dust types data by name
   const sortedDustTypesData = sortBy(uniqueDustTypesData, ['dust_name']);
 
   useEffect(() => {
-    // Initialize selected dust types when the component mounts
     const initialSelectedDustTypes: { [key: string]: string[] } = {};
     selectedTypes.forEach((typeId) => {
       const dustType = uniqueDustTypesData.find((type) => type.id_dust_type.includes(typeId));
@@ -34,7 +30,6 @@ const DustType: React.FC<DustTypeProps> = ({ onChange, selectedTypes }) => {
     setSelectedDustTypes(initialSelectedDustTypes);
   }, [selectedTypes]);
 
-  // Handle dropdown change
   const handleDropDownChange = (value: string | string[]) => {
     const valuesArray = Array.isArray(value) ? value : [value];
     setTypesInputValue(valuesArray);
@@ -64,7 +59,6 @@ const DustType: React.FC<DustTypeProps> = ({ onChange, selectedTypes }) => {
     setSelectedDustTypes(updatedSelectedDustTypes);
   };
 
-  // Handle blur event
   const handleBlur = () => {
     const selectedValues = Object.values(selectedDustTypes).flat().map(Number);
     onChange(selectedValues);
@@ -95,7 +89,6 @@ const DustType: React.FC<DustTypeProps> = ({ onChange, selectedTypes }) => {
           onChange={(e: SelectChangeEvent<string | string[]>) => handleDropDownChange(e.target.value)}
           onBlur={handleBlur}
         >
-          {/* Mapping sorted dust types */}
           {sortedDustTypesData.map((type) => (
             <MenuItem key={type.id_dust_type.join()} value={type.id_dust_type.join(',')}>
               {type.dust_name}
@@ -108,4 +101,4 @@ const DustType: React.FC<DustTypeProps> = ({ onChange, selectedTypes }) => {
   );
 };
 
-export default DustType; // Exporting DustType component
+export default DustType;

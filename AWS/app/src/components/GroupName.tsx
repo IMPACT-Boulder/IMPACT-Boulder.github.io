@@ -10,11 +10,12 @@ interface GroupNameProps {
   onChange: (groups: string) => void;
   onGroupChange: (group: string) => void;
   selectedGroups: string;
+  selectedDustType: number[];
 }
 
-const GroupName: React.FC<GroupNameProps> = ({ onChange, onGroupChange, selectedGroups }) => {
+const GroupName: React.FC<GroupNameProps> = ({ onChange, onGroupChange, selectedGroups, selectedDustType }) => {
   const [groupNames, setGroupNames] = useState<string[]>([]);
-  const [error, setError] = useState<string | null>('');
+  const [error, setError] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [inputLabel, setInputLabel] = useState<string>('Experiment Groups');
   const [textFieldLabel, setTextFieldLabel] = useState<string>('');
@@ -27,7 +28,7 @@ const GroupName: React.FC<GroupNameProps> = ({ onChange, onGroupChange, selected
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ selectedDustType: [] }),
+          body: JSON.stringify({ selectedDustType, selectedGroup: selectedGroups }),
         });
         if (!response.ok) {
           throw new Error('Failed to fetch');
@@ -43,7 +44,7 @@ const GroupName: React.FC<GroupNameProps> = ({ onChange, onGroupChange, selected
     };
 
     fetchGroupNames();
-  }, []);
+  }, [selectedDustType, selectedGroups]);
 
   const handleGroupChange = (value: string) => {
     onChange(value);
