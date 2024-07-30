@@ -37,6 +37,12 @@ const GroupName: React.FC<GroupNameProps> = ({ onChange, onGroupChange, selected
         const extractedGroupNames = data.group_names.map((item: any) => item.group_names);
         const sortedGroupNames = sortBy(extractedGroupNames);
         setGroupNames(sortedGroupNames);
+
+        // Deselect group if it does not match the filtered results
+        if (selectedGroups && !sortedGroupNames.includes(selectedGroups)) {
+          onChange('');
+          onGroupChange('');
+        }
       } catch (error: any) {
         console.error('Error fetching group names:', error);
         setError('Failed to fetch group names');
@@ -44,7 +50,7 @@ const GroupName: React.FC<GroupNameProps> = ({ onChange, onGroupChange, selected
     };
 
     fetchGroupNames();
-  }, [selectedDustType, selectedGroups]);
+  }, [selectedDustType, selectedGroups, onChange, onGroupChange]);
 
   const handleGroupChange = (value: string) => {
     onChange(value);

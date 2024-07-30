@@ -38,6 +38,11 @@ const TagDropdown: React.FC<TagDropdownProps> = ({ onChange, selectedTag, select
         const fetchedTagNames = data.tag_names.map((item: any) => item.tag);
         console.log('Processed Tag Names:', fetchedTagNames);
         setTagNames(fetchedTagNames);
+
+        // Deselect tag if it does not match the filtered results
+        if (selectedTag && !fetchedTagNames.includes(selectedTag)) {
+          onChange('');
+        }
       } catch (error) {
         console.error('Error fetching tag names:', error);
         setError('Failed to fetch tag names');
@@ -45,7 +50,7 @@ const TagDropdown: React.FC<TagDropdownProps> = ({ onChange, selectedTag, select
     };
 
     fetchTagNames();
-  }, [selectedGroup, selectedDustType]);
+  }, [selectedGroup, selectedDustType, selectedTag, onChange]);
 
   const handleTagChange = (value: string) => {
     onChange(value);
