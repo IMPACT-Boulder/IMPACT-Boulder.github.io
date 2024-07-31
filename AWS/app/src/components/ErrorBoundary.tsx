@@ -25,7 +25,7 @@ class ErrorBoundary extends Component<React.PropsWithChildren<{}>, ErrorBoundary
       return <div id='error-boundary'>
         <h1>Cannot Connect to the Server</h1>
         <h3>Make sure you are connected to the LASP VPN</h3>
-        <h4>Secure Scoket Layer not yet configured. Open a new tab and enter 'https://10.247.28.95:3000'. Click Advanced, and choose to proceed. This issue is temporary. </h4>
+        <h4>Secure Scoket Layer not yet configured. Open a new tab and enter 'https://10.247.28.33:3000'. Click Advanced, and choose to proceed. This issue is temporary. </h4>
         </div>;
     }
 

@@ -21,7 +21,7 @@ const DustType: React.FC<DustTypeProps> = ({ onChange, selectedTypes, selectedGr
   useEffect(() => {
     const fetchDustTypes = async () => {
       try {
-        const response = await fetch(`https://10.247.28.95:3000/api/set_dust_type`, {
+        const response = await fetch(`https://10.247.28.33:3000/api/set_dust_type`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

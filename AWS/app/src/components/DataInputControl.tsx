@@ -74,6 +74,7 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
   const [fetchTimestamp, setFetchTimestamp] = useState<number | null>(null); // Timestamp when data is fetched
   const [selectedTag, setSelectedTag] = useState<string>(''); // Selected tag name
   const [errorMessage, setErrorMessage] = useState<string | ErrorContent>(''); // Error message
+  const [data, setData] = useState<any[]>([]); // Data state
 
   // Function to handle change in tag names
   const handleTagNamesChange = (value: string) => {
@@ -174,7 +175,7 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
       const dustTypesParam = formState.dustTypes.join(',');
       const groupNamesParam = formState.selectedGroup;
       const tagNamesParam = selectedTag;
-      const apiUrl = `https://10.247.28.95:3000/api/data?limit=${formState.limitValue}&velocityLow=${formState.velLow * 1000}&velocityHigh=${formState.velHigh * 1000}&qualityLow=${formState.qualLow}&qualityHigh=${formState.qualHigh}&massLow=${formState.massLow}&massHigh=${formState.massHigh}&chargeLow=${formState.chargeLow}&chargeHigh=${formState.chargeHigh}&radiusLow=${formState.radiusLow}&radiusHigh=${formState.radiusHigh}&timeLow=${formState.timeLow}&timeHigh=${formState.timeHigh}&dustType=${dustTypesParam}&groupName=${groupNamesParam}&tagName=${tagNamesParam}`;
+      const apiUrl = `https://10.247.28.33:3000/api/data?limit=${formState.limitValue}&velocityLow=${formState.velLow * 1000}&velocityHigh=${formState.velHigh * 1000}&qualityLow=${formState.qualLow}&qualityHigh=${formState.qualHigh}&massLow=${formState.massLow}&massHigh=${formState.massHigh}&chargeLow=${formState.chargeLow}&chargeHigh=${formState.chargeHigh}&radiusLow=${formState.radiusLow}&radiusHigh=${formState.radiusHigh}&timeLow=${formState.timeLow}&timeHigh=${formState.timeHigh}&dustType=${dustTypesParam}&groupName=${groupNamesParam}&tagName=${tagNamesParam}`;
 
       // Log the API URL
       console.log('Fetch URL:', apiUrl);
@@ -186,6 +187,7 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
 
       // Update data if response is an array
       if (Array.isArray(parsedArray)) {
+        setData(parsedArray);
         onDataUpdate(parsedArray); // Update data
       } else {
         console.error('Data is not an array:', parsedArray);
@@ -254,7 +256,13 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
             </Button>
             <div id="loading">
               {loading && <CircularProgress />}
-              {!loading && fetchTimestamp !== null && <p>Data fetched at: {new Date(fetchTimestamp).toLocaleString()}</p>}
+              {!loading && fetchTimestamp !== null && (
+                data.length > 0 ? (
+                  <p>Data fetched at: {new Date(fetchTimestamp).toLocaleString()}</p>
+                ) : (
+                  <p style={{ color: 'red'}} >No Data available matching the selected conditions. Failed to fetch at: {new Date(fetchTimestamp).toLocaleString()}</p>
+                )
+              )}
             </div>
           </div>
         </div>

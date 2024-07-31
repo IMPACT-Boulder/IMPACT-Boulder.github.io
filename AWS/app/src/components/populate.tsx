@@ -14,7 +14,7 @@ const PopulateData: React.FC<PopulateDataProps> = ({ setData, numberOfDataValues
     const fetchData = async () => {
       try {
         // Fetch data from API endpoint
-        const response = await fetch(`https://10.247.28.95:3000/api/data?limit=${numberOfDataValues}`);
+        const response = await fetch(`https://10.247.28.33:3000/api/data?limit=${numberOfDataValues}`);
         const rawData: string = await response.json(); // Get response data as JSON string
         const actualArray: any[] = JSON.parse(rawData); // Parse JSON string to array
         console.log('actualArray', actualArray); // Log the fetched data

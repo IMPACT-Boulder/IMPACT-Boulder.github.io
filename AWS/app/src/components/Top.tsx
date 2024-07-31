@@ -46,7 +46,7 @@ const Top: React.FC = () => {
                                         Log into LASP VPN. The application cannot be used without a LASP VPN connection.
                                     </li>
                                     <li id='error-info'>
-                                        Temporary Measure: once logged into LASP VPN, open a new tab and enter <a href='https://10.247.28.95:3000' target='blank'>'https://10.247.28.95:3000'</a>. Click <span>'Advanced'</span> or <span>'show details'</span>, and then choose to proceed. Then restart the application by opening a new window or refreshing. This issue is a result of the SSL not yet being configured, and is required until it has been configured in order for your browser to trust the application domain. This will be resolved shortly and this step will then be removed.
+                                        Temporary Measure: once logged into LASP VPN, open a new tab and enter <a href='https://10.247.28.33:3000' target='blank'>'https://10.247.28.33:3000'</a>. Click <span>'Advanced'</span> or <span>'show details'</span>, and then choose to proceed. Then restart the application by opening a new window or refreshing. This issue is a result of the SSL not yet being configured, and is required until it has been configured in order for your browser to trust the application domain. This will be resolved shortly and this step will then be removed.
                                     </li>
                                 </ol>
                                 <ul>
