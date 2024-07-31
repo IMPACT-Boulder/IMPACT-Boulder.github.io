@@ -175,7 +175,7 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
       const dustTypesParam = formState.dustTypes.join(',');
       const groupNamesParam = formState.selectedGroup;
       const tagNamesParam = selectedTag;
-      const apiUrl = `https://10.247.28.33:3000/api/data?limit=${formState.limitValue}&velocityLow=${formState.velLow * 1000}&velocityHigh=${formState.velHigh * 1000}&qualityLow=${formState.qualLow}&qualityHigh=${formState.qualHigh}&massLow=${formState.massLow}&massHigh=${formState.massHigh}&chargeLow=${formState.chargeLow}&chargeHigh=${formState.chargeHigh}&radiusLow=${formState.radiusLow}&radiusHigh=${formState.radiusHigh}&timeLow=${formState.timeLow}&timeHigh=${formState.timeHigh}&dustType=${dustTypesParam}&groupName=${groupNamesParam}&tagName=${tagNamesParam}`;
+      const apiUrl = `https://10.247.29.245:3000/api/data?limit=${formState.limitValue}&velocityLow=${formState.velLow * 1000}&velocityHigh=${formState.velHigh * 1000}&qualityLow=${formState.qualLow}&qualityHigh=${formState.qualHigh}&massLow=${formState.massLow}&massHigh=${formState.massHigh}&chargeLow=${formState.chargeLow}&chargeHigh=${formState.chargeHigh}&radiusLow=${formState.radiusLow}&radiusHigh=${formState.radiusHigh}&timeLow=${formState.timeLow}&timeHigh=${formState.timeHigh}&dustType=${dustTypesParam}&groupName=${groupNamesParam}&tagName=${tagNamesParam}`;
 
       // Log the API URL
       console.log('Fetch URL:', apiUrl);

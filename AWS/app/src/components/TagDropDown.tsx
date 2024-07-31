@@ -24,7 +24,7 @@ const TagDropdown: React.FC<TagDropdownProps> = ({ onChange, selectedTag, select
     const fetchTagNames = async () => {
       try {
         console.log('Selected Group:', selectedGroup);
-        const response = await fetch(`https://10.247.28.33:3000/api/set_dust_type`, {
+        const response = await fetch(`https://10.247.29.245:3000/api/set_dust_type`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
