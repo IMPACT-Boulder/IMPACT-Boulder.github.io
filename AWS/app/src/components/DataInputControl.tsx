@@ -19,6 +19,7 @@ import Button from '@mui/material/Button';
 import CircularProgress from '@mui/material/CircularProgress';
 import '../styles/Controls.css';
 import '../styles/Error.css';
+import { ipUrl } from './Config'; // Import the URL from the config file
 
 // Define types for props
 interface DataInputControlProps {
@@ -43,12 +44,10 @@ interface FormState {
   dustTypes: number[];
   selectedGroup: string;
 }
-
 // Define interface for error content
 interface ErrorContent {
   html: string;
 }
-
 // DataInputControl component
 const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => {
   // State variables
@@ -175,7 +174,7 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
       const dustTypesParam = formState.dustTypes.join(',');
       const groupNamesParam = formState.selectedGroup;
       const tagNamesParam = selectedTag;
-      const apiUrl = `https://10.247.29.245:3000/api/data?limit=${formState.limitValue}&velocityLow=${formState.velLow * 1000}&velocityHigh=${formState.velHigh * 1000}&qualityLow=${formState.qualLow}&qualityHigh=${formState.qualHigh}&massLow=${formState.massLow}&massHigh=${formState.massHigh}&chargeLow=${formState.chargeLow}&chargeHigh=${formState.chargeHigh}&radiusLow=${formState.radiusLow}&radiusHigh=${formState.radiusHigh}&timeLow=${formState.timeLow}&timeHigh=${formState.timeHigh}&dustType=${dustTypesParam}&groupName=${groupNamesParam}&tagName=${tagNamesParam}`;
+      const apiUrl = `${ipUrl}/api/data?limit=${formState.limitValue}&velocityLow=${formState.velLow * 1000}&velocityHigh=${formState.velHigh * 1000}&qualityLow=${formState.qualLow}&qualityHigh=${formState.qualHigh}&massLow=${formState.massLow}&massHigh=${formState.massHigh}&chargeLow=${formState.chargeLow}&chargeHigh=${formState.chargeHigh}&radiusLow=${formState.radiusLow}&radiusHigh=${formState.radiusHigh}&timeLow=${formState.timeLow}&timeHigh=${formState.timeHigh}&dustType=${dustTypesParam}&groupName=${groupNamesParam}&tagName=${tagNamesParam}`;
 
       // Log the API URL
       console.log('Fetch URL:', apiUrl);
@@ -191,12 +190,11 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
         onDataUpdate(parsedArray); // Update data
       } else {
         console.error('Data is not an array:', parsedArray);
-        setErrorMessage('Error: Data is not in the expected format'); // Set error message for invalid data format
+
       }
       setFetchTimestamp(Date.now()); // Set fetch timestamp
     } catch (error) {
       console.error('Error fetching data:', error);
-      setErrorMessage('Error: Failed to fetch data'); // Set error message for fetch failure
     } finally {
       setLoading(false); // Set loading state to false when fetch operation completes
     }

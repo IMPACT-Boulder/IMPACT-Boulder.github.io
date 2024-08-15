@@ -5,7 +5,7 @@ import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import InputLabel from '@mui/material/InputLabel';
 import FormHelperText from '@mui/material/FormHelperText';
-import { sortBy } from 'lodash';
+import { ipUrl } from './Config'; // Import the URL from the config file
 
 interface DustTypeProps {
   onChange: (types: number[]) => void;
@@ -13,15 +13,20 @@ interface DustTypeProps {
   selectedGroup: string;
 }
 
+interface DustType {
+  dust_name: string;
+  dust_type: number[];
+}
+
 const DustType: React.FC<DustTypeProps> = ({ onChange, selectedTypes, selectedGroup }) => {
   const [typesInputValue, setTypesInputValue] = useState<string[]>(selectedTypes.map(String));
-  const [dustTypes, setDustTypes] = useState<{ dust_name: string, dust_type: number[] }[]>([]);
+  const [dustTypes, setDustTypes] = useState<DustType[]>([]);
   const [selectedDustTypes, setSelectedDustTypes] = useState<{ [key: string]: string[] }>({});
 
   useEffect(() => {
     const fetchDustTypes = async () => {
       try {
-        const response = await fetch(`https://10.247.29.245:3000/api/set_dust_type`, {
+        const response = await fetch(`${ipUrl}/api/set_dust_type`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -32,14 +37,17 @@ const DustType: React.FC<DustTypeProps> = ({ onChange, selectedTypes, selectedGr
           throw new Error('Failed to fetch');
         }
         const data = await response.json();
-        const fetchedDustTypes = data.dust_types.map((item: any) => ({ dust_name: item.dust_name, dust_type: item.dust_type }));
+        const fetchedDustTypes: DustType[] = data.dust_types.map((item: { dust_name: string; dust_type: number[] }) => ({
+          dust_name: item.dust_name,
+          dust_type: item.dust_type,
+        }));
         console.log('Processed Dust Types:', fetchedDustTypes);
         setDustTypes(fetchedDustTypes);
 
         // Deselect dust type if it does not match the filtered results
         const selectedTypeIds = selectedTypes.map(String);
-        const validTypes = fetchedDustTypes.flatMap(item => item.dust_type.map(String));
-        const validSelectedTypes = selectedTypeIds.filter(typeId => validTypes.includes(typeId));
+        const validTypes = fetchedDustTypes.flatMap((item) => item.dust_type.map(String));
+        const validSelectedTypes = selectedTypeIds.filter((typeId) => validTypes.includes(typeId));
         if (selectedTypeIds.length !== validSelectedTypes.length) {
           setTypesInputValue(validSelectedTypes);
           onChange(validSelectedTypes.map(Number));
@@ -93,8 +101,8 @@ const DustType: React.FC<DustTypeProps> = ({ onChange, selectedTypes, selectedGr
         alignItems: 'center',
         width: '20%',
         '@media (max-width: 800px)': {
-          width: '30%'
-        }
+          width: '30%',
+        },
       }}
       noValidate
       autoComplete="off"
