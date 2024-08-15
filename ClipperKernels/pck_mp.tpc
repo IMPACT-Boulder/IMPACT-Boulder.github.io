@@ -1,0 +1,89 @@
+KPL/PCK
+ 
+ 
+P_constants (PcK) SPICE kernel file
+===========================================================================
+
+        By: Nat Bachman (NAIF)    2011 October 21
+ 
+ 
+File Format
+        
+     A terse description of the PCK file format is given here. See the
+     SPICE "Required Reading" files pck.req and kernel.req for a
+     detailed explanation of the SPICE text kernel file format. The
+     files pck.req and kernel.req are included in the documentation
+     provided with the SPICE Toolkit.
+
+     The file starts out with the ``ID word'' string
+
+        KPL/PCK
+
+     This string identifies the file as a text kernel containing PCK 
+     data.
+
+     This file consists of a series of comment blocks and data blocks.
+     Comment blocks, which contain free-form descriptive or explanatory
+     text, are preceded by a \begintext token. Data blocks follow a
+     \begindata token. In order to be recognized, each of these tokens
+     must be placed on a line by itself.
+
+     The portion of the file preceding the first data block is treated
+     as a comment block; it doesn't require an initial \begintext
+     token.
+
+     This file identifies data using a series of
+
+        KEYWORD = VALUE
+
+     assignments. The left hand side of each assignment is a
+     "kernel variable" name; the right hand side is an associated value
+     or list of values. The SPICE subroutine API allows SPICE routines
+     and user applications to retrieve the set of values associated
+     with each kernel variable name.
+
+     Kernel variable names are case-sensitive and are limited to
+     32 characters in length. 
+
+     Numeric values may be integer or floating point. String values
+     are normally limited to 80 characters in length; however, SPICE
+     provides a mechanism for identifying longer, "continued" strings.
+     See the SPICE routine STPOOL for details.
+
+     String values are single quoted.
+
+     When the right hand side of an assignment is a list of values,
+     the list items may be separated by commas or simply by blanks.
+     The list must be bracketed by parentheses. Example:
+
+        BODY399_RADII     = ( 6378.1366   6378.1366   6356.7519 )
+ 
+     Any blanks preceding or following keyword names, values and equal
+     signs are ignored.
+  
+     Assignments may be spread over multiple lines, for example:
+
+        BODY399_RADII     = ( 6378.1366  
+                              6378.1366
+                              6356.7519 )
+
+     This file may contain blank lines anywhere. Non-printing
+     characters including TAB should not be present in the file: the
+     presence of such characters may cause formatting errors when the
+     file is viewed.
+
+Mission planing value for Europa's radius
+ 
+
+        \begindata
+ 
+        BODY502_RADIUS     = ( 1562.6 )
+ 
+        \begintext
+ 
+===========================================================================
+End of file pck_mp.tpc
+===========================================================================
+
+
+
