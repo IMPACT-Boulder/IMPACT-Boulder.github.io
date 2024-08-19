@@ -4,14 +4,28 @@
         <title>Spectrum</title>
         <item>
             <title>3.3.0-beta</title>
-            <pubDate>Sun, 04 Aug 2024 08:12:27 +0200</pubDate>
-            <sparkle:version>489</sparkle:version>
+            <pubDate>Mon, 19 Aug 2024 20:44:49 +0200</pubDate>
+            <sparkle:version>491</sparkle:version>
             <sparkle:shortVersionString>3.3.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.3.0 (Build 485)</title>
+            <description><![CDATA[<title>Version 3.3.0 (Build 491)</title>
 <description>
 	This is a beta version which probably has not been sufficiently tested.
 	<ul>
+		<li> Version 3.3.0 (491):
+	    	<ul>
+				<li> Deuterium can now be used like a chemical element when defining an 
+				     ion molecule. This enables the definition of e.g. heavy water clusters.
+				     To this aim, a heavy water line catalog and a heay water template are
+				     now included in the default catalog set.
+				<li> Better handling of isotopologues. The main isotopologue is added to the
+				     set of line type parameters.
+				<li> Cleaned and verfied the default reference database.
+				<li> Redesigned the Line Catalog and the Database Maintainance dialogs.
+				<li> Redesigned the Line Type Editor.
+				<li> Fixed various bugs in the Line Catalog and the Line Type Editor.
+				<li> Bug fixes.
+			</ul>
 		<li> Version 3.3.0 (489):
 	    	<ul>
 				<li> This release brings the long promised support for ice targets. For such targets the
@@ -181,7 +195,7 @@
 	</ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="75325071" type="application/octet-stream" sparkle:edSignature="36JlgF8xLLzZdBybHnGzfdrkntp1Afg3LD7LGCcZQwLqEecxCkW73hp+jPpIHWvzgm3r080FGrKpopZveDeYCA=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="76038240" type="application/octet-stream" sparkle:edSignature="OHmcADwYzh7+QHk/XA/9Yp8KozHxbnqhG24Mw1gwGPRET2JlAPlK1Xyow4ALbxQPTnjQmU5mwwgBIbb+Gx9/Aw=="/>
         </item>
     </channel>
 </rss>
