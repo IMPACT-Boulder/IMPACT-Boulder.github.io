@@ -57,6 +57,7 @@ ul#participants li .border {
 	margin: 2rem 0;
     display: flex;
     justify-content: space-evenly;
+	align-items: center;
 }
 .presentation {
     cursor: pointer;
