@@ -44,10 +44,10 @@ interface FormState {
   dustTypes: number[];
   selectedGroup: string;
 }
-// Define interface for error content
-interface ErrorContent {
-  html: string;
-}
+// // Define interface for error content
+// interface ErrorContent {
+//   html: string;
+// }
 // DataInputControl component
 const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => {
   // State variables
@@ -72,7 +72,7 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
   const [loading, setLoading] = useState(false); // Loading state
   const [fetchTimestamp, setFetchTimestamp] = useState<number | null>(null); // Timestamp when data is fetched
   const [selectedTag, setSelectedTag] = useState<string>(''); // Selected tag name
-  const [errorMessage, setErrorMessage] = useState<string | ErrorContent>(''); // Error message
+  // const [errorMessage, setErrorMessage] = useState<string | ErrorContent>(''); // Error message
   const [data, setData] = useState<any[]>([]); // Data state
 
   // Function to handle change in tag names
