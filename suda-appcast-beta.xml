@@ -3,6 +3,122 @@
     <channel>
         <title>SUDA</title>
         <item>
+            <title>1.14.0</title>
+            <pubDate>Tue, 10 Sep 2024 10:22:32 +0200</pubDate>
+            <sparkle:version>44</sparkle:version>
+            <sparkle:shortVersionString>1.14.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <description><![CDATA[<title>Version 1.14.0 (Build 44)</title>
+<description>
+    <ul> 
+        <li> Version 1.14.0 (Build 44):
+            <ul>              
+                <li> As default only Thrace and Thera Macula and Chaos North and South are selected
+                     as unique geologic regions. The regions default setup is Type A: 5%, Type B: 5%,
+                     and Type C: 90%.
+                <li> Derives an estimator for the type abundance within a feature from the observed
+                     sequence of composition as described in Goode et al, 2023. The corresponding 
+                     plots can be selected in the MC mode on the Flyby tab.  
+                <li> This version has been compiled without Swift optimizations, which are causing
+                     mystery crashes on OS versions earlier than Sequoia.
+            </ul>
+        <li> Version 1.12.0 (Build 43):
+            <ul>
+                <li> Composition types can now be assigned to geologic features and the background surface.
+                <li> Ejecta impact rates can now be plotted as function of their composition types.
+                <li> Fixes an issue where the wrong flyby panel number was shown in the sidebar.
+                <li> Annotates compositional mapping plots.
+                <li> Improves the distance scale labels.
+            </ul>
+        <li> Version 1.11.0 (Build 42):
+            <ul>
+                <li> App can now import TID simulation data.
+                <li> Sidebar presents the absorbed dose during the activity.
+                <li> Fixes a bug which causes the app to crash on computers after updating from rather old versions.
+            </ul>
+        <li> Version 1.10.1 (Build 41):
+            <ul>
+                <li> Fixes a bug which causes the app to crash after a fresh installation.
+            </ul>  
+        <li> Version 1.10.0 (Build 40):
+            <ul>
+                <li> The kernels of the default tour(s) are not any longer bundled with the app, but will be installed
+                     when launching the app.
+                <li> Added sub-baseline tour candidate S2V7. 
+                <li> Added fallback to a strict nadir tracking S/C attitude profile for flybys without CK coverage 
+                     (there is no CK for S2S7 yet.).
+                <li> Experimental: It is now possible to simultanously work with tours with different Spice setups.
+                <li> Bug fixes.
+            </ul>  
+        <li> Version 1.9.0 (Build 39):
+            <ul>
+                <li> Improves the setup of Spice kernels to load. You can now either load the kernels using
+					 meta kernel, or you can select individual kernels via a user interface.
+                <li> Adds the ability to show the MC rates of ejecta emitted from features and from the background.
+                <li> Bug fixes.
+            </ul>  
+        <li> Version 1.8.0 (Build 37):
+            <ul>
+                <li> Improved geologic landforms editor. Landforms can be renamed.
+                <li> Increased the maximum number of landforms tracked for ejecta emission to 10.
+                <li> Flyby sidebar lists number of ejecta emitted from landform.
+                <li> Bug fixes.
+            </ul>  
+        <li> Version 1.7.1 (Build 36):
+            <ul>
+                <li> Reduced app size: The surface maps are not any longer bundled with the app but will 
+                     be loaded from the server.
+                <li> Code base is now compliant with xCode 16 and Swift 6.
+            </ul>  
+        <li> Version 1.7.0 (Build 35):
+            <ul>
+                <li> Monte Carlo simulations of SUDA flybys.
+                <li> Marks launch and detection sites.
+                <li> Landforms can now be downselected.
+            </ul>  
+        <li> Version 1.6.0 (Build 34):
+            <ul>
+                <li> Added Cruise pannel:
+                <ul>
+                    <li> Added cruise CK to app bundle.
+                    <li> IDP model by Divine for estimating dust count.
+                    <li> Pointing models for IDPs, ISD, and Jovian nanograins.
+                </ul>
+                <li> Added splash screen (experimental).
+                <li> Added roadmap.
+                <li> Performance improvements.
+            </ul>  
+        <li> Version 1.4.0 (Build 32):
+        <ul>
+            <li> Shows ground tracks.
+            <li> Marks landforms on surface maps.
+            <li> Added dialog for importing KML encoded landform definitions. 
+        </ul>  
+        <li> Version 1.2.1 (Build 30):     
+        <ul>
+            <li> Can be run without any external Spice ressources. To this aim unselect
+                 "Spice data is loaded from user-defined directory". In this configuration
+                 the app uses the 21F31V6 tour kernels, which are bundled with the app.
+            <li> Improved import of tour simulations.
+            <li> Improved requirement verification.
+            <li> Many bug fixes and improvements.
+        </ul>  
+        <li> Version 1.1.0 (Build 28):     
+        <ul>
+            <li> Migrated orbit, time line, ring survey, and nanograin viewers.
+            <li> Analyses orbits, identifies ring and nanograins survey opportunities.
+		</ul>
+     	<li> Version 1.0.1 (Build 26): 
+   		<ul>
+            <li> Identifies flybys on Jovian moons based on Europa Clipper kernels.
+            <li> Analyses flybys, predicts impact rates, and identifies health and safety issues.
+		</ul>	
+    </ul>
+</description>
+]]></description>
+            <enclosure url="https://impact.colorado.edu/SUDA.zip" length="16570710" type="application/octet-stream" sparkle:edSignature="Ko8/0EiyLuyJKYGHChzViqlyrD5jtNtNrFSkW3pp49hUxwcSI5J7pHscQvPrBihPkrX4Wod/ByRzmZFXtWuzBg=="/>
+        </item>
+        <item>
             <title>1.12.0</title>
             <pubDate>Tue, 27 Aug 2024 10:29:34 -0600</pubDate>
             <sparkle:version>43</sparkle:version>
@@ -203,97 +319,6 @@
 </description>
 ]]></description>
             <enclosure url="https://impact.colorado.edu/SUDA.zip" length="16207954" type="application/octet-stream" sparkle:edSignature="x/G0X6FN8BAI5GnT7OgbDnsUzGvNAISpr+2MGogKX+pr/rho6+upIvcEo8gzkRKc1kmeXbPKyCLyCZlqxIEdBQ=="/>
-        </item>
-        <item>
-            <title>1.10.1</title>
-            <pubDate>Tue, 20 Aug 2024 22:44:49 +0200</pubDate>
-            <sparkle:version>41</sparkle:version>
-            <sparkle:shortVersionString>1.10.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 1.10.1 (Build 41)</title>
-<description>
-    <ul> 
-        <li> Version 1.10.1 (Build 41):
-            <ul>
-                <li> Fixes a bug which causes the app to crash after a fresh installation.
-            </ul>  
-        <li> Version 1.10.0 (Build 40):
-            <ul>
-                <li> The kernels of the default tour(s) are not any longer bundled with the app, but will be installed
-                     when launching the app.
-                <li> Added sub-baseline tour candidate S2V7. 
-                <li> Added fallback to a strict nadir tracking S/C attitude profile for flybys without CK coverage 
-                     (there is no CK for S2S7 yet.).
-                <li> Experimental: It is now possible to simultanously work with tours with different Spice setups.
-                <li> Bug fixes.
-            </ul>  
-        <li> Version 1.9.0 (Build 39):
-            <ul>
-                <li> Improves the setup of Spice kernels to load. You can now either load the kernels using
-					 meta kernel, or you can select individual kernels via a user interface.
-                <li> Adds the ability to show the MC rates of ejecta emitted from features and from the background.
-                <li> Bug fixes.
-            </ul>  
-        <li> Version 1.8.0 (Build 37):
-            <ul>
-                <li> Improved geologic landforms editor. Landforms can be renamed.
-                <li> Increased the maximum number of landforms tracked for ejecta emission to 10.
-                <li> Flyby sidebar lists number of ejecta emitted from landform.
-                <li> Bug fixes.
-            </ul>  
-        <li> Version 1.7.1 (Build 36):
-            <ul>
-                <li> Reduced app size: The surface maps are not any longer bundled with the app but will 
-                     be loaded from the server.
-                <li> Code base is now compliant with xCode 16 and Swift 6.
-            </ul>  
-        <li> Version 1.7.0 (Build 35):
-            <ul>
-                <li> Monte Carlo simulations of SUDA flybys.
-                <li> Marks launch and detection sites.
-                <li> Landforms can now be downselected.
-            </ul>  
-        <li> Version 1.6.0 (Build 34):
-            <ul>
-                <li> Added Cruise pannel:
-                <ul>
-                    <li> Added cruise CK to app bundle.
-                    <li> IDP model by Divine for estimating dust count.
-                    <li> Pointing models for IDPs, ISD, and Jovian nanograins.
-                </ul>
-                <li> Added splash screen (experimental).
-                <li> Added roadmap.
-                <li> Performance improvements.
-            </ul>  
-        <li> Version 1.4.0 (Build 32):
-        <ul>
-            <li> Shows ground tracks.
-            <li> Marks landforms on surface maps.
-            <li> Added dialog for importing KML encoded landform definitions. 
-        </ul>  
-        <li> Version 1.2.1 (Build 30):     
-        <ul>
-            <li> Can be run without any external Spice ressources. To this aim unselect
-                 "Spice data is loaded from user-defined directory". In this configuration
-                 the app uses the 21F31V6 tour kernels, which are bundled with the app.
-            <li> Improved import of tour simulations.
-            <li> Improved requirement verification.
-            <li> Many bug fixes and improvements.
-        </ul>  
-        <li> Version 1.1.0 (Build 28):     
-        <ul>
-            <li> Migrated orbit, time line, ring survey, and nanograin viewers.
-            <li> Analyses orbits, identifies ring and nanograins survey opportunities.
-		</ul>
-     	<li> Version 1.0.1 (Build 26): 
-   		<ul>
-            <li> Identifies flybys on Jovian moons based on Europa Clipper kernels.
-            <li> Analyses flybys, predicts impact rates, and identifies health and safety issues.
-		</ul>	
-    </ul>
-</description>
-]]></description>
-            <enclosure url="https://impact.colorado.edu/SUDA.zip" length="16112692" type="application/octet-stream" sparkle:edSignature="JuttnVdSFJyH0iXn/gIJC2nTIcl0KnmGURsYnNRosi+LhlA7C0NSO6vDTd3uov7EveHmmo11WvEtLUxQ4WREDw=="/>
         </item>
     </channel>
 </rss>
