@@ -4,14 +4,61 @@
         <title>Spectrum</title>
         <item>
             <title>3.3.0-beta</title>
-            <pubDate>Sun, 07 Jul 2024 22:02:50 -0600</pubDate>
-            <sparkle:version>483</sparkle:version>
+            <pubDate>Sat, 24 Aug 2024 07:36:10 +0200</pubDate>
+            <sparkle:version>492</sparkle:version>
             <sparkle:shortVersionString>3.3.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.3.0 (Build 478)</title>
+            <description><![CDATA[<title>Version 3.3.0 (Build 491)</title>
 <description>
 	This is a beta version which probably has not been sufficiently tested.
 	<ul>
+		<li> Version 3.3.0 (491):
+			<ul>
+				<li> Improved the default heavy water line catalog and template.
+				<li> Fixed some UI issues in the Spectrum Template Dialog
+				<li> Fixed the save reminder dialog of the catalog viewers.
+			</ul>
+		<li> Version 3.3.0 (491):
+	    	<ul>
+				<li> Deuterium can now be used like a chemical element when defining an 
+				     ion molecule. This enables the definition of e.g. heavy water clusters.
+				     To this aim, a heavy water line catalog and a heay water template are
+				     now included in the default catalog set.
+				<li> Better handling of isotopologues. The main isotopologue is added to the
+				     set of line type parameters.
+				<li> Cleaned and verfied the default reference database.
+				<li> Redesigned the Line Catalog and the Database Maintainance dialogs.
+				<li> Redesigned the Line Type Editor.
+				<li> Fixed various bugs in the Line Catalog and the Line Type Editor.
+				<li> Bug fixes.
+			</ul>
+		<li> Version 3.3.0 (489):
+	    	<ul>
+				<li> This release brings the long promised support for ice targets. For such targets the
+					 solvent and up to 3 solutes can be selected from a (yet) rather small list of chemical
+					 compounds (including water, ammonia, methanol, and NaCl).
+				<li> The new target types are supported by the IMPACT data base.
+				<li> Optimized the project setup UI. Reorganized the processing pane.
+				<li> Fixed an issue with the focusing of the selected line in line tables.
+				<li> Bug fixes.
+			</ul>
+		<li> Version 3.3.0 (486):
+	    	<ul>
+				<li> Improved the setup of Spice kernels to load. You can now either load the kernels using
+					 meta kernel, or you can select individual kernels via a user interface.
+				<li> Fixed the highlighting of selected table rows.
+			</ul>
+		<li> Version 3.3.0 (485):
+	    	<ul>
+				<li> Line viewer now supports fitting of sum spectra line (set sum spectra button located 
+				     above spectra table).
+			</ul>
+		<li> Version 3.3.0 (484):
+	    	<ul>
+				<li> Fixed an issue where line types not included in the project's line catalog but assigned
+				     to a line lead to a crash when bringing up the line popup menu. 
+				<li> Changes to line type definitions are now saved.
+			</ul>
 	    <li> Version 3.3.0 (483):
 	    	<ul>
 				<li> Fixed the frequent mystery crashes introduced by the new Swift toolchain. The root cause
@@ -154,7 +201,7 @@
 	</ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="75296473" type="application/octet-stream" sparkle:edSignature="/Q5WOLrZYo7rclAP8cBnVfabAxUhaKlnaH8/5nAhC/7olLLTyscgCyvBB/lzNwJuxJ+jmd+e1/kp5E+hSDyFBQ=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="75860285" type="application/octet-stream" sparkle:edSignature="Cy38Amsp5QP1r2sowbZXfkKZZZ0vXinzdZpGnxgZe7WXiNjulVXgZV/6o6Xc6lVYvVWxdrPIe1Lf9A8ijO26Aw=="/>
         </item>
     </channel>
 </rss>

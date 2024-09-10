@@ -19,6 +19,7 @@ import Button from '@mui/material/Button';
 import CircularProgress from '@mui/material/CircularProgress';
 import '../styles/Controls.css';
 import '../styles/Error.css';
+import { ipUrl } from './Config'; // Import the URL from the config file
 
 // Define types for props
 interface DataInputControlProps {
@@ -41,16 +42,12 @@ interface FormState {
   timeLow: number;
   timeHigh: number | null;
   dustTypes: number[];
-  groupNames: string[];
-  tagNames: string[];
   selectedGroup: string;
 }
-
-// Define interface for error content
-interface ErrorContent {
-  html: string;
-}
-
+// // Define interface for error content
+// interface ErrorContent {
+//   html: string;
+// }
 // DataInputControl component
 const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => {
   // State variables
@@ -69,35 +66,18 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
     timeLow: 0, // Default low time value
     timeHigh: null, // Default high time value
     dustTypes: [], // Array to store selected dust types
-    groupNames: [], // Array to store selected group names
-    tagNames: [], // Array to store selected tag names
     selectedGroup: '', // Selected group name
   });
 
   const [loading, setLoading] = useState(false); // Loading state
   const [fetchTimestamp, setFetchTimestamp] = useState<number | null>(null); // Timestamp when data is fetched
   const [selectedTag, setSelectedTag] = useState<string>(''); // Selected tag name
-  // const [actualArray, setActualArray] = useState<any[]>([]); // Actual array of data
-  const [errorMessage, setErrorMessage] = useState<string | ErrorContent>(''); // Error message
+  // const [errorMessage, setErrorMessage] = useState<string | ErrorContent>(''); // Error message
+  const [data, setData] = useState<any[]>([]); // Data state
 
   // Function to handle change in tag names
   const handleTagNamesChange = (value: string) => {
     console.log('Selected Tag Names:', value);
-    // Display error message if no tag names are selected
-    setErrorMessage(
-      value.length === 0
-        ? {
-            html: `
-              <h1>Server Error</h1>
-              <h2>Make sure you are connected to the LASP VPN</h2>
-              <h2>Secure Socket Layer not yet configured. Open a new tab and enter 
-              <a href='https://10.247.28.237:3000' target='_blank'> 'https://10.247.28.237:3000'</a>. 
-              Click 'Advanced' or 'show details', and then choose to proceed. This issue is temporary.
-            `,
-          }
-        : ''
-    );
-
     setSelectedTag(value);
   };
 
@@ -119,22 +99,7 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
   // Function to handle change in group names
   const handleGroupChange = (group: string) => {
     console.log('Selected Group Names:', group);
-    // Display error message if no group names are selected
-    setErrorMessage(
-      group.length === 0
-        ? {
-            html: `
-              <h1>Server Error</h1>
-              <h2>Make sure you are connected to the LASP VPN</h2>
-              <h2>Secure Socket Layer not yet configured. Open a new tab and enter 
-              <a href='https://10.247.28.237:3000' target='_blank'> 'https://10.247.28.237:3000'</a>. 
-              Click 'Advanced' or 'show details', and then choose to proceed. This issue is temporary.
-            `,
-          }
-        : ''
-    );
     setFormState((prevFormState) => ({ ...prevFormState, selectedGroup: group }));
-    // Set the selectedGroup based on the first value in the array or empty string if no value
   };
 
   // Function to handle change in high velocity value
@@ -207,11 +172,11 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
 
       // Construct API URL with form values
       const dustTypesParam = formState.dustTypes.join(',');
-      const groupNamesParam = formState.groupNames.join(',');
+      const groupNamesParam = formState.selectedGroup;
       const tagNamesParam = selectedTag;
-      const apiUrl = `https://10.247.28.237:3000/api/data?limit=${formState.limitValue}&velocityLow=${(formState.velLow)*1000}&velocityHigh=${(formState.velHigh)*1000}&qualityLow=${formState.qualLow}&qualityHigh=${formState.qualHigh}&massLow=${formState.massLow}&massHigh=${formState.massHigh}&chargeLow=${formState.chargeLow}&chargeHigh=${formState.chargeHigh}&radiusLow=${formState.radiusLow}&radiusHigh=${formState.radiusHigh}&timeLow=${formState.timeLow}&timeHigh=${formState.timeHigh}&dustType=${dustTypesParam}&groupName=${groupNamesParam}&tagName=${tagNamesParam}`;
-      
-       // Log the API URL
+      const apiUrl = `${ipUrl}/api/data?limit=${formState.limitValue}&velocityLow=${formState.velLow * 1000}&velocityHigh=${formState.velHigh * 1000}&qualityLow=${formState.qualLow}&qualityHigh=${formState.qualHigh}&massLow=${formState.massLow}&massHigh=${formState.massHigh}&chargeLow=${formState.chargeLow}&chargeHigh=${formState.chargeHigh}&radiusLow=${formState.radiusLow}&radiusHigh=${formState.radiusHigh}&timeLow=${formState.timeLow}&timeHigh=${formState.timeHigh}&dustType=${dustTypesParam}&groupName=${groupNamesParam}&tagName=${tagNamesParam}`;
+
+      // Log the API URL
       console.log('Fetch URL:', apiUrl);
 
       // Fetch data from API
@@ -221,17 +186,15 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
 
       // Update data if response is an array
       if (Array.isArray(parsedArray)) {
+        setData(parsedArray);
         onDataUpdate(parsedArray); // Update data
-        // setActualArray(parsedArray); // Set actual array state
-
       } else {
         console.error('Data is not an array:', parsedArray);
-        setErrorMessage('Error: Data is not in the expected format'); // Set error message for invalid data format
+
       }
       setFetchTimestamp(Date.now()); // Set fetch timestamp
     } catch (error) {
       console.error('Error fetching data:', error);
-      setErrorMessage('Error: Failed to fetch data'); // Set error message for fetch failure
     } finally {
       setLoading(false); // Set loading state to false when fetch operation completes
     }
@@ -239,40 +202,31 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
 
   return (
     <div id="box">
-      {/* Error Modal */}
-      {/* <div className={`error-modal ${errorMessage ? 'show' : ''}`}>
-        <div className="error-modal-content">
-          {/* Display error message */}
-          {typeof errorMessage === 'string' ? (
-            <p className="error-message">{errorMessage}</p>
-          ) : (
-            <div dangerouslySetInnerHTML={{ __html: errorMessage.html }} />
-          )}
-        {/* </div> */}
-      {/* </div> */} 
-      {/* Form */}
       <form onSubmit={handleFormSubmit}>
         <div id="controls" onKeyDown={handleKeyDown}>
-          {/* Limit Box */}
           <div id="limit_box">
             <TextBox onChange={handleLimitValueChange} limitValueProp={formState.limitValue} />
           </div>
-          {/* Constraints */}
           <div id="constraints">
-            {/* DustType, GroupName, and TagDropdown components */}
             <div id="constraints_top">
-              {/* Dropdowns for selecting dust types, group names, and tags */}
-              <DustType onChange={handleDustTypeChange} selectedTypes={formState.dustTypes} />
-              <GroupName onChange={handleGroupChange} onGroupChange={handleGroupChange} selectedGroups={formState.selectedGroup} />
-              <TagDropdown onChange={handleTagNamesChange} selectedTag={selectedTag} selectedGroup={formState.selectedGroup} tagNames={formState.tagNames} />
+              <DustType onChange={handleDustTypeChange} selectedTypes={formState.dustTypes} selectedGroup={formState.selectedGroup} />
+              <GroupName
+                onChange={handleGroupChange}
+                onGroupChange={handleGroupChange}
+                selectedGroups={formState.selectedGroup}
+                selectedDustType={formState.dustTypes}
+              />
+              <TagDropdown
+                onChange={handleTagNamesChange}
+                selectedTag={selectedTag}
+                selectedGroup={formState.selectedGroup}
+                selectedDustType={formState.dustTypes}
+              />
             </div>
-            {/* Lower and Upper Constraints */}
             <div id="constraints_main">
-              {/* Lower Constraints */}
               <div className="controls">
                 <h3>Lower Constraints</h3>
                 <div className='constraint_container'>
-                  {/* Components for setting lower constraints */}
                   <VelocityLow onChange={handleVelocityLowChange} velLowProp={formState.velLow} />
                   <MassLow onChange={handleMassLowChange} massLowProp={formState.massLow} />
                   <ChargeLow onChange={handleChargeLowChange} chargeLowProp={formState.chargeLow} />
@@ -281,11 +235,9 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
                   <TimeLow onChange={handleTimeLowChange} timeLowProp={formState.timeLow} />
                 </div>
               </div>
-              {/* Upper Constraints */}
               <div className="controls">
                 <h3>Upper Constraints</h3>
                 <div className='constraint_container'>
-                  {/* Components for setting upper constraints */}
                   <VelocityHigh onChange={handleVelocityHighChange} velHighProp={formState.velHigh} />
                   <MassHigh onChange={handleMassHighChange} massHighProp={formState.massHigh} />
                   <ChargeHigh onChange={handleChargeHighChange} chargeHighProp={formState.chargeHigh} />
@@ -297,23 +249,21 @@ const DataInputControl: React.FC<DataInputControlProps> = ({ onDataUpdate }) => 
             </div>
           </div>
           <div id='submit-load'>
-            {/* Button for submitting form */}
             <Button type="button" variant="contained" onClick={handleFormSubmit} id="submit">
               Submit
             </Button>
-            {/* Loading Indicator */}
             <div id="loading">
-              {/* Display loading indicator */}
               {loading && <CircularProgress />}
-              {/* Display fetch timestamp */}
-              {!loading && fetchTimestamp !== null && <p>Data fetched at: {new Date(fetchTimestamp).toLocaleString()}</p>}
+              {!loading && fetchTimestamp !== null && (
+                data.length > 0 ? (
+                  <p>Data fetched at: {new Date(fetchTimestamp).toLocaleString()}</p>
+                ) : (
+                  <p style={{ color: 'red'}} >No Data available matching the selected conditions. Failed to fetch at: {new Date(fetchTimestamp).toLocaleString()}</p>
+                )
+              )}
             </div>
           </div>
         </div>
-        {/* //Download Button
-        <Button type="button" variant="outlined" onClick={handleDownload} id="download">
-          Download Data as CSV
-        </Button> */}
       </form>
     </div>
   );

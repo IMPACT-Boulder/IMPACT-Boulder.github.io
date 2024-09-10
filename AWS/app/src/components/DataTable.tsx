@@ -1,4 +1,3 @@
-// DataTable.tsx
 import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import MenuItem from '@mui/material/MenuItem';
@@ -33,24 +32,20 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
     setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
   };
 
-  // Function to handle column selection
-  const handleColumnChange = (selectedColumn: string) => {
-    if (selectedColumns.includes(selectedColumn)) {
-      setSelectedColumns(selectedColumns.filter((column) => column !== selectedColumn));
-    } else {
-      setSelectedColumns([...selectedColumns, selectedColumn]);
-    }
-  };
-
   // Sorting data based on sortColumn and sortOrder
   const sortedData = data.slice().sort((a, b) => {
     const compareValueA = a[sortColumn];
     const compareValueB = b[sortColumn];
 
-    if (sortOrder === 'asc') {
-      return compareValueA - compareValueB;
+    if (sortColumn === 'Time') {
+      // Parse the date strings into Date objects
+      const dateA = new Date(compareValueA);
+      const dateB = new Date(compareValueB);
+      // Compare Date objects
+      return sortOrder === 'asc' ? dateA.getTime() - dateB.getTime() : dateB.getTime() - dateA.getTime();
     } else {
-      return compareValueB - compareValueA;
+      // Default numeric comparison
+      return sortOrder === 'asc' ? compareValueA - compareValueB : compareValueB - compareValueA;
     }
   });
 
@@ -70,8 +65,6 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
   // Check if all columns are selected
   const isAllSelected = selectedColumns.length === columnOptions.length;
 
-  const [errorMessage, setErrorMessage] = useState(''); // Enables error handler
-
   // Add the convertToCSV function here
   const convertToCSV = (arr: any[]): string => {
     if (arr.length === 0) return '';
@@ -79,7 +72,7 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
     const lineDelimiter = '\n';
     const keys = Object.keys(arr[0]);
     const csvColumnHeader = keys.join(columnDelimiter);
-    const csvStr = arr.map(row => keys.map(key => row[key]).join(columnDelimiter)).join(lineDelimiter);
+    const csvStr = arr.map((row) => keys.map((key) => row[key]).join(columnDelimiter)).join(lineDelimiter);
     return `${csvColumnHeader}${lineDelimiter}${csvStr}`;
   };
 
@@ -98,13 +91,18 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
         document.body.removeChild(a);
       } catch (error) {
         console.error('Error converting data to CSV:', error);
-        setErrorMessage('Error: Failed to download data as CSV');
       }
     } else {
       console.error('No data available to download.');
-      setErrorMessage('Error: No data available to download');
     }
   };
+
+  // Function to reorder columns to place the sort column first
+  const getOrderedColumns = () => {
+    const otherColumns = selectedColumns.filter(column => column !== sortColumn);
+    return [sortColumn, ...otherColumns];
+  };
+
   return (
     <div id="table_div">
       {/* Header */}
@@ -122,8 +120,8 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
               label="Sort by"
               onChange={(e: SelectChangeEvent<string>) => setSortColumn(e.target.value)}
             >
-              {/* Mapping column options */}
-              {columnOptions.map((column) => (
+              {/* Mapping selected column options */}
+              {selectedColumns.map((column) => (
                 <MenuItem key={column} value={column}>
                   {/* Change label for specific columns */}
                   {column === 'Dust Name' ? 'Dust Type' : column === 'Tag' ? 'Experiment Name' : column}
@@ -144,12 +142,14 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
               multiple
               label="Select Columns"
               value={isAllSelected ? ['All'] : selectedColumns}
-              onChange={(e: SelectChangeEvent<string[]>) => {
+              onChange={(e: SelectChangeEvent<typeof selectedColumns>) => {
                 // Handle selection of all columns
-                if (e.target.value && e.target.value.includes('All')) {
+                const value = e.target.value;
+                if (typeof value === 'string') return;
+                if (value && value.includes('All')) {
                   setSelectedColumns(columnOptions);
                 } else {
-                  setSelectedColumns(e.target.value || []);
+                  setSelectedColumns(value);
                 }
               }}
               // Render selected columns as string
@@ -168,17 +168,19 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
             </Select>
           </FormControl>
           {/* Download Button */}
-        <Button type="button" variant="outlined" onClick={handleDownload} id="download">
-          Download Data as CSV
-        </Button>
+          <Button type="button" variant="outlined" onClick={handleDownload} id="download">
+            Download Data as CSV
+          </Button>
         </Box>
         {/* Table */}
         <table>
           <thead>
             <tr>
-              {/* Mapping selected columns for table headers */}
-              {selectedColumns.map((column) => (
-                <th key={column}>{column === 'Dust Name' ? 'Dust Type' : column === 'Tag' ? 'Experiment Name' : column}</th>
+              {/* Mapping ordered columns for table headers */}
+              {getOrderedColumns().map((column) => (
+                <th key={column}>
+                  {column === 'Dust Name' ? 'Dust Type' : column === 'Tag' ? 'Experiment Name' : column}
+                </th>
               ))}
             </tr>
           </thead>
@@ -186,8 +188,8 @@ const DataTable: React.FC<DataTableProps> = ({ data }) => {
             {/* Mapping sorted data for table rows */}
             {sortedData.map((item, index) => (
               <tr key={index}>
-                {/* Mapping selected columns for table cells */}
-                {selectedColumns.map((column) => (
+                {/* Mapping ordered columns for table cells */}
+                {getOrderedColumns().map((column) => (
                   <td key={column}>
                     {/* Change label for specific columns */}
                     {column === 'Dust Name' ? item['Dust Name'] : column === 'Experiment Name' ? item['Tag'] : item[column]}
