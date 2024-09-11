@@ -10,6 +10,9 @@
     background-size:cover;
     background-position:center;
 }
+#stars {
+  background-image: url("images/black-star-background.jpg");
+}
 #homepage {
   display: flex; 
   flex-direction: column;
@@ -21,11 +24,12 @@
   width: 100% !important;  
 }
 #top_fade {
-  height: 55vh;
+  height: 10vh;
   position: relative;
   width: 100%;
-  background: linear-gradient(transparent, #232323 40vh );
-  margin-top: 80vh;
+  /* background: linear-gradient(transparent, #232323 40vh ); */
+  margin-top: 0vh;
+  background-image: url("images/black-star-background.jpg");
 }
 
 #home_center {
@@ -63,22 +67,56 @@
     background-color: #232323;
     display: flex;
     flex-direction: column;
+    margin-top: -10vh;
 }
+
+#accelerator-home {
+  width: 100%;
+  height: 95vh; /* Increased height to accommodate fade */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("images/black-star-background.jpg");
+  position: relative; /* Added to allow absolute positioning of child elements */
+  overflow: hidden; /* Ensure fade doesn't extend beyond this container */
+  margin-bottom: 30vh;
+}
+
+#home-acc-container {
+  width: 90%;
+  height: 60vh !important;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  /* margin-top: 20vh; Push container down to make room for fade at bottom */
+}
+
+#fade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30vh;
+  background: linear-gradient(transparent, #232323 100%);
+}
+
+
 .home-links-container {
     display: flex;
-    height: 45vh;
+    height: 45vh !important;
     width: 100%;
     align-items: center;
     justify-content: space-around;
 }
 .home-links-click {
   width: 100%;
-  height: 45vh;
+  height: 40vh;
   display: flex;
   align-items: center;
 }
 .home-boxes {
-    height: 40vh;
+    height: 40vh !important;
     width: 30%;
     background-color: rgb(71, 71, 167);
     border-radius: 0.5rem;
@@ -108,6 +146,7 @@
   -o-transform: scale(1.2);
   transform: scale(1.2);
 }
+
 .home_box_link {
   text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
   text-align: center;
@@ -199,7 +238,7 @@
   #top_fade {
     height: 400px;
     margin-top: 750px;
-    background: linear-gradient(transparent, #232323 250px );
+    /* background: linear-gradient(transparent, #232323 250px ); */
   }
   #home-links-section {
     height: 1000px;
@@ -268,7 +307,7 @@
       margin-top: 950px;
       height: 400px;
       margin-top: 750px;
-      background: linear-gradient(transparent, #232323 250px );
+      /* background: linear-gradient(transparent, #232323 250px ); */
 
     }
     #home-links-section {

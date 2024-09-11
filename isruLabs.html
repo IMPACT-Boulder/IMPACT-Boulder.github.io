@@ -48,19 +48,31 @@
     </div>
     <!-- content -->
     <div class="content_section">
-    <div id="container" class="content_container">
-        <!-- ################################################################################################ -->
-       
-            <h2><b>Center for Space Resources (CSR)</b></h2>
-            <p>Housed at the Colorado School of Mines (CSM), the Center for Space Resources provides fully equipped laboratories containing a variety of vacuum chambers to assist in dusty-plamsa studies. Since 1998 CSR has participated in studies relating to dust mitigation on astronaut suits, habitats, and instrumentation as well as the development of various tools used to extract resources from the lunar surface. CSR has also participated in flight hardware design, assembly, testing, and remote operation of experiments on the Space Shuttle and the International Space Station. CSR is complimentary to DAL and DPL in exploring dusty plamsas.</p>
-            
-            <p>More information about CSR can be found <a href="http://spaceresources.mines.edu/" target="_blank">here</a>.</p>
-            
-            <div class="image-center"><img loading="lazy"  src="images/CSR_chambers.jpg" width="530" alt="CSR Chambers" ><br />
-                Two photos of vacuum chambers at CSR.
+        <div id="container" class="content_container" style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+            <section class="clear" style="clear: both;">
+                <h2 style="text-align: left; margin-bottom: 20px;"><b>Center for Space Resources (CSR)</b></h2>
+                
+                <p>Housed at the Colorado School of Mines (CSM), the Center for Space Resources provides fully equipped laboratories containing a variety of vacuum chambers to assist in dusty-plamsa studies. Since 1998 CSR has participated in studies relating to dust mitigation on astronaut suits, habitats, and instrumentation as well as the development of various tools used to extract resources from the lunar surface. CSR has also participated in flight hardware design, assembly, testing, and remote operation of experiments on the Space Shuttle and the International Space Station. CSR is complimentary to DAL and DPL in exploring dusty plamsas.</p>
+                
+                <p>More information about CSR can be found <a href="http://spaceresources.mines.edu/" target="_blank" style="color: #0000EE; text-decoration: underline;">here</a>.</p>
+                
+                <div class="image-container" style="display: flex; justify-content: center; align-items: center; margin-top: 30px;">
+                    <figure class="image-item" style="flex: 0 0 auto; max-width: 530px; text-align: center;">
+                        <img loading="lazy" src="images/CSR_chambers.jpg" alt="CSR Chambers" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+                        <figcaption style="margin-top: 10px; font-style: italic; color: #666;">Two photos of vacuum chambers at CSR.</figcaption>
+                    </figure>
                 </div>
+            </section>
+        </div>
         
-    </div>
+        <style>
+            @media (max-width: 768px) {
+                .image-container {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        </style>
         
         <!-- ################################################################################################ -->
         <div class="clear"></div>

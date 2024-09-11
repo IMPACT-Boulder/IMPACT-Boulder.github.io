@@ -48,26 +48,35 @@
     </div>
     <!-- content -->
     <div class="content_section">
-    <div id="container" class="content_container">
-  
-        <section class="clear">
-            <a name="dpl"></a>
-            <h1><b>Dusty Plasma Laboratory (DPL)</b></h1>
-            
-            <section class="clear">In addition to DAL, IMPACT hosts a variety of vacuum chambers to aide in experimental plasma studies. DPL houses a smaller chamber, 51 cm in diameter and 28 cm tall, used for investigations of dusty plasma phenomena as well as a larger chamber (known as "KEG"), 60 cm in diameter and 80 cm tall, used for investigations of photoelectron sheaths and magnetic anomalies. </section>
-            
-            <figure class="one_half first" style="width:150px"><img loading="lazy"  src="images/DPL_small_chamber.jpg" alt="DPL Small Chamber" />
-                Photo of the small vacuum chamber.
-            </figure>
-            
-            <figure class="one_half" style="width:150px"><img loading="lazy"  src="images/DPL_KEG.jpg" alt="DPL KEG Chamber" />
-                Photo of the "KEG" vacuum chamber.
-            </figure>
-
-        </section>
+        <div id="container" class="content_container" style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+            <section class="clear" style="clear: both;">
+                <a name="dpl"></a>
+                <h1 style="text-align: left; margin-bottom: 20px;"><b>Dusty Plasma Laboratory (DPL)</b></h1>
+                
+                <p>In addition to DAL, IMPACT hosts a variety of vacuum chambers to aide in experimental plasma studies. DPL houses a smaller chamber, 51 cm in diameter and 28 cm tall, used for investigations of dusty plasma phenomena as well as a larger chamber (known as "KEG"), 60 cm in diameter and 80 cm tall, used for investigations of photoelectron sheaths and magnetic anomalies.</p>
+                
+                <div class="image-container" style="display: flex; justify-content: center; align-items: flex-start; gap: 40px; margin-top: 30px;">
+                    <figure class="image-item" style="flex: 0 0 auto; max-width: 400px; text-align: center;">
+                        <img loading="lazy" src="images/DPL_small_chamber.jpg" alt="DPL Small Chamber" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+                        <figcaption style="margin-top: 10px; font-style: italic; color: #666;">Photo of the small vacuum chamber.</figcaption>
+                    </figure>
+                    
+                    <figure class="image-item" style="flex: 0 0 auto; max-width: 400px; text-align: center;">
+                        <img loading="lazy" src="images/DPL_KEG.jpg" alt="DPL KEG Chamber" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+                        <figcaption style="margin-top: 10px; font-style: italic; color: #666;">Photo of the "KEG" vacuum chamber.</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </div>
         
-        
-    </div>
+        <style>
+            @media (max-width: 768px) {
+                .image-container {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        </style>
         
         <!-- ################################################################################################ -->
         <div class="clear"></div>
