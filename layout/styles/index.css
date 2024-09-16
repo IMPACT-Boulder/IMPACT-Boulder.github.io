@@ -9,6 +9,7 @@
     top: 0;
     background-size:cover;
     background-position:center;
+    height: 600px !important;
 }
 #stars {
   background-image: url("images/black-star-background.jpg");
@@ -24,7 +25,7 @@
   width: 100% !important;  
 }
 #top_fade {
-  height: 10vh;
+  
   position: relative;
   width: 100%;
   /* background: linear-gradient(transparent, #232323 40vh ); */
@@ -34,20 +35,19 @@
 
 #home_center {
   position: relative;
-  height: 130vh;
+  height: 10vh;
   display: flex;
   align-items: center;
   width: 100%;
 }
 #home_center_content {
   display: flex;
-  flex-direction: column;
-  height: 400px;
+  /* flex-direction: column; */
+  height: auto;
   width: 100%;
   justify-content: center;
-  align-items: center;
+  align-items: space-between;
   margin: 0 10%;
-  padding-bottom: 30vh;
 }
 #home_center img{
   width: 350px;
@@ -236,8 +236,8 @@
     height: 1300px;
   }
   #top_fade {
-    height: 400px;
-    margin-top: 750px;
+    height: 300px;
+    margin-top: 550px;
     /* background: linear-gradient(transparent, #232323 250px ); */
   }
   #home-links-section {
