@@ -1,13 +1,17 @@
 import Page from './components/interface';
 import './styles/App.css'
 import Top from './components/Top';
-//import ScriptStatus from './components/Rewrite';
 
+/**
+ * The main App component that renders the top section and the page interface.
+ * 
+ * @component
+ * @returns The main application structure.
+ */
 function App() {
   return (
     <div className="App">
       <Top />
-      {/* <ScriptStatus /> */}
       <Page />
     </div>
   );

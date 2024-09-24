@@ -34,8 +34,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "electron-start": "NODE_ENV=production electron .",
-  "electron-dev": "NODE_ENV=development electron ."
-  },  
+    "electron-dev": "NODE_ENV=development electron ."
+  },
   "eslintConfig": {
     "extends": [
       "react-app",

@@ -1,0 +1,11 @@
+{
+    "entryPoints": ["src"],           // Points to your entire src folder
+    "out": "docs",                    // Output folder for documentation
+    "excludePrivate": true,           // Exclude private members
+    "excludeProtected": false,        // Include protected members
+    "excludeExternals": true,         // Exclude external libraries
+    "includeVersion": true,           // Add version number to the docs
+    "entryPointStrategy": "expand",   // Expands directories to include all files
+    "tsconfig": "./tsconfig.json"     // Points to your tsconfig.json (important if you're using TypeScript)
+  }
+  
