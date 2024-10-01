@@ -1,29 +1,63 @@
-// src/App.tsx
-
 import React, { useState } from 'react';
-import { mountShare, listDirectoryContents, unmountShare, searchFilesAndFolders, API_URL } from './apiService';
+import { mountShare, listDirectoryContents, unmountShare, API_URL } from './apiService';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFolder, faFile } from '@fortawesome/free-solid-svg-icons';
+import ErrorModal from './ErrorModal';
 
+/**
+ * Main application component for the IMPACT Data file browser.
+ * 
+ * This component manages the state and interactions for browsing
+ * network shares, directories, and files. It includes functionality
+ * for mounting/unmounting shares, navigating directories, and opening files.
+ *
+ * @component
+ */
 const App: React.FC = () => {
+  /** State for the name of the share to mount */
   const [shareName, setShareName] = useState('');
+  /** State for the password used to mount the share */
   const [password, setPassword] = useState('');
+  /** State for the list of available directories */
   const [directories, setDirectories] = useState<string[]>([]);
+  /** State for the contents of the current folder */
   const [folderContents, setFolderContents] = useState<{ name: string, type: string }[]>([]);
+  /** State for the path of the current folder */
   const [currentFolder, setCurrentFolder] = useState<string>('');
+  /** State for storing and displaying error messages */
   const [error, setError] = useState<string | null>(null);
+  /** State for maintaining navigation history */
   const [pathHistory, setPathHistory] = useState<string[]>([]);
-  const [searchQuery, setSearchQuery] = useState('');
-  const [searchResults, setSearchResults] = useState<{ name: string, path: string, type: string }[]>([]);
-  const [showDropdown, setShowDropdown] = useState(false);
+  /** State for controlling the visibility of the error modal */
+  const [isErrorModalOpen, setIsErrorModalOpen] = useState(false);
+  /** State for storing the current error message */
+  // const [errorMessage, setErrorMessage] = useState('');
 
+  /**
+   * Handles errors by updating the error state and showing the error modal.
+   * 
+   * @param {unknown} error - The error to handle
+   */
+  const handleError = (error: unknown) => {
+    const errorMessage = error instanceof Error ? error.message : String(error);
+    setError(errorMessage);
+    setIsErrorModalOpen(true);
+    // setErrorMessage(errorMessage);
+  };
+
+  /**
+   * Attempts to mount a network share with the provided name and password.
+   * Updates the state with the result or displays an error if unsuccessful.
+   */
   const handleMount = async () => {
     try {
       const result = await mountShare(shareName, password);
       if (result.error) {
         setError(result.error);
         setDirectories([]);
+        setIsErrorModalOpen(true);
+        // setErrorMessage(result.error);
       } else {
         setError(null);
         const sortedDirectories = result.sort((a: string, b: string) => a.localeCompare(b));
@@ -32,12 +66,18 @@ const App: React.FC = () => {
         setCurrentFolder('');
         setPathHistory([]);
       }
-    } catch (error) {
-      setError(`An error occurred while mounting the share: ${error.message}`);
+    } catch (error: unknown) {
+      handleError(error);
       setDirectories([]);
     }
   };
 
+  /**
+   * Handles clicking on a folder to navigate into it.
+   * Updates the current folder and its contents.
+   * 
+   * @param {string} folderName - The name of the folder to navigate into
+   */
   const handleFolderClick = async (folderName: string) => {
     try {
       const newFolderPath = currentFolder ? `${currentFolder}/${folderName}` : folderName;
@@ -50,14 +90,17 @@ const App: React.FC = () => {
         setError(null);
         setFolderContents(result);
         setCurrentFolder(newFolderPath);
-        setShowDropdown(false);
       }
-    } catch (error) {
-      setError(`An error occurred while fetching the folder contents: ${error.message}`);
+    } catch (error: unknown) {
+      handleError(error);
       setFolderContents([]);
     }
   };
 
+  /**
+   * Handles the "Back" button click to navigate to the previous folder.
+   * Updates the current folder and its contents.
+   */
   const handleBackClick = async () => {
     if (pathHistory.length > 0) {
       const previousPath = pathHistory.pop() || '';
@@ -72,13 +115,18 @@ const App: React.FC = () => {
           setFolderContents(result);
           setPathHistory(pathHistory); // Update path history state
         }
-      } catch (error) {
-        setError(`An error occurred while fetching the folder contents: ${error.message}`);
+      } catch (error: unknown) {
+        handleError(error);
         setFolderContents([]);
       }
     }
   };
 
+  /**
+   * Handles clicking on a file to open it in a new tab.
+   * 
+   * @param {string} fileName - The name of the file to open
+   */
   const handleFileClick = (fileName: string) => {
     const filePath = currentFolder ? `${currentFolder}/${fileName}` : fileName;
     const fileURL = `${API_URL}/files/${encodeURIComponent(shareName)}/${encodeURIComponent(filePath)}`;
@@ -86,6 +134,10 @@ const App: React.FC = () => {
     window.open(fileURL, '_blank');
   };
 
+  /**
+   * Attempts to unmount the current network share.
+   * Resets the state if successful or displays an error if unsuccessful.
+   */
   const handleUnmount = async () => {
     try {
       const result = await unmountShare(shareName);
@@ -97,45 +149,23 @@ const App: React.FC = () => {
         setFolderContents([]);
         setCurrentFolder('');
         setPathHistory([]);
-        setSearchResults([]);
-        setSearchQuery('');
-        setShowDropdown(false);
       }
-    } catch (error) {
-      setError(`An error occurred while unmounting the share: ${error.message}`);
+    } catch (error: unknown) {
+      handleError(error);
     }
   };
 
-  const handleSearchChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchQuery(e.target.value);
-    
-    if (e.target.value) {
-      try {
-        const results = await searchFilesAndFolders(shareName, e.target.value);
-        setSearchResults(results);
-        setShowDropdown(true);
-      } catch (error) {
-        console.error('Error searching files and folders:', error);
-      }
-    } else {
-      setShowDropdown(false);
-      setSearchResults([]);
-    }
-  };
-
-  const handleSearchResultClick = (result: { name: string, path: string, type: string }) => {
-    if (result.type === 'directory') {
-      handleFolderClick(result.path);
-    } else {
-      handleFileClick(result.path);
-    }
-    setSearchQuery('');
-    setShowDropdown(false);
+  /**
+   * Closes the error modal.
+   */
+  const handleCloseErrorModal = () => {
+    setIsErrorModalOpen(false);
   };
 
   return (
     <div className="App">
       <h1>IMPACT Data</h1>
+      <h3>LASP VPN connection required</h3>
       {directories.length === 0 && folderContents.length === 0 && (
         <>
           <input
@@ -159,27 +189,6 @@ const App: React.FC = () => {
           <button onClick={handleUnmount}>Unmount Share</button>
           <button onClick={handleBackClick} style={{ marginLeft: '10px' }}>Back</button>
         </>
-      )}
-      
-      {/* Search bar */}
-      <input
-        type="text"
-        value={searchQuery}
-        onChange={handleSearchChange}
-        placeholder="Search files and folders..."
-        className="search-bar"
-      />
-
-      {/* Search results dropdown */}
-      {showDropdown && searchResults.length > 0 && (
-        <ul className="search-results-dropdown">
-          {searchResults.map((result, index) => (
-            <li key={index} onClick={() => handleSearchResultClick(result)}>
-              <FontAwesomeIcon icon={result.type === 'directory' ? faFolder : faFile} className="search-icon" />
-              {result.name}
-            </li>
-          ))}
-        </ul>
       )}
 
       {directories.length > 0 && !currentFolder && (
@@ -216,6 +225,10 @@ const App: React.FC = () => {
           </ul>
         </>
       )}
+      <ErrorModal 
+        isOpen={isErrorModalOpen} 
+        onClose={handleCloseErrorModal} 
+      />
     </div>
   );
 };
