@@ -1,0 +1,11 @@
+{
+    "entryPoints": ["src/main.tsx", "src/App.tsx"],
+    "out": "docs",
+    "excludePrivate": true,
+    "excludeProtected": true,
+    "excludeExternals": true,
+    "theme": "default",
+    "name": "IMPACT Data App",
+    "readme": "none",
+    "includeVersion": true
+  }
