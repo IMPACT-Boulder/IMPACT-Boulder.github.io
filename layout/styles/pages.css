@@ -101,6 +101,29 @@ p {
   color:#2d4159;
   font-weight: bold;
 }
+.menu__box {
+  max-height: 80vh; /* Limit the height to 80% of the viewport height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #888 #f1f1f1; /* For Firefox */
+}
+
+/* Customizing scrollbar for WebKit browsers (Chrome, Safari, etc.) */
+.menu__box::-webkit-scrollbar {
+  width: 6px;
+}
+
+.menu__box::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.menu__box::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.menu__box::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 @media only screen and (min-width: 1200px) {
   .secondary {
     background-image: url("images/black-star-background.jpg");
