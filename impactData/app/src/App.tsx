@@ -8,12 +8,16 @@ import ErrorModal from './ErrorModal';
 /**
  * Main application component for the IMPACT Data file browser.
  * 
- * This component manages the state and interactions for browsing
- * network shares, directories, and files. It includes functionality
- * for mounting/unmounting shares, navigating directories, and opening files.
+ * This component allows users to:
+ * - Mount a network share by providing a share name and password.
+ * - Navigate directories and open files in a read-only mode.
+ * - Display error messages when an issue occurs with mounting or navigating.
+ *
+ * It interacts with the backend using API calls to mount/unmount shares and list directories.
  *
  * @component
  */
+
 const App: React.FC = () => {
   /** State for the name of the share to mount */
   const [shareName, setShareName] = useState('');

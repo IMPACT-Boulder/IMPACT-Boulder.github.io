@@ -1,11 +1,11 @@
 {
-    "entryPoints": ["src/main.tsx", "src/App.tsx"],
-    "out": "docs",
-    "excludePrivate": true,
-    "excludeProtected": true,
-    "excludeExternals": true,
-    "theme": "default",
-    "name": "IMPACT Data App",
-    "readme": "none",
-    "includeVersion": true
-  }
+  "entryPoints": ["src/main.tsx", "src/App.tsx", "src/apiService.ts", "src/ErrorModal.tsx"],
+  "out": "docs",
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "excludeExternals": true,
+  "theme": "default",
+  "name": "IMPACT Data App",
+  "readme": "README.md",  // Include the README file here
+  "includeVersion": true
+}

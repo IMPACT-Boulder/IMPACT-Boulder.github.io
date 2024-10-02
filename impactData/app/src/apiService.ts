@@ -2,6 +2,14 @@
 
 export const API_URL = 'https://10.247.29.41:5000';
 
+/**
+ * Mounts a network share by sending the share name and password to the backend.
+ * 
+ * @param {string} shareName - The name of the network share to mount.
+ * @param {string} password - The password for the network share.
+ * @returns {Promise<Object>} The mounted share details or an error.
+ * @throws {Error} If the mounting fails due to network or authentication issues.
+ */
 export const mountShare = async (shareName: string, password: string) => {
   try {
     const response = await fetch(`${API_URL}/mount`, {
