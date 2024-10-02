@@ -165,6 +165,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <h1>IMPACT Data</h1>
+      <h3>Welcome to the read-only version of IMPACT Data</h3>
       <h3>LASP VPN connection required</h3>
       {directories.length === 0 && folderContents.length === 0 && (
         <>

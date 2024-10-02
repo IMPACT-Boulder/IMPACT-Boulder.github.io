@@ -1,3 +1,7 @@
+# Dust Data Digger
+
+The Dust Data Digger is an application that allows users to interface with and plot data from the IMPACT Dust Accelerator. The app provides intuitive tools for visualizing accelerator data and analyzing results. Please note that a LASP VPN connection is required to use the app. Users may experience downtime when the server is being written to, which can temporarily prevent data access.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules. The app is built with TypeScript, React, and Vite.
