@@ -4,15 +4,20 @@
         <title>Spectrum</title>
         <item>
             <title>3.3.0-beta</title>
-            <pubDate>Tue, 10 Sep 2024 10:28:25 +0200</pubDate>
-            <sparkle:version>493</sparkle:version>
+            <pubDate>Tue, 05 Nov 2024 14:18:17 +0100</pubDate>
+            <sparkle:version>494</sparkle:version>
             <sparkle:shortVersionString>3.3.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.3.0 (Build 491)</title>
+            <description><![CDATA[<title>Version 3.3.0 (Build 494)</title>
 <description>
 	This is a beta version which probably has not been sufficiently tested.
 	<ul>
-			<li> Version 3.3.0 (493):
+		<li> Version 3.3.0 (494):
+			<ul>
+				<li> Shows the molecular structure of molecules for which a SMILES string has been provided.
+				<li> Fixed various issues which affected the IMPACT Query dialog.
+			</ul>
+		<li> Version 3.3.0 (493):
 			<ul>
 				<li> Fixed an issue that prevented the Line Viewer's Mass Range Dialog from closing.
 				<li> Fixed an issue which prevented newly defined Line type definitions from being added to the reference library.
@@ -209,7 +214,7 @@
 	</ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="75854699" type="application/octet-stream" sparkle:edSignature="tj3lm5xQY+PUXGFO1CMH8d+4bttVOll9GRz4O6LotNyw3dGdtfhJ6mgX0HqCpyIC6yOsOOMflA1yjbKTTb5QAg=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="76484783" type="application/octet-stream" sparkle:edSignature="TKtszyWFv7/IyUkI9R7r8x6PZNexfOq9/qx/Hg4KZe9le5MHXqbDB68YKnPXq8T+oqis5NyoBcMoZ1LSPogYAw=="/>
         </item>
     </channel>
 </rss>
