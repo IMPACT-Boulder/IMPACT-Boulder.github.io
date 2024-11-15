@@ -4,14 +4,19 @@
         <title>Spectrum</title>
         <item>
             <title>3.3.0-beta</title>
-            <pubDate>Tue, 05 Nov 2024 14:18:17 +0100</pubDate>
-            <sparkle:version>494</sparkle:version>
+            <pubDate>Fri, 15 Nov 2024 12:19:22 +0100</pubDate>
+            <sparkle:version>495</sparkle:version>
             <sparkle:shortVersionString>3.3.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<title>Version 3.3.0 (Build 494)</title>
 <description>
 	This is a beta version which probably has not been sufficiently tested.
 	<ul>
+		<li> Version 3.3.0 (495):
+			<ul> Improves IDL SpectrumAnalyzer project imorts.
+			<ul> Fixes updating datasets with IMPACT data.
+			<ul> Fixes an issue that IMPACT query errors are not reported properly to the user.
+			<ul> Fixes an issue that QD feature data have not been correctly encoded when uploading to impact.
 		<li> Version 3.3.0 (494):
 			<ul>
 				<li> Shows the molecular structure of molecules for which a SMILES string has been provided.
@@ -214,7 +219,7 @@
 	</ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="76484783" type="application/octet-stream" sparkle:edSignature="TKtszyWFv7/IyUkI9R7r8x6PZNexfOq9/qx/Hg4KZe9le5MHXqbDB68YKnPXq8T+oqis5NyoBcMoZ1LSPogYAw=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="76731442" type="application/octet-stream" sparkle:edSignature="PNCOMU0XxwQxBNgg6T7CrzsyLHezk3RHZMVBb6cxfVtx6HRrJLTfiQ8r993teyL07kuiXYRThhnZc64Ib/LZDw=="/>
         </item>
     </channel>
 </rss>
