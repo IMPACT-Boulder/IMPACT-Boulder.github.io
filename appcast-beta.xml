@@ -3,223 +3,629 @@
     <channel>
         <title>Spectrum</title>
         <item>
-            <title>3.3.0-beta</title>
-            <pubDate>Fri, 15 Nov 2024 12:19:22 +0100</pubDate>
-            <sparkle:version>495</sparkle:version>
-            <sparkle:shortVersionString>3.3.0-beta</sparkle:shortVersionString>
+            <title>3.3.0</title>
+            <pubDate>Thu, 30 Jan 2025 08:51:34 +0100</pubDate>
+            <sparkle:version>499</sparkle:version>
+            <sparkle:shortVersionString>3.3.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.3.0 (Build 494)</title>
+            <description><![CDATA[<title>Version 3.2.5 (Build 457)</title>
 <description>
-	This is a beta version which probably has not been sufficiently tested.
-	<ul>
-		<li> Version 3.3.0 (495):
-			<ul> Improves IDL SpectrumAnalyzer project imorts.
-			<ul> Fixes updating datasets with IMPACT data.
-			<ul> Fixes an issue that IMPACT query errors are not reported properly to the user.
-			<ul> Fixes an issue that QD feature data have not been correctly encoded when uploading to impact.
-		<li> Version 3.3.0 (494):
-			<ul>
-				<li> Shows the molecular structure of molecules for which a SMILES string has been provided.
-				<li> Fixed various issues which affected the IMPACT Query dialog.
-			</ul>
-		<li> Version 3.3.0 (493):
-			<ul>
-				<li> Fixed an issue that prevented the Line Viewer's Mass Range Dialog from closing.
-				<li> Fixed an issue which prevented newly defined Line type definitions from being added to the reference library.
-				<li> Added Deletion Confirmation Dialogs to the Catalog Definition Dialogs.
-				<li> Improved the Line Type Ratio statistics viewer.
-				<li> Updates the default line types definitions after an increase of the app version.
-			</ul>
-		<li> Version 3.3.0 (491):
-			<ul>
-				<li> Improved the default heavy water line catalog and template.
-				<li> Fixed some UI issues in the Spectrum Template Dialog
-				<li> Fixed the save reminder dialog of the catalog viewers.
-			</ul>
-		<li> Version 3.3.0 (491):
-	    	<ul>
-				<li> Deuterium can now be used like a chemical element when defining an 
-				     ion molecule. This enables the definition of e.g. heavy water clusters.
-				     To this aim, a heavy water line catalog and a heay water template are
-				     now included in the default catalog set.
-				<li> Better handling of isotopologues. The main isotopologue is added to the
-				     set of line type parameters.
-				<li> Cleaned and verfied the default reference database.
-				<li> Redesigned the Line Catalog and the Database Maintainance dialogs.
-				<li> Redesigned the Line Type Editor.
-				<li> Fixed various bugs in the Line Catalog and the Line Type Editor.
-				<li> Bug fixes.
-			</ul>
-		<li> Version 3.3.0 (489):
-	    	<ul>
-				<li> This release brings the long promised support for ice targets. For such targets the
-					 solvent and up to 3 solutes can be selected from a (yet) rather small list of chemical
-					 compounds (including water, ammonia, methanol, and NaCl).
-				<li> The new target types are supported by the IMPACT data base.
-				<li> Optimized the project setup UI. Reorganized the processing pane.
-				<li> Fixed an issue with the focusing of the selected line in line tables.
-				<li> Bug fixes.
-			</ul>
-		<li> Version 3.3.0 (486):
-	    	<ul>
-				<li> Improved the setup of Spice kernels to load. You can now either load the kernels using
-					 meta kernel, or you can select individual kernels via a user interface.
-				<li> Fixed the highlighting of selected table rows.
-			</ul>
-		<li> Version 3.3.0 (485):
-	    	<ul>
-				<li> Line viewer now supports fitting of sum spectra line (set sum spectra button located 
-				     above spectra table).
-			</ul>
-		<li> Version 3.3.0 (484):
-	    	<ul>
-				<li> Fixed an issue where line types not included in the project's line catalog but assigned
-				     to a line lead to a crash when bringing up the line popup menu. 
-				<li> Changes to line type definitions are now saved.
-			</ul>
-	    <li> Version 3.3.0 (483):
-	    	<ul>
-				<li> Fixed the frequent mystery crashes introduced by the new Swift toolchain. The root cause
-				     for the crashes is the Swift optimizer, which has been disabled for now. 
-				<li> Rewrote the Spice toolkit integration, which fixes many issues reported by users. The 
-				     Spice error messages are now more helpful. The app is now using the most recent Spice 
-				     release N0067.
-				<li> Fixed the fitting of CDA waveforms.
-				<li> Improved response to selection changes.
-				<li> Bug fixes and performance improvments.
-			</ul>
-		<li> Version 3.3.0 (478):
-			<ul>
-				<li> Fixed an issue where identically named composition types catalogs may cause a crash.
-				<li> Improved import of CCSDS packets.
-				<li> Other bug fixes.
-			</ul>
-		<li> Version 3.3.0 (477):
-			<ul>
-				<li> Fixed an issue where removing a spectrum caused a crash.
-				<li> Reorganized the QD processing menu. Added the capability to trim QD waveforms in the time domain. 
-				<li> Other bug fixes.
-			</ul>
-		<li> Version 3.3.0 (476):
-			<ul>
-				<li> Computation of a sum spectrum will not any longer crash the app.
-				<li> Other bug fixes.
-			</ul>
-		<li> Version 3.3.0 (475):
-			<ul>
-				<li> Fixed another issue in the Impact query filter UI. Selecting time ranges do not crash any longer.
-				<li> Rewrote Run Script query UI. Swift meta kernels will now be loaded before executing the query.
-				<li> Known issues:
-					<ul>
-						<li> Computing sum spectra will lead to a crash.
-						<li> Running Impact query cannot be canceled.
+    <ul>  
+    	<li> Version 3.3.0 (499):
+    		<ul>
+    			<li> General changes:
+    				<ul>
+    					<li> Rewrote the Spice toolkit integration, which fixes many issues reported by users. The 
+							Spice error messages are now more helpful. The app is now using the most recent Spice 
+					   		release N0067.
+						<li> Deuterium can now be used like a chemical element when defining an 
+				 	    	ion molecule. This enables the definition of, e.g., heavy water clusters.
+				  	    	To this aim, a heavy water line catalog and a heay water template are
+				     		now included in the default catalog set.
+						<li> This release brings the long promised support for ice targets. For such targets the
+					 		solvent and up to 3 solutes can be selected from a (yet) rather small list of chemical
+					 		compounds (including water, ammonia, methanol, and NaCl).
+						<li> Improves IDL SpectrumAnalyzer legacy project imports.
+						<li> Shows the molecular structure of molecules for which a SMILES string has been provided.
 					</ul>
-			</ul>
-		<li> Version 3.3.0 (474):
-			<ul>
-				<li> Fixed issue in Impact query filter UI.
-				<li> Improved field dropdown menu in Impact query UI.
-			</ul>
-		<li> Version 3.3.0 (473):
-			<ul>
-				<li> Supports upcomming MacOS 15.
-				<li> Filter dialog works on MacOS 12.
-				<li> Minor UI tweaks.
-			</ul>
-		<li> Version 3.3.0 (472):
-			<ul>
-				<li> Fixed Target dialog.
-				<li> As a fallback for MacOS 12 users, the accounts dialog has been added to the Impact menu.
-			</ul>
-		<li> Version 3.3.0 (471):
-			<ul>
-				<li> Fixed Template dialog.
-				<li> Fixed Materials dialog.
-				<li> Other bug fixes.
-			</ul>
-		<li> Version 3.3.0 (470):
-			<ul>
-				<li> Bug fixes.
-			</ul>
-		<li> Version 3.3.0 (469):
-			<ul>
-				<li> Fixed an issue with the updater in MacOS 14.
-				<li> A few bug bug fixes. 
-			</ul>
-		<li> Version 3.3.0 (468):
-			<ul>
-				<li> The method for culling waveforms with a large number of sampling points for generating plots can 
-				     be selected in the Settings dialog. High mass resolution spectra need to use more computationally
-				     expensive methods to preserve narrow features in plots.
-				<li> Focusing lens voltages can be defined in the project setup.
-				<li> Rewrote the scope data import dialog.
-				<li> Tips for using the scope import dialog will be shown infrequently.
-				<li> Electrodes can be added again in the instrument dialog.
-				<li> Various bug fixes. 
-			</ul>
-		<li> Version 3.3.0 (467):
-			<ul>
-				<li> Uses the most recent version of PacketCrusher which is more forgiving when importing SUDA CCSDS data.
-				<li> Fixes issues with the line catalog user interface introduced in one of the previous releases.
-				     Line types can be copied and edited again!
-				<li> Fixed issues with the interfacing for writing chemical formulas.
-			</ul>
-		<li> Version 3.3.0 (466):
-			<ul>
-				<li> On MacOS 14 the side bar is back on the right side of the app.
-				<li> Fixed some minor work flow issues.
-				<li> Fixed the zooming state of the accelerator data viewer.
-				<li> Fixes some of the default instrument definitions.
-			</ul>
-		<li> Version 3.3.0 (465):
-			<ul>
-    		    <li> Includes the definition for the DDA instrument, ready for importing scope data generated by the EM.
-    		    <li> Includes an updated CDA instrument definition.
-    		    <li> Updates the conversion tables for CDA raw data.
-    		    <li> The app silently recreates missing DN data for instruments which use conversion tables.
-				<li> DN as y axis unit can now only be selected for appropriate instruments.
-    		    <li> The Instrument dialog now saves gain stage definition changes.
-    		    <li> The Instrument dialog now verifies whether an instrument family already exists.
-    		    <li> Many bug fixes.
+    			<li> UI changes:
+    				<ul>
+						<li> Redesigned Line Catalog and the Database Maintainance dialogs.
+						<li> Redesigned Line Type Editor.
+						<li> Improved Project Setup UI. Reorganized Processing pane.
+						<li> Redesigned Scope Data import dialog. Tips for using the scope import dialog will be shown infrequently.
+						<li> The spreadsheet editor has been merged with the CSV export file dialog.
+						<li> Columns of all Viewer tables can be rearranged by the user (only supported in MacOS 14 Sonoma). A right click into the column's header opens a menu for downselecting columns.
+						<li> Reorganized QD processing menu. Added the capability to trim QD waveforms in the time domain. 
+						<li> Improved the setup of Spice kernels to load. You can now either load the kernels using
+							 meta kernel, or you can select individual kernels via a user interface.
+    				</ul>
+    			<li> Instrument specific changes and additions:
+    				<ul>
+    					<li> Includes the definition for the DDA instrument, ready for importing scope data generated by the EM.
+    					<li> Includes an updated CDA instrument definition.
+	    				<li> Updates the conversion tables for CDA raw data.
+	    				<li> Uses the most recent version of PacketCrusher which is more forgiving when importing SUDA and IDEX CCSDS data.
+    				</ul>
+    			<li> Minor changes:
+    				<ul>
+    					<li> The method for culling waveforms with a large number of sampling points for generating plots 	can be selected in the Settings dialog. High mass resolution spectra need to use more
+    						computationally expensive methods to preserve narrow features in plots.
+						<li> The app silently recreates missing DN data for instruments which use conversion tables.
+						<li> DN as y axis unit can now only be selected for appropriate instruments.
+						<li> Focusing lens voltages can be defined in the Project setup.
+						<li> Line viewer now supports fitting of sum spectra lines (set sum spectra button located above 
+							spectra table).		
+						<li> Better handling of isotopologues. The main isotopologue is added to the set of line type 
+							parameters.
+    				</ul>
     		</ul>
-		<li> Version 3.3.0 (464):
-			<ul>
-    		    <li> Migrated the Impact data base access dialogs to SwiftUI. With that the migration to SwiftUI is complete.
-   				<li> Improved the Impact Query dialog. The dialog clearly indicates if Spice ressources must be loaded first to enable a correct conversion of the event time.
-   				<li> Added a context menu to the Query dialog to enable easier builds of range constraints (e.g. time ≥ x && time ≤ y).
-   				<li> Other bug fixes.
-    		</ul>
-		<li> Version 3.3.0 (463):
-			<ul>
-    		    <li> The spreadsheet editor has been merged with the CSV export file dialog.
-   				<li> Other bug fixes.
-    		</ul>
-		<li> Version 3.3.0 (462):
+    	<li> Version 3.2.7 (461):
     		<ul>
     		    <li> Reorganized the Import menu in the menu bar. 
     		    <li> Fixed crashes associated with file selection dialogs.
     		    <li> Other bug fixes.
     		</ul>
-		<li> Version 3.3.0 (Build 460):
+    	<li> Version 3.2.6 (459):
+    		<ul>
+    			<li> Fixed a bug where deleting a line in a sum spectrum lead to a crash.
+    			<li> Spice meta kernels and articulation kernels can now be set in the Project Dialog.
+    			<li> Fixed the <Add Anchor Line...> context menu.
+    			<li> App now responds to changes to the Spectrum Template, Line Catalog, etc.
+    			<li> Features in auxiliary waveforms can now be assigned manually again.
+    			<li> Other bug fixes.
+	   		</ul>
+        <li> Version 3.2.5 (457):
 			<ul>
-				<li> Excludes events with clipped QD feature from Grid Statistics analysis.
-				<li> Includes all bug fixes in the current stable branch (3.2.6).
+    			<li> Fixed an issue where the state of the filter button was wrong after launching the app.
+    			<li> Updates the selected spectrum if data processing removes the currently selected spectrum from the filtered data set. This change has so far only be implemented for the Spectrum Viewer. 
+	   		</ul>
+        <li> Version 3.2.4 (455):
+			<ul>
+    			<li> A bit of code hygene never hurts.
+	   		</ul>
+    	<li> Version 3.2.3 (453):
+			<ul>
+    			<li> The status buttons in the calibration sidebar tab are now correctly updated.
+    			<li> Assigned reference lines in older Spectrum projects are now correctly imported.
+    			<li> The Impact Plasma Yield and the Plasma Rise Time Statistics tools now allow to select the plasma measurement channel via the context menu.
+    			<li> Fixed an issue where the resampling of accelerator waveforms never finished. 
+    			<li> Fixed the layout of the Gain Stage Dialog on the Ion Sensor viewer.
+    			<li> Bug fixes and performance improvements.
+	   		</ul>
+    	<li> Version 3.2.2 (452):
+			<ul>
+    			<li> The waveform tab of the sidebar now provides insight into the waveforms relevant for the selected viewer.
+    			<li> The app now shares its internal reference database with the PacketAnalyzer and Hyperspectrum apps.
+    			<li> The Species statistics tool does not any longer restict frequencies to lines contained in the current line catalog.
+    			<li> The Fitting Model menu item in the main menu bar now allows to assign a model to auxiliary waveforms.
+    			<li> Fixed a bug where deleting a line in the spectrum view leads to a crash.
+    			<li> Bug fixes and performance improvements.
+	   		</ul>
+    	<li> Version 3.2.1 (451):
+			<ul>
+    			<li> App is now sharing its internal reference database with the PacketAnalyzer app and the HyperSpectrum App.
+    			<li> Fixed a number of issues with the Line Types Catalog and Cluster Types Catalog viewers.
+	   		</ul>
+    	<li> Version 3.2.0 (450):
+			<ul>
+    			<li> App's code base has been migrated to SwiftUI, which significantly improves stability and performance.
+    			<li> All Objective C code artifacts have been replaced by Swift.
+    			<li> Waveforms are now compressed when saved as Spectrum projects, enabling much smaller file sizes. Note that this format change is not backward compatible.
+    			<li> Data loading progress is shown to user.
+    			<li> Imports IDEX CCSDS packets.
+    			<li> Imports BCE7 data.
+    			<li> Supports scripted Impact data base queries. 
+				<li> Adds ice accelerator dust source.
+				<li> Adds ability to invert TOF waveforms.
+				<li> Removed Packet Analyzer and Catalog Viewer to reduce complexity. Please use PacketAnalyzer instead.
+	   		</ul>
+        <li> Version 3.1.1 (419): 
+        	<ul>
+        	 	<li> Fixes an issue where the library selection did not work in the Line Type Library UI.
+			 	<li> Addresses an rare issue that affected the import of damaged or incomplete accelerator scope traces.
 			</ul>
-		<li> Version 3.3.0 (Build 456):
-			<ul>
-		    	<li> Columns of all Viewer tables can be rearranged by the user (only supported in MacOS 14 Sonoma). A right click into the column's header opens a menu for downselecting columns.
-		    	<li> Includes all bug fixes in the current stable branch (3.2.4).
-			</ul>
-		<li> Version 3.3.0 (Build 454):
-			<ul>
-		    	<li> Columns of the Spectrum and Line Viewer tables can be rearranged by the user (only supported in MacOS 14 Sonoma).
-		    	<li> Implemented a work around to prevent crashes when starting an import on Intel Macs. Please note that I couldn't 
-		    	     test this on an Intel Mac so far.
-			</ul>      
-	</ul>
+    	<li> Version 3.1.0 (416): 
+       		 <ul>
+       		 	<li> New Impact Database account management, which moved to the Preferences dialog. Account credentials will be stored in the user's local keychain, implying that passwords only need entered at the time of the account's registration with the app. Accounts can be selected in the main menu's Impact menu.
+       		 	<li> Supports Impact database version 3.4.0, which now accepts QD (accelerator) data. Ignored and locked state of mass lines are now exported to Impact DB. 
+	    		<li> Impact Database action menus have been moved to stand alone menu Impact located in the main menu bar.
+	    		<li> Import and Export submenues have been moved from File menu to main bar.
+	    		<li> The H5 export has been significantly enhanced to allow for the reimport of H5 files. Import of H5 Spectrum archives are now possible. H5 archives starting with a LILBID group are considered to contain LILBID raw data generated by the Freie University group and will be coverted into a Spectrum project.
+	        	<li> This version brings support of user-defined Python functions. Right now Python modules computing line shapes and waveform models can be called by Spectrum. Python plugins need to registered via the Preferences dialog. Because Spectrum is sandboxed, it cannot call call external programs including the Python interpreter. For this reason, a full Python 3.8 package including NumPy is bundled into the App (which explains the large increase of the app's size).
+	    		<li> Impproved import of PSU data. The correlation between PSU and QD data can be analysed indepth with the new QD Detection Statistics tool.
+	    		<li> New tool for visualizing the impact plasma composition as function of the impact speed, impact energy, and impact energy density.
+	    		<li> Suports lastest version of SUDA instrument software. 					
+	    		<li> Provides predefined IDEX and DDA instruments.
+	        	<li> Improved code stability
+	        	<li> Known issues:
+	        		<ul>
+	        			<li> Data sets containing complex large molecules are causing performance issues. This problem has been fixed in 3.2.0 (beta).
+	        		</ul>
+	   		</ul>	
+	    <li> Version 3.0.8 (388):
+            <ul>
+                <li> Supports Impact database version 3.4.0
+                <li> Ignored and locked state of mass lines are now exported to Impact DB. 
+                <li> Fixes an issue where CDA data sets could not be merged.
+             </ul>      
+       	<li> Version 3.0.7 (387):
+            <ul>
+	            <li> Line areas can now be selected for CSV exports.
+	            <li> Fixes an issue where the peak finder ignores the minimum S2N of a peak. 
+	            <li> Fixes an issue where the spread sheet editor crashes after selecting a line mode.
+	        </ul>      
+         <li> Version 3.0.6 (386):
+            <ul>
+	            <li> The previous release has been built for Apple Silicon macs only. This release will run again on all macs. 
+	        </ul>	     
+         <li> Version 3.0.5 (385):
+            <ul>
+	            <li> The peak finder search range can now be changed. To the change the range, choose 
+	                  Product > Project, then click Processing.
+	           <li> Fixes various issues related to waveform trimming.
+	        </ul>	      
+         <li> Version 3.0.4 (384):
+            <ul>
+	            <li> Fixes an issue that caused the annoying alert introduced by the previous versions.
+	        </ul>	      
+        <li> Version 3.0.3 (382):
+            <ul>
+	            <li> Fixes an issue where sometimes multiple spectrometers of the same family with identical version numbers
+	                   are stored in the app's internal database. This fixes multiple issues related to using the wrong spectrometer.
+	            <li> This version can now read projects created with the current beta app version (3.1.x).
+	            <li> The default query tree is now more meaningful.
+	        </ul>	
+        <li> Version 3.0.1 (379): 
+        <ul>
+	        <li> Minor bug fixes.
+	    </ul>	
+        <li> Version 3.0.0 (378): 
+        <ul>
+	        <li> Polished UI
+	        <li> Impact database access
+	        <li> Better organisation scheme for datasets
+	        <li> Suports lastest version of SUDA instrument software
+	        <li> Improved code stability
+	    </ul>	
+      <li> Version 2.2.0 (289): 
+        <ul>
+	        <li> Spectrometers are now stored in internal SQLite database
+	        <li> Updated third party frameworks
+	        <li> Code quality has been improved
+	    </ul>	
+      <li> Version 2.1.4 (287): 
+        <ul>
+            <li> Fixes an issue where the load of very old cluster type libraries causes the app to crash. 
+         </ul>
+      <li> Version 2.1.3 (285): 
+         <ul>
+            <li> Fixes an issue where the SUDA packet import stalles if the packet data file is incomplete.
+            <li> The packet import dialog notifies the user about insufficent spectrometer information. 
+         </ul>
+      <li> Version 2.1.2 (284): 
+         <ul>
+            <li> Just fixes the version number of the app.
+         </ul>
+      <li> Version 2.1.1 (283):
+          <ul>
+            <li> This is a minor update, which brings an improved default reference database version.
+         </ul>
+      <li> Version 2.1.0 (282):
+        <ul>
+      		<li> Line type libraries and templates are now stored in an internal SQLIte database. The types have unique identifiers, which ensures consistency accros projects. Changes to a line type affects all libraries and templates employing this type.
+      		<li> App imports SUDA packet data. CDA packet data will be supported in the next release.
+      		<li> App imports data from the CDA data base. The data base is now hosted on the new server suda.colorado.edu. 
+      		<li> Major parts of the code have been rewritten.  
+      	</ul>
+       <li> Version 2.0.0 (194):
+	  	<ul>
+      		<li> App is fully sandboxed, which greatly improves the app's security. 
+      		<li> Inspector sidebars provide information about all aspects of the data set.
+      		<li> Models can be fitted to auxiliary waveforms.
+      		<li> Data base manager for data import.
+      		<li> Improved IDL import.
+      		<li> HDF5 and CSV data export.
+      		<li> Improved Spice performance.
+      		<li> Speed dependent spectrum templates.
+      		<li> New statistics tools.
+      		<li> MacOS Mojave dark mode support.
+      	</ul>
+    </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="76731442" type="application/octet-stream" sparkle:edSignature="PNCOMU0XxwQxBNgg6T7CrzsyLHezk3RHZMVBb6cxfVtx6HRrJLTfiQ8r993teyL07kuiXYRThhnZc64Ib/LZDw=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum.zip" length="77643293" type="application/octet-stream" sparkle:edSignature="Q9nSXKx0T3rAUUuCG074R7pfzcfkJIxG2TIoCcVgi5AQudR95zzcCX46fcUzbdQhMKgLI0/JXn4t+VnGsbktDw=="/>
+        </item>
+        <item>
+            <title>3.2.7</title>
+            <pubDate>Thu, 15 Feb 2024 17:27:33 +0100</pubDate>
+            <sparkle:version>461</sparkle:version>
+            <sparkle:shortVersionString>3.2.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<title>Version 3.2.5 (Build 457)</title>
+<description>
+    <ul>  
+    	<li> Version 3.2.7 (461):
+    		<ul>
+    		    <li> Reorganized the Import menu in the menu bar. 
+    		    <li> Fixed crashes associated with file selection dialogs.
+    		    <li> Other bug fixes.
+    		</ul>
+    	<li> Version 3.2.6 (459):
+    		<ul>
+    			<li> Fixed a bug where deleting a line in a sum spectrum lead to a crash.
+    			<li> Spice meta kernels and articulation kernels can now be set in the Project Dialog.
+    			<li> Fixed the <Add Anchor Line...> context menu.
+    			<li> App now responds to changes to the Spectrum Template, Line Catalog, etc.
+    			<li> Features in auxiliary waveforms can now be assigned manually again.
+    			<li> Other bug fixes.
+	   		</ul>
+        <li> Version 3.2.5 (457):
+			<ul>
+    			<li> Fixed an issue where the state of the filter button was wrong after launching the app.
+    			<li> Updates the selected spectrum if data processing removes the currently selected spectrum from the filtered data set. This change has so far only be implemented for the Spectrum Viewer. 
+	   		</ul>
+        <li> Version 3.2.4 (455):
+			<ul>
+    			<li> A bit of code hygene never hurts.
+	   		</ul>
+    	<li> Version 3.2.3 (453):
+			<ul>
+    			<li> The status buttons in the calibration sidebar tab are now correctly updated.
+    			<li> Assigned reference lines in older Spectrum projects are now correctly imported.
+    			<li> The Impact Plasma Yield and the Plasma Rise Time Statistics tools now allow to select the plasma measurement channel via the context menu.
+    			<li> Fixed an issue where the resampling of accelerator waveforms never finished. 
+    			<li> Fixed the layout of the Gain Stage Dialog on the Ion Sensor viewer.
+    			<li> Bug fixes and performance improvements.
+	   		</ul>
+    	<li> Version 3.2.2 (452):
+			<ul>
+    			<li> The waveform tab of the sidebar now provides insight into the waveforms relevant for the selected viewer.
+    			<li> The app now shares its internal reference database with the PacketAnalyzer and Hyperspectrum apps.
+    			<li> The Species statistics tool does not any longer restict frequencies to lines contained in the current line catalog.
+    			<li> The Fitting Model menu item in the main menu bar now allows to assign a model to auxiliary waveforms.
+    			<li> Fixed a bug where deleting a line in the spectrum view leads to a crash.
+    			<li> Bug fixes and performance improvements.
+	   		</ul>
+    	<li> Version 3.2.1 (451):
+			<ul>
+    			<li> App is now sharing its internal reference database with the PacketAnalyzer app and the HyperSpectrum App.
+    			<li> Fixed a number of issues with the Line Types Catalog and Cluster Types Catalog viewers.
+	   		</ul>
+    	<li> Version 3.2.0 (450):
+			<ul>
+    			<li> App's code base has been migrated to SwiftUI, which significantly improves stability and performance.
+    			<li> All Objective C code artifacts have been replaced by Swift.
+    			<li> Waveforms are now compressed when saved as Spectrum projects, enabling much smaller file sizes. Note that this format change is not backward compatible.
+    			<li> Data loading progress is shown to user.
+    			<li> Imports IDEX CCSDS packets.
+    			<li> Imports BCE7 data.
+    			<li> Supports scripted Impact data base queries. 
+				<li> Adds ice accelerator dust source.
+				<li> Adds ability to invert TOF waveforms.
+				<li> Removed Packet Analyzer and Catalog Viewer to reduce complexity. Please use PacketAnalyzer instead.
+	   		</ul>
+        <li> Version 3.1.1 (419): 
+        	<ul>
+        	 	<li> Fixes an issue where the library selection did not work in the Line Type Library UI.
+			 	<li> Addresses an rare issue that affected the import of damaged or incomplete accelerator scope traces.
+			</ul>
+    	<li> Version 3.1.0 (416): 
+       		 <ul>
+       		 	<li> New Impact Database account management, which moved to the Preferences dialog. Account credentials will be stored in the user's local keychain, implying that passwords only need entered at the time of the account's registration with the app. Accounts can be selected in the main menu's Impact menu.
+       		 	<li> Supports Impact database version 3.4.0, which now accepts QD (accelerator) data. Ignored and locked state of mass lines are now exported to Impact DB. 
+	    		<li> Impact Database action menus have been moved to stand alone menu Impact located in the main menu bar.
+	    		<li> Import and Export submenues have been moved from File menu to main bar.
+	    		<li> The H5 export has been significantly enhanced to allow for the reimport of H5 files. Import of H5 Spectrum archives are now possible. H5 archives starting with a LILBID group are considered to contain LILBID raw data generated by the Freie University group and will be coverted into a Spectrum project.
+	        	<li> This version brings support of user-defined Python functions. Right now Python modules computing line shapes and waveform models can be called by Spectrum. Python plugins need to registered via the Preferences dialog. Because Spectrum is sandboxed, it cannot call call external programs including the Python interpreter. For this reason, a full Python 3.8 package including NumPy is bundled into the App (which explains the large increase of the app's size).
+	    		<li> Impproved import of PSU data. The correlation between PSU and QD data can be analysed indepth with the new QD Detection Statistics tool.
+	    		<li> New tool for visualizing the impact plasma composition as function of the impact speed, impact energy, and impact energy density.
+	    		<li> Suports lastest version of SUDA instrument software. 					
+	    		<li> Provides predefined IDEX and DDA instruments.
+	        	<li> Improved code stability
+	        	<li> Known issues:
+	        		<ul>
+	        			<li> Data sets containing complex large molecules are causing performance issues. This problem has been fixed in 3.2.0 (beta).
+	        		</ul>
+	   		</ul>	
+	    <li> Version 3.0.8 (388):
+            <ul>
+                <li> Supports Impact database version 3.4.0
+                <li> Ignored and locked state of mass lines are now exported to Impact DB. 
+                <li> Fixes an issue where CDA data sets could not be merged.
+             </ul>      
+       	<li> Version 3.0.7 (387):
+            <ul>
+	            <li> Line areas can now be selected for CSV exports.
+	            <li> Fixes an issue where the peak finder ignores the minimum S2N of a peak. 
+	            <li> Fixes an issue where the spread sheet editor crashes after selecting a line mode.
+	        </ul>      
+         <li> Version 3.0.6 (386):
+            <ul>
+	            <li> The previous release has been built for Apple Silicon macs only. This release will run again on all macs. 
+	        </ul>	     
+         <li> Version 3.0.5 (385):
+            <ul>
+	            <li> The peak finder search range can now be changed. To the change the range, choose 
+	                  Product > Project, then click Processing.
+	           <li> Fixes various issues related to waveform trimming.
+	        </ul>	      
+         <li> Version 3.0.4 (384):
+            <ul>
+	            <li> Fixes an issue that caused the annoying alert introduced by the previous versions.
+	        </ul>	      
+        <li> Version 3.0.3 (382):
+            <ul>
+	            <li> Fixes an issue where sometimes multiple spectrometers of the same family with identical version numbers
+	                   are stored in the app's internal database. This fixes multiple issues related to using the wrong spectrometer.
+	            <li> This version can now read projects created with the current beta app version (3.1.x).
+	            <li> The default query tree is now more meaningful.
+	        </ul>	
+        <li> Version 3.0.1 (379): 
+        <ul>
+	        <li> Minor bug fixes.
+	    </ul>	
+        <li> Version 3.0.0 (378): 
+        <ul>
+	        <li> Polished UI
+	        <li> Impact database access
+	        <li> Better organisation scheme for datasets
+	        <li> Suports lastest version of SUDA instrument software
+	        <li> Improved code stability
+	    </ul>	
+      <li> Version 2.2.0 (289): 
+        <ul>
+	        <li> Spectrometers are now stored in internal SQLite database
+	        <li> Updated third party frameworks
+	        <li> Code quality has been improved
+	    </ul>	
+      <li> Version 2.1.4 (287): 
+        <ul>
+            <li> Fixes an issue where the load of very old cluster type libraries causes the app to crash. 
+         </ul>
+      <li> Version 2.1.3 (285): 
+         <ul>
+            <li> Fixes an issue where the SUDA packet import stalles if the packet data file is incomplete.
+            <li> The packet import dialog notifies the user about insufficent spectrometer information. 
+         </ul>
+      <li> Version 2.1.2 (284): 
+         <ul>
+            <li> Just fixes the version number of the app.
+         </ul>
+      <li> Version 2.1.1 (283):
+          <ul>
+            <li> This is a minor update, which brings an improved default reference database version.
+         </ul>
+      <li> Version 2.1.0 (282):
+        <ul>
+      		<li> Line type libraries and templates are now stored in an internal SQLIte database. The types have unique identifiers, which ensures consistency accros projects. Changes to a line type affects all libraries and templates employing this type.
+      		<li> App imports SUDA packet data. CDA packet data will be supported in the next release.
+      		<li> App imports data from the CDA data base. The data base is now hosted on the new server suda.colorado.edu. 
+      		<li> Major parts of the code have been rewritten.  
+      	</ul>
+       <li> Version 2.0.0 (194):
+	  	<ul>
+      		<li> App is fully sandboxed, which greatly improves the app's security. 
+      		<li> Inspector sidebars provide information about all aspects of the data set.
+      		<li> Models can be fitted to auxiliary waveforms.
+      		<li> Data base manager for data import.
+      		<li> Improved IDL import.
+      		<li> HDF5 and CSV data export.
+      		<li> Improved Spice performance.
+      		<li> Speed dependent spectrum templates.
+      		<li> New statistics tools.
+      		<li> MacOS Mojave dark mode support.
+      	</ul>
+    </ul>
+</description>
+]]></description>
+            <enclosure url="https://impact.colorado.edu/Spectrum.zip" length="77366989" type="application/octet-stream" sparkle:edSignature="CuVmGl05LaJ9NAT3VDXduTA+0+XqDBVsUsfwcA280BuIO3s4ThzluLBZ1JlmXUUKZYAPnyfjgjUf6HJq2wirDg=="/>
+        </item>
+        <item>
+            <title>3.2.6</title>
+            <pubDate>Sun, 11 Feb 2024 12:20:42 -0700</pubDate>
+            <sparkle:version>459</sparkle:version>
+            <sparkle:shortVersionString>3.2.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<title>Version 3.2.5 (Build 457)</title>
+<description>
+    <ul>  
+    	<li> Version 3.2.6 (459):
+    		<ul>
+    			<li> Fixed a bug where deleting a line in a sum spectrum lead to a crash.
+    			<li> Spice meta kernels and articulation kernels can now be set in the Project Dialog.
+    			<li> Fixed the <Add Anchor Line...> context menu.
+    			<li> App now responds to changes to the Spectrum Template, Line Catalog, etc.
+    			<li> Features in auxiliary waveforms can now be assigned manually again.
+    			<li> Other bug fixes.
+	   		</ul>
+        <li> Version 3.2.5 (457):
+			<ul>
+    			<li> Fixed an issue where the state of the filter button was wrong after launching the app.
+    			<li> Updates the selected spectrum if data processing removes the currently selected spectrum from the filtered data set. This change has so far only be implemented for the Spectrum Viewer. 
+	   		</ul>
+        <li> Version 3.2.4 (455):
+			<ul>
+    			<li> A bit of code hygene never hurts.
+	   		</ul>
+    	<li> Version 3.2.3 (453):
+			<ul>
+    			<li> The status buttons in the calibration sidebar tab are now correctly updated.
+    			<li> Assigned reference lines in older Spectrum projects are now correctly imported.
+    			<li> The Impact Plasma Yield and the Plasma Rise Time Statistics tools now allow to select the plasma measurement channel via the context menu.
+    			<li> Fixed an issue where the resampling of accelerator waveforms never finished. 
+    			<li> Fixed the layout of the Gain Stage Dialog on the Ion Sensor viewer.
+    			<li> Bug fixes and performance improvements.
+	   		</ul>
+    	<li> Version 3.2.2 (452):
+			<ul>
+    			<li> The waveform tab of the sidebar now provides insight into the waveforms relevant for the selected viewer.
+    			<li> The app now shares its internal reference database with the PacketAnalyzer and Hyperspectrum apps.
+    			<li> The Species statistics tool does not any longer restict frequencies to lines contained in the current line catalog.
+    			<li> The Fitting Model menu item in the main menu bar now allows to assign a model to auxiliary waveforms.
+    			<li> Fixed a bug where deleting a line in the spectrum view leads to a crash.
+    			<li> Bug fixes and performance improvements.
+	   		</ul>
+    	<li> Version 3.2.1 (451):
+			<ul>
+    			<li> App is now sharing its internal reference database with the PacketAnalyzer app and the HyperSpectrum App.
+    			<li> Fixed a number of issues with the Line Types Catalog and Cluster Types Catalog viewers.
+	   		</ul>
+    	<li> Version 3.2.0 (450):
+			<ul>
+    			<li> App's code base has been migrated to SwiftUI, which significantly improves stability and performance.
+    			<li> All Objective C code artifacts have been replaced by Swift.
+    			<li> Waveforms are now compressed when saved as Spectrum projects, enabling much smaller file sizes. Note that this format change is not backward compatible.
+    			<li> Data loading progress is shown to user.
+    			<li> Imports IDEX CCSDS packets.
+    			<li> Imports BCE7 data.
+    			<li> Supports scripted Impact data base queries. 
+				<li> Adds ice accelerator dust source.
+				<li> Adds ability to invert TOF waveforms.
+				<li> Removed Packet Analyzer and Catalog Viewer to reduce complexity. Please use PacketAnalyzer instead.
+	   		</ul>
+        <li> Version 3.1.1 (419): 
+        	<ul>
+        	 	<li> Fixes an issue where the library selection did not work in the Line Type Library UI.
+			 	<li> Addresses an rare issue that affected the import of damaged or incomplete accelerator scope traces.
+			</ul>
+    	<li> Version 3.1.0 (416): 
+       		 <ul>
+       		 	<li> New Impact Database account management, which moved to the Preferences dialog. Account credentials will be stored in the user's local keychain, implying that passwords only need entered at the time of the account's registration with the app. Accounts can be selected in the main menu's Impact menu.
+       		 	<li> Supports Impact database version 3.4.0, which now accepts QD (accelerator) data. Ignored and locked state of mass lines are now exported to Impact DB. 
+	    		<li> Impact Database action menus have been moved to stand alone menu Impact located in the main menu bar.
+	    		<li> Import and Export submenues have been moved from File menu to main bar.
+	    		<li> The H5 export has been significantly enhanced to allow for the reimport of H5 files. Import of H5 Spectrum archives are now possible. H5 archives starting with a LILBID group are considered to contain LILBID raw data generated by the Freie University group and will be coverted into a Spectrum project.
+	        	<li> This version brings support of user-defined Python functions. Right now Python modules computing line shapes and waveform models can be called by Spectrum. Python plugins need to registered via the Preferences dialog. Because Spectrum is sandboxed, it cannot call call external programs including the Python interpreter. For this reason, a full Python 3.8 package including NumPy is bundled into the App (which explains the large increase of the app's size).
+	    		<li> Impproved import of PSU data. The correlation between PSU and QD data can be analysed indepth with the new QD Detection Statistics tool.
+	    		<li> New tool for visualizing the impact plasma composition as function of the impact speed, impact energy, and impact energy density.
+	    		<li> Suports lastest version of SUDA instrument software. 					
+	    		<li> Provides predefined IDEX and DDA instruments.
+	        	<li> Improved code stability
+	        	<li> Known issues:
+	        		<ul>
+	        			<li> Data sets containing complex large molecules are causing performance issues. This problem has been fixed in 3.2.0 (beta).
+	        		</ul>
+	   		</ul>	
+	    <li> Version 3.0.8 (388):
+            <ul>
+                <li> Supports Impact database version 3.4.0
+                <li> Ignored and locked state of mass lines are now exported to Impact DB. 
+                <li> Fixes an issue where CDA data sets could not be merged.
+             </ul>      
+       	<li> Version 3.0.7 (387):
+            <ul>
+	            <li> Line areas can now be selected for CSV exports.
+	            <li> Fixes an issue where the peak finder ignores the minimum S2N of a peak. 
+	            <li> Fixes an issue where the spread sheet editor crashes after selecting a line mode.
+	        </ul>      
+         <li> Version 3.0.6 (386):
+            <ul>
+	            <li> The previous release has been built for Apple Silicon macs only. This release will run again on all macs. 
+	        </ul>	     
+         <li> Version 3.0.5 (385):
+            <ul>
+	            <li> The peak finder search range can now be changed. To the change the range, choose 
+	                  Product > Project, then click Processing.
+	           <li> Fixes various issues related to waveform trimming.
+	        </ul>	      
+         <li> Version 3.0.4 (384):
+            <ul>
+	            <li> Fixes an issue that caused the annoying alert introduced by the previous versions.
+	        </ul>	      
+        <li> Version 3.0.3 (382):
+            <ul>
+	            <li> Fixes an issue where sometimes multiple spectrometers of the same family with identical version numbers
+	                   are stored in the app's internal database. This fixes multiple issues related to using the wrong spectrometer.
+	            <li> This version can now read projects created with the current beta app version (3.1.x).
+	            <li> The default query tree is now more meaningful.
+	        </ul>	
+        <li> Version 3.0.1 (379): 
+        <ul>
+	        <li> Minor bug fixes.
+	    </ul>	
+        <li> Version 3.0.0 (378): 
+        <ul>
+	        <li> Polished UI
+	        <li> Impact database access
+	        <li> Better organisation scheme for datasets
+	        <li> Suports lastest version of SUDA instrument software
+	        <li> Improved code stability
+	    </ul>	
+      <li> Version 2.2.0 (289): 
+        <ul>
+	        <li> Spectrometers are now stored in internal SQLite database
+	        <li> Updated third party frameworks
+	        <li> Code quality has been improved
+	    </ul>	
+      <li> Version 2.1.4 (287): 
+        <ul>
+            <li> Fixes an issue where the load of very old cluster type libraries causes the app to crash. 
+         </ul>
+      <li> Version 2.1.3 (285): 
+         <ul>
+            <li> Fixes an issue where the SUDA packet import stalles if the packet data file is incomplete.
+            <li> The packet import dialog notifies the user about insufficent spectrometer information. 
+         </ul>
+      <li> Version 2.1.2 (284): 
+         <ul>
+            <li> Just fixes the version number of the app.
+         </ul>
+      <li> Version 2.1.1 (283):
+          <ul>
+            <li> This is a minor update, which brings an improved default reference database version.
+         </ul>
+      <li> Version 2.1.0 (282):
+        <ul>
+      		<li> Line type libraries and templates are now stored in an internal SQLIte database. The types have unique identifiers, which ensures consistency accros projects. Changes to a line type affects all libraries and templates employing this type.
+      		<li> App imports SUDA packet data. CDA packet data will be supported in the next release.
+      		<li> App imports data from the CDA data base. The data base is now hosted on the new server suda.colorado.edu. 
+      		<li> Major parts of the code have been rewritten.  
+      	</ul>
+       <li> Version 2.0.0 (194):
+	  	<ul>
+      		<li> App is fully sandboxed, which greatly improves the app's security. 
+      		<li> Inspector sidebars provide information about all aspects of the data set.
+      		<li> Models can be fitted to auxiliary waveforms.
+      		<li> Data base manager for data import.
+      		<li> Improved IDL import.
+      		<li> HDF5 and CSV data export.
+      		<li> Improved Spice performance.
+      		<li> Speed dependent spectrum templates.
+      		<li> New statistics tools.
+      		<li> MacOS Mojave dark mode support.
+      	</ul>
+    </ul>
+</description>
+]]></description>
+            <enclosure url="https://impact.colorado.edu/Spectrum.zip" length="77364518" type="application/octet-stream" sparkle:edSignature="rGJBSv5vqdCG5yHDze3lLMTahtQ+RTf4njkgIDfPVdvq/YMl/AltAkH7bwgVaQ25Szry1Bi9i0O/B9HilA9DDw=="/>
+        </item>
+        <item>
+            <title>3.1.1</title>
+            <pubDate>Tue, 03 Jan 2023 14:46:36 +0100</pubDate>
+            <sparkle:version>419</sparkle:version>
+            <sparkle:shortVersionString>3.1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://impact.colorado.edu/Spectrum.html</sparkle:releaseNotesLink>
+            <enclosure url="https://impact.colorado.edu/Spectrum.zip" length="75356291" type="application/octet-stream" sparkle:edSignature="S5sEL0jqS2GadojLVJtlJUJYMeHvSDKyd75poQMxxJ+v+rkLZtcnWEgMOOZ70OMIWN2uyp3Flde/7JGDZGPnCg=="/>
+        </item>
+        <item>
+            <title>3.1.0</title>
+            <pubDate>Sun, 18 Dec 2022 11:44:18 +0100</pubDate>
+            <sparkle:version>416</sparkle:version>
+            <sparkle:shortVersionString>3.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://impact.colorado.edu/Spectrum.html</sparkle:releaseNotesLink>
+            <enclosure url="https://impact.colorado.edu/Spectrum.zip" length="75346582" type="application/octet-stream" sparkle:edSignature="m1GnCQmc3ltXc1P5H9I0w4AAVCTLnAsqALVm7/+bxqgeunZN2PaagrxhMEFSwdZ+uTJqIlEw0SY+7bu7n/hQAg=="/>
+        </item>
+        <item>
+            <title>3.0.8</title>
+            <pubDate>Sat, 20 Aug 2022 06:08:38 -0600</pubDate>
+            <sparkle:version>395</sparkle:version>
+            <sparkle:shortVersionString>3.0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>Spectrum.html</sparkle:releaseNotesLink>
+            <enclosure url="Spectrum.zip" length="36855380" type="application/octet-stream" sparkle:edSignature="OJe07r1wdYbCK71qyHko4UbMuUGzSfie5F3FSPJWtKhu7vID4N+A5k4EEB0kTHrnhq+nrzHqc0UJlGDYnG3YBg=="/>
         </item>
     </channel>
 </rss>
