@@ -4,18 +4,27 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Fri, 07 Mar 2025 21:55:20 +0100</pubDate>
-            <sparkle:version>503</sparkle:version>
+            <pubDate>Fri, 28 Mar 2025 16:28:01 +0100</pubDate>
+            <sparkle:version>505</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<title>Version 3.3.1 (Build 500)</title>
 <description>
     <ul>  
         This is a beta version which probably has not been sufficiently tested.
+        <li> Version 3.4.0 beta (505):
+        	 <ul>
+    			<li> New About Spectrum window.
+    			<li> New What's New window.
+    			<li> Marks the event that is currently selected in the statistics scatter plots.
+    			<li> Enhanced the capabilities of the Collection Efficiency statistics tool.
+    			<li> Reads projects created with older versions (<2.2) of Spectrum App.
+    			<li> Performance improvements and bug fixes.
+    		 </ul>
         <li> Version 3.4.0 beta (503):
     		 <ul>
     			<li> Bug fixes.
-    		</ul>
+    		 </ul>
     	<li> Version 3.4.0 beta (502):
     		 <ul>
     			<li> The internal data handling has been rewritten, which significantly improves the memory footprint and the performance of the user interface.
@@ -27,7 +36,7 @@
     </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="79150248" type="application/octet-stream" sparkle:edSignature="HakK6965yHLoAbIn+QRJDRGYVPrkHd0bP9pl+tJiPgEz7cAEhxx737BIu+X4Xuy5Iut6qEXn38M+35jkfsXmBQ=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="80263684" type="application/octet-stream" sparkle:edSignature="OIWt4YD6aGvYelsG5gm/k4Cc1RhqocPgiEowKllSaEYK0zF8n+Mf3F2Ng6zad4mu/jmGGefmzQp+r/8gOGepCQ=="/>
         </item>
     </channel>
 </rss>
