@@ -4,14 +4,20 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Thu, 17 Apr 2025 07:33:32 +0200</pubDate>
-            <sparkle:version>508</sparkle:version>
+            <pubDate>Wed, 23 Apr 2025 07:05:53 +0200</pubDate>
+            <sparkle:version>509</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.4.0 (Build 508)</title>
+            <description><![CDATA[<title>Version 3.4.0 (Build 509)</title>
 <description>
     <ul>  
         This is a beta version which probably has not been sufficiently tested.
+        <li> Version 3.4.0 beta (509):
+            <ul>
+    			<li> Fixed: Event filter doesn't include the "Missing QD" case.
+    			<li> Improved zooming into mass spectra.
+    			<li> Started to localize the app.
+    		</ul>
         <li> Version 3.4.0 beta (508):
             <ul>
     			<li> Fixed: Spectrum crashes when opening the Impact database query dialog.
@@ -50,7 +56,7 @@
     </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="80868782" type="application/octet-stream" sparkle:edSignature="AgAaWFN3QL7UV2NiF/yIGXLywSlGNtvYzlC3IZztYwuCfuDFVzeCeHUq7lVyaNoN8WMyXfBZg5KfVjBfuU/yBg=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="80986048" type="application/octet-stream" sparkle:edSignature="KrfY8leCBOnGP8CsVt0Zebmcxdq3naGEVlqhlLliYom89YpGHhF5RdaVPOMN95v2GtQeTe7xLGAjTWiyVOUhDw=="/>
         </item>
     </channel>
 </rss>
