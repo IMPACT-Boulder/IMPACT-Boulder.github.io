@@ -4,15 +4,19 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Mon, 28 Apr 2025 11:26:10 +0200</pubDate>
-            <sparkle:version>511</sparkle:version>
+            <pubDate>Tue, 29 Apr 2025 10:02:46 +0200</pubDate>
+            <sparkle:version>512</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.4.0 (Build 510)</title>
+            <description><![CDATA[<title>Version 3.4.0 (Build 512)</title>
 <description>
     <ul>  
         This is a beta version which probably has not been sufficiently tested.
-        <li> Version 3.4.0 beta (510):
+        <li> Version 3.4.0 beta (512):
+            <ul>
+                <li> Fixed: "Plasma Ion Yield" and "Plasma Rise Time" statistics viewers do not export data as CSV.
+            </ul>
+        <li> Version 3.4.0 beta (511):
             <ul>
                 <li> Incorrectly assigned line types are highlighted in red in the line table.
                 <li> Fixed: Data is not loaded into the user interface after a successful import.
@@ -67,7 +71,7 @@
     </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="81054011" type="application/octet-stream" sparkle:edSignature="U7SOeguWbIEWaryFoCVDBLdyCu2O9dSJCtwdfI/H11yDpe7L96V7Q1zdHJsS/nrUAwJ3OGQcu+o+w8JAktqKAw=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="81084619" type="application/octet-stream" sparkle:edSignature="Mcy+s/PzWavHj21wAM/7j7BHdEk8PHjmmu3nTzQ1GNKtWyvju21QR/m63A2fwlzQlkzpmSkjvX2heNrOeeGEDw=="/>
         </item>
     </channel>
 </rss>
