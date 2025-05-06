@@ -4,14 +4,22 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Tue, 29 Apr 2025 10:02:46 +0200</pubDate>
-            <sparkle:version>512</sparkle:version>
+            <pubDate>Tue, 06 May 2025 08:23:53 +0200</pubDate>
+            <sparkle:version>513</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.4.0 (Build 512)</title>
+            <description><![CDATA[<title>Version 3.4.0 (Build 513)</title>
 <description>
     <ul>  
         This is a beta version which probably has not been sufficiently tested.
+        <li> Version 3.4.0 beta (513):
+            <ul>
+                <li> Spectrum integrals can be recomputed for the whole data sets.
+                <li> Improved the "Plasma Ion Yield" statistics viewer.
+                <li> Fixed: "Plasma Ion Yield" statistics viewer cannot be selected in project without auxiliary waveforms.
+                <li> Fixed: Statistics viewers are not dismissed when the parent project is closed.
+                <li> Fixed: In some statistics viewers, the user selection for "Mark Current" events is not persisted.
+            </ul>
         <li> Version 3.4.0 beta (512):
             <ul>
                 <li> Fixed: "Plasma Ion Yield" and "Plasma Rise Time" statistics viewers do not export data as CSV.
@@ -71,7 +79,7 @@
     </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="81084619" type="application/octet-stream" sparkle:edSignature="Mcy+s/PzWavHj21wAM/7j7BHdEk8PHjmmu3nTzQ1GNKtWyvju21QR/m63A2fwlzQlkzpmSkjvX2heNrOeeGEDw=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="81237908" type="application/octet-stream" sparkle:edSignature="JNm/Srn7OKoGK0AKk5Rlpd39qDFdcm6IuatrTrwssEpIXs6sYeLrkf9HVf6Aod3vwNEHpNqo/qp3kAnSzpnPBg=="/>
         </item>
     </channel>
 </rss>
