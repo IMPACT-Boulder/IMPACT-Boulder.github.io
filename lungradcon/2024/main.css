@@ -1,0 +1,276 @@
+html{
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 0.05em;
+}
+body {
+	background-color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url(images/moon_expanded-1200x2300-rt.png);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	overflow-x: hidden;
+	margin: 0 0 0 0;
+}
+#header {
+	color: #CFB87C;
+	background-color: rgba(0, 0, 0, 0.85);
+}
+#title-1 {
+	font-size: 4rem;
+	padding-top: 1rem;
+	margin: 0 0 0 0;
+	text-align: center;
+}
+#title-2 {
+	font-size: 1.4rem;
+	margin: 0 0 0 0;
+	text-align: center;
+}
+#main, #footer {
+	width: 80%;
+	margin: 0 auto;
+}
+#main {
+	min-height: 300px;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 0 0 0 0;
+	padding-top: 0px;
+	overflow: auto;
+	border: #000 solid 0.1rem;
+	border-radius: 0.4rem;
+	margin-top: 7rem;
+	-webkit-box-shadow:0 0 1rem #CFB87C; 
+	-moz-box-shadow: 0 0 1rem #CFB87C;
+	box-shadow:0 0 1rem #CFB87C;
+}
+#main-index{
+	min-height: 300px;
+	padding: 0;
+	padding-top: 0px;
+	overflow: auto;
+	width: 80%;
+	margin: 0 auto;
+	background-color: transparent;
+	margin-top: 7rem;
+}
+.content-container{
+	margin-bottom: 4rem;
+	background-color: rgba(0, 0, 0, 0.6);
+	border: #000 solid 0.1rem;
+	border-radius: 0.4rem;
+	-webkit-box-shadow:0 0 1rem #CFB87C; 
+	-moz-box-shadow: 0 0 1rem #CFB87C;
+	box-shadow:0 0 1rem #CFB87C;
+	padding: 2rem;
+}
+#content {
+	padding: 2rem;
+	min-height: 290px;
+	float: left;
+	overflow: hidden;
+	color: #FFF;
+	margin: 0 auto;
+}
+#rightnav {
+	width: 240px;
+	float: right;
+	padding-top: 40px;
+}
+#foot-space {
+	height: 100px;
+}
+#regents {
+	width: 595px;
+	margin: 0 auto;
+	padding-top: 5px;
+	color: white;
+	font-size: 0.8em;
+}
+.content-container h1 {
+	font-size: 2.2rem;
+}
+.content-container h2 {
+	margin-top: 0;
+	font-size: 2rem;
+}
+#content {
+	font-size: 1.1rem;
+}
+h1, h2, h3 {
+	padding-left: 25px;
+	display: block;
+}
+h1 {
+	font-size: 1.5em;
+	border-bottom: 1px solid #CFB87C;
+	padding-top: .1em;
+	color: #CFB87C;
+}
+h2 {
+	font-size: 1.2em;
+	border-bottom: 1px solid #CFB87C;
+	padding-top: 0.7rem;
+	margin-top: 2rem;
+	color: #CFB87C;
+}
+h3 {
+	margin-top: 0;
+}
+
+
+div.image-right, div.image-left {
+	text-align: center;
+	font-size: 0.85em;
+	color: #444;
+	font-style: italic;
+}
+div.image-right {
+	float: right;
+	margin-left: 10px;	
+}
+div.image-left {
+	float: left;
+	margin-right: 10px;
+}
+
+/* ------------- LINKS ------------- */
+
+#content a {
+	text-decoration: none;
+	color: rgb(255, 153, 0);
+}
+#content a:hover {
+	text-decoration: underline;
+}
+
+
+/* ------------- TOP NAVIGATION ------------- */
+#topnav {
+	height: 2rem;
+	width: 100%;
+	text-align: center;
+	padding: 1rem 0 1rem 0;
+	background-color: rgba(68, 68, 68, 0.4);
+	border-top: #CFB87C  solid 0.015rem;
+}
+#topnav a, #rightnav a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	display: block;
+	text-decoration: none;
+	color:#CFB87C
+}
+#topnav a {
+	width: 125px;
+	height: 31px;
+	line-height: 31px;
+	text-align: center;
+	display: inline-block;
+	margin: 0 0.2rem 0 0.2rem;
+}
+#topnav a:hover {
+	color: #4994DA;
+}
+#topnav a.disabled:hover {
+	background-color: transparent;
+	cursor: default;
+}
+#topnav a.disabled {
+	color: gray;
+}
+
+#zoom {
+	font-size: 1.2rem;
+}
+/* IE6 "ghost text bug" fix */
+/**html #topnav #lastlink {
+	float: right;
+	width: 119px;
+}*/
+/* end IE6 bug fix */
+
+
+/* ------------- RIGHT NAVIGATION ------------- */
+#rightnav a {
+	line-height: 1.1em;
+	padding: 6px;
+	margin-bottom: 5px;
+	color: white;
+	background: url(images/rightnav_bg.jpg) top right repeat-y;
+	text-align: right;
+}
+#rightnav a:hover {
+	border: 1px solid #AAAAAA;
+	border-right-width: 0;
+	padding: 5px 6px 5px 5px;
+}
+
+#rightnav a.disabled:hover {
+	border: none;
+	padding: 6px;
+	cursor: default;
+}
+#rightnav a.disabled {
+	color: gray;
+}
+
+
+
+/* ------------------------------------------------------- */
+
+
+.newsitem {
+	overflow: auto;
+	margin-bottom: 20px;
+	clear: both;
+	padding: 2px 0;
+}
+.date {
+	float: left;
+	width: 12%;
+}
+.story {
+	float: right;
+	width: 85%;
+	
+}
+
+#partners img {
+	padding: 2px;
+	border: none;
+}
+#partners a img {
+	border: 2px solid transparent;
+}
+#partners a:hover img {
+	border: 2px solid #1C3BA1;
+}
+
+/*------------FOOTER-----------------*/
+
+footer {
+	background-color: #000;
+	text-align: center;
+}
+#footer-sponsors {
+	font-size: 1.75rem;
+	letter-spacing: 0.1em;
+	color:#CFB87C; 
+	padding-top: 1.25rem;
+}
+footer p {
+	color: #fff;
+	width: 62%;
+	font-weight: bold;
+	font-size: 0.9rem;
+	margin: 0 auto;
+	padding-bottom: 1rem;
+}
+footer img {
+	margin: 0 1rem 2rem 1rem;
+}
