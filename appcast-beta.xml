@@ -4,14 +4,21 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Tue, 06 May 2025 08:23:53 +0200</pubDate>
-            <sparkle:version>513</sparkle:version>
+            <pubDate>Mon, 12 May 2025 16:42:58 +0200</pubDate>
+            <sparkle:version>514</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
             <description><![CDATA[<title>Version 3.4.0 (Build 513)</title>
 <description>
     <ul>  
         This is a beta version which probably has not been sufficiently tested.
+        <li> Version 3.4.0 beta (514):
+            <ul>
+                <li> New: If selected by the user, the stretch is automatically updated after actions that affect the parameter, such as adding or removing lines.
+                <li> Fixed: Lines marked "ignore for stretch" will not be updated after stretch parameter changes.
+                <li> Improved line information popup.
+                <li> Completion of migration to Swift 6.
+            </ul>
         <li> Version 3.4.0 beta (513):
             <ul>
                 <li> Spectrum integrals can be recomputed for the whole data sets.
@@ -79,7 +86,7 @@
     </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="81237908" type="application/octet-stream" sparkle:edSignature="JNm/Srn7OKoGK0AKk5Rlpd39qDFdcm6IuatrTrwssEpIXs6sYeLrkf9HVf6Aod3vwNEHpNqo/qp3kAnSzpnPBg=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="82028016" type="application/octet-stream" sparkle:edSignature="+uDx5Q1y30kYSWYMIiY37ue8NV5TP7JmMWt4zfG6PbvuoFaBAyaMlbId8uF3jjru9mFVSrtdGRpNvBT4iW1yDQ=="/>
         </item>
     </channel>
 </rss>
