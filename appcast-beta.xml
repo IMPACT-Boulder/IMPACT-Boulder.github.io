@@ -4,14 +4,28 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Mon, 12 May 2025 16:42:58 +0200</pubDate>
-            <sparkle:version>514</sparkle:version>
+            <pubDate>Thu, 12 Jun 2025 09:21:54 -0600</pubDate>
+            <sparkle:version>515</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.4.0 (Build 513)</title>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <description><![CDATA[<title>Version 3.4.0 (Build 515)</title>
 <description>
     <ul>  
         This is a beta version which probably has not been sufficiently tested.
+        <li> Version 3.4.0 beta (515):
+            <ul>
+                <li> To improve the quality of the app, the minimum required version of MacOS has been increased to 13 (Ventura).
+                <li> New: The "Sum Spectrum" Persona is now responsible for analyzing and processing sum spectra. Individual spectra are handled by the "Spectrum" Persona. There is a button to switch between the two personas.
+                <li> New: The labels of the mass lines that contribute to the fit of a spectrum's stretch parameter are now in bold.
+                <li> New: The color of the baseline marker now depends on the baseline model type.
+                <li> New: You can now rearrange the order of spectra in the sum spectra table by drag and drop.
+                <li> New: Computationally expensive fits of line profiles are now automatically canceled after exceeding a time limit.
+                <li> The Cluster Type Catalog and Composition Type Catalog dialogs have been rewritten. Now, existing types can be added to multiple catalogs.
+                <li> Fixed: The data point marker associated with the currently selected event does not always update.
+                <li> Fixed: Sum spectra cannot be removed from the project.
+                <li> Fixed: Changing the baseline of a spectrum does not cause the stretch parameter estimate to be recomputed.
+                <li> Fixed: Changing the spectrum's baseline does not result in updated line amplitudes.
+            </ul>
         <li> Version 3.4.0 beta (514):
             <ul>
                 <li> New: If selected by the user, the stretch is automatically updated after actions that affect the parameter, such as adding or removing lines.
@@ -86,7 +100,7 @@
     </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="82028016" type="application/octet-stream" sparkle:edSignature="+uDx5Q1y30kYSWYMIiY37ue8NV5TP7JmMWt4zfG6PbvuoFaBAyaMlbId8uF3jjru9mFVSrtdGRpNvBT4iW1yDQ=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="81103479" type="application/octet-stream" sparkle:edSignature="ZYecFlEFqKsiUfzUnC/bVPCVFaVrBeFMc44WHtVSMeFxo7TRvTWLsAEXjvfST19ZhCF30+EbUxbFypZ3Bl6vAA=="/>
         </item>
     </channel>
 </rss>
