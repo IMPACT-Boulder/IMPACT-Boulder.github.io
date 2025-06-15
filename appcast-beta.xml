@@ -4,14 +4,21 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Thu, 12 Jun 2025 09:21:54 -0600</pubDate>
-            <sparkle:version>515</sparkle:version>
+            <pubDate>Sun, 15 Jun 2025 05:42:09 -0600</pubDate>
+            <sparkle:version>516</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.4.0 (Build 515)</title>
+            <description><![CDATA[<title>Version 3.4.0 (Build 516)</title>
 <description>
     <ul>  
         This is a beta version which probably has not been sufficiently tested.
+        <li> Version 3.4.0 beta (516):
+            <ul>
+                <li> New: A button has been added to reset the zoom window.
+                <li> Improved: Assigning a new type to a line that is currently being ignored for the stretch computation will reset its ignored status.
+                <li> Fixed: In some cases, the zoom window may not be centred correctly on the selected line when the line is close to the plot range boundaries.
+                <li> Fixed: The "Import from CCSDS Packets" dialog does not have a tab for selecting the catalogues associated with the imported data.
+            </ul>
         <li> Version 3.4.0 beta (515):
             <ul>
                 <li> To improve the quality of the app, the minimum required version of MacOS has been increased to 13 (Ventura).
@@ -100,7 +107,7 @@
     </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="81103479" type="application/octet-stream" sparkle:edSignature="ZYecFlEFqKsiUfzUnC/bVPCVFaVrBeFMc44WHtVSMeFxo7TRvTWLsAEXjvfST19ZhCF30+EbUxbFypZ3Bl6vAA=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="81312032" type="application/octet-stream" sparkle:edSignature="2ZPY/Kv6z2IIh2X1btQla/UeBVwfXIsMwtNWH7srLZv8EHUIIQDc1T4iDAnVm2624g1XzGFEWEq06MNj1pg1DA=="/>
         </item>
     </channel>
 </rss>
