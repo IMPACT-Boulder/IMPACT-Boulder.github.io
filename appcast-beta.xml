@@ -4,14 +4,24 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Sun, 15 Jun 2025 05:42:09 -0600</pubDate>
-            <sparkle:version>516</sparkle:version>
+            <pubDate>Mon, 23 Jun 2025 07:01:35 -0600</pubDate>
+            <sparkle:version>517</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.4.0 (Build 516)</title>
+            <description><![CDATA[<title>Version 3.4.0 (Build 517)</title>
 <description>
     <ul>  
         This is a beta version which probably has not been sufficiently tested.
+        <li> Version 3.4.0 beta (517):
+            <ul>
+                <li> New: When zoomed in, the time range displayed in the "Accelerator View" can be fixed to the QD feature.
+                <li> New: You can mark artefact regions in spectrum plots via the context menu (Plot Settings/Mark Artefacts).
+                <li> New: You can unlock all the lines in the selected spectrum by using the context menu (Unlock Lines).
+                <li> Improved: After importing an IDL Science Analyzer project, the assigned line types can be changed via the new "Imported Lines" dialogue box. All assigned lines will be set to "Locked" to prevent the app's algorithms from changing the types.
+                <li> Fixed: Attempting to export the app's internal reference library to a file causes the app to crash.
+                <li> Fixed: The stretch parameter estimation does not ignore mass lines located within an artefact region.
+                <li> Fixed: It is not possible to change the setup of the noise filter used to calculate the line amplitudes in the "Project" dialogue.
+            </ul>
         <li> Version 3.4.0 beta (516):
             <ul>
                 <li> New: A button has been added to reset the zoom window.
@@ -107,7 +117,7 @@
     </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="81312032" type="application/octet-stream" sparkle:edSignature="2ZPY/Kv6z2IIh2X1btQla/UeBVwfXIsMwtNWH7srLZv8EHUIIQDc1T4iDAnVm2624g1XzGFEWEq06MNj1pg1DA=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="81756047" type="application/octet-stream" sparkle:edSignature="0gIJJ7pCBUrosELe613bjETk1C/IK9Gc0u3kaxxbP0Wv67AIsuLSxAX5h4/LG+C6tRWu2UY1mbyNedozx/lKAg=="/>
         </item>
     </channel>
 </rss>
