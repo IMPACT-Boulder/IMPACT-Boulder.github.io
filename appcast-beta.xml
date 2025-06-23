@@ -4,14 +4,19 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Mon, 23 Jun 2025 07:01:35 -0600</pubDate>
-            <sparkle:version>517</sparkle:version>
+            <pubDate>Mon, 23 Jun 2025 13:24:56 -0600</pubDate>
+            <sparkle:version>518</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
             <description><![CDATA[<title>Version 3.4.0 (Build 517)</title>
 <description>
     <ul>  
         This is a beta version which probably has not been sufficiently tested.
+        <li> Version 3.4.0 beta (517):
+            <ul>
+                <li> Fixed: Importing IDEX CCSDS data fails if the previous instrument imported was SUDA.
+                <li> Fixed: Neither low-gain nor high-gain target waveforms are considered to be target waveforms.
+            </ul>
         <li> Version 3.4.0 beta (517):
             <ul>
                 <li> New: When zoomed in, the time range displayed in the "Accelerator View" can be fixed to the QD feature.
@@ -117,7 +122,7 @@
     </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="81756047" type="application/octet-stream" sparkle:edSignature="0gIJJ7pCBUrosELe613bjETk1C/IK9Gc0u3kaxxbP0Wv67AIsuLSxAX5h4/LG+C6tRWu2UY1mbyNedozx/lKAg=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="81789459" type="application/octet-stream" sparkle:edSignature="LWmq2XF/uOgN5pdYvhJVf5GQhRUuWFwDEdYbLGGy5WpIgtfItthIhxSH76jVO27/41z3wZroGF/SptxT7jrhAQ=="/>
         </item>
     </channel>
 </rss>
