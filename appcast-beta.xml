@@ -8,11 +8,11 @@
             <sparkle:version>518</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.4.0 (Build 517)</title>
+            <description><![CDATA[<title>Version 3.4.0 (Build 518)</title>
 <description>
     <ul>  
         This is a beta version which probably has not been sufficiently tested.
-        <li> Version 3.4.0 beta (517):
+        <li> Version 3.4.0 beta (518):
             <ul>
                 <li> Fixed: Importing IDEX CCSDS data fails if the previous instrument imported was SUDA.
                 <li> Fixed: Neither low-gain nor high-gain target waveforms are considered to be target waveforms.
