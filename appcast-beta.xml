@@ -4,15 +4,23 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Thu, 26 Jun 2025 05:39:08 -0600</pubDate>
-            <sparkle:version>519</sparkle:version>
+            <pubDate>Sat, 28 Jun 2025 09:19:33 -0600</pubDate>
+            <sparkle:version>520</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.4.0 (Build 519)</title>
+            <description><![CDATA[<title>Version 3.4.0 (Build 520)</title>
 <description>
     <ul>  
         This is a beta version which probably has not been sufficiently tested.
-        <li> Version 3.4.0 beta (518):
+        <li> Version 3.4.0 beta (520):
+            <ul>
+                <li> New: You can now deselect the removal of the background from the TOF waveform (context menu/Background/Remove Background).
+                <li> New: The "Release Notes" option has been added to the "Help" menu in the main menu bar, which displays the release notes. 
+                <li> Fixed: Clicking on the "Complete release notes" button in the 'What's New' dialogue does not display the release notes.
+                <li> Fixed: The range of CDA waveforms from which the background has been subtracted may not be optimal.
+                <li> Fixed: TOF waveforms that are filled may show artefacts.
+            </ul> 
+        <li> Version 3.4.0 beta (519):
             <ul>
                 <li> Fixed: Opening the "Ion Grid" window using the context menu may cause the program to crash.
                 <li> The "Ion Grid" window has been renamed "Ion Grid Analyzer".
@@ -128,7 +136,7 @@
     </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="82076497" type="application/octet-stream" sparkle:edSignature="VgVak3uMOk2VCJSVP73S+PAqkRRgQwRoqry562XO48QJRhbbOXtR2odC4YVnpdPxPvEUD14vW1qcs4Sim2GbAg=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="81541691" type="application/octet-stream" sparkle:edSignature="puLT8zpW0LpdZZVZvcGoN/A3RqBm45VTNs8WLPsY96N9YfdoDH21sLyxbgdCsNhNyJOAlhD2hjB+NY7x8K0cCQ=="/>
         </item>
     </channel>
 </rss>
