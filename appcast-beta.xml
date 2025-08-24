@@ -4,15 +4,44 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Thu, 10 Jul 2025 08:36:27 -0600</pubDate>
-            <sparkle:version>521</sparkle:version>
+            <pubDate>Sun, 24 Aug 2025 08:35:07 -0600</pubDate>
+            <sparkle:version>526</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.4.0 (Build 521)</title>
+            <description><![CDATA[<title>Version 3.4.0 (Build 526)</title>
 <description>
     <ul>  
         This is a beta version which probably has not been sufficiently tested.
-        <li> Version 3.4.0 beta (521):
+        <li> Version 3.4.0 beta (526):
+            <ul>
+                <li> New: Two waveform models were added for fitting auxiliary waveforms. The "Diffuse" model is used to describe slowly rising waveforms, and the "Pulse+Diffuse" model is used to fit waveforms exhibiting a double pulse morphology.
+                <li> New: Imports legacy IDL Browser (*.cda) projects (Imports/New Project from/CDA Analyzer Project...).
+                <li> New: Imports legacy BCE7 binary (*.bin) data (Imports/New Project from/BCE7 Bin Data (CDA FS/FU)...).
+                <li> New: Imports CDA labbooks (Imports/Add Lab Data/Labbook Data...).
+                <li> New: Imports CDA QP Data (Import/Add Lab Data/Update QP Data...).
+                <li> New: A filter for auxiliary waveform properties has been added. The filterable properties include rise time, time at maximum, waveform amplitude, and amplitude ratio. Furthermore, the dataset can be filtered based on the newly introduced waveform issues, including "clipping", "insufficient resolution", "maximum outside the recorded time range", "late trigger", "non-monotonic", and "no impact waveform".
+                <li> New: You can flag auxiliary waveforms for issues via the context menu (individual waveform) or the Processing menu in the main menu bar (currently selected spectra).
+                <li> New: The start time of the ion can be assigned as the impact time for the currently selected events (Process/Calibrate Data/Assign Ion Start as Impact Time).
+                <li> New: The app can now handle waveforms created by amplifiers that may switch their gain during recording.
+                <li> New: The dataset description now includes impact angles for accelerator datasets.
+                <li> New: You can now assign and process rectangular grid waveform features.
+                <li> New: An editor has been added for QD and PSU data assigned to the impact (via auxiliary events table's context menu).
+                <li> Improved: Updated CDA FS conversion tables.
+                <li> Improved: Updated the definitions for the CDA FU/FS.
+                <li> Improved: The Project Setup Dialog is now searchable.
+                <li> Fixed: Features of the QP waveform are not shown when plotted in the DN domain.
+                <li> Fixed: The event filter ignores the fact that an impact on an alternative target (e.g., CDA ITT) is valid.
+                <li> Fixed: The wrong amplitude feature might be used when filtering for the amplitude of an auxiliary waveform.
+                <li> Fixed: The dataset view of the project setup dialog box may not display the impact location editor.
+        <li> Version 3.4.0 beta (522):
+            <ul>
+                <li> New: The design of the Filter dialog has been updated.
+                <li> New: Auxiliary amplifiers that can change their gain during waveform recording are now supported (context menu/Changed Gain).
+                <li> New: Waveforms affected by gain changes during their recording can now be flagged. 
+                <li> New: A new model for CSA waveforms has been added, combining a charge pulse at the time of impact with an extended, slow release of charge at later times.
+                <li> New: Histograms of waveform parameters (e.g. charge amplitude or rise time) can now be colour-coded according to the distribution of a second parameter within the histogram bins.
+                <li> Fixed: Importing IDL SpectrumAnalyzer projects may cause the program to crash.
+                <li> Fixed: Various issues associated with CDA data.
             <ul>
                 <li> New: The design of the Settings and Project dialogs has been updated.
                 <li> New: The minimum r.m.s. noise of an auxiliary waveform can be defined on the corresponding Waveform Definition page in the Instrument dialog.
@@ -147,7 +176,7 @@
     </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="82955991" type="application/octet-stream" sparkle:edSignature="HQBZ+ADiou6gKM759rlq/nbOse6Bc+1D9YXONHeXGk7OTZVnj7+1l51P+pirU84CSFOaatzCbog1WePPxCmODw=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="84613679" type="application/octet-stream" sparkle:edSignature="+OOlcrqMuex0PYwMzbfIEra+BLWY4MMHxORTl37uq4cVuBYtjYrvvV970BjcYTrfXCmewXFAPWs7x06fjfsUAw=="/>
         </item>
     </channel>
 </rss>
