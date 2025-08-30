@@ -4,14 +4,19 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Sun, 24 Aug 2025 08:35:07 -0600</pubDate>
-            <sparkle:version>526</sparkle:version>
+            <pubDate>Sat, 30 Aug 2025 07:05:53 -0600</pubDate>
+            <sparkle:version>527</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.4.0 (Build 526)</title>
+            <description><![CDATA[<title>Version 3.4.0 (Build 527)</title>
 <description>
     <ul>  
         This is a beta version which probably has not been sufficiently tested.
+        <li> Version 3.4.0 beta (527):
+            <ul>
+                <li> New: You can now set the time zone in the Project Setup dialog.
+                <li> New: The currently defined types of instrument values are available in the Instrument Parameter dialog box.
+                <li> Fixed: Attempting to import CCSDS data will cause the program to crash.
         <li> Version 3.4.0 beta (526):
             <ul>
                 <li> New: Two waveform models were added for fitting auxiliary waveforms. The "Diffuse" model is used to describe slowly rising waveforms, and the "Pulse+Diffuse" model is used to fit waveforms exhibiting a double pulse morphology.
@@ -176,7 +181,7 @@
     </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="84613679" type="application/octet-stream" sparkle:edSignature="+OOlcrqMuex0PYwMzbfIEra+BLWY4MMHxORTl37uq4cVuBYtjYrvvV970BjcYTrfXCmewXFAPWs7x06fjfsUAw=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="85394983" type="application/octet-stream" sparkle:edSignature="nb3SdtiUaS3KFfUkCpx96FqB3dRZd60P/IqzB1b6z8Q1SA873rAsbMdDueap3jyethJZ+d4wiy+F1sPZaZiXDw=="/>
         </item>
     </channel>
 </rss>
