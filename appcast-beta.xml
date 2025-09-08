@@ -4,14 +4,19 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Sat, 30 Aug 2025 07:05:53 -0600</pubDate>
-            <sparkle:version>527</sparkle:version>
+            <pubDate>Mon, 08 Sep 2025 09:27:50 -0600</pubDate>
+            <sparkle:version>528</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.4.0 (Build 527)</title>
+            <description><![CDATA[<title>Version 3.4.0 (Build 528)</title>
 <description>
     <ul>  
         This is a beta version which probably has not been sufficiently tested.
+        <li> Version 3.4.0 beta (528):
+            <ul>
+                <li> Improved: The instrument setup dialog box has been redesigned. You can now search for the features of the instrument that you want to change.
+                <li> Improved: The efficiency statistics tool now clearly shows the auxiliary waveforms on which the calculations are based. The term "efficiency" is only used if the correction for transmission losses is applied, otherwhise the amplitude ratio (e.g., QI/QC) is used.
+                <li> Improved: The default CDA instruments are now using the correct grid transmissions.
         <li> Version 3.4.0 beta (527):
             <ul>
                 <li> New: You can now set the time zone in the Project Setup dialog.
@@ -181,7 +186,7 @@
     </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="85394983" type="application/octet-stream" sparkle:edSignature="nb3SdtiUaS3KFfUkCpx96FqB3dRZd60P/IqzB1b6z8Q1SA873rAsbMdDueap3jyethJZ+d4wiy+F1sPZaZiXDw=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="85155456" type="application/octet-stream" sparkle:edSignature="BXMdoCDvuwK9LZX137KKoa6667vdzNXSkcmyoxrh/eWZyXlE7Lev6hOdFwhGdTfOb/qbBd/6l0m3IEzKa0BzCw=="/>
         </item>
     </channel>
 </rss>
