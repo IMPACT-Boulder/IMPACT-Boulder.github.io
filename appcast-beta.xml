@@ -4,189 +4,245 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Mon, 08 Sep 2025 09:27:50 -0600</pubDate>
-            <sparkle:version>528</sparkle:version>
+            <pubDate>Thu, 11 Sep 2025 10:06:59 -0600</pubDate>
+            <sparkle:version>529</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.4.0 (Build 528)</title>
+            <description><![CDATA[<title>Version 3.4.0 (Build 529)</title>
 <description>
-    <ul>  
-        This is a beta version which probably has not been sufficiently tested.
-        <li> Version 3.4.0 beta (528):
-            <ul>
-                <li> Improved: The instrument setup dialog box has been redesigned. You can now search for the features of the instrument that you want to change.
-                <li> Improved: The efficiency statistics tool now clearly shows the auxiliary waveforms on which the calculations are based. The term "efficiency" is only used if the correction for transmission losses is applied, otherwhise the amplitude ratio (e.g., QI/QC) is used.
-                <li> Improved: The default CDA instruments are now using the correct grid transmissions.
-        <li> Version 3.4.0 beta (527):
-            <ul>
-                <li> New: You can now set the time zone in the Project Setup dialog.
-                <li> New: The currently defined types of instrument values are available in the Instrument Parameter dialog box.
-                <li> Fixed: Attempting to import CCSDS data will cause the program to crash.
-        <li> Version 3.4.0 beta (526):
-            <ul>
-                <li> New: Two waveform models were added for fitting auxiliary waveforms. The "Diffuse" model is used to describe slowly rising waveforms, and the "Pulse+Diffuse" model is used to fit waveforms exhibiting a double pulse morphology.
-                <li> New: Imports legacy IDL Browser (*.cda) projects (Imports/New Project from/CDA Analyzer Project...).
-                <li> New: Imports legacy BCE7 binary (*.bin) data (Imports/New Project from/BCE7 Bin Data (CDA FS/FU)...).
-                <li> New: Imports CDA labbooks (Imports/Add Lab Data/Labbook Data...).
-                <li> New: Imports CDA QP Data (Import/Add Lab Data/Update QP Data...).
-                <li> New: A filter for auxiliary waveform properties has been added. The filterable properties include rise time, time at maximum, waveform amplitude, and amplitude ratio. Furthermore, the dataset can be filtered based on the newly introduced waveform issues, including "clipping", "insufficient resolution", "maximum outside the recorded time range", "late trigger", "non-monotonic", and "no impact waveform".
-                <li> New: You can flag auxiliary waveforms for issues via the context menu (individual waveform) or the Processing menu in the main menu bar (currently selected spectra).
-                <li> New: The start time of the ion can be assigned as the impact time for the currently selected events (Process/Calibrate Data/Assign Ion Start as Impact Time).
-                <li> New: The app can now handle waveforms created by amplifiers that may switch their gain during recording.
-                <li> New: The dataset description now includes impact angles for accelerator datasets.
-                <li> New: You can now assign and process rectangular grid waveform features.
-                <li> New: An editor has been added for QD and PSU data assigned to the impact (via auxiliary events table's context menu).
-                <li> Improved: Updated CDA FS conversion tables.
-                <li> Improved: Updated the definitions for the CDA FU/FS.
-                <li> Improved: The Project Setup Dialog is now searchable.
-                <li> Fixed: Features of the QP waveform are not shown when plotted in the DN domain.
-                <li> Fixed: The event filter ignores the fact that an impact on an alternative target (e.g., CDA ITT) is valid.
-                <li> Fixed: The wrong amplitude feature might be used when filtering for the amplitude of an auxiliary waveform.
-                <li> Fixed: The dataset view of the project setup dialog box may not display the impact location editor.
-        <li> Version 3.4.0 beta (522):
-            <ul>
-                <li> New: The design of the Filter dialog has been updated.
-                <li> New: Auxiliary amplifiers that can change their gain during waveform recording are now supported (context menu/Changed Gain).
-                <li> New: Waveforms affected by gain changes during their recording can now be flagged. 
-                <li> New: A new model for CSA waveforms has been added, combining a charge pulse at the time of impact with an extended, slow release of charge at later times.
-                <li> New: Histograms of waveform parameters (e.g. charge amplitude or rise time) can now be colour-coded according to the distribution of a second parameter within the histogram bins.
-                <li> Fixed: Importing IDL SpectrumAnalyzer projects may cause the program to crash.
-                <li> Fixed: Various issues associated with CDA data.
-            <ul>
-                <li> New: The design of the Settings and Project dialogs has been updated.
-                <li> New: The minimum r.m.s. noise of an auxiliary waveform can be defined on the corresponding Waveform Definition page in the Instrument dialog.
-                <li> New: The ability of a waveform amplifier to switch its gain while recording a signal can be configured on the relevant Waveform Definition page in the instrument dialog.
-                <li> Fixed: Auxiliary waveforms generated by instruments that use look-up tables to convert raw data into physical data may not be processed or plotted correctly.
-                <li> Fixed: When selecting DN units, fits to auxiliary waveforms generated by instruments using lookup tables to convert raw data into physical data are not plotted.
-                <li> Fixed: Updating the CDA mass spectra using the IMPACT database may cause the program to crash.
-                <li> Fixed: The Waveform Parameter Statistics Tool fails to plot the rise time statistics.
-                <li> Fixed: It is not possible to fit the rise time statistics to a Gaussian using the Waveform Parameter Statistics Tool.
-            </ul> 
-        <li> Version 3.4.0 beta (520):
-            <ul>
-                <li> New: You can now deselect the removal of the background from the TOF waveform (context menu/Background/Remove Background).
-                <li> New: The "Release Notes" option has been added to the "Help" menu in the main menu bar, which displays the release notes. 
-                <li> Fixed: Clicking on the "Complete release notes" button in the 'What's New' dialogue does not display the release notes.
-                <li> Fixed: The range of CDA waveforms from which the background has been subtracted may not be optimal.
-                <li> Fixed: TOF waveforms that are filled may show artefacts.
-            </ul> 
-        <li> Version 3.4.0 beta (519):
-            <ul>
-                <li> Fixed: Opening the "Ion Grid" window using the context menu may cause the program to crash.
-                <li> The "Ion Grid" window has been renamed "Ion Grid Analyzer".
-                <li> Partial migration of the code to Swift 6.2. Migrating AppKit code to SwiftUI.
-            </ul>      
-        <li> Version 3.4.0 beta (518):
-            <ul>
-                <li> Fixed: Importing IDEX CCSDS data fails if the previous instrument imported was SUDA.
-                <li> Fixed: Neither low-gain nor high-gain target waveforms are considered to be target waveforms.
-            </ul>
-        <li> Version 3.4.0 beta (517):
-            <ul>
-                <li> New: When zoomed in, the time range displayed in the "Accelerator View" can be fixed to the QD feature.
-                <li> New: You can mark artefact regions in spectrum plots via the context menu (Plot Settings/Mark Artefacts).
-                <li> New: You can unlock all the lines in the selected spectrum by using the context menu (Unlock Lines).
-                <li> Improved: After importing an IDL Science Analyzer project, the assigned line types can be changed via the new "Imported Lines" dialogue box. All assigned lines will be set to "Locked" to prevent the app's algorithms from changing the types.
-                <li> Fixed: Attempting to export the app's internal reference library to a file causes the app to crash.
-                <li> Fixed: The stretch parameter estimation does not ignore mass lines located within an artefact region.
-                <li> Fixed: It is not possible to change the setup of the noise filter used to calculate the line amplitudes in the "Project" dialogue.
-            </ul>
-        <li> Version 3.4.0 beta (516):
-            <ul>
-                <li> New: A button has been added to reset the zoom window.
-                <li> Improved: Assigning a new type to a line that is currently being ignored for the stretch computation will reset its ignored status.
-                <li> Fixed: In some cases, the zoom window may not be centred correctly on the selected line when the line is close to the plot range boundaries.
-                <li> Fixed: The "Import from CCSDS Packets" dialog does not have a tab for selecting the catalogues associated with the imported data.
-            </ul>
-        <li> Version 3.4.0 beta (515):
-            <ul>
-                <li> To improve the quality of the app, the minimum required version of MacOS has been increased to 13 (Ventura).
-                <li> New: The "Sum Spectrum" Persona is now responsible for analyzing and processing sum spectra. Individual spectra are handled by the "Spectrum" Persona. There is a button to switch between the two personas.
-                <li> New: The labels of the mass lines that contribute to the fit of a spectrum's stretch parameter are now in bold.
-                <li> New: The color of the baseline marker now depends on the baseline model type.
-                <li> New: You can now rearrange the order of spectra in the sum spectra table by drag and drop.
-                <li> New: Computationally expensive fits of line profiles are now automatically canceled after exceeding a time limit.
-                <li> The Cluster Type Catalog and Composition Type Catalog dialogs have been rewritten. Now, existing types can be added to multiple catalogs.
-                <li> Fixed: The data point marker associated with the currently selected event does not always update.
-                <li> Fixed: Sum spectra cannot be removed from the project.
-                <li> Fixed: Changing the baseline of a spectrum does not cause the stretch parameter estimate to be recomputed.
-                <li> Fixed: Changing the spectrum's baseline does not result in updated line amplitudes.
-            </ul>
-        <li> Version 3.4.0 beta (514):
-            <ul>
-                <li> New: If selected by the user, the stretch is automatically updated after actions that affect the parameter, such as adding or removing lines.
-                <li> Fixed: Lines marked "ignore for stretch" will not be updated after stretch parameter changes.
-                <li> Improved line information popup.
-                <li> Completion of migration to Swift 6.
-            </ul>
-        <li> Version 3.4.0 beta (513):
-            <ul>
-                <li> Spectrum integrals can be recomputed for the whole data sets.
-                <li> Improved the "Plasma Ion Yield" statistics viewer.
-                <li> Fixed: "Plasma Ion Yield" statistics viewer cannot be selected in project without auxiliary waveforms.
-                <li> Fixed: Statistics viewers are not dismissed when the parent project is closed.
-                <li> Fixed: In some statistics viewers, the user selection for "Mark Current" events is not persisted.
-            </ul>
-        <li> Version 3.4.0 beta (512):
-            <ul>
-                <li> Fixed: "Plasma Ion Yield" and "Plasma Rise Time" statistics viewers do not export data as CSV.
-            </ul>
-        <li> Version 3.4.0 beta (511):
-            <ul>
-                <li> Incorrectly assigned line types are highlighted in red in the line table.
-                <li> Fixed: Data is not loaded into the user interface after a successful import.
-            </ul>
-        <li> Version 3.4.0 beta (510):
-            <ul>
-    			<li> Improved zoom window pinning.
-    			<li> Added Water + Salt default composition types catalog.
-    			<li> Added Water + Salt default line types catalog.
-            </ul>
-        <li> Version 3.4.0 beta (509):
-            <ul>
-    			<li> Fixed: Event filter doesn't include the "Missing QD" case.
-    			<li> Improved zooming into mass spectra.
-    			<li> Started to localize the app.
-    		</ul>
-        <li> Version 3.4.0 beta (508):
-            <ul>
-    			<li> Fixed: Spectrum crashes when opening the Impact database query dialog.
-    			<li> Added anion version to the Water default line catalog.
-    			<li> Added anion version to the Water + Fe default template.
-    		</ul>
-        <li> Version 3.4.0 beta (507):
-        	 <ul>
-    			<li> Bug fixes.
-    		</ul>
-        <li> Version 3.4.0 beta (506):
-        	 <ul>
-    			<li> Bug fixes.
-    		</ul>
-        <li> Version 3.4.0 beta (505):
-        	 <ul>
-    			<li> New About Spectrum window.
-    			<li> New What's New window.
-    			<li> Marks the event that is currently selected in the statistics scatter plots.
-    			<li> Enhanced the capabilities of the Collection Efficiency statistics tool.
-    			<li> Reads projects created with older versions (<2.2) of Spectrum App.
-    			<li> Performance improvements and bug fixes.
-    		 </ul>
-        <li> Version 3.4.0 beta (503):
-    		 <ul>
-    			<li> Bug fixes.
-    		 </ul>
-    	<li> Version 3.4.0 beta (502):
-    		 <ul>
-    			<li> The internal data handling has been rewritten, which significantly improves the memory footprint and the performance of the user interface.
-				<li> Ringing imposed on a line profile can now be fitted to a damped oscillator model to remove it from the waveform.
-				<li> Projects that were saved with older versions of the app (< 2.2) can now be opened again.
-				<li> Added a filter to down select mass spectra with a line whose estimated abundance is within a specified range.
-				<li> Bug fixes and performance enhancements.
-			</ul>
-    </ul>
+  <ul>
+    This is a beta version which probably has not been sufficiently tested.
+    <li> Version 3.4.0 beta (529):
+        <ul>
+            <li> New: You can now set instrument voltages in the auxiliary waveform viewer.</li>
+            <li> New: The Data Filter Dialog's selection sidebar now color-codes data filter pages with active filter settings.</li>
+            <li> Improved: The menu for the y-axis of TOF waveforms has been improved and is now more user-friendly.</li>
+            <li> Improved: The instrument dialog now provides more information about certain setup options. Setup options that are irrelevant to the instrument type are hidden.</li>
+        </ul>
+    </li>
+    
+    <li>Version 3.4.0 beta (528)
+      <ul>
+        <li>Improved: The instrument setup dialog box has been redesigned. You can now search for the features of the instrument that you want to change.</li>
+        <li>Improved: The efficiency statistics tool now clearly shows the auxiliary waveforms on which the calculations are based. The term "efficiency" is only used if the correction for transmission losses is applied; otherwise the amplitude ratio (e.g., QI/QC) is used.</li>
+        <li>Improved: The default CDA instruments are now using the correct grid transmissions.</li>
+      </ul>
+    </li>
+
+    <li>Version 3.4.0 beta (527)
+      <ul>
+        <li>New: You can now set the time zone in the Project Setup dialog.</li>
+        <li>New: The currently defined types of instrument values are available in the Instrument Parameter dialog box.</li>
+        <li>Fixed: Attempting to import CCSDS data will cause the program to crash.</li>
+      </ul>
+    </li>
+
+    <li>Version 3.4.0 beta (526)
+      <ul>
+        <li>New: Two waveform models were added for fitting auxiliary waveforms. The "Diffuse" model is used to describe slowly rising waveforms, and the "Pulse+Diffuse" model is used to fit waveforms exhibiting a double pulse morphology.</li>
+        <li>New: Imports legacy IDL Browser (*.cda) projects (Imports/New Project from/CDA Analyzer Project...).</li>
+        <li>New: Imports legacy BCE7 binary (*.bin) data (Imports/New Project from/BCE7 Bin Data (CDA FS/FU)...).</li>
+        <li>New: Imports CDA labbooks (Imports/Add Lab Data/Labbook Data...).</li>
+        <li>New: Imports CDA QP Data (Import/Add Lab Data/Update QP Data...).</li>
+        <li>New: A filter for auxiliary waveform properties has been added. The filterable properties include rise time, time at maximum, waveform amplitude, and amplitude ratio. Furthermore, the dataset can be filtered based on the newly introduced waveform issues, including "clipping", "insufficient resolution", "maximum outside the recorded time range", "late trigger", "non-monotonic", and "no impact waveform".</li>
+        <li>New: You can flag auxiliary waveforms for issues via the context menu (individual waveform) or the Processing menu in the main menu bar (currently selected spectra).</li>
+        <li>New: The start time of the ion can be assigned as the impact time for the currently selected events (Process/Calibrate Data/Assign Ion Start as Impact Time).</li>
+        <li>New: The app can now handle waveforms created by amplifiers that may switch their gain during recording.</li>
+        <li>New: The dataset description now includes impact angles for accelerator datasets.</li>
+        <li>New: You can now assign and process rectangular grid waveform features.</li>
+        <li>New: An editor has been added for QD and PSU data assigned to the impact (via auxiliary events table's context menu).</li>
+        <li>Improved: Updated CDA FS conversion tables.</li>
+        <li>Improved: Updated the definitions for the CDA FU/FS.</li>
+        <li>Improved: The Project Setup Dialog is now searchable.</li>
+        <li>Fixed: Features of the QP waveform are not shown when plotted in the DN domain.</li>
+        <li>Fixed: The event filter ignores the fact that an impact on an alternative target (e.g., CDA ITT) is valid.</li>
+        <li>Fixed: The wrong amplitude feature might be used when filtering for the amplitude of an auxiliary waveform.</li>
+        <li>Fixed: The dataset view of the project setup dialog box may not display the impact location editor.</li>
+      </ul>
+    </li>
+
+    <li>Version 3.4.0 beta (522)
+      <ul>
+        <li>New: The design of the Filter dialog has been updated.</li>
+        <li>New: Auxiliary amplifiers that can change their gain during waveform recording are now supported (context menu/Changed Gain).</li>
+        <li>New: Waveforms affected by gain changes during their recording can now be flagged.</li>
+        <li>New: A new model for CSA waveforms has been added, combining a charge pulse at the time of impact with an extended, slow release of charge at later times.</li>
+        <li>New: Histograms of waveform parameters (e.g., charge amplitude or rise time) can now be colour‑coded according to the distribution of a second parameter within the histogram bins.</li>
+        <li>Fixed: Importing IDL SpectrumAnalyzer projects may cause the program to crash.</li>
+        <li>Fixed: Various issues associated with CDA data.</li>
+      </ul>
+      <ul>
+        <li>New: The design of the Settings and Project dialogs has been updated.</li>
+        <li>New: The minimum r.m.s. noise of an auxiliary waveform can be defined on the corresponding Waveform Definition page in the Instrument dialog.</li>
+        <li>New: The ability of a waveform amplifier to switch its gain while recording a signal can be configured on the relevant Waveform Definition page in the instrument dialog.</li>
+        <li>Fixed: Auxiliary waveforms generated by instruments that use look‑up tables to convert raw data into physical data may not be processed or plotted correctly.</li>
+        <li>Fixed: When selecting DN units, fits to auxiliary waveforms generated by instruments using lookup tables to convert raw data into physical data are not plotted.</li>
+        <li>Fixed: Updating the CDA mass spectra using the IMPACT database may cause the program to crash.</li>
+        <li>Fixed: The Waveform Parameter Statistics Tool fails to plot the rise time statistics.</li>
+        <li>Fixed: It is not possible to fit the rise time statistics to a Gaussian using the Waveform Parameter Statistics Tool.</li>
+      </ul>
+    </li>
+
+    <li>Version 3.4.0 beta (520)
+      <ul>
+        <li>New: You can now deselect the removal of the background from the TOF waveform (context menu/Background/Remove Background).</li>
+        <li>New: The "Release Notes" option has been added to the "Help" menu in the main menu bar, which displays the release notes.</li>
+        <li>Fixed: Clicking on the "Complete release notes" button in the 'What's New' dialogue does not display the release notes.</li>
+        <li>Fixed: The range of CDA waveforms from which the background has been subtracted may not be optimal.</li>
+        <li>Fixed: TOF waveforms that are filled may show artefacts.</li>
+      </ul>
+    </li>
+
+    <li>Version 3.4.0 beta (519)
+      <ul>
+        <li>Fixed: Opening the "Ion Grid" window using the context menu may cause the program to crash.</li>
+        <li>The "Ion Grid" window has been renamed "Ion Grid Analyzer".</li>
+        <li>Partial migration of the code to Swift 6.2. Migrating AppKit code to SwiftUI.</li>
+      </ul>
+    </li>
+
+    <li>Version 3.4.0 beta (518)
+      <ul>
+        <li>Fixed: Importing IDEX CCSDS data fails if the previous instrument imported was SUDA.</li>
+        <li>Fixed: Neither low‑gain nor high‑gain target waveforms are considered to be target waveforms.</li>
+      </ul>
+    </li>
+
+    <li>Version 3.4.0 beta (517)
+      <ul>
+        <li>New: When zoomed in, the time range displayed in the "Accelerator View" can be fixed to the QD feature.</li>
+        <li>New: You can mark artefact regions in spectrum plots via the context menu (Plot Settings/Mark Artefacts).</li>
+        <li>New: You can unlock all the lines in the selected spectrum by using the context menu (Unlock Lines).</li>
+        <li>Improved: After importing an IDL Science Analyzer project, the assigned line types can be changed via the new "Imported Lines" dialogue box. All assigned lines will be set to "Locked" to prevent the app's algorithms from changing the types.</li>
+        <li>Fixed: Attempting to export the app's internal reference library to a file causes the app to crash.</li>
+        <li>Fixed: The stretch parameter estimation does not ignore mass lines located within an artefact region.</li>
+        <li>Fixed: It is not possible to change the setup of the noise filter used to calculate the line amplitudes in the "Project" dialogue.</li>
+      </ul>
+    </li>
+
+    <li>Version 3.4.0 beta (516)
+      <ul>
+        <li>New: A button has been added to reset the zoom window.</li>
+        <li>Improved: Assigning a new type to a line that is currently being ignored for the stretch computation will reset its ignored status.</li>
+        <li>Fixed: In some cases, the zoom window may not be centred correctly on the selected line when the line is close to the plot range boundaries.</li>
+        <li>Fixed: The "Import from CCSDS Packets" dialog does not have a tab for selecting the catalogues associated with the imported data.</li>
+      </ul>
+    </li>
+
+    <li>Version 3.4.0 beta (515)
+      <ul>
+        <li>To improve the quality of the app, the minimum required version of macOS has been increased to 13 (Ventura).</li>
+        <li>New: The "Sum Spectrum" Persona is now responsible for analyzing and processing sum spectra. Individual spectra are handled by the "Spectrum" Persona. There is a button to switch between the two personas.</li>
+        <li>New: The labels of the mass lines that contribute to the fit of a spectrum's stretch parameter are now in bold.</li>
+        <li>New: The color of the baseline marker now depends on the baseline model type.</li>
+        <li>New: You can now rearrange the order of spectra in the sum spectra table by drag and drop.</li>
+        <li>New: Computationally expensive fits of line profiles are now automatically canceled after exceeding a time limit.</li>
+        <li>The Cluster Type Catalog and Composition Type Catalog dialogs have been rewritten. Now, existing types can be added to multiple catalogs.</li>
+        <li>Fixed: The data point marker associated with the currently selected event does not always update.</li>
+        <li>Fixed: Sum spectra cannot be removed from the project.</li>
+        <li>Fixed: Changing the baseline of a spectrum does not cause the stretch parameter estimate to be recomputed.</li>
+        <li>Fixed: Changing the spectrum's baseline does not result in updated line amplitudes.</li>
+      </ul>
+    </li>
+
+    <li>Version 3.4.0 beta (514)
+      <ul>
+        <li>New: If selected by the user, the stretch is automatically updated after actions that affect the parameter, such as adding or removing lines.</li>
+        <li>Fixed: Lines marked "ignore for stretch" will not be updated after stretch parameter changes.</li>
+        <li>Improved line information popup.</li>
+        <li>Completion of migration to Swift 6.</li>
+      </ul>
+    </li>
+
+    <li>Version 3.4.0 beta (513)
+      <ul>
+        <li>Spectrum integrals can be recomputed for the whole data sets.</li>
+        <li>Improved the "Plasma Ion Yield" statistics viewer.</li>
+        <li>Fixed: "Plasma Ion Yield" statistics viewer cannot be selected in project without auxiliary waveforms.</li>
+        <li>Fixed: Statistics viewers are not dismissed when the parent project is closed.</li>
+        <li>Fixed: In some statistics viewers, the user selection for "Mark Current" events is not persisted.</li>
+      </ul>
+    </li>
+
+    <li>Version 3.4.0 beta (512)
+      <ul>
+        <li>Fixed: "Plasma Ion Yield" and "Plasma Rise Time" statistics viewers do not export data as CSV.</li>
+      </ul>
+    </li>
+
+    <li>Version 3.4.0 beta (511)
+      <ul>
+        <li>Incorrectly assigned line types are highlighted in red in the line table.</li>
+        <li>Fixed: Data is not loaded into the user interface after a successful import.</li>
+      </ul>
+    </li>
+
+    <li>Version 3.4.0 beta (510)
+      <ul>
+        <li>Improved zoom window pinning.</li>
+        <li>Added Water + Salt default composition types catalog.</li>
+        <li>Added Water + Salt default line types catalog.</li>
+      </ul>
+    </li>
+
+    <li>Version 3.4.0 beta (509)
+      <ul>
+        <li>Fixed: Event filter doesn't include the "Missing QD" case.</li>
+        <li>Improved zooming into mass spectra.</li>
+        <li>Started to localize the app.</li>
+      </ul>
+    </li>
+
+    <li>Version 3.4.0 beta (508)
+      <ul>
+        <li>Fixed: Spectrum crashes when opening the Impact database query dialog.</li>
+        <li>Added anion version to the Water default line catalog.</li>
+        <li>Added anion version to the Water + Fe default template.</li>
+      </ul>
+    </li>
+
+    <li>Version 3.4.0 beta (507)
+      <ul>
+        <li>Bug fixes.</li>
+      </ul>
+    </li>
+
+    <li>Version 3.4.0 beta (506)
+      <ul>
+        <li>Bug fixes.</li>
+      </ul>
+    </li>
+
+    <li>Version 3.4.0 beta (505)
+      <ul>
+        <li>New About Spectrum window.</li>
+        <li>New What's New window.</li>
+        <li>Marks the event that is currently selected in the statistics scatter plots.</li>
+        <li>Enhanced the capabilities of the Collection Efficiency statistics tool.</li>
+        <li>Reads projects created with older versions (&lt; 2.2) of Spectrum App.</li>
+        <li>Performance improvements and bug fixes.</li>
+      </ul>
+    </li>
+
+    <li>Version 3.4.0 beta (503)
+      <ul>
+        <li>Bug fixes.</li>
+      </ul>
+    </li>
+
+    <li>Version 3.4.0 beta (502)
+      <ul>
+        <li>The internal data handling has been rewritten, which significantly improves the memory footprint and the performance of the user interface.</li>
+        <li>Ringing imposed on a line profile can now be fitted to a damped oscillator model to remove it from the waveform.</li>
+        <li>Projects that were saved with older versions of the app (&lt; 2.2) can now be opened again.</li>
+        <li>Added a filter to down select mass spectra with a line whose estimated abundance is within a specified range.</li>
+        <li>Bug fixes and performance enhancements.</li>
+      </ul>
+    </li>
+  </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="85155456" type="application/octet-stream" sparkle:edSignature="BXMdoCDvuwK9LZX137KKoa6667vdzNXSkcmyoxrh/eWZyXlE7Lev6hOdFwhGdTfOb/qbBd/6l0m3IEzKa0BzCw=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="85194418" type="application/octet-stream" sparkle:edSignature="CCWaK+zWOsO+PNrb2VpQ1OmsC3RpllhhqI6s2yr97uhowSxTTJXEspBkNgPv26XAZSVWtuCw1nS4KLEAVWGyBQ=="/>
         </item>
     </channel>
 </rss>
