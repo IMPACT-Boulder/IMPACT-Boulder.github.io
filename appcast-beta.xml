@@ -4,14 +4,25 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Thu, 11 Sep 2025 10:06:59 -0600</pubDate>
-            <sparkle:version>529</sparkle:version>
+            <pubDate>Fri, 26 Sep 2025 11:30:11 -0600</pubDate>
+            <sparkle:version>530</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.4.0 (Build 529)</title>
+            <description><![CDATA[<title>Version 3.4.0 (Build 530)</title>
 <description>
   <ul>
     This is a beta version which probably has not been sufficiently tested.
+    
+    <li> Version 3.4.0 beta (530):
+        <ul>
+            <li> Improved: The chemical formula editor has been completely overhauled.</li>
+            <li> Improved: The Line Catalog and Template dialogs have been rewritten.</li>
+            <li> Fixed: An issue on macOS 26 that caused the program to crash when the sidebar was opened has been fixed.</li>
+            <li> Fixed: An issue on macOS 26 that caused the app to not respond to mouse movements has been fixed.</li>
+            <li> Fixed: Updating from an old version of the app results in a crash when launching it.
+        </ul>
+    </li>
+ 
     <li> Version 3.4.0 beta (529):
         <ul>
             <li> New: You can now set instrument voltages in the auxiliary waveform viewer.</li>
@@ -242,7 +253,7 @@
   </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="85194418" type="application/octet-stream" sparkle:edSignature="CCWaK+zWOsO+PNrb2VpQ1OmsC3RpllhhqI6s2yr97uhowSxTTJXEspBkNgPv26XAZSVWtuCw1nS4KLEAVWGyBQ=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="84268367" type="application/octet-stream" sparkle:edSignature="dZye6v+LmskG22W6izhpYzHVACDARBZAPRu03LMxF8j9uvoQhnZty0z3jrwBEslbpZ+yfJj59JlluTQnvkKeAA=="/>
         </item>
     </channel>
 </rss>
