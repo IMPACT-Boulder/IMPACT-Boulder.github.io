@@ -4,14 +4,26 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Fri, 26 Sep 2025 11:30:11 -0600</pubDate>
-            <sparkle:version>530</sparkle:version>
+            <pubDate>Wed, 01 Oct 2025 18:39:31 -0600</pubDate>
+            <sparkle:version>531</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.4.0 (Build 530)</title>
+            <description><![CDATA[<title>Version 3.4.0 (Build 531)</title>
 <description>
   <ul>
     This is a beta version which probably has not been sufficiently tested.
+    <li> Version 3.4.0 beta (531):
+        <ul>
+            <li> New: The app no longer comes with the default reference database, which will be downloaded from the server as needed. This reduces the app's size.</li>
+            <li> New: Two new model options have been added for CDA grid features.</li>
+            <li> New: The dust grain's entry point and angle into the instrument are derived from CDA grid features.</li>
+            <li> New: The grid sensor statistics tool now allows you to analyze the distribution of derived values for the dust entry point and angle.</li>
+            <li> Fixed: The default catalogs are not fully updated after app updates.</li>
+            <li> Fixed: The CCSDS import dialog does not close after the import is finished.</li>
+            <li> Fixed: The cursor is not visible when marking grid crossing times for rectangular grid features.
+            <li> Fixed: The fourth grid crossing point is not marked for rectangular grid features.
+        </ul>
+    </li>
     
     <li> Version 3.4.0 beta (530):
         <ul>
@@ -253,7 +265,7 @@
   </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="84268367" type="application/octet-stream" sparkle:edSignature="dZye6v+LmskG22W6izhpYzHVACDARBZAPRu03LMxF8j9uvoQhnZty0z3jrwBEslbpZ+yfJj59JlluTQnvkKeAA=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="82646401" type="application/octet-stream" sparkle:edSignature="mMUxdl2UnPRnoAZS03CHogvYb+PDw1DyitF1EgOwH2CXgLlHsOTC0U5rzuF0BDtaAGUMLCI89ucn1zqwgX54Ag=="/>
         </item>
     </channel>
 </rss>
