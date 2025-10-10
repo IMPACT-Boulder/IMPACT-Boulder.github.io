@@ -4,14 +4,24 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Wed, 01 Oct 2025 18:39:31 -0600</pubDate>
-            <sparkle:version>531</sparkle:version>
+            <pubDate>Fri, 10 Oct 2025 11:56:49 -0600</pubDate>
+            <sparkle:version>532</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
             <description><![CDATA[<title>Version 3.4.0 (Build 531)</title>
 <description>
   <ul>
     This is a beta version which probably has not been sufficiently tested.
+    <li> Version 3.4.0 beta (532):
+        <ul>
+            <li> New: If there are no pickup data available, uncertainties for the dust speed and size are estimated from the difference between the values derived from an instrument's grid sensor and the accelerator's PSU data.</li>
+            <li> New: You can now adjust individual feature points for multipoint grid sensor features.</li>
+            <li> Improved: The way the mouse interacts with plots has been rewritten, making it more responsive.</li>
+            <li> Fixed: The speed and direction of the striking dust particles are not correctly derived from the induced features recorded by the QP grid sensor.
+            <li> Fixed: A selected file or directory may not be accessible.</li>
+        </ul>
+    </li>
+
     <li> Version 3.4.0 beta (531):
         <ul>
             <li> New: The app no longer comes with the default reference database, which will be downloaded from the server as needed. This reduces the app's size.</li>
@@ -265,7 +275,7 @@
   </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="82646401" type="application/octet-stream" sparkle:edSignature="mMUxdl2UnPRnoAZS03CHogvYb+PDw1DyitF1EgOwH2CXgLlHsOTC0U5rzuF0BDtaAGUMLCI89ucn1zqwgX54Ag=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="45571860" type="application/octet-stream" sparkle:edSignature="dpi+SywAxF7cI/CEF2HoJorjFKxjueB5JsPtJoT7M6AYRewXDJ0HDPptgrk48iHONqwfpLsOAENJn7M3aJaFAw=="/>
         </item>
     </channel>
 </rss>
