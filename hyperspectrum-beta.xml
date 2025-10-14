@@ -3,6 +3,163 @@
     <channel>
         <title>HyperSpectrum</title>
         <item>
+            <title>1.5.0</title>
+            <pubDate>Tue, 14 Oct 2025 09:41:09 -0600</pubDate>
+            <sparkle:version>21</sparkle:version>
+            <sparkle:shortVersionString>1.5.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <description><![CDATA[<title>Version 1.5.0 (Build 21)</title>
+<description>
+        <ul>
+            <li> Version 1.5.0 (21):
+                <ul>
+                    <li> New: The app no longer comes with the default reference database, which will be downloaded from the server as needed. This reduces the app's size.</li>
+                    <li> The app is compatible with MacOS Tahoe.
+                </ul>
+            </li>
+
+            <li> Version 1.4.0 (20):
+                <ul>
+                    <li> New: The new Composition Speed Dependency tool, accessible from the Products menu, can be used to visualize the speed dependency of the spectrum composition.</li>
+                </ul>
+            </li>
+
+            <li>Version 1.3.0 (19):
+                <ul>
+                    <li>New: You can edit spectrum properties using the new editor in the spectra navigation menu.</li>
+                    <li>New: The new Line Area Speed Dependency tool, accessible from the Products menu, can be used to visualize the speed dependency of line ratios.</li>
+                    <li>Bug fixes and improvements.</li>
+                </ul>
+            </li>
+            <li>Version 1.2.1 (18):
+                <ul>
+                    <li>Projects can now have more than one spectrum.</li>
+                </ul>
+            </li>
+            <li>Version 1.1.1 (16):
+                <ul>
+                    <li>App is now sharing its internal reference database with the PacketAnalyzer app and the Spectrum App.</li>
+                    <li>Added cluster lines filter.</li>
+                    <li>Added dynamic range setup.</li>
+                    <li>Improved instrument mapping.</li>
+                    <li>Improved stability and performance.</li>
+                </ul>
+            </li>
+            <li>Version 1.0.9 (9):
+                <ul>
+                    <li>Improved the performance for spectra with hundreds of lines.</li>
+                    <li>Fixed an issue that prevented the updater from working properly.</li>
+                </ul>
+            </li>
+            <li>Version 1.0.8 (8):
+                <ul>
+                    <li>Fixed an issue that led to a crash after adding the first line.</li>
+                </ul>
+            </li>
+            <li>Version 1.0.7 (7):
+                <ul>
+                    <li>Fixed an issue that prevented the app from launching.</li>
+                </ul>
+            </li>
+            <li>Version 1.0.6 (6):
+                <ul>
+                    <li>First release.</li>
+                </ul>
+            </li>
+        </ul>
+</description>
+]]></description>
+            <enclosure url="https://impact.colorado.edu/HyperSpectrum.zip" length="20198723" type="application/octet-stream" sparkle:edSignature="kY3c9GE7GYxJuVNPShlvGs+fDjVZlzf8WN6xvoAJM0xSDg8yVe3XbPRzCazp/mAMo8CV4DVGt8HYp91xsutOAQ=="/>
+        </item>
+        <item>
+            <title>1.3.0</title>
+            <pubDate>Sun, 04 May 2025 12:25:19 +0200</pubDate>
+            <sparkle:version>19</sparkle:version>
+            <sparkle:shortVersionString>1.3.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <description><![CDATA[<title>Version 1.3.0 (Build 19)</title>
+<description>
+    <ul>  
+    	<li> Version 1.3.0 (19):
+    		<ul>
+    		    <li> Spectrum properties can be edited using a new editor in the spectra navigation menu.
+				<li> The speed dependency of line ratios can be visualized with the new Speed Dependency tool, accessible from the Products menu.
+				<li> Bug fixes and improvements.
+	        </ul> 
+    	<li> Version 1.2.1 (18):
+            <ul>
+    			<li> Projects can now have more than one spectrum.
+    		</ul> 
+    	<li> Version 1.1.1 (16):
+            <ul>
+    			<li> App is now sharing its internal reference database with the PacketAnalyzer app and the Spectrum App.
+    			<li> Added cluster lines filter
+    			<li> Added dynamic range setup
+    			<li> Improved instrument mapping.
+    			<li> Improved stability and performance.
+        	</ul> 
+    	<li> Version 1.0.9 (9):
+            <ul>
+	            <li> Improved the performance for spectra with hundreds of lines.
+	            <li> Fixed an issue that prevented the updater to work properly
+	        </ul> 
+    	<li> Version 1.0.8 (8):
+            <ul>
+	            <li> FIxed an issue that lead to a crash after adding the first line.
+	        </ul> 
+    	<li> Version 1.0.7 (7):
+            <ul>
+	            <li> FIxed an issue that prevented the app from launching.
+	        </ul>   
+	    <li> Version 1.0.6 (6):
+            <ul>
+	            <li> First release
+	        </ul>      
+    </ul>
+</description>
+]]></description>
+            <enclosure url="https://impact.colorado.edu/HyperSpectrum.zip" length="20132822" type="application/octet-stream" sparkle:edSignature="54oRq9VQmRlGHw9te7ajcEKlVi5WY+wfoEleCCQggMJg4NZOOTqOZMY59QuuFq//Je3qlh+NJ+k96pMoxZWACg=="/>
+        </item>
+        <item>
+            <title>1.2.1</title>
+            <pubDate>Fri, 28 Mar 2025 16:23:32 +0100</pubDate>
+            <sparkle:version>18</sparkle:version>
+            <sparkle:shortVersionString>1.2.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <description><![CDATA[<title>Version 1.0.8 (Build 8)</title>
+<description>
+    <ul>  
+    	<li> Version 1.2.1 (18):
+    		<li> Projects can now have more than one spectrum.
+    	<li> Version 1.1.1 (16):
+    		<li> App is now sharing its internal reference database with the PacketAnalyzer app and the Spectrum App.
+    		<li> Added cluster lines filter
+    		<li> Added dynamic range setup
+    		<li> Improved instrument mapping.
+    		<li> Improved stability and performance.
+        <li> Version 1.0.9 (9):
+            <ul>
+	            <li> Improved the performance for spectra with hundreds of lines.
+	            <li> Fixed an issue that prevented the updater to work properly
+	        </ul> 
+    	<li> Version 1.0.8 (8):
+            <ul>
+	            <li> FIxed an issue that lead to a crash after adding the first line.
+	        </ul> 
+    	<li> Version 1.0.7 (7):
+            <ul>
+	            <li> FIxed an issue that prevented the app from launching.
+	        </ul>   
+	    <li> Version 1.0.6 (6):
+            <ul>
+	            <li> First release
+	        </ul>      
+    </ul>
+</description>
+]]></description>
+            <enclosure url="https://impact.colorado.edu/HyperSpectrum.zip" length="19424756" type="application/octet-stream" sparkle:edSignature="0kCE7HQsdqJxSCEVO/Rfo2HbeKRrDroBw/LTz93SRdiyk68Oi2wKgZyW+nETGrZeFpk3t94DabISUdIuHmiTAg=="/>
+        </item>
+        <item>
             <title>1.0.9</title>
             <pubDate>Wed, 30 Nov 2022 16:35:06 +0100</pubDate>
             <sparkle:version>9</sparkle:version>
