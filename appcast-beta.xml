@@ -4,14 +4,23 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Tue, 14 Oct 2025 12:04:54 -0600</pubDate>
-            <sparkle:version>533</sparkle:version>
+            <pubDate>Thu, 23 Oct 2025 14:30:21 -0600</pubDate>
+            <sparkle:version>534</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
             <description><![CDATA[<title>Version 3.4.0 (Build 533)</title>
 <description>
   <ul>
     This is a beta version which probably has not been sufficiently tested.
+    <li> Version 3.4.0 beta (534):
+          <ul>
+              <li> Improved: The Composition Types Catalog dialog has been rewritten.</li>
+              <li> Fixed: Pages may not load when selected in the Instrument dialog. The search field may not be visible.</li>
+              <li> Fixed: The search field in the Project dialog may not be visible.</li>
+              <li> Fixed: The catalog dialogs for line types, cluster types, and spectrum templates may not always close properly.</li>
+          </ul>
+      </li>
+
     <li> Version 3.4.0 beta (533):
         <ul>
             <li> Bug fixes and performance improvements
@@ -281,7 +290,7 @@
   </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="45046402" type="application/octet-stream" sparkle:edSignature="I1cYA2ljD3To00wGq3txGWJFd4nr8DRslB1k9hNDN5116UnMEZ6NIfAG6MQfmx1zvrmNzuTyR51j3mJ66l8qCw=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="45104326" type="application/octet-stream" sparkle:edSignature="T+k8CaM5utafDgM0B/y8T5b3nU3VnbCBRjhQI+bO6/v1C8JwnEnxVv0y2zalZWjpPbvMvJGYTwlzq8F5BT73Dg=="/>
         </item>
     </channel>
 </rss>
