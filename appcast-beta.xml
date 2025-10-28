@@ -4,14 +4,21 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Sat, 25 Oct 2025 08:37:33 -0600</pubDate>
-            <sparkle:version>535</sparkle:version>
+            <pubDate>Tue, 28 Oct 2025 13:49:50 -0600</pubDate>
+            <sparkle:version>536</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
             <description><![CDATA[<title>Version 3.4.0 (Build 535)</title>
 <description>
   <ul>
     This is a beta version which probably has not been sufficiently tested.
+    <li> Version 3.4.0 beta (536):
+          <ul>
+              <li> New: You can now select the IMAP spacecraft as an observer.
+              <li> Fixed: The mouse operations in the Spectrum viewer are broken.</li>
+          </ul>
+    </li>
+            
     <li> Version 3.4.0 beta (535):
           <ul>
               <li> Fixed: You cannot delete instrument versions in the Instrument dialog.</li>
@@ -299,7 +306,7 @@
   </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="45088401" type="application/octet-stream" sparkle:edSignature="6K01aSjf4zb7aucS/eejVvUiKMnMnnJl7Kf64OXS9V0zaUgeZZfWWZTNFg7Gk4mIKM08Q6qn72LrmKvpBWn7Dw=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="45826538" type="application/octet-stream" sparkle:edSignature="HFzCMTczaGzxOwJod3sVYNVjF8bX7YFWiqe3Ar+suvqLsFJgo6timCkoa9a6+CPaJV5pR+is9+8MbCE/YmcdCg=="/>
         </item>
     </channel>
 </rss>
