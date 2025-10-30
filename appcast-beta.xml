@@ -4,14 +4,21 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Tue, 28 Oct 2025 13:49:50 -0600</pubDate>
-            <sparkle:version>536</sparkle:version>
+            <pubDate>Thu, 30 Oct 2025 06:24:30 -0600</pubDate>
+            <sparkle:version>538</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
             <description><![CDATA[<title>Version 3.4.0 (Build 535)</title>
 <description>
   <ul>
     This is a beta version which probably has not been sufficiently tested.
+    <li> Version 3.4.0 beta (538):
+          <ul>
+              <li> Fixed: In Mac OS Sequoia and earlier versions, mouse operations in the Spectrum Viewer are not functioning properly.</li>
+              <li> Fixed: The plot amplitudes in the Auxiliary Waveforms Viewer are improperly scaled.</li>
+          <ul>
+    </li>
+      
     <li> Version 3.4.0 beta (536):
           <ul>
               <li> New: You can now select the IMAP spacecraft as an observer.
@@ -306,7 +313,7 @@
   </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="45826538" type="application/octet-stream" sparkle:edSignature="HFzCMTczaGzxOwJod3sVYNVjF8bX7YFWiqe3Ar+suvqLsFJgo6timCkoa9a6+CPaJV5pR+is9+8MbCE/YmcdCg=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="45831831" type="application/octet-stream" sparkle:edSignature="nabwsYfE42FaBf9/PBHepKt5pa3AUsE75ZCD0Iuqmct2k1m9XyRKy6rOrwtl72r/5NSodNxyX77yBpDG5KY5Dw=="/>
         </item>
     </channel>
 </rss>
