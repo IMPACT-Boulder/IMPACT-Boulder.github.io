@@ -4,14 +4,25 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Thu, 30 Oct 2025 06:24:30 -0600</pubDate>
-            <sparkle:version>538</sparkle:version>
+            <pubDate>Mon, 03 Nov 2025 16:07:57 -0700</pubDate>
+            <sparkle:version>539</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
             <description><![CDATA[<title>Version 3.4.0 (Build 535)</title>
 <description>
   <ul>
     This is a beta version which probably has not been sufficiently tested.
+         <li> Version 3.4.0 beta (539):
+          <ul>
+              <li> New: Users can now save project catalogs with project data via the "File/Save with Catalogs..." option in the main menu, allowing them to share projects.</li>
+              <li> Improved: The Settings Dialog's user interface has been improved.</li>
+              <li> Fixed: Creating a sum spectrum from anion spectra may result in incorrect polarity assignment.</li>
+              <li> Fixed: After deleting the last spectrum in the Sum Spectrum persona, the app may become unpredictable.</li>
+              <li> Fixed: Plots created using the Species vs. Observable Statistics tool cannot be saved as PDFs.</li>
+              <li> Fixed: Some of the numeric inputs in the Project Setup dialog box are rounded up too much.</li>
+          </ul>
+      </li>
+
     <li> Version 3.4.0 beta (538):
           <ul>
               <li> Fixed: In Mac OS Sequoia and earlier versions, mouse operations in the Spectrum Viewer are not functioning properly.</li>
@@ -313,7 +324,7 @@
   </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="45831831" type="application/octet-stream" sparkle:edSignature="nabwsYfE42FaBf9/PBHepKt5pa3AUsE75ZCD0Iuqmct2k1m9XyRKy6rOrwtl72r/5NSodNxyX77yBpDG5KY5Dw=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="45768430" type="application/octet-stream" sparkle:edSignature="8JOOXqOn0HBSQJRNUU+cg3QwOLbSGyPXBeZb7p2ZViVBYEh84PU3+tVuXXmLeBEpsrdcTf/FzT82cFxzsifUAw=="/>
         </item>
     </channel>
 </rss>
