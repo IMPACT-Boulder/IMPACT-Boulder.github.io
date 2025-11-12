@@ -4,14 +4,23 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Mon, 03 Nov 2025 16:07:57 -0700</pubDate>
-            <sparkle:version>539</sparkle:version>
+            <pubDate>Wed, 12 Nov 2025 10:49:55 -0700</pubDate>
+            <sparkle:version>540</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.4.0 (Build 535)</title>
+            <description><![CDATA[<title>Version 3.4.0 (Build 540)</title>
 <description>
   <ul>
     This is a beta version which probably has not been sufficiently tested.
+        <li> Version 3.4.0 beta (540):
+          <ul>
+              <li> Improved: The CCSDS packet data import process is now managed by PacketCrusher version 5.0.0.</li>
+              <li> Improved: The catalog dialogs now clearly indicate when the selected catalog cannot be changed because it is the default catalog.</li>
+              <li> Fixed: Catalog dialogs ignore changes to the project setup if they are called more than once.</li>
+              <li> Fixed: It is not possible to save changes to a composition type catalog.</li>
+          </ul>
+      </li>
+
          <li> Version 3.4.0 beta (539):
           <ul>
               <li> New: Users can now save project catalogs with project data via the "File/Save with Catalogs..." option in the main menu, allowing them to share projects.</li>
@@ -324,7 +333,7 @@
   </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="45768430" type="application/octet-stream" sparkle:edSignature="8JOOXqOn0HBSQJRNUU+cg3QwOLbSGyPXBeZb7p2ZViVBYEh84PU3+tVuXXmLeBEpsrdcTf/FzT82cFxzsifUAw=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="45888519" type="application/octet-stream" sparkle:edSignature="iAtLpdVECpsg2vNCMC036PA9xtIQGonmwqT9TI+IWo/wb0z50TfyiK8LHOmdQva2vll5nmTOEOh4KxZ79KMdDA=="/>
         </item>
     </channel>
 </rss>
