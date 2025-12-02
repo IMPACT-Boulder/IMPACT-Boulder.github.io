@@ -4,14 +4,24 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Thu, 20 Nov 2025 14:26:07 -0700</pubDate>
-            <sparkle:version>541</sparkle:version>
+            <pubDate>Tue, 02 Dec 2025 10:36:43 -0700</pubDate>
+            <sparkle:version>542</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.4.0 (Build 541)</title>
+            <description><![CDATA[<title>Version 3.4.0 (Build 542)</title>
 <description>
   <ul>
     This is a beta version which probably has not been sufficiently tested.
+    <li> Version 3.4.0 beta (542):
+         <ul>
+              <li> Fixed: It is not possible to plot ion detector waveforms in physical units.</li>
+              <li> Fixed: The HRD waveform is not displayed correctly in ion sensor mode.</li>
+              <li> Fixed: The top plot in the auxiliary viewer will be left empty.</li>
+              <li> Fixed: It is not possible to add new grid points to a spectrum background model when using the 'Subtract Background' plotting mode.</li>
+              <li> Fixed: Adding a background grid point at the left or right end of the current model will cause the app to crash.</li>
+          </ul>
+    </li>
+
         <li> Version 3.4.0 beta (541):
           <ul>
             <li> Fixed: CCSDS data cannot be imported.</li>
@@ -339,7 +349,7 @@
   </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="45242176" type="application/octet-stream" sparkle:edSignature="1C2j7FpfG80c3DG/rrkpzUROOotZ6Bhll/Q15JDaHRVmSh6bex4JESHtp2Ch/zKvJbrOF4W0HcWrnHDgaUDbDw=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="45244301" type="application/octet-stream" sparkle:edSignature="SrPU3heys7yPUJ1XPim7IOb17SGMe65itWPN0ZULzq92YF56Z2AIv7btNrRIErPqgD2mscA9JJPBKVfjAXd0DA=="/>
         </item>
     </channel>
 </rss>
