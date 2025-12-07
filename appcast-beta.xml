@@ -4,14 +4,20 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Tue, 02 Dec 2025 10:36:43 -0700</pubDate>
-            <sparkle:version>542</sparkle:version>
+            <pubDate>Sun, 07 Dec 2025 15:11:43 -0700</pubDate>
+            <sparkle:version>543</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.4.0 (Build 542)</title>
+            <description><![CDATA[<title>Version 3.4.0 (Build 543)</title>
 <description>
   <ul>
     This is a beta version which probably has not been sufficiently tested.
+    <li> Version 3.4.0 beta (543):
+          <ul>
+              <li> Fixed: The title of a spectrum in the sum spectra table is not updated immediately after a new name is assigned.</li>
+              <li> Fixed: Switching between a staggered and a non-staggered zoomed plot in the Ion Viewer can result in undefined behaviour.</li>
+          </ul>
+      </li>
     <li> Version 3.4.0 beta (542):
          <ul>
               <li> Fixed: It is not possible to plot ion detector waveforms in physical units.</li>
@@ -349,7 +355,7 @@
   </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="45244301" type="application/octet-stream" sparkle:edSignature="SrPU3heys7yPUJ1XPim7IOb17SGMe65itWPN0ZULzq92YF56Z2AIv7btNrRIErPqgD2mscA9JJPBKVfjAXd0DA=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="45241363" type="application/octet-stream" sparkle:edSignature="kcHR6+cQNaS1xyRF+A/XouQ65mUOBL9bx+ZcimYNKJYT+0Jz5kpUEyiDsXFp9F+uoCXUbOyyhgXrxFvVTld3CA=="/>
         </item>
     </channel>
 </rss>
