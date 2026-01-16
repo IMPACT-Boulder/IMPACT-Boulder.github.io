@@ -4,14 +4,23 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Sun, 07 Dec 2025 15:11:43 -0700</pubDate>
-            <sparkle:version>543</sparkle:version>
+            <pubDate>Fri, 16 Jan 2026 14:33:28 -0700</pubDate>
+            <sparkle:version>544</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
             <description><![CDATA[<title>Version 3.4.0 (Build 543)</title>
 <description>
   <ul>
     This is a beta version which probably has not been sufficiently tested.
+    <li> Version 3.4.0 beta (544):
+              <li> New: Buttons for zooming in and out of plots have been added to the Auxiliary Waveforms and Ion Sensor Waveform viewers.</li>
+              <li> New: Background models can be assigned to individual ion sensor waveforms.</li>
+              <li> New: Artifacts can be assigned to individual ion sensor waveforms.</li>
+              <li> New: Artifacts can be assigned to spectrum waveforms.</li>
+              <li> New: HDR spectra can now be computed from ion sensor waveforms to which background models and waveform artefacts have been assigned.</li>
+              <li> New: Sum spectra can now be computed from spectra to which background models and waveform artefacts have been assigned.</li>
+              <li> Improved: Regions of the ion sensor waveform that are used to create an HDR spectrum can now be marked.</li>
+    </li>
     <li> Version 3.4.0 beta (543):
           <ul>
               <li> Fixed: The title of a spectrum in the sum spectra table is not updated immediately after a new name is assigned.</li>
@@ -355,7 +364,7 @@
   </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="45241363" type="application/octet-stream" sparkle:edSignature="kcHR6+cQNaS1xyRF+A/XouQ65mUOBL9bx+ZcimYNKJYT+0Jz5kpUEyiDsXFp9F+uoCXUbOyyhgXrxFvVTld3CA=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="45850303" type="application/octet-stream" sparkle:edSignature="T537UR08+qKOwhFKZFGA7cRWlheFVFvsPxCXsHGwptFsffSWqtQaOg49cF7mfkOLWlww5U6pMeEHgfeCjxCvAA=="/>
         </item>
     </channel>
 </rss>
