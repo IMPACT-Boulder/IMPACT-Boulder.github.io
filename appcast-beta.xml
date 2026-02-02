@@ -4,15 +4,22 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Fri, 16 Jan 2026 14:33:28 -0700</pubDate>
-            <sparkle:version>544</sparkle:version>
+            <pubDate>Mon, 02 Feb 2026 07:04:02 -0700</pubDate>
+            <sparkle:version>545</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.4.0 (Build 543)</title>
+            <description><![CDATA[<title>Version 3.4.0 (Build 545)</title>
 <description>
   <ul>
     This is a beta version which probably has not been sufficiently tested.
+    <li> Version 3.4.0 beta (545):
+          <ul>
+              <li> Fixed: The Spectrum Viewer context menu does not allow you to select some options for computing sum spectra.</li>
+              <li> Fixed: Assigning and marking artifacts only works correctly if the selected x-axis type is time.</li>
+          </ul>
+    </li>
     <li> Version 3.4.0 beta (544):
+          <ul>
               <li> New: Buttons for zooming in and out of plots have been added to the Auxiliary Waveforms and Ion Sensor Waveform viewers.</li>
               <li> New: Background models can be assigned to individual ion sensor waveforms.</li>
               <li> New: Artifacts can be assigned to individual ion sensor waveforms.</li>
@@ -20,6 +27,7 @@
               <li> New: HDR spectra can now be computed from ion sensor waveforms to which background models and waveform artefacts have been assigned.</li>
               <li> New: Sum spectra can now be computed from spectra to which background models and waveform artefacts have been assigned.</li>
               <li> Improved: Regions of the ion sensor waveform that are used to create an HDR spectrum can now be marked.</li>
+          </ul>
     </li>
     <li> Version 3.4.0 beta (543):
           <ul>
@@ -364,7 +372,7 @@
   </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="45850303" type="application/octet-stream" sparkle:edSignature="T537UR08+qKOwhFKZFGA7cRWlheFVFvsPxCXsHGwptFsffSWqtQaOg49cF7mfkOLWlww5U6pMeEHgfeCjxCvAA=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="45939768" type="application/octet-stream" sparkle:edSignature="0euOCFXh+U0Wat6X4Lo1V8PDVK7WgpIqjMNOCuSkwbnEq6+UXB3Y9JS3Kmfc+Mk+4y0ntZcKud0F+SD7dty+CQ=="/>
         </item>
     </channel>
 </rss>
