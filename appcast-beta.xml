@@ -4,14 +4,35 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Mon, 02 Feb 2026 07:04:02 -0700</pubDate>
-            <sparkle:version>545</sparkle:version>
+            <pubDate>Mon, 02 Mar 2026 14:10:27 -0700</pubDate>
+            <sparkle:version>548</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.4.0 (Build 545)</title>
+            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
+            <description><![CDATA[<title>Version 3.4.0 (Build 548)</title>
 <description>
   <ul>
     This is a beta version which probably has not been sufficiently tested.
+    <li> Version 3.4.0 beta (548):
+          <ul>
+              <li>Improved: The import of old Spectrum Analyzer data has been improved.</li>
+          </ul>
+      </li>
+      <li> Version 3.4.0 beta (547):
+          <ul>
+              <li>New: The app can now run scripted queries on CDA data identified by its PDS ID.</li>
+          </ul>
+      </li>
+      <li> Version 3.4.0 beta (546):
+          <ul>
+              <li> The minimum operating system required for deployment of the app is now macOS 15.</li>
+              <li> New: The app can now extract CDA data from CCSDS packet files.</li>
+              <li> New: The app can now extract DDA data from raw instrument data files.</li>
+              <li> New: The app supports scripted database queries for PDS IDs of CDA events.</li>
+              <li> Fixed: It is not possible to assign or mark artefacts correctly if the selected x-axis type is 'mass'.</li>
+              <li> Fixed: Gain stage definitions cannot be added to or edited.</li>
+              <li> Improved: Much faster import of CCSDS packet data.</li>
+          </ul>
+      </li>
     <li> Version 3.4.0 beta (545):
           <ul>
               <li> Fixed: The Spectrum Viewer context menu does not allow you to select some options for computing sum spectra.</li>
@@ -372,7 +393,7 @@
   </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="45939768" type="application/octet-stream" sparkle:edSignature="0euOCFXh+U0Wat6X4Lo1V8PDVK7WgpIqjMNOCuSkwbnEq6+UXB3Y9JS3Kmfc+Mk+4y0ntZcKud0F+SD7dty+CQ=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="48288714" type="application/octet-stream" sparkle:edSignature="Mc+8fjEpMxklUIVRlJJQxYsp5Mz3HGtX8X7WRJVpYFi9phNPPtDbIY/nafc+BB9omUP2wKaBR3E+Ru0TbmqAAQ=="/>
         </item>
     </channel>
 </rss>
