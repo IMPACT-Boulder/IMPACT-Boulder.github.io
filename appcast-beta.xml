@@ -4,14 +4,19 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Wed, 11 Mar 2026 20:50:26 -0600</pubDate>
-            <sparkle:version>549</sparkle:version>
+            <pubDate>Thu, 12 Mar 2026 11:55:55 -0600</pubDate>
+            <sparkle:version>550</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
             <description><![CDATA[<title>Version 3.4.0 (Build 549)</title>
 <description>
   <ul>
     This is a beta version which probably has not been sufficiently tested.
+      <li> Version 3.4.0 beta (550):
+          <ul>
+              <li>Fixed: The app cannot require the access rights for loading scope data files from the selected directory.</li>
+          </ul>
+      </li>
       <li> Version 3.4.0 beta (549):
           <ul>
               <li>Experimental: Implemented the arPLS algorithm for providing a first estimate of the baselines of TOF waveforms.</li>
@@ -401,7 +406,7 @@
   </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="48299793" type="application/octet-stream" sparkle:edSignature="61Upq0aRLJhr7E7krjnZhvdqWfKMdE/Agcz1mR9z12pvs5i3a+XwKQpuW+Nvl6/EhcXTvikkQVWIPyfKCnrMDA=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="48295618" type="application/octet-stream" sparkle:edSignature="2bjV2HqnoI/k2yenLF7jzVsSj4Y5TBXg8LykL3hbMTNL4kOLCbVx+HgzHCovGHa9YzwnxI0MRDo+n5ojreq+Bg=="/>
         </item>
     </channel>
 </rss>
