@@ -4,14 +4,19 @@
         <title>PacketAnalyzer</title>
         <item>
             <title>1.4.0-beta</title>
-            <pubDate>Mon, 16 Mar 2026 11:07:36 -0500</pubDate>
-            <sparkle:version>33</sparkle:version>
+            <pubDate>Sat, 21 Mar 2026 10:01:38 -0600</pubDate>
+            <sparkle:version>34</sparkle:version>
             <sparkle:shortVersionString>1.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 1.4.0-beta (Build 33)</title>
+            <description><![CDATA[<title>Version 1.4.0-beta (Build 34)</title>
 <description>
     <ul> 
         This is a beta version which probably has not been sufficiently tested.
+        <li>Version 1.4.0 beta (Build 34)</li>
+        <ul>
+            <li>Fixed: The app will crash the first time it is run.</li>
+            <li>Fixed: After launching the app for the first time, you will not be able to access the fetched resources.</li>
+        </ul>
         <li>Version 1.4.0 beta (Build 33)</li>
         <ul>
             <li>New: Supports the DDA instrument.</li>
@@ -102,7 +107,7 @@
     </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/PacketAnalyzer-beta.zip" length="24916234" type="application/octet-stream" sparkle:edSignature="Hx8mE9G1FTY1k+F9GmwBFhb82R0XhbGKxGNkVCbGlLtu1fJV+2/dd4vRrmHIOzwF0cIr/NWxCkEh8zrsYLqHDw=="/>
+            <enclosure url="https://impact.colorado.edu/PacketAnalyzer-beta.zip" length="24919068" type="application/octet-stream" sparkle:edSignature="9uadJ8kOK33UMTlhXI006b29I7UuKRcFogVRMKekMX7Vkq399yW1/QfmbmvWxFAehWR7FnJjg16hG+7edJlcDQ=="/>
         </item>
     </channel>
 </rss>
