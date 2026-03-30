@@ -4,7 +4,7 @@
         <title>PacketAnalyzer</title>
         <item>
             <title>1.4.0-beta</title>
-            <pubDate>Mon, 30 Mar 2026 10:28:20 -0600</pubDate>
+            <pubDate>Mon, 30 Mar 2026 12:12:47 -0600</pubDate>
             <sparkle:version>35</sparkle:version>
             <sparkle:shortVersionString>1.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
@@ -113,7 +113,7 @@
     </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/PacketAnalyzer-beta.zip" length="23995221" type="application/octet-stream" sparkle:edSignature="NWNn9EcPD/hWND+7mnWip+AQXbBwSpOAxeLx6RvR0Rts+8Q4ISMPGCmldCsMYCkOdXtorwkf2AJ6wtAPCCsBCA=="/>
+            <enclosure url="https://impact.colorado.edu/PacketAnalyzer-beta.zip" length="25022754" type="application/octet-stream" sparkle:edSignature="Fec3Qs6Osc65+8EXuYm78/GPb48JOKFfAKE3Rj8nYf2raDPTL1SQuyefzK+ZK04nJYIjB++/nBn8upnVSd6XDg=="/>
         </item>
     </channel>
 </rss>
