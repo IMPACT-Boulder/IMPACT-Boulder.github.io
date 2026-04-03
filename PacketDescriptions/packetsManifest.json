@@ -1,0 +1,21 @@
+{
+  "createdAt" : "2026-04-03T20:07:19Z",
+  "files" : [
+    {
+      "name" : "CDA.zip",
+      "sha256" : "5f786e6a233d88349bb293e30138a5ff95eaa64bc9056c581efd4c3ef10b85da"
+    },
+    {
+      "name" : "DDA.zip",
+      "sha256" : "62deea6f4a58491aefd98f4bb039ee7e0b8eac719cfde6ffd0779f78a7137e4e"
+    },
+    {
+      "name" : "IDEX.zip",
+      "sha256" : "a384272ceeeee006bd890fe4691605224f13220dd66db33120ea94dff97c18c8"
+    },
+    {
+      "name" : "SUDA.zip",
+      "sha256" : "3439f6ccf5b52894af77d640ed872a0820ccf11d977c1f42451150a41de6b94a"
+    }
+  ]
+}
