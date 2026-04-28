@@ -1,0 +1,33 @@
+{
+  "createdAt" : "2026-04-28T14:00:42Z",
+  "files" : [
+    {
+      "name" : "Rnd8_S2v7_scpse.bsp.zip",
+      "sha256" : "9f465ba42ed8619e6b795dbedb13f7c0e4fee75f4a89c58e255fc6ef7fd264b4"
+    },
+    {
+      "name" : "clipper_sc_21F31_V6_LP01_Cruise_Simulation.bc.zip",
+      "sha256" : "cc2019d5ae1aac6a6ba4b8c38c150979ac64f6fb156400b3773f7e4992a77638"
+    },
+    {
+      "name" : "clipper_sc_Rnd7_T1_Tour_Simulation.bc.zip",
+      "sha256" : "ac6ff7076b9f89b16fc0bed3fe06d74f7ece2972f5796d08977940cfef5cf9e8"
+    },
+    {
+      "name" : "cpck15Dec2017.tpc",
+      "sha256" : "3265aa314edce1fe6f89edb0a010192e43db5d3c0cb67621e0a7a3d8ceb9aa1f"
+    },
+    {
+      "name" : "europaclipper_00000.tsc",
+      "sha256" : "3ec8fa370f167a0051769d773121c21299fed12c27c24ad66d62f5e2ad0f8fa7"
+    },
+    {
+      "name" : "naif0012.tls",
+      "sha256" : "678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b"
+    },
+    {
+      "name" : "pck_mp.tpc",
+      "sha256" : "d263990143c6e13c41efbbeef43d9a11ba6a528cc5464e837ab4b913e106bb24"
+    }
+  ]
+}
