@@ -1,0 +1,17 @@
+{
+  "createdAt" : "2026-04-30T19:30:11Z",
+  "files" : [
+    {
+      "name" : "callisto.png.zip",
+      "sha256" : "aba0bc0c325011b3acd6afe404aca0edacf4706b25878a54c3eeb12dc99b88d0"
+    },
+    {
+      "name" : "europa.png.zip",
+      "sha256" : "098fcb75a1a40033bb297c08c6f7a88103b355113dbaeff1f768af505cc559bd"
+    },
+    {
+      "name" : "ganymede.png.zip",
+      "sha256" : "a09ceafc4e66646b71f764f3f03bba6665e1bb93f5aff60bce495cad134387e8"
+    }
+  ]
+}
