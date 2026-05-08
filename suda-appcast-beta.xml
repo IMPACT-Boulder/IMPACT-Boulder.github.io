@@ -4,14 +4,22 @@
         <title>SUDA</title>
         <item>
             <title>1.18.0-beta</title>
-            <pubDate>Wed, 25 Mar 2026 11:31:13 -0600</pubDate>
-            <sparkle:version>49</sparkle:version>
+            <pubDate>Fri, 08 May 2026 07:27:24 +0200</pubDate>
+            <sparkle:version>50</sparkle:version>
             <sparkle:shortVersionString>1.18.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 1.17.0 (Build 47)</title>
+            <description><![CDATA[<title>Version 1.18.0-beta (Build 50)</title>
 <description>
     <ul> 
         This is a beta version which probably has not been sufficiently tested.
+        <li> Version 1.18.0-beta (Build 50):
+            <ul>
+                <li> New: Users can now install and uninstall essential app resources such as Spice kernel sets or surface images.</li>
+                <li> New: Users can create and load Spice kernel sets for their projects.</li>
+                <li> New: New app resource releases will be silently pushed to users' computers and will not require the app to be updated.</li>
+                <li> Fixed: Plots based on MC may crash during creation.</li>
+            </ul>
+        </li>
         <li> Version 1.18.0-beta (Build 49):
             <ul>
                 <li> Feature rate predictions are now correctly based on the number of MC runs defined by the user. The corresponding plot shows the bounds defined by the first (25%) and third (75%) quartiles.</li>
@@ -137,7 +145,7 @@
     </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/SUDA-beta.zip" length="21171697" type="application/octet-stream" sparkle:edSignature="feKJpEMineYeFtO5ihCA57/ukrXEZpsRjs4egW77BZz/9aqghMKF2RFhCrfkUFiul9gs00ZR0Z8KzGfIok5sDg=="/>
+            <enclosure url="https://impact.colorado.edu/SUDA-beta.zip" length="21877434" type="application/octet-stream" sparkle:edSignature="OhfHqEi1fBTiR5GqKRN/12RTcCCJX18SX6N6MEHiGfr9LviGBooaYhOscyyOeHua9inTi7N1jvmQb5GbVKaTDg=="/>
         </item>
     </channel>
 </rss>
