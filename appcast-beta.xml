@@ -4,15 +4,24 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Wed, 10 Jun 2026 07:00:08 -0600</pubDate>
-            <sparkle:version>553</sparkle:version>
+            <pubDate>Sat, 13 Jun 2026 18:00:22 -0600</pubDate>
+            <sparkle:version>554</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
             <description><![CDATA[<title>Version 3.4.0 (Build 549)</title>
 <description>
   <ul>
     This is a beta version which probably has not been sufficiently tested.
-        <li> Version 3.4.0 beta (553):
+    <li> Version 3.4.0 beta (554):
+          <ul>
+              <li>New: A filter for the dust origin has been added.</li>
+              <li>Improved: Impact database queries are better at handling intermittent connectivity issues.</li>
+              <li>Fixed: The 'Event Type' drop-down menu in the Spectrum Viewer's table contains duplicate menu items.</li>
+              <li>Fixed: The selected state of the relation operator selection in the 'Impact Query' dialog is not visible.</li>
+              <li>Fixed: The 'Date format' button in the 'Impact Query' dialogue does not work.</li>
+          </ul>
+    </li>
+    <li> Version 3.4.0 beta (553):
           <ul>
               <li>New: The app can now run Lua scripts for converting waveform parameters into mass and speed, for example. These scripts can be assigned either to all projects or to a single project, and they are instrument-specific. Currently, scripts for assigning dust mass, impact speed and impact target are supported.</li>
               <li>New: The Orbit Visualiser now enables you to plot impact rates, median rise times and impact charges.</li>
@@ -24,8 +33,8 @@
               <li>Fixed: The colour bars may be rendered as empty.</li>
               <li>Fixed: Importing certain versions of IDL legacy data may fail.</li>
           </ul>
-       </li>   
-       <li> Version 3.4.0 beta (552):
+    </li>   
+    <li> Version 3.4.0 beta (552):
            <ul>
               <li>New: The context menu of the Spectrum Viewer has an option that sets and anchors a new line to the previous user-assigned anchor line.</li>
               <li>New: Plots in Orbit Visualizer can now be annotated with the currently selected event.</li>
@@ -442,7 +451,7 @@
   </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="51944690" type="application/octet-stream" sparkle:edSignature="X8VdHN32GiB58TpZxw+7KtvhJbeVdEcrW6m1mCkyPb6wOHwBsfarIkgo0Ycqj5jq2xRMSv/APItMrzO3jktZDg=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="51988532" type="application/octet-stream" sparkle:edSignature="f6b9hr0K0SH6yyrt+Kedqs8fsRZHSLlKBBGYYo8zpBrKM/6ErF7xre+Vk303PML5IH6YG9H0V902QxB3HUzyDw=="/>
         </item>
     </channel>
 </rss>
