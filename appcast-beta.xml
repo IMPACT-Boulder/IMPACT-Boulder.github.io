@@ -4,14 +4,29 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Tue, 16 Jun 2026 06:32:10 -0600</pubDate>
-            <sparkle:version>555</sparkle:version>
+            <pubDate>Tue, 07 Jul 2026 10:49:06 +0200</pubDate>
+            <sparkle:version>556</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
             <description><![CDATA[<title>Version 3.4.0 (Build 549)</title>
 <description>
   <ul>
     This is a beta version which probably has not been sufficiently tested.
+    <li> Version 3.4.0 beta (556):
+          <ul>
+              <li>The app is compatible with the upcoming version of macOS, 'Golden Gate'.</li>
+              <li>New: A protection option has been added to projects to prevent users from changing certain settings, such as the assigned instrument version, to protect the integrity of the Impact database. This option can be enabled in Project Settings. The protected state is now the default for data imported from the Impact database.</li>
+              <li>New: The trigger line of a spectrum can be identified in the data set via the 'Process > Calibrate Data > Identify Trigger Lines' option.</li>
+              <li>New: It is now possible to filter data sets for their trigger lines.</li>
+              <li>New: You can select the app's localisation in the 'Settings' dialog.</li>
+              <li>Improved: The app now remembers the state of the correlation panel's presentation.</li>
+              <li>Improved: The plot annotations do not rearrange themselves when the window is resized.</li>
+              <li>Improved: Most of the statistical tools have undergone code review.</li>
+              <li>Improved: The potential trigger lines are now shown on the upper scale of the correlation panel plot.</li>
+              <li>Fixed: The layout of the window may change unexpectedly when you resize it.</li>
+              <li>Fixed: The line type assigned to a mass line cannot be locked.</li>
+          </ul>
+    </li>
     <li> Version 3.4.0 beta (555):
           <ul>
               <li>New: It is now possible to avoid uploading the metadata of a project to the Impact database. Users can setup this option in the project dialog by unselecting 'Dataset > Include dataset in uploads'.</li>
@@ -463,7 +478,7 @@
   </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="51995425" type="application/octet-stream" sparkle:edSignature="rM2dJfXU9Y9p0QcFEy7VwXMXD/fGTWz0i22JG1aelTgFlFvPEszxeyqRX8PokYyNDnz3UU1V8DUzyzLr9zilCA=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="51889111" type="application/octet-stream" sparkle:edSignature="idYNFM4Qf2Y0qVTb+njzOMkXMFAAY12bm9PPAGc3tXGuH7M6C4rWVbbIS1d3h7CYPPbgM3KVZWZe45uScIlmDA=="/>
         </item>
     </channel>
 </rss>
