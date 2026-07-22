@@ -4,14 +4,23 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Tue, 07 Jul 2026 10:49:06 +0200</pubDate>
-            <sparkle:version>556</sparkle:version>
+            <pubDate>Wed, 22 Jul 2026 07:21:17 +0200</pubDate>
+            <sparkle:version>557</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
             <description><![CDATA[<title>Version 3.4.0 (Build 549)</title>
 <description>
   <ul>
     This is a beta version which probably has not been sufficiently tested.
+    <li> Version 3.4.0 beta (557):
+          <ul>
+              <li>New: This version introduces full colour theme management (Settings > Themes). Themes can be duplicated, edited, imported and exported.</li>
+              <li>Improved: The 'Scope Import' dialogue has been redesigned.</li>
+              <li>Improved: Users can now set the yield range in the 'Impact Charge Yield' and 'Specie Charge Yield' statistics tools.</li>
+              <li>Improved: The spectrum integral is recomputed when a baseline is assigned or reassigned.</li>
+              <li>Fixed: </li>
+          </ul>
+    </li>
     <li> Version 3.4.0 beta (556):
           <ul>
               <li>The app is compatible with the upcoming version of macOS, 'Golden Gate'.</li>
@@ -478,7 +487,7 @@
   </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="51889111" type="application/octet-stream" sparkle:edSignature="idYNFM4Qf2Y0qVTb+njzOMkXMFAAY12bm9PPAGc3tXGuH7M6C4rWVbbIS1d3h7CYPPbgM3KVZWZe45uScIlmDA=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="52560625" type="application/octet-stream" sparkle:edSignature="+xRX3AOhtMluOaIluQ0zUG6l8FXsmLmKURe4muOV4Ya65p2HjvdoWFHDVO8wTc8Ozc0TZAMPV5j83ADl/esCDg=="/>
         </item>
     </channel>
 </rss>
