@@ -4,14 +4,20 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Wed, 29 Jul 2026 20:57:52 +0200</pubDate>
-            <sparkle:version>558</sparkle:version>
+            <pubDate>Mon, 10 Aug 2026 14:04:52 +0200</pubDate>
+            <sparkle:version>559</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
             <description><![CDATA[<title>Version 3.4.0 (Build 558)</title>
 <description>
   <ul>
     This is a beta version which probably has not been sufficiently tested.
+    <li> Version 3.4.0 beta (559):
+          <ul>
+            <li>Fixed: Using baseline models to analyse time-of-flight spectra may lead to unexpected results.</li>
+            <li>Fixed: The default filenames suggested for saving PDFs do not include the project name.</li>
+          </ul>
+    </li>
     <li> Version 3.4.0 beta (558):
           <ul>
             <li>Improved: You can now also change the line shape model and the line cluster association state via the context menu of the line table.</li>
@@ -496,7 +502,7 @@
   </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="52535565" type="application/octet-stream" sparkle:edSignature="BnM/UFFvHKY1UHRGsITbh5Iq9S7vhiP3XKUszNRWFVwVPSTjVWXtPYw3BpIzJjocoMxcoQPu6HBm8YLDzYyCDA=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="52527218" type="application/octet-stream" sparkle:edSignature="Pb93q+H9BJx3A4xVcbqvODPiV1WqzxupgubTjMmzaMeRsyncOLQBVJib6LkpiDlMmXjPBeXH+w54mGehpaAAAA=="/>
         </item>
     </channel>
 </rss>
