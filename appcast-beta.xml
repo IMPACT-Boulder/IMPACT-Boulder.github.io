@@ -4,14 +4,26 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Mon, 10 Aug 2026 14:04:52 +0200</pubDate>
-            <sparkle:version>559</sparkle:version>
+            <pubDate>Sat, 05 Sep 2026 09:50:44 -0600</pubDate>
+            <sparkle:version>560</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
             <description><![CDATA[<title>Version 3.4.0 (Build 558)</title>
 <description>
   <ul>
     This is a beta version which probably has not been sufficiently tested.
+    <li> Version 3.4.0 beta (560):
+          <ul>
+              <li>New: Users can now edit Lua scripts in a syntax-sensitive, fully configurable code editor that is bundled with the app.</li>
+              <li>New: Support for scripting has been added to identify gain range switches and the impactor origin.</li>
+              <li>Improved: The `rise time` statistics tool can now use the circular Kepler ram speed to estimate the impact speed of space data sets.</li>
+              <li>Improved: The user can now install Lua scripts for all projects via Settings > Scripting or for individual projects via Project Setup. Project-level setup takes precedence.</li>
+              <li>Improved: User can now select `Kepler speed` and `retrograde Kepler speed` as observables to the Orbit Visualizer tool.</li>
+              <li>Improved: It is now possible to declare Instruments as default for all users.</li>
+              <li>Fixed: The Y-axis titles of Orbit Visualizer plots are sometimes not useful.</li>
+              <li>Fixed: The `Project Setup` dialog sometimes incorrectly states that the project consists of multiple data sets.</li>
+          </ul>
+    </li>
     <li> Version 3.4.0 beta (559):
           <ul>
             <li>Fixed: Using baseline models to analyse time-of-flight spectra may lead to unexpected results.</li>
@@ -502,7 +514,7 @@
   </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="52527218" type="application/octet-stream" sparkle:edSignature="Pb93q+H9BJx3A4xVcbqvODPiV1WqzxupgubTjMmzaMeRsyncOLQBVJib6LkpiDlMmXjPBeXH+w54mGehpaAAAA=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="72205441" type="application/octet-stream" sparkle:edSignature="N09TyycTG2z7ZYFdvhJzvvgU+7EYUb+zlmVbEffbCBHpsIXaLo+VIAsN6Pie3XzOZRRX5nE45YDaN06gIhVqAQ=="/>
         </item>
     </channel>
 </rss>
