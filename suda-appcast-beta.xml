@@ -3,16 +3,24 @@
     <channel>
         <title>SUDA</title>
         <item>
-            <title>1.18.0-beta</title>
-            <pubDate>Fri, 08 May 2026 07:27:24 +0200</pubDate>
-            <sparkle:version>50</sparkle:version>
-            <sparkle:shortVersionString>1.18.0-beta</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <title>1.18.0-beta-2</title>
+            <pubDate>Fri, 02 Oct 2026 11:33:50 -0600</pubDate>
+            <sparkle:version>51</sparkle:version>
+            <sparkle:shortVersionString>1.18.0-beta-2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
             <description><![CDATA[<title>Version 1.18.0-beta (Build 50)</title>
 <description>
     <ul> 
         This is a beta version which probably has not been sufficiently tested.
-        <li> Version 1.18.0-beta (Build 50):
+        <li> Version 1.18.0-beta-2 (Build 51):
+            <ul>
+                <li> New: The app now supports themes, which you can create, change, import, or export through the settings dialog.</li>
+                <li> New: Users can now add models that are provided as Lua scripts for the ISD, IDP, and Jovian dust streams, as well as other types of dust populations that are relevant for the cruise phase. These Lua models can be modified and rerun without restarting the app. Additionally, models can be assigned to all ISD projects via the Settings dialog or to individual projects via the Project Setup dialog. </li>
+                <li> New: The app comes with a syntax-sensitive Lua editor that allows you to edit and run Lua scripts in real time.</li>
+                <li> Various bug fixes.</li>
+            </ul>
+        </li>
+        <li> Version 1.18.0-beta-1 (Build 50):
             <ul>
                 <li> New: Users can now install and uninstall essential app resources such as Spice kernel sets or surface images.</li>
                 <li> New: Users can create and load Spice kernel sets for their projects.</li>
@@ -145,7 +153,7 @@
     </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/SUDA-beta.zip" length="21877434" type="application/octet-stream" sparkle:edSignature="OhfHqEi1fBTiR5GqKRN/12RTcCCJX18SX6N6MEHiGfr9LviGBooaYhOscyyOeHua9inTi7N1jvmQb5GbVKaTDg=="/>
+            <enclosure url="https://impact.colorado.edu/SUDA-beta.zip" length="43748960" type="application/octet-stream" sparkle:edSignature="d5kK3X9VaDHObCb2DuyDJyDPNkAYC6qcwl7wT/2XB5HYUDwKhWdQs0lW1UHUI99eZcDZqZLVKg41eZOGhNVOBA=="/>
         </item>
     </channel>
 </rss>
