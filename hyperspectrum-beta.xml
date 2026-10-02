@@ -3,14 +3,29 @@
     <channel>
         <title>HyperSpectrum</title>
         <item>
-            <title>1.6.0-beta</title>
-            <pubDate>Fri, 08 May 2026 07:19:50 +0200</pubDate>
-            <sparkle:version>23</sparkle:version>
-            <sparkle:shortVersionString>1.6.0-beta</sparkle:shortVersionString>
+            <title>1.7.0-beta</title>
+            <pubDate>Fri, 02 Oct 2026 11:44:19 -0600</pubDate>
+            <sparkle:version>24</sparkle:version>
+            <sparkle:shortVersionString>1.7.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
             <description><![CDATA[<title>Version 1.5.0 (Build 21)</title>
 <description>
         <ul>
+        	<li> Version 1.7.0-beta (24):
+                <ul>
+                    <li> Supports MacOS 27</li>
+                    <li> New: The "Speed dependence" tool now allows the user to select whether the sizes of all clusters should be shown in a single plot.</li>
+                    <li> New: Users can now select multiple rows in the line table. When multiple lines are selected, the corresponding context menu allows the user to change the "ignore" state for those rows.</li>
+                    <li> Bug fixes and improvements.</li>
+                </ul>
+            </li>
+            <li> Version 1.6.0-beta (23):
+                <ul>
+                    <li> Fixed: The app does not check the update server for beta updates.</li>
+                    <li> Fixed: The app will not open the statistics viewer.</li>
+                    <li> Fixed: The app may crash when rendering certain incorrectly formed line labels.</li>
+                </ul>
+            </li>
             <li> Version 1.6.0-beta (23):
                 <ul>
                     <li> Fixed: The app does not check the update server for beta updates.</li>
@@ -85,7 +100,7 @@
         </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/HyperSpectrum-beta.zip" length="21708498" type="application/octet-stream" sparkle:edSignature="en7qPb6sWPLlI7OTq2TQ48giSr8WIqeyggobvZ+Nvg4Scu4RsNybs3T3N4EuZlAJa/lrixqpe+Wdfgdc8cqnBg=="/>
+            <enclosure url="https://impact.colorado.edu/HyperSpectrum-beta.zip" length="22218943" type="application/octet-stream" sparkle:edSignature="g6rIy3bkqIpMztbzHzYyqrKV8F7tPiCJkGO8lhV1RAUbM+6MW6a0cQBxywdbxBfq7bxZAiGFEKSRh5R1rXS0CQ=="/>
         </item>
     </channel>
 </rss>
