@@ -3,15 +3,24 @@
     <channel>
         <title>PacketAnalyzer</title>
         <item>
-            <title>1.4.0-beta</title>
-            <pubDate>Fri, 03 Apr 2026 09:57:33 -0600</pubDate>
-            <sparkle:version>37</sparkle:version>
-            <sparkle:shortVersionString>1.4.0-beta</sparkle:shortVersionString>
+            <title>1.4.0-rc</title>
+            <pubDate>Mon, 19 Oct 2026 10:31:44 -0600</pubDate>
+            <sparkle:version>38</sparkle:version>
+            <sparkle:shortVersionString>1.4.0-rc</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
             <description><![CDATA[<title>Version 1.4.0-beta (Build 36)</title>
 <description>
     <ul> 
         This is a beta version which probably has not been sufficiently tested.
+        <li>Version 1.4.0 release candidate (Build 38)</li>
+        <ul>
+            <li>Added: Themes are now supported.</li>
+            <li>Improved: The code base has been reviewed and updated.</li>
+        </u>
+        <li>Version 1.4.0 beta (Build 37)</li>
+        <ul>
+            <li>Fixed: Opening the import dialogue may cause the program to crash.</li>
+        </u>
         <li>Version 1.4.0 beta (Build 36)</li>
         <ul>
             <li>Fixed: Due to an unexpected change in Swift 6.3, the app's import dialogues are no longer working.</li>
@@ -118,7 +127,7 @@
     </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/PacketAnalyzer-beta.zip" length="25021477" type="application/octet-stream" sparkle:edSignature="b/YWW27jf+AtpWPajfmduVdunHEIR61hugnQ9sv0pQRJb5VbHOjGqwpdPuGqij7ysrZf1LONBuLsu4hvcB4wDQ=="/>
+            <enclosure url="https://impact.colorado.edu/PacketAnalyzer-beta.zip" length="25938121" type="application/octet-stream" sparkle:edSignature="w4X5vuhJEoB2wgbjQvxQjbk7Rwj5ncycvuSAWbCfCuO2OXjvcmtu7DrRd/RSMtdEmV+wISKBVxfO7WBz8llzCw=="/>
         </item>
     </channel>
 </rss>
