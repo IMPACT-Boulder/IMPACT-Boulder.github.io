@@ -4,14 +4,30 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Sat, 05 Sep 2026 09:50:44 -0600</pubDate>
-            <sparkle:version>560</sparkle:version>
+            <pubDate>Fri, 30 Oct 2026 14:09:06 -0600</pubDate>
+            <sparkle:version>561</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
             <description><![CDATA[<title>Version 3.4.0 (Build 558)</title>
 <description>
   <ul>
     This is a beta version which probably has not been sufficiently tested.
+    <li> Version 3.4.0 beta (561):
+          <ul>
+              <li>New: For instruments that record parts of the spectrum at a lower time resolution (e.g. CDA), the full mass spectrum including the low resolution region can now be selected directly via the context menu.</li>
+              <li>New (experimental): Imports IDEX CDF archives.</li>
+              <li>New: The automatic (ArPL) background model assignment feature is now available for gain stage waveforms.</li>
+              <li>Improved: The import of IDEX CCSDS packet data has been improved. Noise and test pulse events are now identified, and the auxiliary waveforms are fitted to the simplest CSA waveform model.</li>
+              <li>Improved: The computation of high dynamic range waveforms has been improved.</li>
+              <li>Improved: In Spectrum View, you can now visually mark the time of impact deduced from the auxiliary waveforms.</li>
+              <li>Improved: Changes between light and dark mode are now reflected in the Statistics Viewers.</li>
+              <li>Fixed: Color changes assigned to existing template lines in the Spectrum Template dialog may be ignored.</li>
+              <li>Fixed: It is not possible to change the fit constraints for auxiliary waveforms in the Fit Parameter dialog.</li>
+              <li>Fixed: Is it not possible to select a directory containing scope waveforms for import in MacOS 27.</li>
+              <li>Known Issues: The hatching pattern used to mark artefact regions in Ion Sensor PDFs does not look crisp.</li>
+              <li>Known Issues: Artifact regions that overlap are not merged into a single region.</li>
+          </ul>
+    </li>   
     <li> Version 3.4.0 beta (560):
           <ul>
               <li>New: Users can now edit Lua scripts in a syntax-sensitive, fully configurable code editor that is bundled with the app.</li>
@@ -514,7 +530,7 @@
   </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="72205441" type="application/octet-stream" sparkle:edSignature="N09TyycTG2z7ZYFdvhJzvvgU+7EYUb+zlmVbEffbCBHpsIXaLo+VIAsN6Pie3XzOZRRX5nE45YDaN06gIhVqAQ=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="74100011" type="application/octet-stream" sparkle:edSignature="GpM/GqUvTQnX8F3CJMgYx0D8GOoG8pSKiknbbW0ZE9aRqJQA8STzhFQpKRG1ZTERmquSJPSFpH5FTGtAn0yxAA=="/>
         </item>
     </channel>
 </rss>
