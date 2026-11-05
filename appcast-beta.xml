@@ -4,14 +4,25 @@
         <title>Spectrum</title>
         <item>
             <title>3.4.0-beta</title>
-            <pubDate>Sun, 01 Nov 2026 12:24:38 -0700</pubDate>
-            <sparkle:version>562</sparkle:version>
+            <pubDate>Wed, 04 Nov 2026 20:31:29 -0700</pubDate>
+            <sparkle:version>563</sparkle:version>
             <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.4.0 RC 1 (Build 562)</title>
+            <description><![CDATA[<title>Version 3.4.0 RC 2 (Build 563)</title>
 <description>
   <ul>
     This is a beta version which probably has not been sufficiently tested.
+    <li> Version 3.4.0 Release Candidate 2 (563):
+          <ul>
+              <li>New: Users can now set the maximum multiplicity and minimum abundance of isotopologues used for computation in the app's settings dialog.</li>
+              <li>Improved: Handling and importing instrument voltages is now more reliable.</li>
+              <li>Improved: The abundances of isotopologues derived from line integrals are now also displayed in the line viewer for molecules.</li>
+              <li>Fixed: The line pop-up does not display the isotopic abundance of the selected line type.</li>
+              <li>Minor bug fixes.</li>
+              <li>Known Issues: The hatching pattern used to mark artefact regions in Ion Sensor PDFs does not look crisp.</li>
+              <li>Known Issues: Artifact regions that overlap are not merged into a single region.</li>
+          </ul>
+    </li>
     <li> Version 3.4.0 Release Candidate 1 (562):
           <ul>
               <li>Improved: The default file name for saving PDFs of single-event data, such as mass spectra, now uses the date instead of the event number, which may not be unique.</li>
@@ -540,7 +551,7 @@
   </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="74028194" type="application/octet-stream" sparkle:edSignature="MgkuficSY5CTppUONHczak4lDAaIj8atHaNYIENYwQDSJXtMSENLi3mIPbHun/Usfi1nqw/mRp3jwMVSdAPqAQ=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="73986503" type="application/octet-stream" sparkle:edSignature="JU/Mv8MkZgtr6xXaGHEsf8qHQS0w0BQmKo6XjiiGowB5AQqsQ6E9krREPYu6WKvAE9Dn2m29mggFOsg7gwrHDQ=="/>
         </item>
     </channel>
 </rss>
