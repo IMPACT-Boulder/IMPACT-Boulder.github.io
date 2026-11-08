@@ -3,15 +3,26 @@
     <channel>
         <title>Spectrum</title>
         <item>
-            <title>3.4.0-beta</title>
-            <pubDate>Wed, 04 Nov 2026 20:31:29 -0700</pubDate>
-            <sparkle:version>563</sparkle:version>
-            <sparkle:shortVersionString>3.4.0-beta</sparkle:shortVersionString>
+            <title>3.4.0-rc3</title>
+            <pubDate>Sun, 08 Nov 2026 09:17:29 -0700</pubDate>
+            <sparkle:version>564</sparkle:version>
+            <sparkle:shortVersionString>3.4.0-rc3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
-            <description><![CDATA[<title>Version 3.4.0 RC 2 (Build 563)</title>
+            <description><![CDATA[<title>Version 3.4.0 RC 3 (Build 564)</title>
 <description>
   <ul>
     This is a beta version which probably has not been sufficiently tested.
+    <li> Version 3.4.0 Release Candidate 3 (564):
+          <ul>
+              <li>Improved: The line fit plot annotations are more meaningful.</li>
+              <li>Improved: The color theme items now have improved descriptions.</li>
+              <li>Improved: You can add and remove artifact regions in the Line Viewer.</li>
+              <li>Fixed: The annotations in the line plots may overlap.</li>
+              <li>Fixed: Artifact regions are not ignored when performing a mass line fit.</li>
+              <li>Fixed: Artifact regions that overlap are not merged into a single region.</li>
+              <li>Minor bug fixes.</li>
+          </ul>
+    </li>
     <li> Version 3.4.0 Release Candidate 2 (563):
           <ul>
               <li>New: Users can now set the maximum multiplicity and minimum abundance of isotopologues used for computation in the app's settings dialog.</li>
@@ -551,7 +562,7 @@
   </ul>
 </description>
 ]]></description>
-            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="73986503" type="application/octet-stream" sparkle:edSignature="JU/Mv8MkZgtr6xXaGHEsf8qHQS0w0BQmKo6XjiiGowB5AQqsQ6E9krREPYu6WKvAE9Dn2m29mggFOsg7gwrHDQ=="/>
+            <enclosure url="https://impact.colorado.edu/Spectrum-beta.zip" length="73999288" type="application/octet-stream" sparkle:edSignature="rmYoc3Kwnh84mchJgmIHYa6L1E4JmACwhTscDS1wlS62HIIOsXpM3X0Be5p6qme+O3ogJohEvcbe/AcT2iCQBg=="/>
         </item>
     </channel>
 </rss>
